@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { Car, MapPin, Plane, Briefcase, Clock, Users, Shield, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import heroImg from '@/assets/images/vehicles/hero-bg.jpg';
 
 export default function ServicesPage() {
   const services = [
@@ -96,8 +97,12 @@ export default function ServicesPage() {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={heroImg} alt="Our Services" className="w-full h-full object-cover opacity-30" />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/80 to-blue-800/80"></div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
               Our Taxi Services

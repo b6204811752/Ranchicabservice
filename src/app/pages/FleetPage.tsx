@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { Car, Users, Wind } from 'lucide-react';
 import { motion } from 'motion/react';
+import heroImg from '@/assets/images/vehicles/hero-bg1.webp';
 import ertigaImg from '@/assets/images/vehicles/ertiga.jpg';
 import auraImg from '@/assets/images/vehicles/aura.jpg';
 import dezireImg from '@/assets/images/vehicles/dezire.jpg';
@@ -82,8 +83,12 @@ export default function FleetPage() {
         />
       </Helmet>
 
-      <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={heroImg} alt="Our Fleet" className="w-full h-full object-cover opacity-30" />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/80 to-blue-800/80"></div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Our Fleet of Vehicles
           </h1>
