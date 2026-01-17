@@ -12,7 +12,7 @@ export default function Footer() {
             <img 
               src={logo} 
               alt="Ranchi Cab Service" 
-              className="h-12 w-auto object-contain mb-4 brightness-0 invert"
+              className="h-16 w-auto object-contain mb-4 bg-white p-2 rounded-lg"
             />
             <h3 className="text-xl font-bold mb-4">Ranchi Cab Service</h3>
             <p className="text-gray-400 mb-4">
