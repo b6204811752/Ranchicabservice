@@ -27,27 +27,28 @@ export default function ComparisonTable() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-8 sm:mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 px-4">
             Why Choose Ranchi Cab Service?
           </h2>
-          <p className="text-xl text-blue-200">
+          <p className="text-base sm:text-xl text-blue-200 px-4">
             See how we compare with other taxi services
           </p>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
-          className="bg-white/10 backdrop-blur-lg rounded-2xl overflow-hidden border border-white/20 shadow-2xl"
-        >
-          <div className="grid grid-cols-3 bg-gradient-to-r from-blue-600 to-purple-600 p-4 font-bold text-lg">
-            <div className="col-span-1">Features</div>
-            <div className="text-center">Ranchi Cab Service</div>
-            <div className="text-center">Others</div>
+        <div className="overflow-x-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="bg-white/10 backdrop-blur-lg rounded-2xl overflow-hidden border border-white/20 shadow-2xl min-w-[600px] sm:min-w-0"
+          >
+            <div className="grid grid-cols-3 bg-gradient-to-r from-blue-600 to-purple-600 p-3 sm:p-4 font-bold text-sm sm:text-base md:text-lg">
+              <div className="col-span-1 text-left">Features</div>
+              <div className="text-center">Us</div>
+              <div className="text-center">Others</div>
           </div>
 
           {features.map((item, index) => (
@@ -57,7 +58,7 @@ export default function ComparisonTable() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.05 }}
-              className={`grid grid-cols-3 p-4 ${index % 2 === 0 ? 'bg-white/5' : 'bg-white/10'} border-b border-white/10`}
+              className={`grid grid-cols-3 p-3 sm:p-4 ${index % 2 === 0 ? 'bg-white/5' : 'bg-white/10'} border-b border-white/10`}
             >
               <div className="col-span-1 font-medium">{item.feature}</div>
               <div className="text-center">

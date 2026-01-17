@@ -56,15 +56,15 @@ export default function FAQ() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-12"
+          className="text-center mb-8 sm:mb-12 px-4"
         >
-          <div className="inline-flex items-center gap-3 bg-white px-6 py-3 rounded-full shadow-lg mb-4">
-            <HelpCircle className="w-6 h-6 text-blue-600" />
-            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+          <div className="inline-flex items-center gap-2 sm:gap-3 bg-white px-4 sm:px-6 py-2 sm:py-3 rounded-full shadow-lg mb-3 sm:mb-4">
+            <HelpCircle className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" />
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
               Frequently Asked Questions
             </h2>
           </div>
-          <p className="text-xl text-gray-600 mt-4">
+          <p className="text-base sm:text-xl text-gray-600 mt-3 sm:mt-4">
             Everything you need to know about Ranchi Cab Service
           </p>
         </motion.div>
@@ -81,9 +81,9 @@ export default function FAQ() {
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full px-6 py-5 flex justify-between items-center text-left hover:bg-blue-50 transition-all"
+                className="w-full px-4 sm:px-6 py-4 sm:py-5 flex justify-between items-center text-left hover:bg-blue-50 transition-all"
               >
-                <span className="font-semibold text-lg text-gray-800 pr-4">{faq.question}</span>
+                <span className="font-semibold text-base sm:text-lg text-gray-800 pr-3 sm:pr-4">{faq.question}</span>
                 <motion.div
                   animate={{ rotate: openIndex === index ? 180 : 0 }}
                   transition={{ duration: 0.3 }}
