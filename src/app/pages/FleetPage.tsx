@@ -198,49 +198,6 @@ export default function FleetPage() {
             ))}
           </div>
         </div>
-      </section></h3>
-                  
-                  <div className="space-y-3 mb-6">
-                    <div className="flex items-center space-x-3 text-gray-600">
-                      <Users className="w-5 h-5 text-blue-600" />
-                      <span>{vehicle.seats}</span>
-                    </div>
-                    <div className="flex items-center space-x-3 text-gray-600">
-                      <Wind className="w-5 h-5 text-blue-600" />
-                      <span>AC Available</span>
-                    </div>
-                    <div className="flex items-center space-x-3 text-gray-600">
-                      <Car className="w-5 h-5 text-blue-600" />
-                      <span>{vehicle.luggage} Capacity</span>
-                    </div>
-                  </div>
-
-                  <div className="border-t border-gray-200 pt-4 mb-4">
-                    <div className="flex justify-between mb-2">
-                      <span className="text-gray-600">Local:</span>
-                      <span className="font-bold text-blue-600">{vehicle.localRate}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-600">Outstation:</span>
-                      <span className="font-bold text-blue-600">{vehicle.outstationRate}</span>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-wrap gap-2">
-                    {vehicle.features.map((feature, idx) => (
-                      <span
-                        key={idx}
-                        className="px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-sm font-semibold"
-                      >
-                        {feature}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </section>
 
       <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
