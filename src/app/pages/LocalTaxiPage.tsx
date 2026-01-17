@@ -82,6 +82,7 @@ export default function LocalTaxiPage() {
                   </div>
                 </div>
               </motion.div>
+            ))}
           </div>
         </div>
       </section>
