@@ -67,7 +67,7 @@ export default function AirportPage() {
                 className="flex justify-between items-center p-6 bg-gradient-to-r from-white via-blue-50 to-white rounded-lg shadow-md border-l-4 border-blue-600">
                 <span className="text-lg font-semibold">{item.vehicle}</span>
                 <span className="text-2xl font-bold text-blue-600">{item.rate}</span>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
