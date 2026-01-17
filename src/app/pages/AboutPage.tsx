@@ -142,14 +142,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-                  {stat.number}
-                </div>
-                <div className="text-lg text-blue-100">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Our Values */}
       <section className="py-16 relative bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 overflow-hidden">
