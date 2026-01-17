@@ -39,15 +39,19 @@ export default function AboutPage() {
   return (
     <>
       <Helmet>
-        <title>About Us - Ranchi Cab Service | Best Taxi Service in Ranchi</title>
+        <title>About Us - Ranchi Cab Service | Best Taxi Service Provider in Ranchi Since 2010</title>
         <meta
           name="description"
-          content="Learn about Ranchi Cab Service, the leading taxi service provider in Ranchi. With 15+ years of experience and 10,000+ happy customers, we offer safe, reliable, and affordable cab services."
+          content="Learn about Ranchi Cab Service - Ranchi's most trusted taxi service provider. 10+ years experience, 500+ happy customers, verified drivers & 24/7 service. Book reliable cabs in Ranchi."
         />
         <meta
           name="keywords"
-          content="about ranchi cab service, taxi company ranchi, cab service jharkhand, ranchi taxi company"
+          content="about ranchi cab service, ranchi taxi company, best cab service ranchi, trusted taxi ranchi, ranchi travels company, professional cab service ranchi"
         />
+        <link rel="canonical" href="https://ranchicabservice.vercel.app/about" />
+        <meta property="og:title" content="About Ranchi Cab Service - Trusted Taxi Service Provider" />
+        <meta property="og:description" content="Ranchi's most reliable cab service with 10+ years experience and 500+ happy customers" />
+        <meta property="og:url" content="https://ranchicabservice.vercel.app/about" />
       </Helmet>
 
       {/* Hero Section */}

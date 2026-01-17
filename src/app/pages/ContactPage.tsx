@@ -21,11 +21,35 @@ export default function ContactPage() {
   return (
     <>
       <Helmet>
-        <title>Contact Us - Get in Touch | Ranchi Cab Service</title>
+        <title>Contact Us - Ranchi Cab Service | Call +91 7903629240 | Book Taxi 24/7</title>
         <meta
           name="description"
-          content="Contact Ranchi Cab Service. Call +91 7903629240, Email: rohittravels10@gmail.com. Available 24/7 for all your taxi booking needs."
+          content="📞 Contact Ranchi Cab Service ✓ Call: +91 7903629240 ✓ Email: rohittravels10@gmail.com ✓ WhatsApp Booking ✓ 24/7 Support ✓ Instant Confirmation. Book your taxi now!"
         />
+        <meta
+          name="keywords"
+          content="ranchi cab service contact number, taxi booking ranchi phone number, ranchi cab service whatsapp, call taxi ranchi, book cab ranchi contact, ranchi taxi helpline, 24/7 cab service ranchi"
+        />
+        <link rel="canonical" href="https://ranchicabservice.vercel.app/contact" />
+        <meta property="og:title" content="Contact Ranchi Cab Service - Book Taxi 24/7" />
+        <meta property="og:description" content="Call +91 7903629240 for instant taxi booking in Ranchi. Available 24/7" />
+        <meta property="og:url" content="https://ranchicabservice.vercel.app/contact" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": "Contact Ranchi Cab Service",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+917903629240",
+              "email": "rohittravels10@gmail.com",
+              "contactType": "Customer Service",
+              "areaServed": "Ranchi",
+              "availableLanguage": ["English", "Hindi"]
+            }
+          })}
+        </script>
       </Helmet>
 
       <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">

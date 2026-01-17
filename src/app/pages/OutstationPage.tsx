@@ -51,15 +51,33 @@ export default function OutstationPage() {
   return (
     <>
       <Helmet>
-        <title>Outstation Taxi from Ranchi | One Way & Round Trip Cab Service</title>
+        <title>Outstation Taxi from Ranchi | Ranchi to Patna, Kolkata, Jamshedpur Cab @ Best Price</title>
         <meta
           name="description"
-          content="Book outstation taxi from Ranchi to Patna, Kolkata, Jamshedpur, Bokaro & nearby cities. One-way and round trip cab service. Best rates, clean cars, verified drivers. Call +91 7903629240"
+          content="🚗 Book Outstation Cab from Ranchi ✓ Ranchi to Patna ₹4,500 ✓ Ranchi to Kolkata ₹6,000 ✓ AC Cars ✓ One-Way & Round Trip ✓ Experienced Drivers. Call +91 7903629240"
         />
         <meta
           name="keywords"
-          content="outstation taxi ranchi, ranchi to patna cab, ranchi to kolkata taxi, ranchi outstation cab service, one way taxi from ranchi"
+          content="outstation taxi ranchi, ranchi to patna cab, ranchi to kolkata taxi, ranchi to jamshedpur cab, ranchi to bokaro taxi, ranchi to dhanbad cab, ranchi to hazaribagh taxi, outstation cab fare ranchi, one way taxi ranchi, round trip cab ranchi, highway taxi ranchi, intercity cab ranchi"
         />
+        <link rel="canonical" href="https://ranchicabservice.vercel.app/outstation-taxi" />
+        <meta property="og:title" content="Outstation Taxi from Ranchi - Book Cabs to Patna, Kolkata & More" />
+        <meta property="og:description" content="Comfortable outstation cabs from Ranchi to nearby cities. Best rates, experienced drivers, AC cars. Book now!" />
+        <meta property="og:url" content="https://ranchicabservice.vercel.app/outstation-taxi" />
+        
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "TripAction",
+            "name": "Outstation Taxi Service from Ranchi",
+            "description": "Book outstation cabs from Ranchi to Patna, Kolkata, Jamshedpur and other cities",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Ranchi Cab Service",
+              "telephone": "+917903629240"
+            }
+          })}
+        </script>
       </Helmet>
 
       {/* Hero Section */}

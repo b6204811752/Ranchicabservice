@@ -19,6 +19,7 @@ import FloatingButtons from '@/app/components/common/FloatingButtons';
 import ScrollToTop from '@/app/components/common/ScrollToTop';
 import ScrollToTopOnNavigation from '@/app/components/common/ScrollToTopOnNavigation';
 import SEO from '@/app/components/common/SEO';
+import StickyBookingBar from '@/app/components/common/StickyBookingBar';
 
 export default function App() {
   return (
@@ -47,6 +48,7 @@ export default function App() {
           </main>
           <Footer />
           <FloatingButtons />
+          <StickyBookingBar />
           <ScrollToTop />
         </div>
       </Router>

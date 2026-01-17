@@ -6,6 +6,10 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { motion } from 'motion/react';
+import TrustBadges from '@/app/components/common/TrustBadges';
+import FareCalculator from '@/app/components/common/FareCalculator';
+import FAQ from '@/app/components/common/FAQ';
+import ComparisonTable from '@/app/components/common/ComparisonTable';
 import heroImg1 from '@/assets/images/vehicles/hero-bg1.webp';
 import heroImg2 from '@/assets/images/vehicles/hero-bg2.webp';
 import heroImg3 from '@/assets/images/vehicles/hero-bg.jpg';
@@ -227,15 +231,87 @@ export default function HomePage() {
   return (
     <>
       <Helmet>
-        <title>Best Cab Service in Ranchi – Safe, Reliable & Affordable Taxi | Ranchi Cab Service</title>
+        <title>Ranchi Cab Service | Book Best Taxi in Ranchi 24/7 | Local, Outstation & Airport Cabs</title>
         <meta
           name="description"
-          content="Ranchi Cab Service offers best taxi service in Ranchi. Book outstation cabs, local taxi, airport transfer, and corporate taxi service. Available 24/7. Call +91 7903629240"
+          content="⭐ Ranchi's #1 Cab Service ✓ 24/7 Available ✓ Safe & Verified Drivers ✓ Best Rates ✓ Local Taxi ✓ Outstation Cabs ✓ Airport Transfer ✓ Corporate Taxi. Book Now: +91 7903629240"
         />
         <meta
           name="keywords"
-          content="Ranchi cab service, taxi service in Ranchi, cab booking Ranchi, Ranchi taxi service, outstation cab from Ranchi, Ranchi airport taxi"
+          content="ranchi cab service, taxi service in ranchi, cab booking ranchi, ranchi taxi, ranchi airport taxi, outstation taxi ranchi, local taxi ranchi, ranchi to patna cab, ranchi to kolkata taxi, ranchi to jamshedpur cab, cab service near me ranchi, best taxi service ranchi, cheap cab ranchi, 24/7 taxi ranchi, ranchi cab booking online, corporate taxi ranchi, ranchi travels, taxi fare ranchi"
         />
+        <link rel="canonical" href="https://ranchicabservice.vercel.app/" />
+        
+        {/* Enhanced Open Graph */}
+        <meta property="og:title" content="Ranchi Cab Service | Book Best Taxi in Ranchi 24/7" />
+        <meta property="og:description" content="⭐ Ranchi's #1 Cab Service - Safe, Reliable & Affordable. Book Local Taxi, Outstation Cabs & Airport Transfer. Call +91 7903629240" />
+        <meta property="og:url" content="https://ranchicabservice.vercel.app/" />
+        <meta property="og:type" content="website" />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Ranchi Cab Service | Best Taxi in Ranchi 24/7" />
+        <meta name="twitter:description" content="Book Safe & Affordable Taxi in Ranchi. Local, Outstation, Airport & Corporate Cabs Available 24/7" />
+        
+        {/* Structured Data for HomePage */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "TaxiService",
+            "name": "Ranchi Cab Service",
+            "description": "Best taxi and cab service in Ranchi offering 24/7 local taxi, outstation cabs, airport transfers and corporate transportation",
+            "url": "https://ranchicabservice.vercel.app",
+            "telephone": "+917903629240",
+            "priceRange": "₹₹",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5",
+              "reviewCount": "500"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Ranchi",
+              "containedIn": {
+                "@type": "State",
+                "name": "Jharkhand"
+              }
+            }
+          })}
+        </script>
+        
+        {/* FAQ Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How can I book a cab in Ranchi?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "You can book a cab by calling +91 7903629240, sending a WhatsApp message, or using our online booking form. We provide instant confirmation and 24/7 booking service."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What are your taxi rates in Ranchi?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our local taxi rates start from ₹10/km for sedans and ₹14/km for SUVs. Outstation rates are ₹12/km for sedans and ₹16/km for SUVs."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you provide 24/7 taxi service?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we are available 24 hours a day, 7 days a week, including all holidays for emergency travel, airport transfers, or outstation trips."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       {/* Hero Section with Image Slider */}
@@ -314,6 +390,9 @@ export default function HomePage() {
           ))}
         </Slider>
       </section>
+
+      {/* Trust Badges */}
+      <TrustBadges />
 
       {/* Booking Form Section */}
       <section id="booking-form" className="py-16 bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 -mt-20 relative z-10 overflow-hidden">
@@ -757,6 +836,64 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Fare Calculator Section */}
+      <section className="py-16 bg-gradient-to-br from-white via-blue-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">
+                Calculate Your Fare
+              </h2>
+              <p className="text-xl text-gray-600 mb-8">
+                Get instant fare estimates for your journey. Transparent pricing with no hidden charges.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">✓</div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800">Transparent Pricing</h4>
+                    <p className="text-gray-600 text-sm">No surge pricing, no hidden costs</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">✓</div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800">Multiple Payment Options</h4>
+                    <p className="text-gray-600 text-sm">Cash, UPI, Cards - your choice</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">✓</div>
+                  <div>
+                    <h4 className="font-semibold text-gray-800">Best Rate Guarantee</h4>
+                    <p className="text-gray-600 text-sm">Competitive rates for all routes</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <FareCalculator />
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Comparison Table */}
+      <ComparisonTable />
+
+      {/* FAQ Section */}
+      <FAQ />
 
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white relative overflow-hidden">

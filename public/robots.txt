@@ -1,0 +1,15 @@
+# Ranchi Cab Service - Robots.txt
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /*.json$
+
+# Sitemaps
+Sitemap: https://ranchicabservice.vercel.app/sitemap.xml
+
+# Crawl-delay for bots
+User-agent: Googlebot
+Crawl-delay: 0
+
+User-agent: Bingbot
+Crawl-delay: 1
