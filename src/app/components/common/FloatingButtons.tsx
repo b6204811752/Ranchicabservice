@@ -3,7 +3,7 @@ import { Phone, MessageCircle } from 'lucide-react';
 export default function FloatingButtons() {
   return (
     <div className="fixed bottom-24 right-4 md:right-6 flex flex-col space-y-3 z-[45]">
-      {/* WhatsApp Button */}}
+      {/* WhatsApp Button */}
       <a
         href="https://wa.me/917903629240?text=Hi, I want to book a cab"
         target="_blank"
