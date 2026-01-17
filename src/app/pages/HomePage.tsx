@@ -231,16 +231,31 @@ export default function HomePage() {
   return (
     <>
       <Helmet>
-        <title>Ranchi Cab Service | Book Best Taxi in Ranchi 24/7 | Local, Outstation & Airport Cabs</title>
+        <title>Ranchi Cab Service | Car Rental in Ranchi | Taxi Hire 24x7 | Book Sedan, SUV, Innova</title>
         <meta
           name="description"
-          content="⭐ Ranchi's #1 Cab Service ✓ 24/7 Available ✓ Safe & Verified Drivers ✓ Best Rates ✓ Local Taxi ✓ Outstation Cabs ✓ Airport Transfer ✓ Corporate Taxi. Book Now: +91 7903629240"
+          content="⭐ Book Car Rental in Ranchi ✓ Chauffeur Driven Cabs 24x7 ✓ One Way & Round Trip ✓ Airport Taxi ✓ Local Hire ✓ Sedan ₹10/km ✓ SUV ₹14/km ✓ Innova Crysta ✓ Govt Verified Drivers ✓ 2000+ Routes. Call: 7903629240"
         />
         <meta
           name="keywords"
-          content="ranchi cab service, taxi service in ranchi, cab booking ranchi, ranchi taxi, ranchi airport taxi, outstation taxi ranchi, local taxi ranchi, ranchi to patna cab, ranchi to kolkata taxi, ranchi to jamshedpur cab, cab service near me ranchi, best taxi service ranchi, cheap cab ranchi, 24/7 taxi ranchi, ranchi cab booking online, corporate taxi ranchi, ranchi travels, taxi fare ranchi"
+          content="car rental ranchi, car rental in ranchi, taxi service ranchi, taxi service in ranchi, cab service in ranchi, cab booking ranchi, ranchi taxi, ranchi cabs, ranchi cab, near me taxi service, near me cab service, 7 seater taxi service, chauffeur driven car rental ranchi, ranchi airport taxi, birsa munda airport taxi, outstation taxi ranchi, one way cab ranchi, one way taxi ranchi, one way cab, one way taxi, one way cab service, one way taxi service, round trip taxi ranchi, local taxi ranchi, ranchi local cab service, ranchi local taxi service, hourly car rental ranchi, ranchi to patna cab, ranchi to kolkata taxi, ranchi to kolkata cab, ranchi to kolkata cab service, ranchi to kolkata taxi service, ranchi to jamshedpur cab, ranchi to bokaro cab, ranchi to bokaro taxi service, ranchi to bokaro cab service, ranchi to dhanbad taxi, ranchi to dhanbad cab service, ranchi to dhanbad taxi service, ranchi to gaya cab, ranchi to gaya taxi service, ranchi to gaya cab service, ranchi to tata cab service, ranchi to tata taxi service, ranchi to netarhat taxi service, ranchi to hazaribagh cab service, ranchi to hazaribagh taxi service, ranchi to koderma cab service, ranchi to koderma taxi service, ranchi to varanasi cab, ranchi to varanasi taxi, ranchi to varanasi cab service, ranchi to varanasi taxi service, ranchi to ramgarh cab service, ranchi to ramgarh taxi service, cab service near me ranchi, best taxi service ranchi, sasta cab service, sasta cab sasta taxi, affordable cab ranchi, 24/7 taxi ranchi, tempo traveller ranchi, innova crysta ranchi, dzire taxi ranchi, ertiga cab ranchi, ranchi cab online booking, corporate taxi ranchi, ranchi car hire, taxi fare ranchi, car rental rates ranchi, ranchi travels, ranchi taxi service near railway station, ranchi taxi number, ranchi cab contact number"
         />
         <link rel="canonical" href="https://ranchicabservice.vercel.app/" />
+        
+        {/* Geo Targeting */}
+        <meta name="geo.region" content="IN-JH" />
+        <meta name="geo.placename" content="Ranchi" />
+        <meta name="geo.position" content="23.3441;85.3096" />
+        <meta name="ICBM" content="23.3441, 85.3096" />
+        
+        {/* Additional Meta Tags */}
+        <meta name="author" content="Ranchi Cab Service" />
+        <meta name="revisit-after" content="7 days" />
+        <meta name="language" content="English" />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="General" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         
         {/* Enhanced Open Graph */}
         <meta property="og:title" content="Ranchi Cab Service | Book Best Taxi in Ranchi 24/7" />
@@ -253,29 +268,156 @@ export default function HomePage() {
         <meta name="twitter:title" content="Ranchi Cab Service | Best Taxi in Ranchi 24/7" />
         <meta name="twitter:description" content="Book Safe & Affordable Taxi in Ranchi. Local, Outstation, Airport & Corporate Cabs Available 24/7" />
         
-        {/* Structured Data for HomePage */}
+        {/* Structured Data - LocalBusiness */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "TaxiService",
+            "@type": "LocalBusiness",
+            "@id": "https://ranchicabservice.vercel.app/#business",
             "name": "Ranchi Cab Service",
-            "description": "Best taxi and cab service in Ranchi offering 24/7 local taxi, outstation cabs, airport transfers and corporate transportation",
+            "alternateName": "Ranchi Taxi Service",
+            "description": "Premier car rental and taxi service in Ranchi offering chauffeur-driven cabs for local trips, outstation journeys, airport transfers, and corporate transportation. Available 24x7 with verified drivers.",
             "url": "https://ranchicabservice.vercel.app",
             "telephone": "+917903629240",
+            "email": "rohittravels10@gmail.com",
             "priceRange": "₹₹",
+            "image": "https://ranchicabservice.vercel.app/logo.png",
+            "logo": "https://ranchicabservice.vercel.app/logo.png",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Ranchi",
+              "addressLocality": "Ranchi",
+              "addressRegion": "Jharkhand",
+              "postalCode": "834001",
+              "addressCountry": "IN"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "23.3441",
+              "longitude": "85.3096"
+            },
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+              "opens": "00:00",
+              "closes": "23:59"
+            },
             "aggregateRating": {
               "@type": "AggregateRating",
-              "ratingValue": "5",
-              "reviewCount": "500"
+              "ratingValue": "4.8",
+              "reviewCount": "500",
+              "bestRating": "5",
+              "worstRating": "1"
             },
-            "areaServed": {
-              "@type": "City",
-              "name": "Ranchi",
-              "containedIn": {
-                "@type": "State",
-                "name": "Jharkhand"
+            "areaServed": [
+              {
+                "@type": "City",
+                "name": "Ranchi",
+                "containedIn": {"@type": "State", "name": "Jharkhand"}
+              },
+              {"@type": "City", "name": "Patna"},
+              {"@type": "City", "name": "Kolkata"},
+              {"@type": "City", "name": "Jamshedpur"},
+              {"@type": "City", "name": "Bokaro"},
+              {"@type": "City", "name": "Dhanbad"},
+              {"@type": "City", "name": "Gaya"},
+              {"@type": "City", "name": "Hazaribagh"}
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Taxi Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Local Taxi Service",
+                    "description": "Hourly car rental in Ranchi for local trips"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Outstation Taxi Service",
+                    "description": "One way and round trip cab service from Ranchi"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Airport Taxi Service",
+                    "description": "Birsa Munda Airport pickup and drop service"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Corporate Taxi Service",
+                    "description": "Monthly corporate car rental packages"
+                  }
+                }
+              ]
+            },
+            "sameAs": [
+              "https://www.facebook.com/ranchicabservice",
+              "https://www.instagram.com/ranchicabservice",
+              "https://twitter.com/ranchicabservice"
+            ]
+          })}
+        </script>
+        
+        {/* BreadcrumbList Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://ranchicabservice.vercel.app/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Services",
+                "item": "https://ranchicabservice.vercel.app/services"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Fleet",
+                "item": "https://ranchicabservice.vercel.app/fleet"
               }
-            }
+            ]
+          })}
+        </script>
+        
+        {/* Organization Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Ranchi Cab Service",
+            "url": "https://ranchicabservice.vercel.app",
+            "logo": "https://ranchicabservice.vercel.app/logo.png",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+91-7903629240",
+                "contactType": "Customer Service",
+                "areaServed": "IN",
+                "availableLanguage": ["English", "Hindi"]
+              }
+            ],
+            "sameAs": [
+              "https://www.facebook.com/ranchicabservice",
+              "https://www.instagram.com/ranchicabservice"
+            ]
           })}
         </script>
         
@@ -290,23 +432,63 @@ export default function HomePage() {
                 "name": "How can I book a cab in Ranchi?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "You can book a cab by calling +91 7903629240, sending a WhatsApp message, or using our online booking form. We provide instant confirmation and 24/7 booking service."
+                  "text": "You can book a cab by calling +91 7903629240, sending a WhatsApp message, or using our online booking form on ranchicabservice.vercel.app. We provide instant confirmation and 24/7 booking service for all car rental needs."
                 }
               },
               {
                 "@type": "Question",
-                "name": "What are your taxi rates in Ranchi?",
+                "name": "What are your car rental rates in Ranchi?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Our local taxi rates start from ₹10/km for sedans and ₹14/km for SUVs. Outstation rates are ₹12/km for sedans and ₹16/km for SUVs."
+                  "text": "Our local taxi rates start from ₹10/km for sedans (Dzire, Aura), ₹14/km for SUVs (Ertiga), and ₹16/km for Innova Crysta. Outstation rates are ₹12/km for sedans and ₹16/km for SUVs. We offer the lowest average per km rates in Ranchi."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Do you provide 24/7 taxi service?",
+                "name": "Do you provide 24/7 taxi service in Ranchi?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, we are available 24 hours a day, 7 days a week, including all holidays for emergency travel, airport transfers, or outstation trips."
+                  "text": "Yes, Ranchi Cab Service operates 24 hours a day, 7 days a week, 365 days a year including all holidays. Our chauffeur-driven cabs are available for emergency travel, airport transfers, or outstation trips at any time."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Which cities do you cover for outstation taxi from Ranchi?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We provide outstation taxi service from Ranchi to 2000+ routes including Patna, Kolkata, Jamshedpur, Bokaro, Dhanbad, Gaya, Hazaribagh, Dumka, Deoghar, Varanasi, and all major cities in Jharkhand, Bihar, West Bengal, and neighboring states."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you provide airport taxi service in Ranchi?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we provide reliable airport taxi service for Birsa Munda Airport Ranchi with 24/7 availability. Our service includes flight tracking, meet & greet at arrivals, and comfortable rides to/from the airport."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are your drivers verified and experienced?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, all our drivers are government-verified, police-verified, and have extensive driving experience. Safety is our prime concern. Our chauffeurs are professional, courteous, and well-trained to ensure a comfortable journey."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What types of vehicles are available for car rental in Ranchi?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We offer a wide range of vehicles including Maruti Dzire, Hyundai Aura (sedans), Maruti Ertiga (SUV), Toyota Innova Crysta, luxury cars like Audi and BMW. All vehicles are well-maintained, clean, and air-conditioned."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you offer one-way taxi service from Ranchi?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we offer both one-way and round-trip taxi services from Ranchi. For one-way drops, you only pay for one side without any return charges, making it very affordable for intercity travel."
                 }
               }
             ]
@@ -894,6 +1076,127 @@ export default function HomePage() {
 
       {/* FAQ Section */}
       <FAQ />
+
+      {/* SEO Content Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-lg max-w-none">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Car Rental & Taxi Service in Ranchi - Your Trusted Travel Partner</h2>
+              
+              <p className="text-gray-700 mb-4">
+                Welcome to <strong>Ranchi Cab Service</strong>, your premier destination for reliable and affordable <strong>car rental in Ranchi</strong>. 
+                We are a leading <strong>taxi service provider in Ranchi, Jharkhand</strong>, offering chauffeur-driven cab services for local trips, 
+                outstation journeys, airport transfers, and corporate transportation. With over 2000+ routes covered and 500+ satisfied customers, 
+                we have established ourselves as the most trusted <strong>cab booking service in Ranchi</strong>.
+              </p>
+
+              <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Our Comprehensive Car Rental Services in Ranchi</h3>
+              
+              <div className="grid md:grid-cols-2 gap-6 mb-6">
+                <div>
+                  <h4 className="text-xl font-semibold text-blue-600 mb-2">🚖 Local Taxi Service in Ranchi</h4>
+                  <p className="text-gray-700">
+                    Book <strong>local taxi in Ranchi</strong> for hourly rental packages. Perfect for city tours, shopping, business meetings, 
+                    or daily commute. Our flexible packages include 4-hour, 8-hour, and 12-hour rentals starting at just ₹10/km for sedans.
+                  </p>
+                </div>
+                
+                <div>
+                  <h4 className="text-xl font-semibold text-blue-600 mb-2">🛣️ Outstation Taxi from Ranchi</h4>
+                  <p className="text-gray-700">
+                    Planning an outstation trip? Book <strong>outstation cab from Ranchi</strong> with both one-way and round-trip options. 
+                    We cover popular routes like Ranchi to Patna, Ranchi to Kolkata, Ranchi to Jamshedpur, Ranchi to Bokaro, and 2000+ more destinations.
+                  </p>
+                </div>
+                
+                <div>
+                  <h4 className="text-xl font-semibold text-blue-600 mb-2">✈️ Airport Taxi Service</h4>
+                  <p className="text-gray-700">
+                    Need <strong>Birsa Munda Airport taxi</strong>? Our 24x7 <strong>airport cab service in Ranchi</strong> ensures punctual pickup 
+                    and drop with flight tracking, meet & greet service, and comfortable rides to/from the airport.
+                  </p>
+                </div>
+                
+                <div>
+                  <h4 className="text-xl font-semibold text-blue-600 mb-2">💼 Corporate Taxi Solutions</h4>
+                  <p className="text-gray-700">
+                    <strong>Corporate taxi service in Ranchi</strong> with customized monthly packages, dedicated vehicles, professional chauffeurs, 
+                    and flexible billing options for businesses and organizations.
+                  </p>
+                </div>
+              </div>
+
+              <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Wide Range of Vehicles for Every Need</h3>
+              <p className="text-gray-700 mb-4">
+                Our fleet includes <strong>Sedan taxi (Maruti Dzire, Hyundai Aura)</strong>, <strong>SUV cab (Maruti Ertiga)</strong>, 
+                <strong>Innova Crysta</strong>, and luxury cars including <strong>Audi and BMW</strong>. All vehicles are well-maintained, 
+                air-conditioned, and driven by government-verified professional chauffeurs.
+              </p>
+
+              <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Popular Outstation Routes from Ranchi</h3>
+              <div className="grid md:grid-cols-3 gap-4 mb-6">
+                <ul className="list-disc list-inside text-gray-700 space-y-2">
+                  <li><strong>Ranchi to Patna cab</strong> - 350 km, ₹4,500</li>
+                  <li><strong>Ranchi to Kolkata taxi</strong> - 420 km, ₹6,000</li>
+                  <li><strong>Ranchi to Jamshedpur cab</strong> - 140 km, ₹2,200</li>
+                </ul>
+                <ul className="list-disc list-inside text-gray-700 space-y-2">
+                  <li><strong>Ranchi to Bokaro taxi</strong> - 110 km, ₹1,800</li>
+                  <li><strong>Ranchi to Dhanbad cab</strong> - 160 km, ₹2,500</li>
+                  <li><strong>Ranchi to Gaya taxi</strong> - 200 km, ₹3,000</li>
+                </ul>
+                <ul className="list-disc list-inside text-gray-700 space-y-2">
+                  <li><strong>Ranchi to Hazaribagh</strong> - 90 km, ₹1,500</li>
+                  <li><strong>Ranchi to Deoghar</strong> - 250 km, ₹3,500</li>
+                  <li><strong>Ranchi to Dumka</strong> - 270 km, ₹3,800</li>
+                </ul>
+              </div>
+
+              <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Ranchi Cab Service?</h3>
+              <ul className="list-disc list-inside text-gray-700 space-y-2 mb-6">
+                <li>✅ <strong>24x7 Availability</strong> - Book cab anytime, anywhere</li>
+                <li>✅ <strong>Government Verified Drivers</strong> - Safe and secure travel</li>
+                <li>✅ <strong>Transparent Pricing</strong> - No hidden charges, all-inclusive rates</li>
+                <li>✅ <strong>Well-Maintained Fleet</strong> - Clean, comfortable AC vehicles</li>
+                <li>✅ <strong>Instant Booking Confirmation</strong> - Call, WhatsApp or online booking</li>
+                <li>✅ <strong>2000+ Routes Covered</strong> - One-way and round-trip options</li>
+                <li>✅ <strong>Best Price Guarantee</strong> - Lowest average per km rates in Ranchi</li>
+                <li>✅ <strong>Expert Chauffeurs</strong> - Professional and courteous drivers</li>
+              </ul>
+
+              <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Easy Cab Booking in Ranchi</h3>
+              <p className="text-gray-700 mb-4">
+                Booking a <strong>taxi in Ranchi</strong> is now easier than ever! Simply call us at <strong>+91 7903629240</strong>, 
+                send a WhatsApp message, or use our <strong>online cab booking</strong> form. We provide instant confirmation and ensure 
+                your cab arrives on time, every time.
+              </p>
+
+              <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Service Areas in Ranchi</h3>
+              <p className="text-gray-700 mb-4">
+                We provide <strong>taxi service near Ranchi Railway Station, Ranchi Airport, Namkum, Doranda, Kanke, Lalpur, Harmu, 
+                Bariatu, Booty More, Hinoo, Hatia, Tatisilwai, Ratu Road, Kokar, Argora, Morabadi, Dhurwa, Tupudana, Patratu</strong> 
+                and all major localities in Ranchi city.
+              </p>
+
+              <div className="bg-blue-50 border-l-4 border-blue-600 p-6 mt-8">
+                <h4 className="text-xl font-bold text-blue-900 mb-2">🎯 Keywords for Quick Search:</h4>
+                <p className="text-gray-700 text-sm">
+                  car rental ranchi, taxi service ranchi, cab booking ranchi, ranchi taxi, ranchi cab, chauffeur driven car rental, 
+                  ranchi airport taxi, birsa munda airport cab, outstation taxi ranchi, one way cab ranchi, round trip taxi ranchi, 
+                  local taxi ranchi, hourly car rental ranchi, tempo traveller ranchi, innova crysta ranchi, dzire taxi ranchi, 
+                  ertiga cab ranchi, ranchi cab online booking, corporate taxi ranchi, ranchi car hire, taxi fare ranchi, 
+                  car rental rates ranchi, ranchi travels, ranchi taxi service near railway station, ranchi taxi number
+                </p>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
 
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white relative overflow-hidden">
