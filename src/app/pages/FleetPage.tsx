@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { Car, Users, Wind } from 'lucide-react';
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import heroImg from '@/assets/images/vehicles/hero-bg1.webp';
 import ertigaImg from '@/assets/images/vehicles/ertiga.jpg';
 import auraImg from '@/assets/images/vehicles/aura.jpg';
@@ -186,13 +187,15 @@ export default function FleetPage() {
                       <span className="font-bold text-2xl bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">{vehicle.outstationRate}</span>
                     </motion.div>
                   </div>
-                  <motion.button
-                    whileHover={{ scale: 1.05, y: -2 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="w-full mt-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 hover:from-blue-700 hover:via-purple-700 hover:to-pink-700 text-white py-4 rounded-xl font-bold shadow-lg hover:shadow-xl transition-all"
-                  >
-                    Book Now
-                  </motion.button>
+                  <Link to="/#booking-form">
+                    <motion.button
+                      whileHover={{ scale: 1.05, y: -2 }}
+                      whileTap={{ scale: 0.95 }}
+                      className="w-full mt-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 hover:from-blue-700 hover:via-purple-700 hover:to-pink-700 text-white py-4 rounded-xl font-bold shadow-lg hover:shadow-xl transition-all"
+                    >
+                      Book Now
+                    </motion.button>
+                  </Link>
                 </div>
               </motion.div>
             ))}
@@ -207,6 +210,15 @@ export default function FleetPage() {
             Call us now to check availability and book your ride
           </p>
           <div className="flex flex-wrap justify-center gap-4">
+            <Link to="/#booking-form">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="bg-white hover:bg-gray-100 text-blue-600 px-8 py-4 rounded-lg font-semibold transition-colors shadow-lg"
+              >
+                Book Online
+              </motion.button>
+            </Link>
             <a
               href="tel:+917903629240"
               className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-semibold transition-colors"

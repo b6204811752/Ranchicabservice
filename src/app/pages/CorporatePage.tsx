@@ -1,5 +1,8 @@
 import { Helmet } from 'react-helmet-async';
 import { Briefcase, Users, Clock, Shield } from 'lucide-react';
+import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
+import heroImg from '@/assets/images/vehicles/luxury-car.jpg';
 
 export default function CorporatePage() {
   const services = [
@@ -28,14 +31,27 @@ export default function CorporatePage() {
         />
       </Helmet>
 
-      <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+      <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={heroImg} alt="Corporate Service" className="w-full h-full object-cover opacity-30" />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-600/80 to-blue-800/80"></div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <motion.h1 
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-4xl md:text-5xl font-bold mb-6"
+          >
             Corporate Taxi Service
-          </h1>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+          </motion.h1>
+          <motion.p 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            className="text-xl text-blue-100 max-w-3xl mx-auto"
+          >
             Professional transportation solutions for businesses. Reliable, punctual, and tailored to your corporate needs.
-          </p>
+          </motion.p>
         </div>
       </section>
 
@@ -85,6 +101,11 @@ export default function CorporatePage() {
             Contact us for customized corporate transportation solutions
           </p>
           <div className="flex flex-wrap justify-center gap-4">
+            <Link to="/#booking-form">
+              <button className="bg-white hover:bg-gray-100 text-blue-600 px-8 py-4 rounded-lg font-semibold transition-colors shadow-lg">
+                Book Online
+              </button>
+            </Link>
             <a
               href="tel:+917903629240"
               className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-semibold transition-colors"

@@ -287,7 +287,7 @@ export default function HomePage() {
       </section>
 
       {/* Booking Form Section */}
-      <section className="py-16 bg-gray-50 -mt-20 relative z-10">
+      <section id="booking-form" className="py-16 bg-gray-50 -mt-20 relative z-10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

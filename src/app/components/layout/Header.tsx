@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Phone, Menu, X } from 'lucide-react';
+import { motion, AnimatePresence } from 'motion/react';
 import logo from '@/assets/images/logos/ranchicabserviceslogo.png';
 
 export default function Header() {
@@ -19,18 +20,20 @@ export default function Header() {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-md">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
-            <img 
+          <Link to="/" className="flex items-center space-x-3 group">
+            <motion.img 
+              whileHover={{ scale: 1.05, rotate: 5 }}
+              transition={{ type: "spring", stiffness: 300 }}
               src={logo} 
               alt="Ranchi Cab Service" 
               className="h-16 w-auto object-contain"
             />
             <div>
-              <h1 className="text-xl font-bold text-gray-900">Ranchi Cab Service</h1>
+              <h1 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Ranchi Cab Service</h1>
               <p className="text-xs text-gray-600">Safe & Reliable</p>
             </div>
           </Link>
@@ -53,13 +56,15 @@ export default function Header() {
           </nav>
 
           {/* Call Now Button */}
-          <a
+          <motion.a
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             href="tel:+917903629240"
-            className="hidden md:flex items-center space-x-2 bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-6 py-3 rounded-lg font-semibold transition-colors"
+            className="hidden md:flex items-center space-x-2 bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-yellow-500 hover:to-orange-500 text-gray-900 px-6 py-3 rounded-lg font-semibold transition-all shadow-md hover:shadow-lg"
           >
             <Phone className="w-5 h-5" />
             <span>Call Now</span>
-          </a>
+          </motion.a>
 
           {/* Mobile Menu Button */}
           <button
@@ -71,8 +76,14 @@ export default function Header() {
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <nav className="md:hidden py-4 border-t border-gray-200">
+        <AnimatePresence>
+          {isMenuOpen && (
+            <motion.nav 
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              className="md:hidden py-4 border-t border-gray-200 overflow-hidden"
+            >
             {navLinks.map((link) => (
               <Link
                 key={link.path}
@@ -94,8 +105,9 @@ export default function Header() {
               <Phone className="w-5 h-5" />
               <span>Call Now: +91 7903629240</span>
             </a>
-          </nav>
-        )}
+          </motion.nav>
+          )}
+        </AnimatePresence>
       </div>
     </header>
   );

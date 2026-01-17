@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
-import { MapPin, ArrowRight, Check, Phone } from 'lucide-react';
+import { MapPin, ArrowRight, Check, Phone, Car } from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function OutstationPage() {
   const [formData, setFormData] = useState({
@@ -276,6 +277,12 @@ export default function OutstationPage() {
             Call now or send us a WhatsApp message for instant booking and best rates
           </p>
           <div className="flex flex-wrap justify-center gap-4">
+            <Link to="/#booking-form">
+              <button className="bg-white hover:bg-gray-100 text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center space-x-2 shadow-lg">
+                <Car className="w-5 h-5" />
+                <span>Book Online</span>
+              </button>
+            </Link>
             <a
               href="tel:+917903629240"
               className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center space-x-2"

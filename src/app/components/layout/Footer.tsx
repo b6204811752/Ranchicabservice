@@ -1,11 +1,16 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Facebook, Twitter, Instagram } from 'lucide-react';
+import { motion } from 'motion/react';
 import logo from '@/assets/images/logos/ranchicabserviceslogo.png';
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white pt-12 pb-6">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white pt-12 pb-6 relative overflow-hidden">
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500 rounded-full filter blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
@@ -19,15 +24,30 @@ export default function Footer() {
               Your trusted partner for safe, reliable, and affordable taxi services in Ranchi and nearby cities.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-blue-400 transition-colors">
+              <motion.a 
+                whileHover={{ scale: 1.2, rotate: 360 }} 
+                transition={{ duration: 0.5 }}
+                href="#" 
+                className="hover:text-blue-400 transition-colors"
+              >
                 <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="hover:text-blue-400 transition-colors">
+              </motion.a>
+              <motion.a 
+                whileHover={{ scale: 1.2, rotate: 360 }} 
+                transition={{ duration: 0.5 }}
+                href="#" 
+                className="hover:text-blue-400 transition-colors"
+              >
                 <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="hover:text-blue-400 transition-colors">
+              </motion.a>
+              <motion.a 
+                whileHover={{ scale: 1.2, rotate: 360 }} 
+                transition={{ duration: 0.5 }}
+                href="#" 
+                className="hover:text-pink-400 transition-colors"
+              >
                 <Instagram className="w-5 h-5" />
-              </a>
+              </motion.a>
             </div>
           </div>
 

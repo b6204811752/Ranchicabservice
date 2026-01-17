@@ -143,7 +143,7 @@ export default function ServicesPage() {
                       ))}
                     </ul>
                     <Link
-                      to={service.link}
+                      to=\"/#booking-form\"
                       className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
                     >
                       {service.buttonText}
@@ -206,6 +206,11 @@ export default function ServicesPage() {
             Contact us now for instant booking and best rates
           </p>
           <div className="flex flex-wrap justify-center gap-4">
+            <Link to="/#booking-form">
+              <button className="bg-white hover:bg-gray-100 text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg">
+                Book Online
+              </button>
+            </Link>
             <a
               href="tel:+917903629240"
               className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg transition-colors"

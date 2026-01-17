@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { Shield, Users, Award, Heart, Target, TrendingUp } from 'lucide-react';
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 import heroImg1 from '@/assets/images/vehicles/hero-bg1.webp';
 import heroImg2 from '@/assets/images/vehicles/hero-bg2.webp';
 
@@ -265,6 +266,11 @@ export default function AboutPage() {
             Join thousands of satisfied customers and experience the best cab service in Ranchi
           </p>
           <div className="flex flex-wrap justify-center gap-4">
+            <Link to="/#booking-form">
+              <button className="bg-white hover:bg-gray-100 text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg">
+                Book Online
+              </button>
+            </Link>
             <a
               href="tel:+917903629240"
               className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
