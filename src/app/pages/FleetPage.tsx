@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Car, Users, Wind } from 'lucide-react';
+import { motion } from 'motion/react';
 
 export default function FleetPage() {
   const vehicles = [
@@ -86,18 +87,107 @@ export default function FleetPage() {
         </div>
       </section>
 
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 relative bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 overflow-hidden">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-blue-300 to-purple-300 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-br from-purple-300 to-pink-300 rounded-full filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {vehicles.map((vehicle, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow">
-                <img
-                  src={vehicle.image}
-                  alt={vehicle.name}
-                  className="w-full h-56 object-cover"
-                />
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold mb-4">{vehicle.name}</h3>
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 50, rotateX: -20 }}
+                whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1, duration: 0.6 }}
+                whileHover={{ 
+                  y: -15,
+                  rotateY: 5,
+                  scale: 1.05,
+                  boxShadow: "0 30px 60px -15px rgba(0, 0, 0, 0.3)"
+                }}
+                className="group relative bg-white/90 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden border border-white/20"
+                style={{ transformStyle: 'preserve-3d' }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 via-purple-500/0 to-pink-500/0 group-hover:from-blue-500/10 group-hover:via-purple-500/10 group-hover:to-pink-500/10 transition-all duration-700"></div>
+                <div className="relative overflow-hidden h-64">
+                  <motion.img
+                    src={vehicle.image}
+                    alt={vehicle.name}
+                    className="w-full h-full object-cover"
+                    whileHover={{ scale: 1.2 }}
+                    transition={{ duration: 0.6 }}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+                  <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+                    <div className="flex flex-wrap gap-2">
+                      {vehicle.features.map((feature, idx) => (
+                        <motion.span
+                          key={idx}
+                          initial={{ opacity: 0, scale: 0 }}
+                          whileInView={{ opacity: 1, scale: 1 }}
+                          transition={{ delay: idx * 0.1 }}
+                          className="bg-white/90 backdrop-blur-sm text-gray-900 px-3 py-1 rounded-full text-xs font-semibold"
+                        >
+                          {feature}
+                        </motion.span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <div className="p-6 relative z-10">
+                  <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-gray-900 to-blue-900 bg-clip-text text-transparent">{vehicle.name}</h3>
+                  <div className="grid grid-cols-2 gap-4 mb-6">
+                    <motion.div 
+                      className="flex items-center space-x-2 bg-gradient-to-r from-blue-50 to-purple-50 p-3 rounded-xl"
+                      whileHover={{ scale: 1.05, x: 2 }}
+                    >
+                      <Users className="w-5 h-5 text-blue-600" />
+                      <span className="text-sm font-semibold text-gray-700">{vehicle.seats}</span>
+                    </motion.div>
+                    <motion.div 
+                      className="flex items-center space-x-2 bg-gradient-to-r from-green-50 to-emerald-50 p-3 rounded-xl"
+                      whileHover={{ scale: 1.05, x: 2 }}
+                    >
+                      <Wind className="w-5 h-5 text-green-600" />
+                      <span className="text-sm font-semibold text-gray-700">AC</span>
+                    </motion.div>
+                    <motion.div 
+                      className="flex items-center space-x-2 bg-gradient-to-r from-orange-50 to-amber-50 p-3 rounded-xl col-span-2"
+                      whileHover={{ scale: 1.05, x: 2 }}
+                    >
+                      <Car className="w-5 h-5 text-orange-600" />
+                      <span className="text-sm font-semibold text-gray-700">{vehicle.luggage}</span>
+                    </motion.div>
+                  </div>
+                  <div className="border-t border-gray-200 pt-4 space-y-3">
+                    <motion.div 
+                      className="flex justify-between items-center p-4 rounded-xl bg-gradient-to-r from-blue-50 via-purple-50 to-pink-50"
+                      whileHover={{ scale: 1.02, x: 5 }}
+                    >
+                      <span className="text-gray-700 font-semibold">Local Rate:</span>
+                      <span className="font-bold text-2xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">{vehicle.localRate}</span>
+                    </motion.div>
+                    <motion.div 
+                      className="flex justify-between items-center p-4 rounded-xl bg-gradient-to-r from-purple-50 via-pink-50 to-orange-50"
+                      whileHover={{ scale: 1.02, x: 5 }}
+                    >
+                      <span className="text-gray-700 font-semibold">Outstation:</span>
+                      <span className="font-bold text-2xl bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">{vehicle.outstationRate}</span>
+                    </motion.div>
+                  </div>
+                  <motion.button
+                    whileHover={{ scale: 1.05, y: -2 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="w-full mt-6 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 hover:from-blue-700 hover:via-purple-700 hover:to-pink-700 text-white py-4 rounded-xl font-bold shadow-lg hover:shadow-xl transition-all"
+                  >
+                    Book Now
+                  </motion.button>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section></h3>
                   
                   <div className="space-y-3 mb-6">
                     <div className="flex items-center space-x-3 text-gray-600">

@@ -368,29 +368,51 @@ export default function HomePage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+      <section className="py-16 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 opacity-50"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent mb-4">
               Why Choose Ranchi Cab Service?
             </h2>
             <p className="text-xl text-gray-600">
               Your trusted partner for safe and reliable taxi services
             </p>
-          </div>
+          </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 20, rotateX: -15 }}
+                whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl shadow-md hover:shadow-2xl transition-all transform hover:-translate-y-2 border border-blue-100"
+                transition={{ delay: index * 0.1, duration: 0.6 }}
+                whileHover={{ 
+                  y: -10, 
+                  rotateY: 5,
+                  scale: 1.05,
+                  boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)"
+                }}
+                className="group relative bg-gradient-to-br from-white via-blue-50 to-purple-50 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all transform border border-blue-100 backdrop-blur-sm"
+                style={{ transformStyle: 'preserve-3d' }}
               >
-                <div className="text-blue-600 mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="relative z-10">
+                  <motion.div 
+                    className="text-blue-600 mb-4"
+                    whileHover={{ rotate: 360, scale: 1.2 }}
+                    transition={{ duration: 0.6 }}
+                  >
+                    {feature.icon}
+                  </motion.div>
+                  <h3 className="text-xl font-bold mb-2 bg-gradient-to-r from-gray-900 to-blue-900 bg-clip-text text-transparent">{feature.title}</h3>
+                  <p className="text-gray-600">{feature.description}</p>
+                </div>
               </motion.div>
             ))}
           </div>
@@ -398,81 +420,139 @@ export default function HomePage() {
       </section>
 
       {/* Our Services */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+      <section className="py-16 relative bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50">
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute top-0 left-0 w-96 h-96 bg-blue-400 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-400 rounded-full filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
               Our Taxi Services in Ranchi
             </h2>
             <p className="text-xl text-gray-600">
               Comprehensive cab solutions for all your travel needs
             </p>
-          </div>
+          </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
-              <Link
+              <motion.div
                 key={index}
-                to={service.link}
-                className="bg-white p-6 rounded-xl shadow-md hover:shadow-2xl transition-all hover:-translate-y-2 group bg-gradient-to-br from-white to-blue-50"
+                initial={{ opacity: 0, y: 50, rotateX: -20 }}
+                whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.15, type: "spring", stiffness: 100 }}
+                whileHover={{ 
+                  y: -15,
+                  rotateY: 8,
+                  scale: 1.05,
+                  transition: { duration: 0.3 }
+                }}
+                style={{ transformStyle: 'preserve-3d' }}
               >
-                <div className="text-blue-600 mb-4 group-hover:scale-110 transition-transform">
-                  {service.icon}
-                </div>
-                <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                <p className="text-gray-600 mb-4">{service.description}</p>
-                <span className="text-blue-600 font-semibold flex items-center group-hover:translate-x-2 transition-transform">
-                  Learn More <ArrowRight className="w-4 h-4 ml-2" />
-                </span>
-              </Link>
+                <Link
+                  to={service.link}
+                  className="block relative bg-white/80 backdrop-blur-lg p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all group overflow-hidden border border-white/20"
+                >
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 via-purple-500/0 to-pink-500/0 group-hover:from-blue-500/10 group-hover:via-purple-500/10 group-hover:to-pink-500/10 transition-all duration-500"></div>
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full filter blur-2xl opacity-0 group-hover:opacity-30 transition-opacity"></div>
+                  <motion.div 
+                    className="text-blue-600 mb-4 relative z-10"
+                    whileHover={{ scale: 1.2, rotate: 5 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                  >
+                    {service.icon}
+                  </motion.div>
+                  <h3 className="text-xl font-bold mb-2 relative z-10 bg-gradient-to-r from-gray-900 to-blue-900 bg-clip-text text-transparent group-hover:from-blue-600 group-hover:to-purple-600 transition-all">{service.title}</h3>
+                  <p className="text-gray-600 mb-4 relative z-10">{service.description}</p>
+                  <span className="text-blue-600 font-semibold flex items-center group-hover:translate-x-2 transition-transform relative z-10">
+                    Learn More <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </Link>
+              </motion.div>
             ))}
           </div>
         </div>
       </section>
 
       {/* Our Fleet */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+      <section className="py-16 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-blue-50 to-purple-50"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent mb-4">
               Our Fleet of Vehicles
             </h2>
             <p className="text-xl text-gray-600">
               Wide range of vehicles to suit your needs and budget
             </p>
-          </div>
+          </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {vehicles.map((vehicle, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, scale: 0.8, rotateY: -30 }}
+                whileInView={{ opacity: 1, scale: 1, rotateY: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-2xl transition-all transform hover:-translate-y-2"
+                transition={{ delay: index * 0.1, duration: 0.6 }}
+                whileHover={{ 
+                  y: -12,
+                  rotateY: 5,
+                  scale: 1.03,
+                  boxShadow: "0 30px 60px -15px rgba(0, 0, 0, 0.3)"
+                }}
+                className="group relative bg-white/90 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden border border-gray-100"
+                style={{ transformStyle: 'preserve-3d' }}
               >
-                <div className="relative overflow-hidden group">
-                  <img
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 via-purple-500/0 to-pink-500/0 group-hover:from-blue-500/10 group-hover:via-purple-500/10 group-hover:to-pink-500/10 transition-all duration-700"></div>
+                <div className="relative overflow-hidden">
+                  <motion.img
                     src={vehicle.image}
                     alt={vehicle.name}
-                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-56 object-cover"
+                    whileHover={{ scale: 1.15 }}
+                    transition={{ duration: 0.6 }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{vehicle.name}</h3>
-                  <div className="flex items-center justify-between text-sm text-gray-600 mb-4">
-                    <span>{vehicle.seats} Seater</span>
-                    <span className="text-green-600 font-semibold">AC Available</span>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
+                  <div className="absolute top-4 right-4">
+                    <motion.div 
+                      className="bg-gradient-to-r from-green-400 to-emerald-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg"
+                      whileHover={{ scale: 1.1, rotate: 5 }}
+                    >
+                      AC Available
+                    </motion.div>
                   </div>
-                  <div className="border-t pt-4">
-                    <div className="flex justify-between mb-2">
-                      <span className="text-gray-600">Local:</span>
-                      <span className="font-semibold text-blue-600">{vehicle.local}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-600">Outstation:</span>
-                      <span className="font-semibold text-blue-600">{vehicle.outstation}</span>
-                    </div>
+                </div>
+                <div className="p-6 relative">
+                  <h3 className="text-2xl font-bold mb-3 bg-gradient-to-r from-gray-900 to-blue-900 bg-clip-text text-transparent">{vehicle.name}</h3>
+                  <div className="flex items-center justify-between text-sm mb-4">
+                    <span className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full font-semibold">{vehicle.seats} Seater</span>
+                  </div>
+                  <div className="border-t border-gray-200 pt-4 space-y-3">
+                    <motion.div 
+                      className="flex justify-between items-center p-3 rounded-lg bg-gradient-to-r from-blue-50 to-purple-50"
+                      whileHover={{ scale: 1.02, x: 5 }}
+                    >
+                      <span className="text-gray-700 font-medium">Local:</span>
+                      <span className="font-bold text-xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">{vehicle.local}</span>
+                    </motion.div>
+                    <motion.div 
+                      className="flex justify-between items-center p-3 rounded-lg bg-gradient-to-r from-purple-50 to-pink-50"
+                      whileHover={{ scale: 1.02, x: 5 }}
+                    >
+                      <span className="text-gray-700 font-medium">Outstation:</span>
+                      <span className="font-bold text-xl bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">{vehicle.outstation}</span>
+                    </motion.div>
                   </div>
                 </div>
               </motion.div>
@@ -490,34 +570,72 @@ export default function HomePage() {
       </section>
 
       {/* Popular Routes */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+      <section className="py-16 relative bg-gradient-to-br from-gray-50 via-white to-blue-50 overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-300 to-purple-300 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-purple-300 to-pink-300 rounded-full filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
               Popular Outstation Routes from Ranchi
             </h2>
             <p className="text-xl text-gray-600">
               Best rates for outstation cab service
             </p>
-          </div>
+          </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {routes.map((route, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: -20, rotateY: -15 }}
+                whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.05 }}
-                className="bg-gradient-to-br from-blue-50 via-white to-yellow-50 p-6 rounded-xl shadow-md hover:shadow-xl transition-all border border-blue-100 hover:border-blue-300"
+                transition={{ delay: index * 0.08, duration: 0.6 }}
+                whileHover={{ 
+                  y: -8,
+                  rotateY: 5,
+                  scale: 1.03,
+                  boxShadow: "0 20px 40px -12px rgba(0, 0, 0, 0.25)"
+                }}
+                className="group relative bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-gray-100 overflow-hidden"
+                style={{ transformStyle: 'preserve-3d' }}
               >
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-lg font-semibold">{route.from}</h3>
-                  <ArrowRight className="w-5 h-5 text-blue-600" />
-                  <h3 className="text-lg font-semibold">{route.to}</h3>
-                </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-gray-600">{route.distance}</span>
-                  <span className="text-xl font-bold text-blue-600">{route.fare}</span>
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 via-purple-500/0 to-pink-500/0 group-hover:from-blue-500/5 group-hover:via-purple-500/5 group-hover:to-pink-500/5 transition-all duration-500"></div>
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-yellow-300 to-orange-300 rounded-full filter blur-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
+                <div className="relative z-10">
+                  <div className="flex items-center justify-between mb-4">
+                    <motion.h3 
+                      className="text-lg font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+                      whileHover={{ scale: 1.05 }}
+                    >
+                      {route.from}
+                    </motion.h3>
+                    <motion.div
+                      whileHover={{ rotate: 360, scale: 1.2 }}
+                      transition={{ duration: 0.6 }}
+                    >
+                      <ArrowRight className="w-6 h-6 text-blue-600" />
+                    </motion.div>
+                    <motion.h3 
+                      className="text-lg font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent"
+                      whileHover={{ scale: 1.05 }}
+                    >
+                      {route.to}
+                    </motion.h3>
+                  </div>
+                  <div className="flex justify-between text-sm mb-2">
+                    <span className="text-gray-600">{route.distance}</span>
+                    <motion.span 
+                      className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent"
+                      whileHover={{ scale: 1.15 }}
+                    >
+                      {route.fare}
+                    </motion.span>
+                  </div>
                 </div>
               </motion.div>
             ))}
@@ -526,35 +644,67 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+      <section className="py-16 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-yellow-50 to-orange-50"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-orange-600 via-yellow-600 to-amber-600 bg-clip-text text-transparent mb-4">
               What Our Customers Say
             </h2>
             <p className="text-xl text-gray-600">
               Real feedback from satisfied customers
             </p>
-          </div>
+          </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 30, rotateX: -20 }}
+                whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-gradient-to-br from-white to-yellow-50 p-6 rounded-xl shadow-md hover:shadow-xl transition-all"
+                transition={{ delay: index * 0.15, duration: 0.7 }}
+                whileHover={{ 
+                  y: -10,
+                  rotateY: 5,
+                  scale: 1.05,
+                  boxShadow: "0 25px 50px -12px rgba(251, 191, 36, 0.4)"
+                }}
+                className="group relative bg-white/70 backdrop-blur-xl p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all border border-yellow-100 overflow-hidden"
+                style={{ transformStyle: 'preserve-3d' }}
               >
-                <div className="flex mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-gray-600 mb-4 italic">&ldquo;{testimonial.text}&rdquo;</p>
-                <div className="border-t pt-4">
-                  <p className="font-semibold">{testimonial.name}</p>
-                  <p className="text-sm text-gray-500">{testimonial.location}</p>
+                <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/0 via-orange-500/0 to-amber-500/0 group-hover:from-yellow-500/10 group-hover:via-orange-500/10 group-hover:to-amber-500/10 transition-all duration-700"></div>
+                <div className="absolute -top-10 -right-10 w-40 h-40 bg-gradient-to-br from-yellow-300 to-orange-300 rounded-full filter blur-3xl opacity-0 group-hover:opacity-30 transition-opacity duration-700"></div>
+                <div className="relative z-10">
+                  <motion.div 
+                    className="flex mb-4"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ delay: index * 0.15 + 0.3 }}
+                  >
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <motion.div
+                        key={i}
+                        initial={{ scale: 0, rotate: -180 }}
+                        whileInView={{ scale: 1, rotate: 0 }}
+                        transition={{ delay: index * 0.15 + 0.4 + i * 0.1, type: "spring" }}
+                      >
+                        <Star className="w-6 h-6 text-yellow-400 fill-current" />
+                      </motion.div>
+                    ))}
+                  </motion.div>
+                  <p className="text-gray-700 mb-6 italic text-lg leading-relaxed">&ldquo;{testimonial.text}&rdquo;</p>
+                  <div className="border-t border-yellow-200 pt-4">
+                    <p className="font-bold text-lg bg-gradient-to-r from-gray-900 to-orange-900 bg-clip-text text-transparent">{testimonial.name}</p>
+                    <p className="text-sm text-gray-500 flex items-center mt-1">
+                      <MapPin className="w-4 h-4 mr-1" />
+                      {testimonial.location}
+                    </p>
+                  </div>
                 </div>
               </motion.div>
             ))}

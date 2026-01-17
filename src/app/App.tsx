@@ -12,9 +12,12 @@ import CitiesPage from '@/app/pages/CitiesPage';
 import ContactPage from '@/app/pages/ContactPage';
 import PrivacyPage from '@/app/pages/PrivacyPage';
 import TermsPage from '@/app/pages/TermsPage';
+import NotFoundPage from '@/app/pages/NotFoundPage';
 import Header from '@/app/components/layout/Header';
 import Footer from '@/app/components/layout/Footer';
 import FloatingButtons from '@/app/components/common/FloatingButtons';
+import ScrollToTop from '@/app/components/common/ScrollToTop';
+import ScrollToTopOnNavigation from '@/app/components/common/ScrollToTopOnNavigation';
 import SEO from '@/app/components/common/SEO';
 
 export default function App() {
@@ -23,6 +26,7 @@ export default function App() {
       <Router>
         <div className="min-h-screen flex flex-col bg-white">
           <SEO />
+          <ScrollToTopOnNavigation />
           <Header />
           <main className="flex-1">
             <Routes>
@@ -38,10 +42,12 @@ export default function App() {
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/privacy-policy" element={<PrivacyPage />} />
               <Route path="/terms-conditions" element={<TermsPage />} />
+              <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </main>
           <Footer />
           <FloatingButtons />
+          <ScrollToTop />
         </div>
       </Router>
     </HelmetProvider>

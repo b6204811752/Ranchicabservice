@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { Shield, Users, Award, Heart, Target, TrendingUp } from 'lucide-react';
+import { motion } from 'motion/react';
 
 export default function AboutPage() {
   const values = [
@@ -92,12 +93,49 @@ export default function AboutPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 relative bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-700 text-white overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-400 rounded-full filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-400 rounded-full filter blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-4xl md:text-5xl font-bold mb-2 text-yellow-400">
+              <motion.div 
+                key={index} 
+                className="text-center group"
+                initial={{ opacity: 0, y: 30, scale: 0.8 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.15, type: "spring", stiffness: 100 }}
+                whileHover={{ 
+                  y: -10,
+                  scale: 1.1,
+                  rotateY: 10,
+                  transition: { duration: 0.3 }
+                }}
+                style={{ transformStyle: 'preserve-3d' }}
+              >
+                <div className="relative">
+                  <div className="absolute inset-0 bg-white/10 rounded-2xl filter blur-xl group-hover:blur-2xl transition-all"></div>
+                  <div className="relative bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 group-hover:border-white/40 transition-all">
+                    <motion.div 
+                      className="text-5xl md:text-6xl font-bold mb-2 text-yellow-300"
+                      initial={{ scale: 0 }}
+                      whileInView={{ scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: index * 0.15 + 0.3, type: "spring", stiffness: 200 }}
+                    >
+                      {stat.number}
+                    </motion.div>
+                    <div className="text-lg text-blue-100 font-medium">{stat.label}</div>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
                   {stat.number}
                 </div>
                 <div className="text-lg text-blue-100">{stat.label}</div>
@@ -108,23 +146,54 @@ export default function AboutPage() {
       </section>
 
       {/* Our Values */}
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+      <section className="py-16 relative bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-300 to-purple-300 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-purple-300 to-pink-300 rounded-full filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
               Our Core Values
             </h2>
             <p className="text-xl text-gray-600">
               The principles that guide everything we do
             </p>
-          </div>
+          </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow text-center">
-                <div className="text-blue-600 mb-4 flex justify-center">{value.icon}</div>
-                <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
-                <p className="text-gray-600">{value.description}</p>
-              </div>
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 50, rotateX: -20 }}
+                whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1, duration: 0.6 }}
+                whileHover={{ 
+                  y: -15,
+                  rotateY: 8,
+                  scale: 1.05,
+                  boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)"
+                }}
+                className="group relative bg-white/80 backdrop-blur-lg p-8 rounded-2xl shadow-xl transition-all border border-white/20 overflow-hidden"
+                style={{ transformStyle: 'preserve-3d' }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 via-purple-500/0 to-pink-500/0 group-hover:from-blue-500/10 group-hover:via-purple-500/10 group-hover:to-pink-500/10 transition-all duration-700"></div>
+                <div className="absolute -top-10 -right-10 w-32 h-32 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full filter blur-2xl opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <div className="relative z-10">
+                  <motion.div 
+                    className="text-blue-600 mb-6 flex justify-center"
+                    whileHover={{ scale: 1.2, rotate: 360 }}
+                    transition={{ duration: 0.6 }}
+                  >
+                    {value.icon}
+                  </motion.div>
+                  <h3 className="text-xl font-bold mb-3 bg-gradient-to-r from-gray-900 to-blue-900 bg-clip-text text-transparent text-center">{value.title}</h3>
+                  <p className="text-gray-600 text-center leading-relaxed">{value.description}</p>
+                </div>
+              </motion.div>
             ))}
           </div>
         </div>

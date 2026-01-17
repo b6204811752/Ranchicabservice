@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { useState } from 'react';
+import { motion } from 'motion/react';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -38,66 +39,131 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 relative bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-300 to-purple-300 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div>
-              <h2 className="text-3xl font-bold mb-8">Get In Touch</h2>
+              <motion.h2 
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-8"
+              >
+                Get In Touch
+              </motion.h2>
               <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-blue-100 p-3 rounded-lg">
-                    <Phone className="w-6 h-6 text-blue-600" />
-                  </div>
+                <motion.div 
+                  className="flex items-start space-x-4 group"
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.1 }}
+                  whileHover={{ x: 10, scale: 1.02 }}
+                >
+                  <motion.div 
+                    className="bg-gradient-to-br from-blue-500 to-purple-500 p-4 rounded-2xl shadow-lg group-hover:shadow-xl transition-all"
+                    whileHover={{ rotate: 360, scale: 1.1 }}
+                    transition={{ duration: 0.6 }}
+                  >
+                    <Phone className="w-6 h-6 text-white" />
+                  </motion.div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Phone</h3>
-                    <a href="tel:+917903629240" className="text-blue-600 hover:underline">
+                    <a href="tel:+917903629240" className="text-blue-600 hover:text-purple-600 transition-colors text-lg font-medium">
                       +91 7903629240
                     </a>
                   </div>
-                </div>
+                </motion.div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="bg-blue-100 p-3 rounded-lg">
-                    <Mail className="w-6 h-6 text-blue-600" />
-                  </div>
+                <motion.div 
+                  className="flex items-start space-x-4 group"
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2 }}
+                  whileHover={{ x: 10, scale: 1.02 }}
+                >
+                  <motion.div 
+                    className="bg-gradient-to-br from-green-500 to-emerald-500 p-4 rounded-2xl shadow-lg group-hover:shadow-xl transition-all"
+                    whileHover={{ rotate: 360, scale: 1.1 }}
+                    transition={{ duration: 0.6 }}
+                  >
+                    <Mail className="w-6 h-6 text-white" />
+                  </motion.div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Email</h3>
-                    <a href="mailto:rohittravels10@gmail.com" className="text-blue-600 hover:underline">
+                    <a href="mailto:rohittravels10@gmail.com" className="text-blue-600 hover:text-purple-600 transition-colors font-medium">
                       rohittravels10@gmail.com
                     </a>
                   </div>
-                </div>
+                </motion.div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="bg-blue-100 p-3 rounded-lg">
-                    <MapPin className="w-6 h-6 text-blue-600" />
-                  </div>
+                <motion.div 
+                  className="flex items-start space-x-4 group"
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3 }}
+                  whileHover={{ x: 10, scale: 1.02 }}
+                >
+                  <motion.div 
+                    className="bg-gradient-to-br from-orange-500 to-red-500 p-4 rounded-2xl shadow-lg group-hover:shadow-xl transition-all"
+                    whileHover={{ rotate: 360, scale: 1.1 }}
+                    transition={{ duration: 0.6 }}
+                  >
+                    <MapPin className="w-6 h-6 text-white" />
+                  </motion.div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Location</h3>
                     <p className="text-gray-600">Ranchi, Jharkhand, India</p>
                   </div>
-                </div>
+                </motion.div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="bg-blue-100 p-3 rounded-lg">
-                    <Clock className="w-6 h-6 text-blue-600" />
-                  </div>
+                <motion.div 
+                  className="flex items-start space-x-4 group"
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.4 }}
+                  whileHover={{ x: 10, scale: 1.02 }}
+                >
+                  <motion.div 
+                    className="bg-gradient-to-br from-purple-500 to-pink-500 p-4 rounded-2xl shadow-lg group-hover:shadow-xl transition-all"
+                    whileHover={{ rotate: 360, scale: 1.1 }}
+                    transition={{ duration: 0.6 }}
+                  >
+                    <Clock className="w-6 h-6 text-white" />
+                  </motion.div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Working Hours</h3>
                     <p className="text-gray-600">24/7 - Always Available</p>
                   </div>
-                </div>
+                </motion.div>
               </div>
             </div>
 
             {/* Contact Form */}
-            <div className="bg-white p-8 rounded-xl shadow-lg">
-              <h2 className="text-2xl font-bold mb-6">Send Us a Message</h2>
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <label className="block text-sm font-semibold mb-2">Name</label>
-                  <input
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="relative bg-white/80 backdrop-blur-xl p-8 rounded-3xl shadow-2xl border border-white/20 overflow-hidden"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-purple-500/5 to-pink-500/5"></div>
+              <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full filter blur-3xl opacity-10"></div>
+              <div className="relative z-10">
+                <h2 className="text-2xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Send Us a Message</h2>
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <motion.div
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.1 }}
+                  >
+                    <label className="block text-sm font-semibold mb-2 text-gray-700">Name</label>
+                    <input
                     type="text"
                     required
                     value={formData.name}
