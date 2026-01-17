@@ -2,6 +2,8 @@ import { Helmet } from 'react-helmet-async';
 import { Car, MapPin, Plane, Briefcase, Clock, Users, Shield, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import heroImg from '@/assets/images/vehicles/hero-bg.jpg';
+import airportImg from '@/assets/images/vehicles/airport.avif';
+import corporateImg from '@/assets/images/vehicles/crista.jpeg';
 
 export default function ServicesPage() {
   const services = [
@@ -153,15 +155,15 @@ export default function ServicesPage() {
                 <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
                   <div className="rounded-2xl overflow-hidden shadow-xl">
                     <img
-                      src={`https://images.unsplash.com/photo-${
+                      src={
                         index === 0
-                          ? '1449965408869-eaa3f722e40d'
+                          ? `https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800`
                           : index === 1
-                          ? '1506521781263-d8422e82f27a'
+                          ? `https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=800`
                           : index === 2
-                          ? '1556388158-e7e4bb515774'
-                          : '1551836022-4c4c79fd09a0'
-                      }?w=800`}
+                          ? airportImg
+                          : corporateImg
+                      }
                       alt={service.title}
                       className="w-full h-full object-cover"
                     />

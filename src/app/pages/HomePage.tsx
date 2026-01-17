@@ -84,11 +84,11 @@ export default function HomePage() {
   const sliderSettings = {
     dots: true,
     infinite: true,
-    speed: 800,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 1000,
     fade: true,
     cssEase: 'cubic-bezier(0.4, 0, 0.2, 1)',
   };
@@ -240,6 +240,35 @@ export default function HomePage() {
 
       {/* Hero Section with Image Slider */}
       <section className="relative h-[600px] md:h-[700px] overflow-hidden">
+        {/* Floating Bubbles */}
+        <div className="absolute inset-0 z-[5] pointer-events-none overflow-hidden">
+          {[...Array(15)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="absolute rounded-full"
+              style={{
+                width: `${Math.random() * 60 + 20}px`,
+                height: `${Math.random() * 60 + 20}px`,
+                left: `${Math.random() * 100}%`,
+                top: `${100 + Math.random() * 20}%`,
+                background: `radial-gradient(circle at 30% 30%, rgba(255, 255, 255, ${Math.random() * 0.4 + 0.1}), rgba(147, 197, 253, ${Math.random() * 0.3 + 0.1}))`,
+                boxShadow: `inset -2px -2px 8px rgba(255, 255, 255, 0.3), 0 4px 20px rgba(59, 130, 246, ${Math.random() * 0.3 + 0.1})`,
+              }}
+              animate={{
+                y: [-100, -window.innerHeight - 200],
+                x: [0, Math.sin(i) * 100],
+                scale: [1, 1.2, 1],
+                opacity: [0, 1, 1, 0],
+              }}
+              transition={{
+                duration: Math.random() * 10 + 15,
+                repeat: Infinity,
+                delay: Math.random() * 5,
+                ease: "easeInOut",
+              }}
+            />
+          ))}
+        </div>
         <Slider {...sliderSettings} className="h-full">
           {heroSlides.map((slide, index) => (
             <div key={index} className="relative h-[600px] md:h-[700px]">
@@ -287,14 +316,21 @@ export default function HomePage() {
       </section>
 
       {/* Booking Form Section */}
-      <section id="booking-form" className="py-16 bg-gray-50 -mt-20 relative z-10">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="booking-form" className="py-16 bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 -mt-20 relative z-10 overflow-hidden">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 50, rotateX: -20 }}
+            whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
             viewport={{ once: true }}
-            className="bg-white rounded-2xl shadow-2xl p-8 border-t-4 border-blue-600"
+            transition={{ duration: 0.8 }}
+            whileHover={{ y: -5, boxShadow: "0 30px 60px -15px rgba(0, 0, 0, 0.3)" }}
+            className="bg-white/90 backdrop-blur-xl rounded-2xl shadow-2xl p-8 border-t-4 border-blue-600 relative overflow-hidden"
+            style={{ transformStyle: 'preserve-3d' }}
           >
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 opacity-50"></div>
+            <div className="relative z-10">
             <h2 className="text-3xl font-bold mb-6 text-center bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
               Book Your Cab Now
             </h2>
@@ -372,6 +408,7 @@ export default function HomePage() {
                 </button>
               </div>
             </form>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -722,36 +759,72 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+      <section className="py-16 bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-30">
+          <div className="absolute top-0 left-1/4 w-64 h-64 bg-yellow-400 rounded-full filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-green-400 rounded-full filter blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
+          <motion.h2 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-3xl md:text-4xl font-bold mb-6"
+          >
             Ready to Book Your Cab?
-          </h2>
-          <p className="text-xl mb-8 text-blue-100">
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-xl mb-8 text-blue-100"
+          >
             Call us now or book via WhatsApp for instant confirmation
-          </p>
+          </motion.p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a
+            <motion.a
               href="tel:+917903629240"
-              className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 inline-flex items-center space-x-2 shadow-xl"
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+              whileHover={{ scale: 1.1, rotate: 2 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all inline-flex items-center space-x-2 shadow-xl"
             >
               <Phone className="w-5 h-5" />
               <span>+91 7903629240</span>
-            </a>
-            <a
+            </motion.a>
+            <motion.a
               href="https://wa.me/917903629240"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 shadow-xl"
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4 }}
+              whileHover={{ scale: 1.1, rotate: -2 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-xl"
             >
               WhatsApp Now
-            </a>
-            <Link
-              to="/contact"
-              className="bg-white hover:bg-gray-100 text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 shadow-xl"
+            </motion.a>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.5 }}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
             >
-              Contact Us
-            </Link>
+              <Link
+                to="/contact"
+                className="bg-white hover:bg-gray-100 text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-xl inline-block"
+              >
+                Contact Us
+              </Link>
+            </motion.div>
           </div>
         </div>
       </section>
