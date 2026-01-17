@@ -6,6 +6,15 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { motion } from 'motion/react';
+import heroImg1 from '@/assets/images/vehicles/hero-bg1.webp';
+import heroImg2 from '@/assets/images/vehicles/hero-bg2.webp';
+import heroImg3 from '@/assets/images/vehicles/hero-bg.jpg';
+import ertigaImg from '@/assets/images/vehicles/ertiga.jpg';
+import auraImg from '@/assets/images/vehicles/aura.jpg';
+import dezireImg from '@/assets/images/vehicles/dezire.jpg';
+import cristaImg from '@/assets/images/vehicles/crista.jpeg';
+import audiImg from '@/assets/images/vehicles/audi.jpg';
+import bmwImg from '@/assets/images/vehicles/bmw.jpg';
 
 export default function HomePage() {
   const [formData, setFormData] = useState({
@@ -56,17 +65,17 @@ export default function HomePage() {
 
   const heroSlides = [
     {
-      image: 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1200',
+      image: heroImg1,
       title: 'Best Cab Service in Ranchi',
       subtitle: 'Safe, Reliable & Affordable',
     },
     {
-      image: 'https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=1200',
+      image: heroImg2,
       title: 'Outstation Taxi Service',
       subtitle: 'Travel Comfortably to Any City',
     },
     {
-      image: 'https://images.unsplash.com/photo-1573474542-c8d1d2f63ec4?w=1200',
+      image: heroImg3,
       title: '24/7 Airport Transfer',
       subtitle: 'Punctual Pickup & Drop Service',
     },
@@ -87,7 +96,7 @@ export default function HomePage() {
   const vehicles = [
     {
       name: 'Maruti Ertiga',
-      image: 'https://images.unsplash.com/photo-1573474542-c8d1d2f63ec4?w=400',
+      image: ertigaImg,
       seats: '6+1',
       ac: true,
       local: '₹12/km',
@@ -95,7 +104,7 @@ export default function HomePage() {
     },
     {
       name: 'Hyundai Aura',
-      image: 'https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=400',
+      image: auraImg,
       seats: '4+1',
       ac: true,
       local: '₹10/km',
@@ -103,7 +112,7 @@ export default function HomePage() {
     },
     {
       name: 'Maruti Dzire',
-      image: 'https://images.unsplash.com/photo-1617469767053-d3b523a0b982?w=400',
+      image: dezireImg,
       seats: '4+1',
       ac: true,
       local: '₹10/km',
@@ -111,7 +120,7 @@ export default function HomePage() {
     },
     {
       name: 'Toyota Innova Crysta',
-      image: 'https://images.unsplash.com/photo-1748215210939-ad8b6c8c086d?w=400',
+      image: cristaImg,
       seats: '7+1',
       ac: true,
       local: '₹16/km',
@@ -119,7 +128,7 @@ export default function HomePage() {
     },
     {
       name: 'Audi',
-      image: 'https://images.unsplash.com/photo-1692098861062-e6b4b4ec96bc?w=400',
+      image: audiImg,
       seats: '4+1',
       ac: true,
       local: 'On Request',
@@ -127,7 +136,7 @@ export default function HomePage() {
     },
     {
       name: 'BMW',
-      image: 'https://images.unsplash.com/photo-1731142582229-e0ee70302c02?w=400',
+      image: bmwImg,
       seats: '4+1',
       ac: true,
       local: 'On Request',

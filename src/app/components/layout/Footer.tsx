@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Facebook, Twitter, Instagram } from 'lucide-react';
+import logo from '@/assets/images/logos/ranchicabserviceslogo.png';
 
 export default function Footer() {
   return (
@@ -8,6 +9,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
+            <img 
+              src={logo} 
+              alt="Ranchi Cab Service" 
+              className="h-12 w-auto object-contain mb-4 brightness-0 invert"
+            />
             <h3 className="text-xl font-bold mb-4">Ranchi Cab Service</h3>
             <p className="text-gray-400 mb-4">
               Your trusted partner for safe, reliable, and affordable taxi services in Ranchi and nearby cities.

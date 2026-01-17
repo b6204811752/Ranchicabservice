@@ -1,12 +1,18 @@
 import { Helmet } from 'react-helmet-async';
 import { Car, Users, Wind } from 'lucide-react';
 import { motion } from 'motion/react';
+import ertigaImg from '@/assets/images/vehicles/ertiga.jpg';
+import auraImg from '@/assets/images/vehicles/aura.jpg';
+import dezireImg from '@/assets/images/vehicles/dezire.jpg';
+import cristaImg from '@/assets/images/vehicles/crista.jpeg';
+import audiImg from '@/assets/images/vehicles/audi.jpg';
+import bmwImg from '@/assets/images/vehicles/bmw.jpg';
 
 export default function FleetPage() {
   const vehicles = [
     {
       name: 'Maruti Ertiga',
-      image: 'https://images.unsplash.com/photo-1573474542-c8d1d2f63ec4?w=600',
+      image: ertigaImg,
       seats: '6+1 Seater',
       ac: true,
       luggage: '3-4 Bags',
@@ -16,7 +22,7 @@ export default function FleetPage() {
     },
     {
       name: 'Hyundai Aura',
-      image: 'https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=600',
+      image: auraImg,
       seats: '4+1 Seater',
       ac: true,
       luggage: '2-3 Bags',
@@ -26,7 +32,7 @@ export default function FleetPage() {
     },
     {
       name: 'Maruti Dzire',
-      image: 'https://images.unsplash.com/photo-1617469767053-d3b523a0b982?w=600',
+      image: dezireImg,
       seats: '4+1 Seater',
       ac: true,
       luggage: '2-3 Bags',
@@ -36,7 +42,7 @@ export default function FleetPage() {
     },
     {
       name: 'Toyota Innova Crysta',
-      image: 'https://images.unsplash.com/photo-1748215210939-ad8b6c8c086d?w=600',
+      image: cristaImg,
       seats: '7+1 Seater',
       ac: true,
       luggage: '5-6 Bags',
@@ -46,7 +52,7 @@ export default function FleetPage() {
     },
     {
       name: 'Audi',
-      image: 'https://images.unsplash.com/photo-1692098861062-e6b4b4ec96bc?w=600',
+      image: audiImg,
       seats: '4+1 Seater',
       ac: true,
       luggage: '3-4 Bags',
@@ -56,7 +62,7 @@ export default function FleetPage() {
     },
     {
       name: 'BMW',
-      image: 'https://images.unsplash.com/photo-1731142582229-e0ee70302c02?w=600',
+      image: bmwImg,
       seats: '4+1 Seater',
       ac: true,
       luggage: '3-4 Bags',
