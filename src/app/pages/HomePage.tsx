@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import { Phone, Clock, Shield, Users, Star, MapPin, Car, ArrowRight } from 'lucide-react';
+import { Phone, Clock, Shield, Users, Star, MapPin, Car, ArrowRight, MessageCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Slider from 'react-slick';
@@ -592,9 +592,17 @@ export default function HomePage() {
           >
             <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 opacity-50"></div>
             <div className="relative z-10">
+            <div className="text-center mb-4">
+              <span className="inline-block bg-green-500 text-white px-4 py-1 rounded-full text-xs font-semibold animate-pulse">
+                🔥 500+ Bookings This Month
+              </span>
+            </div>
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-center bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent px-4">
-              Book Your Cab Now
+              Book Your Cab Now - Get Instant Confirmation
             </h2>
+            <p className="text-center text-gray-600 mb-4 text-sm">
+              ⏱️ Booking takes less than 60 seconds • ✓ No advance payment required
+            </p>
             <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="block text-sm font-semibold mb-2">Your Name</label>
@@ -663,10 +671,14 @@ export default function HomePage() {
               <div className="md:col-span-2">
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white px-6 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-[1.02] shadow-lg"
+                  className="w-full bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white px-6 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-[1.02] shadow-lg flex items-center justify-center gap-2"
                 >
-                  Book Now
+                  <Car className="w-5 h-5" />
+                  Book Now - Get Instant Confirmation
                 </button>
+                <p className="text-center text-xs text-gray-500 mt-2">
+                  ✓ No advance payment • ✓ Free cancellation up to 24hrs before
+                </p>
               </div>
             </form>
             </div>
@@ -766,6 +778,12 @@ export default function HomePage() {
                   to={service.link}
                   className="block relative bg-white/80 backdrop-blur-lg p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all group overflow-hidden border border-white/20"
                 >
+                  <div className="absolute top-4 right-4 z-20">
+                    <span className="flex items-center gap-1 bg-green-500 text-white text-xs px-3 py-1 rounded-full font-semibold">
+                      <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
+                      Available Now
+                    </span>
+                  </div>
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 via-purple-500/0 to-pink-500/0 group-hover:from-blue-500/10 group-hover:via-purple-500/10 group-hover:to-pink-500/10 transition-all duration-500"></div>
                   <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full filter blur-2xl opacity-0 group-hover:opacity-30 transition-opacity"></div>
                   <motion.div 
@@ -825,7 +843,8 @@ export default function HomePage() {
                 <div className="relative overflow-hidden">
                   <motion.img
                     src={vehicle.image}
-                    alt={vehicle.name}
+                    alt={`${vehicle.name} - Car Rental in Ranchi - ${vehicle.seats} Seater AC Cab`}
+                    loading="lazy"
                     className="w-full h-48 sm:h-56 object-cover"
                     whileHover={{ scale: 1.15 }}
                     transition={{ duration: 0.6 }}
@@ -963,6 +982,15 @@ export default function HomePage() {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-orange-600 via-yellow-600 to-amber-600 bg-clip-text text-transparent mb-3 sm:mb-4">
               What Our Customers Say
             </h2>
+            <div className="flex items-center justify-center gap-3 mb-2">
+              <div className="flex items-center">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
+              <span className="text-gray-700 font-semibold">4.9/5</span>
+              <span className="text-gray-500 text-sm">(500+ Reviews)</span>
+            </div>
             <p className="text-base sm:text-xl text-gray-600">
               Real feedback from satisfied customers
             </p>
@@ -1016,6 +1044,32 @@ export default function HomePage() {
               </motion.div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Live Chat Prompt */}
+      <section className="py-12 bg-gradient-to-r from-green-500 to-green-600">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="flex flex-col md:flex-row items-center justify-between gap-6 bg-white/10 backdrop-blur-sm rounded-2xl p-8"
+          >
+            <div className="text-white text-left">
+              <h3 className="text-2xl font-bold mb-2">Need Help Choosing the Right Cab?</h3>
+              <p className="text-green-100">Chat with us on WhatsApp for instant assistance & best deals</p>
+            </div>
+            <a
+              href="https://wa.me/917903629240?text=Hi, I need help booking a cab"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-green-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-50 transition-all shadow-xl flex items-center gap-2 whitespace-nowrap"
+            >
+              <MessageCircle className="w-6 h-6" />
+              Chat on WhatsApp
+            </a>
+          </motion.div>
         </div>
       </section>
 
