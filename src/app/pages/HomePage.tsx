@@ -10,6 +10,12 @@ import TrustBadges from '@/app/components/common/TrustBadges';
 import FareCalculator from '@/app/components/common/FareCalculator';
 import FAQ from '@/app/components/common/FAQ';
 import ComparisonTable from '@/app/components/common/ComparisonTable';
+import Reviews from '@/app/components/common/Reviews';
+import Newsletter from '@/app/components/common/Newsletter';
+import CTABanner from '@/app/components/common/CTABanner';
+import SocialShare from '@/app/components/common/SocialShare';
+import ServiceAreas from '@/app/components/common/ServiceAreas';
+import BlogSection from '@/app/components/common/BlogSection';
 import heroImg1 from '@/assets/images/vehicles/hero-bg1.webp';
 import heroImg2 from '@/assets/images/vehicles/hero-bg2.webp';
 import heroImg3 from '@/assets/images/vehicles/hero-bg.jpg';
@@ -1322,6 +1328,36 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Reviews Section */}
+      <Reviews />
+
+      {/* Service Areas */}
+      <ServiceAreas />
+
+      {/* Blog Section */}
+      <BlogSection />
+
+      {/* Social Share & Newsletter */}
+      <div className="bg-gray-50 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="lg:col-span-1">
+              <SocialShare />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Newsletter */}
+      <Newsletter />
+
+      {/* Final CTA Banner */}
+      <CTABanner 
+        variant="dark"
+        title="Book Your Next Ride with Confidence"
+        description="Trusted by 500+ customers. Professional drivers. Best rates guaranteed."
+      />
     </>
   );
 }

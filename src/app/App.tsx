@@ -20,15 +20,19 @@ import ScrollToTop from '@/app/components/common/ScrollToTop';
 import ScrollToTopOnNavigation from '@/app/components/common/ScrollToTopOnNavigation';
 import SEO from '@/app/components/common/SEO';
 import StickyBookingBar from '@/app/components/common/StickyBookingBar';
+import Breadcrumbs from '@/app/components/common/Breadcrumbs';
+import PerformanceMonitor from '@/app/components/common/PerformanceMonitor';
 
 export default function App() {
   return (
     <HelmetProvider>
       <Router>
+        <PerformanceMonitor />
         <div className="min-h-screen flex flex-col bg-white">
           <SEO />
           <ScrollToTopOnNavigation />
           <Header />
+          <Breadcrumbs />
           <main className="flex-1">
             <Routes>
               <Route path="/" element={<HomePage />} />
