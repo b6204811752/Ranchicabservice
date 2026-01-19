@@ -13,6 +13,7 @@ import ContactPage from '@/app/pages/ContactPage';
 import PrivacyPage from '@/app/pages/PrivacyPage';
 import TermsPage from '@/app/pages/TermsPage';
 import NotFoundPage from '@/app/pages/NotFoundPage';
+import RanchiToPatnaPage from '@/app/pages/routes/RanchiToPatnaPage';
 import Header from '@/app/components/layout/Header';
 import Footer from '@/app/components/layout/Footer';
 import FloatingButtons from '@/app/components/common/FloatingButtons';
@@ -47,6 +48,16 @@ export default function App() {
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/privacy-policy" element={<PrivacyPage />} />
               <Route path="/terms-conditions" element={<TermsPage />} />
+              
+              {/* Route-specific pages for SEO */}
+              <Route path="/ranchi-to-patna-cab" element={<RanchiToPatnaPage />} />
+              <Route path="/ranchi-to-kolkata-taxi" element={<RanchiToPatnaPage />} />
+              <Route path="/ranchi-to-jamshedpur-cab" element={<RanchiToPatnaPage />} />
+              <Route path="/ranchi-to-bokaro-taxi" element={<RanchiToPatnaPage />} />
+              <Route path="/ranchi-to-dhanbad-cab" element={<RanchiToPatnaPage />} />
+              <Route path="/ranchi-airport-taxi" element={<AirportPage />} />
+              <Route path="/birsa-munda-airport-cab" element={<AirportPage />} />
+              
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </main>

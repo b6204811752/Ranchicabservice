@@ -19,7 +19,7 @@ export default function SEO({
   schema
 }: SEOProps = {}) {
   const location = useLocation();
-  const baseUrl = 'https://ranchicabservice.vercel.app';
+  const baseUrl = 'https://www.ranchicabservice.com';
   const canonicalUrl = `${baseUrl}${location.pathname}`;
   
   const defaultTitle = 'Ranchi Cab Service - Best Taxi Service in Ranchi | Book Now 24/7';
@@ -116,6 +116,10 @@ export default function SEO({
                   }
                 ],
                 "sameAs": [
+                  "https://www.facebook.com/ranchicabservice",
+                  "https://www.instagram.com/ranchicabservice",
+                  "https://twitter.com/ranchicabs",
+                  "https://www.linkedin.com/company/ranchicabservice",
                   "https://wa.me/917903629240"
                 ],
                 "hasOfferCatalog": {

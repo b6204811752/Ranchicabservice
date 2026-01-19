@@ -27,7 +27,10 @@ export default function Footer() {
               <motion.a 
                 whileHover={{ scale: 1.2, rotate: 360 }} 
                 transition={{ duration: 0.5 }}
-                href="#" 
+                href="https://www.facebook.com/ranchicabservice" 
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow us on Facebook"
                 className="hover:text-blue-400 transition-colors"
               >
                 <Facebook className="w-5 h-5" />
@@ -35,7 +38,10 @@ export default function Footer() {
               <motion.a 
                 whileHover={{ scale: 1.2, rotate: 360 }} 
                 transition={{ duration: 0.5 }}
-                href="#" 
+                href="https://twitter.com/ranchicabs" 
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow us on Twitter"
                 className="hover:text-blue-400 transition-colors"
               >
                 <Twitter className="w-5 h-5" />
@@ -43,7 +49,10 @@ export default function Footer() {
               <motion.a 
                 whileHover={{ scale: 1.2, rotate: 360 }} 
                 transition={{ duration: 0.5 }}
-                href="#" 
+                href="https://www.instagram.com/ranchicabservice" 
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow us on Instagram"
                 className="hover:text-pink-400 transition-colors"
               >
                 <Instagram className="w-5 h-5" />
