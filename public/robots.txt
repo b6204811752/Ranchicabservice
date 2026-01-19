@@ -1,5 +1,6 @@
 # Ranchi Cab Service - Robots.txt
 # Car Rental & Taxi Service in Ranchi, Jharkhand
+
 User-agent: *
 Allow: /
 Disallow: /api/
@@ -7,16 +8,11 @@ Disallow: /*.json$
 Disallow: /admin/
 Disallow: /private/
 
-# Specifically allow important pages
-Allow: /services
-Allow: /fleet
-Allow: /contact
-Allow: /about
-Allow: /local-taxi-ranchi
-Allow: /outstation-taxi
-Allow: /airport-taxi
-Allow: /corporate-taxi
-Allow: /cities
+# Sitemaps
+Sitemap: https://www.ranchicabservice.com/sitemap.xml
+
+# Crawl-delay for responsible crawling
+Crawl-delay: 1
 
 # Sitemaps
 Sitemap: https://ranchicabservice.com/sitemap.xml

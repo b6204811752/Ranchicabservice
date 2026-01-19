@@ -247,7 +247,7 @@ export default function HomePage() {
           name="keywords"
           content="car rental ranchi, car rental in ranchi, taxi service ranchi, taxi service in ranchi, cab service in ranchi, cab booking ranchi, ranchi taxi, ranchi cabs, ranchi cab, near me taxi service, near me cab service, 7 seater taxi service, chauffeur driven car rental ranchi, ranchi airport taxi, birsa munda airport taxi, outstation taxi ranchi, one way cab ranchi, one way taxi ranchi, one way cab, one way taxi, one way cab service, one way taxi service, round trip taxi ranchi, local taxi ranchi, ranchi local cab service, ranchi local taxi service, hourly car rental ranchi, ranchi to patna cab, ranchi to kolkata taxi, ranchi to kolkata cab, ranchi to kolkata cab service, ranchi to kolkata taxi service, ranchi to jamshedpur cab, ranchi to bokaro cab, ranchi to bokaro taxi service, ranchi to bokaro cab service, ranchi to dhanbad taxi, ranchi to dhanbad cab service, ranchi to dhanbad taxi service, ranchi to gaya cab, ranchi to gaya taxi service, ranchi to gaya cab service, ranchi to tata cab service, ranchi to tata taxi service, ranchi to netarhat taxi service, ranchi to hazaribagh cab service, ranchi to hazaribagh taxi service, ranchi to koderma cab service, ranchi to koderma taxi service, ranchi to varanasi cab, ranchi to varanasi taxi, ranchi to varanasi cab service, ranchi to varanasi taxi service, ranchi to ramgarh cab service, ranchi to ramgarh taxi service, cab service near me ranchi, best taxi service ranchi, sasta cab service, sasta cab sasta taxi, affordable cab ranchi, 24/7 taxi ranchi, tempo traveller ranchi, innova crysta ranchi, dzire taxi ranchi, ertiga cab ranchi, ranchi cab online booking, corporate taxi ranchi, ranchi car hire, taxi fare ranchi, car rental rates ranchi, ranchi travels, ranchi taxi service near railway station, ranchi taxi number, ranchi cab contact number"
         />
-        <link rel="canonical" href="https://ranchicabservice.com/" />
+        <link rel="canonical" href="https://www.ranchicabservice.com/" />
         
         {/* Geo Targeting */}
         <meta name="geo.region" content="IN-JH" />
@@ -267,29 +267,36 @@ export default function HomePage() {
         {/* Enhanced Open Graph */}
         <meta property="og:title" content="Ranchi Cab Service | Book Best Taxi in Ranchi 24/7" />
         <meta property="og:description" content="⭐ Ranchi's #1 Cab Service - Safe, Reliable & Affordable. Book Local Taxi, Outstation Cabs & Airport Transfer. Call +91 7903629240" />
-        <meta property="og:url" content="https://ranchicabservice.com/" />
+        <meta property="og:url" content="https://www.ranchicabservice.com/" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.ranchicabservice.com/logo.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="Ranchi Cab Service" />
+        <meta property="og:locale" content="en_IN" />
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Ranchi Cab Service | Best Taxi in Ranchi 24/7" />
         <meta name="twitter:description" content="Book Safe & Affordable Taxi in Ranchi. Local, Outstation, Airport & Corporate Cabs Available 24/7" />
+        <meta name="twitter:image" content="https://www.ranchicabservice.com/logo.png" />
+        <meta name="twitter:site" content="@ranchicabservice" />
         
         {/* Structured Data - LocalBusiness */}
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "@id": "https://ranchicabservice.com/#business",
+            "@id": "https://www.ranchicabservice.com/#business",
             "name": "Ranchi Cab Service",
             "alternateName": "Ranchi Taxi Service",
             "description": "Premier car rental and taxi service in Ranchi offering chauffeur-driven cabs for local trips, outstation journeys, airport transfers, and corporate transportation. Available 24x7 with verified drivers.",
-            "url": "https://ranchicabservice.vercel.app",
+            "url": "https://www.ranchicabservice.com",
             "telephone": "+917903629240",
             "email": "rohittravels10@gmail.com",
             "priceRange": "₹₹",
-            "image": "https://ranchicabservice.com/logo.png",
-            "logo": "https://ranchicabservice.com/logo.png",
+            "image": "https://www.ranchicabservice.com/logo.png",
+            "logo": "https://www.ranchicabservice.com/logo.png",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Ranchi",
