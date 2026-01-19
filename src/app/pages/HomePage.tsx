@@ -1069,123 +1069,318 @@ export default function HomePage() {
       <FAQ />
 
       {/* SEO Content Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Car Rental & Taxi Service in Ranchi - Your Trusted Travel Partner</h2>
-              
-              <p className="text-gray-700 mb-4">
-                Welcome to <strong>Ranchi Cab Service</strong>, your premier destination for reliable and affordable <strong>car rental in Ranchi</strong>. 
-                We are a leading <strong>taxi service provider in Ranchi, Jharkhand</strong>, offering chauffeur-driven cab services for local trips, 
-                outstation journeys, airport transfers, and corporate transportation. With over 2000+ routes covered and 500+ satisfied customers, 
-                we have established ourselves as the most trusted <strong>cab booking service in Ranchi</strong>.
-              </p>
+      <section className="py-20 bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 relative overflow-hidden">
+        {/* Background Decorations */}
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full filter blur-3xl opacity-10 animate-pulse"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full filter blur-3xl opacity-10 animate-pulse" style={{ animationDelay: '1s' }}></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
+              Car Rental & Taxi Service in Ranchi
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Your Trusted Travel Partner</p>
+          </motion.div>
 
-              <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Our Comprehensive Car Rental Services in Ranchi</h3>
-              
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
-                <div>
-                  <h4 className="text-xl font-semibold text-blue-600 mb-2">🚖 Local Taxi Service in Ranchi</h4>
-                  <p className="text-gray-700">
+          {/* Introduction Card */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="bg-white/80 backdrop-blur-lg rounded-3xl shadow-xl p-8 md:p-10 mb-12 border border-white/20"
+          >
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Welcome to <span className="font-bold text-blue-600">Ranchi Cab Service</span>, your premier destination for reliable and affordable <span className="font-semibold">car rental in Ranchi</span>. 
+              We are a leading <span className="font-semibold">taxi service provider in Ranchi, Jharkhand</span>, offering chauffeur-driven cab services for local trips, 
+              outstation journeys, airport transfers, and corporate transportation. With over <span className="font-bold text-purple-600">2000+ routes covered</span> and <span className="font-bold text-purple-600">500+ satisfied customers</span>, 
+              we have established ourselves as the most trusted <span className="font-semibold">cab booking service in Ranchi</span>.
+            </p>
+          </motion.div>
+
+          {/* Services Grid */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3 }}
+            className="mb-16"
+          >
+            <h3 className="text-3xl font-bold text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-8">
+              Our Comprehensive Car Rental Services in Ranchi
+            </h3>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              <motion.div
+                whileHover={{ y: -5, boxShadow: "0 20px 40px -12px rgba(0, 0, 0, 0.2)" }}
+                className="group relative bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-6 border border-blue-100 overflow-hidden transition-all"
+              >
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full filter blur-2xl opacity-0 group-hover:opacity-20 transition-opacity"></div>
+                <div className="relative z-10">
+                  <div className="text-4xl mb-3">🚖</div>
+                  <h4 className="text-xl font-bold text-blue-600 mb-3">Local Taxi Service in Ranchi</h4>
+                  <p className="text-gray-700 leading-relaxed">
                     Book <strong>local taxi in Ranchi</strong> for hourly rental packages. Perfect for city tours, shopping, business meetings, 
-                    or daily commute. Our flexible packages include 4-hour, 8-hour, and 12-hour rentals starting at just ₹10/km for sedans.
+                    or daily commute. Our flexible packages include 4-hour, 8-hour, and 12-hour rentals starting at just <span className="font-bold text-blue-600">₹10/km</span> for sedans.
                   </p>
                 </div>
-                
-                <div>
-                  <h4 className="text-xl font-semibold text-blue-600 mb-2">🛣️ Outstation Taxi from Ranchi</h4>
-                  <p className="text-gray-700">
+              </motion.div>
+              
+              <motion.div
+                whileHover={{ y: -5, boxShadow: "0 20px 40px -12px rgba(0, 0, 0, 0.2)" }}
+                className="group relative bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-6 border border-purple-100 overflow-hidden transition-all"
+              >
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full filter blur-2xl opacity-0 group-hover:opacity-20 transition-opacity"></div>
+                <div className="relative z-10">
+                  <div className="text-4xl mb-3">🛣️</div>
+                  <h4 className="text-xl font-bold text-purple-600 mb-3">Outstation Taxi from Ranchi</h4>
+                  <p className="text-gray-700 leading-relaxed">
                     Planning an outstation trip? Book <strong>outstation cab from Ranchi</strong> with both one-way and round-trip options. 
-                    We cover popular routes like Ranchi to Patna, Ranchi to Kolkata, Ranchi to Jamshedpur, Ranchi to Bokaro, and 2000+ more destinations.
+                    We cover popular routes like Ranchi to Patna, Ranchi to Kolkata, Ranchi to Jamshedpur, Ranchi to Bokaro, and <span className="font-bold text-purple-600">2000+ more destinations</span>.
                   </p>
                 </div>
-                
-                <div>
-                  <h4 className="text-xl font-semibold text-blue-600 mb-2">✈️ Airport Taxi Service</h4>
-                  <p className="text-gray-700">
+              </motion.div>
+              
+              <motion.div
+                whileHover={{ y: -5, boxShadow: "0 20px 40px -12px rgba(0, 0, 0, 0.2)" }}
+                className="group relative bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-6 border border-indigo-100 overflow-hidden transition-all"
+              >
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-indigo-400 to-blue-400 rounded-full filter blur-2xl opacity-0 group-hover:opacity-20 transition-opacity"></div>
+                <div className="relative z-10">
+                  <div className="text-4xl mb-3">✈️</div>
+                  <h4 className="text-xl font-bold text-indigo-600 mb-3">Airport Taxi Service</h4>
+                  <p className="text-gray-700 leading-relaxed">
                     Need <strong>Birsa Munda Airport taxi</strong>? Our 24x7 <strong>airport cab service in Ranchi</strong> ensures punctual pickup 
                     and drop with flight tracking, meet & greet service, and comfortable rides to/from the airport.
                   </p>
                 </div>
-                
-                <div>
-                  <h4 className="text-xl font-semibold text-blue-600 mb-2">💼 Corporate Taxi Solutions</h4>
-                  <p className="text-gray-700">
+              </motion.div>
+              
+              <motion.div
+                whileHover={{ y: -5, boxShadow: "0 20px 40px -12px rgba(0, 0, 0, 0.2)" }}
+                className="group relative bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-6 border border-pink-100 overflow-hidden transition-all"
+              >
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-pink-400 to-purple-400 rounded-full filter blur-2xl opacity-0 group-hover:opacity-20 transition-opacity"></div>
+                <div className="relative z-10">
+                  <div className="text-4xl mb-3">💼</div>
+                  <h4 className="text-xl font-bold text-pink-600 mb-3">Corporate Taxi Solutions</h4>
+                  <p className="text-gray-700 leading-relaxed">
                     <strong>Corporate taxi service in Ranchi</strong> with customized monthly packages, dedicated vehicles, professional chauffeurs, 
                     and flexible billing options for businesses and organizations.
                   </p>
                 </div>
-              </div>
+              </motion.div>
+            </div>
+          </motion.div>
 
-              <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Wide Range of Vehicles for Every Need</h3>
-              <p className="text-gray-700 mb-4">
-                Our fleet includes <strong>Sedan taxi (Maruti Dzire, Hyundai Aura)</strong>, <strong>SUV cab (Maruti Ertiga)</strong>, 
-                <strong>Innova Crysta</strong>, and luxury cars including <strong>Audi and BMW</strong>. All vehicles are well-maintained, 
-                air-conditioned, and driven by government-verified professional chauffeurs.
-              </p>
-
-              <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Popular Outstation Routes from Ranchi</h3>
-              <div className="grid md:grid-cols-3 gap-4 mb-6">
-                <ul className="list-disc list-inside text-gray-700 space-y-2">
-                  <li><strong>Ranchi to Patna cab</strong> - 350 km, ₹4,500</li>
-                  <li><strong>Ranchi to Kolkata taxi</strong> - 420 km, ₹6,000</li>
-                  <li><strong>Ranchi to Jamshedpur cab</strong> - 140 km, ₹2,200</li>
-                </ul>
-                <ul className="list-disc list-inside text-gray-700 space-y-2">
-                  <li><strong>Ranchi to Bokaro taxi</strong> - 110 km, ₹1,800</li>
-                  <li><strong>Ranchi to Dhanbad cab</strong> - 160 km, ₹2,500</li>
-                  <li><strong>Ranchi to Gaya taxi</strong> - 200 km, ₹3,000</li>
-                </ul>
-                <ul className="list-disc list-inside text-gray-700 space-y-2">
-                  <li><strong>Ranchi to Hazaribagh</strong> - 90 km, ₹1,500</li>
-                  <li><strong>Ranchi to Deoghar</strong> - 250 km, ₹3,500</li>
-                  <li><strong>Ranchi to Dumka</strong> - 270 km, ₹3,800</li>
-                </ul>
-              </div>
-
-              <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Why Choose Ranchi Cab Service?</h3>
-              <ul className="list-disc list-inside text-gray-700 space-y-2 mb-6">
-                <li>✅ <strong>24x7 Availability</strong> - Book cab anytime, anywhere</li>
-                <li>✅ <strong>Government Verified Drivers</strong> - Safe and secure travel</li>
-                <li>✅ <strong>Transparent Pricing</strong> - No hidden charges, all-inclusive rates</li>
-                <li>✅ <strong>Well-Maintained Fleet</strong> - Clean, comfortable AC vehicles</li>
-                <li>✅ <strong>Instant Booking Confirmation</strong> - Call, WhatsApp or online booking</li>
-                <li>✅ <strong>2000+ Routes Covered</strong> - One-way and round-trip options</li>
-                <li>✅ <strong>Best Price Guarantee</strong> - Lowest average per km rates in Ranchi</li>
-                <li>✅ <strong>Expert Chauffeurs</strong> - Professional and courteous drivers</li>
-              </ul>
-
-              <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Easy Cab Booking in Ranchi</h3>
-              <p className="text-gray-700 mb-4">
-                Booking a <strong>taxi in Ranchi</strong> is now easier than ever! Simply call us at <strong>+91 7903629240</strong>, 
-                send a WhatsApp message, or use our <strong>online cab booking</strong> form. We provide instant confirmation and ensure 
-                your cab arrives on time, every time.
-              </p>
-
-              <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Service Areas in Ranchi</h3>
-              <p className="text-gray-700 mb-4">
-                We provide <strong>taxi service near Ranchi Railway Station, Ranchi Airport, Namkum, Doranda, Kanke, Lalpur, Harmu, 
-                Bariatu, Booty More, Hinoo, Hatia, Tatisilwai, Ratu Road, Kokar, Argora, Morabadi, Dhurwa, Tupudana, Patratu</strong> 
-                and all major localities in Ranchi city.
-              </p>
-
-              <div className="bg-blue-50 border-l-4 border-blue-600 p-6 mt-8">
-                <h4 className="text-xl font-bold text-blue-900 mb-2">🎯 Keywords for Quick Search:</h4>
-                <p className="text-gray-700 text-sm">
-                  car rental ranchi, taxi service ranchi, cab booking ranchi, ranchi taxi, ranchi cab, chauffeur driven car rental, 
-                  ranchi airport taxi, birsa munda airport cab, outstation taxi ranchi, one way cab ranchi, round trip taxi ranchi, 
-                  local taxi ranchi, hourly car rental ranchi, tempo traveller ranchi, innova crysta ranchi, dzire taxi ranchi, 
-                  ertiga cab ranchi, ranchi cab online booking, corporate taxi ranchi, ranchi car hire, taxi fare ranchi, 
-                  car rental rates ranchi, ranchi travels, ranchi taxi service near railway station, ranchi taxi number
+          {/* Fleet Section */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4 }}
+            className="mb-16"
+          >
+            <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-3xl shadow-2xl p-8 md:p-12 text-white relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full filter blur-3xl"></div>
+              <div className="relative z-10">
+                <h3 className="text-3xl font-bold mb-6">Wide Range of Vehicles for Every Need</h3>
+                <p className="text-lg text-blue-50 leading-relaxed">
+                  Our fleet includes <span className="font-bold text-white">Sedan taxi (Maruti Dzire, Hyundai Aura)</span>, <span className="font-bold text-white">SUV cab (Maruti Ertiga)</span>, 
+                  <span className="font-bold text-white"> Innova Crysta</span>, and luxury cars including <span className="font-bold text-white">Audi and BMW</span>. All vehicles are well-maintained, 
+                  air-conditioned, and driven by government-verified professional chauffeurs.
                 </p>
               </div>
-            </motion.div>
-          </div>
+            </div>
+          </motion.div>
+
+          {/* Routes Grid */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5 }}
+            className="mb-16"
+          >
+            <h3 className="text-3xl font-bold text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-8">
+              Popular Outstation Routes from Ranchi
+            </h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              <motion.div
+                whileHover={{ scale: 1.02 }}
+                className="bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-6 border border-gray-100"
+              >
+                <ul className="space-y-3">
+                  <li className="flex items-center justify-between p-3 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg hover:shadow-md transition-shadow">
+                    <span className="font-medium text-gray-800"><strong>Ranchi to Patna cab</strong></span>
+                    <span className="text-sm text-gray-600">350 km • <span className="font-bold text-blue-600">₹4,500</span></span>
+                  </li>
+                  <li className="flex items-center justify-between p-3 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg hover:shadow-md transition-shadow">
+                    <span className="font-medium text-gray-800"><strong>Ranchi to Kolkata taxi</strong></span>
+                    <span className="text-sm text-gray-600">420 km • <span className="font-bold text-blue-600">₹6,000</span></span>
+                  </li>
+                  <li className="flex items-center justify-between p-3 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg hover:shadow-md transition-shadow">
+                    <span className="font-medium text-gray-800"><strong>Ranchi to Jamshedpur</strong></span>
+                    <span className="text-sm text-gray-600">140 km • <span className="font-bold text-blue-600">₹2,200</span></span>
+                  </li>
+                </ul>
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.02 }}
+                className="bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-6 border border-gray-100"
+              >
+                <ul className="space-y-3">
+                  <li className="flex items-center justify-between p-3 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg hover:shadow-md transition-shadow">
+                    <span className="font-medium text-gray-800"><strong>Ranchi to Bokaro taxi</strong></span>
+                    <span className="text-sm text-gray-600">110 km • <span className="font-bold text-purple-600">₹1,800</span></span>
+                  </li>
+                  <li className="flex items-center justify-between p-3 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg hover:shadow-md transition-shadow">
+                    <span className="font-medium text-gray-800"><strong>Ranchi to Dhanbad cab</strong></span>
+                    <span className="text-sm text-gray-600">160 km • <span className="font-bold text-purple-600">₹2,500</span></span>
+                  </li>
+                  <li className="flex items-center justify-between p-3 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg hover:shadow-md transition-shadow">
+                    <span className="font-medium text-gray-800"><strong>Ranchi to Gaya taxi</strong></span>
+                    <span className="text-sm text-gray-600">200 km • <span className="font-bold text-purple-600">₹3,000</span></span>
+                  </li>
+                </ul>
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.02 }}
+                className="bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-6 border border-gray-100"
+              >
+                <ul className="space-y-3">
+                  <li className="flex items-center justify-between p-3 bg-gradient-to-r from-pink-50 to-orange-50 rounded-lg hover:shadow-md transition-shadow">
+                    <span className="font-medium text-gray-800"><strong>Ranchi to Hazaribagh</strong></span>
+                    <span className="text-sm text-gray-600">90 km • <span className="font-bold text-pink-600">₹1,500</span></span>
+                  </li>
+                  <li className="flex items-center justify-between p-3 bg-gradient-to-r from-pink-50 to-orange-50 rounded-lg hover:shadow-md transition-shadow">
+                    <span className="font-medium text-gray-800"><strong>Ranchi to Deoghar</strong></span>
+                    <span className="text-sm text-gray-600">250 km • <span className="font-bold text-pink-600">₹3,500</span></span>
+                  </li>
+                  <li className="flex items-center justify-between p-3 bg-gradient-to-r from-pink-50 to-orange-50 rounded-lg hover:shadow-md transition-shadow">
+                    <span className="font-medium text-gray-800"><strong>Ranchi to Dumka</strong></span>
+                    <span className="text-sm text-gray-600">270 km • <span className="font-bold text-pink-600">₹3,800</span></span>
+                  </li>
+                </ul>
+              </motion.div>
+            </div>
+          </motion.div>
+
+          {/* Why Choose Us Grid */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.6 }}
+            className="mb-16"
+          >
+            <h3 className="text-3xl font-bold text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-8">
+              Why Choose Ranchi Cab Service?
+            </h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+              {[
+                { icon: '⏰', title: '24x7 Availability', desc: 'Book cab anytime, anywhere' },
+                { icon: '✅', title: 'Verified Drivers', desc: 'Safe and secure travel' },
+                { icon: '💰', title: 'Transparent Pricing', desc: 'No hidden charges' },
+                { icon: '🚗', title: 'Well-Maintained Fleet', desc: 'Clean, comfortable AC vehicles' },
+                { icon: '⚡', title: 'Instant Confirmation', desc: 'Call, WhatsApp or online' },
+                { icon: '🗺️', title: '2000+ Routes', desc: 'One-way and round-trip' },
+                { icon: '🏆', title: 'Best Price Guarantee', desc: 'Lowest per km rates' },
+                { icon: '👔', title: 'Expert Chauffeurs', desc: 'Professional and courteous' }
+              ].map((item, index) => (
+                <motion.div
+                  key={index}
+                  whileHover={{ y: -5, scale: 1.02 }}
+                  className="bg-white/90 backdrop-blur-md rounded-xl shadow-lg p-4 border border-gray-100 text-center group hover:shadow-xl transition-all"
+                >
+                  <div className="text-4xl mb-2 group-hover:scale-110 transition-transform">{item.icon}</div>
+                  <h4 className="font-bold text-gray-800 mb-1">{item.title}</h4>
+                  <p className="text-sm text-gray-600">{item.desc}</p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Booking CTA */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.7 }}
+            className="mb-16"
+          >
+            <div className="bg-gradient-to-r from-green-500 to-emerald-600 rounded-3xl shadow-2xl p-8 md:p-12 text-white text-center relative overflow-hidden">
+              <div className="absolute top-0 left-0 w-64 h-64 bg-white/10 rounded-full filter blur-3xl"></div>
+              <div className="absolute bottom-0 right-0 w-64 h-64 bg-white/10 rounded-full filter blur-3xl"></div>
+              <div className="relative z-10">
+                <h3 className="text-3xl font-bold mb-4">Easy Cab Booking in Ranchi</h3>
+                <p className="text-xl text-green-50 mb-6 max-w-3xl mx-auto leading-relaxed">
+                  Booking a <span className="font-bold text-white">taxi in Ranchi</span> is now easier than ever! Simply call us at <span className="font-bold text-white">+91 7903629240</span>, 
+                  send a WhatsApp message, or use our <span className="font-bold text-white">online cab booking</span> form. We provide instant confirmation and ensure 
+                  your cab arrives on time, every time.
+                </p>
+                <div className="flex flex-wrap justify-center gap-4">
+                  <a href="tel:+917903629240" className="bg-white text-green-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-50 transition-all shadow-xl inline-flex items-center gap-2">
+                    <Phone className="w-5 h-5" />
+                    Call Now
+                  </a>
+                  <a href="https://wa.me/917903629240" target="_blank" rel="noopener noreferrer" className="bg-green-700 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-800 transition-all shadow-xl inline-flex items-center gap-2">
+                    <MessageCircle className="w-5 h-5" />
+                    WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Service Areas */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.8 }}
+            className="mb-12"
+          >
+            <div className="bg-white/90 backdrop-blur-md rounded-3xl shadow-xl p-8 md:p-10 border border-gray-100">
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6 text-center">
+                Service Areas in Ranchi
+              </h3>
+              <p className="text-gray-700 leading-relaxed text-center max-w-5xl mx-auto">
+                We provide <span className="font-semibold">taxi service near Ranchi Railway Station, Ranchi Airport, Namkum, Doranda, Kanke, Lalpur, Harmu, 
+                Bariatu, Booty More, Hinoo, Hatia, Tatisilwai, Ratu Road, Kokar, Argora, Morabadi, Dhurwa, Tupudana, Patratu</span> 
+                and all major localities in Ranchi city.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Keywords Box */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.9 }}
+            className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-3xl shadow-2xl p-8 border-4 border-white/20 relative overflow-hidden"
+          >
+            <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full filter blur-3xl"></div>
+            <div className="relative z-10">
+              <h4 className="text-2xl font-bold text-white mb-4 flex items-center gap-2">
+                <span className="text-3xl">🎯</span> Keywords for Quick Search
+              </h4>
+              <p className="text-blue-50 text-sm leading-relaxed">
+                car rental ranchi, taxi service ranchi, cab booking ranchi, ranchi taxi, ranchi cab, chauffeur driven car rental, 
+                ranchi airport taxi, birsa munda airport cab, outstation taxi ranchi, one way cab ranchi, round trip taxi ranchi, 
+                local taxi ranchi, hourly car rental ranchi, tempo traveller ranchi, innova crysta ranchi, dzire taxi ranchi, 
+                ertiga cab ranchi, ranchi cab online booking, corporate taxi ranchi, ranchi car hire, taxi fare ranchi, 
+                car rental rates ranchi, ranchi travels, ranchi taxi service near railway station, ranchi taxi number
+              </p>
+            </div>
+          </motion.div>
         </div>
       </section>
 

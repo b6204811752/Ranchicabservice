@@ -130,6 +130,12 @@ export default function CTABanner({
               {/* Book Online Button */}
               <Link to="/#booking-form">
                 <motion.button
+                  onClick={() => {
+                    const bookingForm = document.getElementById('booking-form');
+                    if (bookingForm) {
+                      bookingForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                  }}
                   whileHover={{ scale: 1.02, x: 10 }}
                   whileTap={{ scale: 0.98 }}
                   className="w-full bg-white hover:bg-gray-100 text-blue-600 px-8 py-5 rounded-2xl font-bold text-lg shadow-2xl transition-all flex items-center justify-between group"
