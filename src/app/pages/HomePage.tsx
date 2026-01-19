@@ -101,6 +101,7 @@ export default function HomePage() {
     autoplaySpeed: 1000,
     fade: true,
     cssEase: 'cubic-bezier(0.4, 0, 0.2, 1)',
+    pauseOnHover: true,
   };
 
   const vehicles = [
@@ -890,14 +891,20 @@ export default function HomePage() {
               </motion.div>
             ))}
           </div>
-          <div className="text-center mt-8">
+          <motion.div 
+            className="text-center mt-8"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
             <Link
               to="/fleet"
-              className="inline-block bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white px-8 py-3 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg"
             >
               View Full Fleet
+              <ArrowRight className="w-5 h-5" />
             </Link>
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -975,83 +982,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-white via-yellow-50 to-orange-50"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-8 sm:mb-12 px-4"
-          >
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-orange-600 via-yellow-600 to-amber-600 bg-clip-text text-transparent mb-3 sm:mb-4">
-              What Our Customers Say
-            </h2>
-            <div className="flex items-center justify-center gap-3 mb-2">
-              <div className="flex items-center">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                ))}
-              </div>
-              <span className="text-gray-700 font-semibold">4.9/5</span>
-              <span className="text-gray-500 text-sm">(500+ Reviews)</span>
-            </div>
-            <p className="text-base sm:text-xl text-gray-600">
-              Real feedback from satisfied customers
-            </p>
-          </motion.div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-            {testimonials.map((testimonial, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30, rotateX: -20 }}
-                whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.15, duration: 0.7 }}
-                whileHover={{ 
-                  y: -10,
-                  rotateY: 5,
-                  scale: 1.05,
-                  boxShadow: "0 25px 50px -12px rgba(251, 191, 36, 0.4)"
-                }}
-                className="group relative bg-white/70 backdrop-blur-xl p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all border border-yellow-100 overflow-hidden"
-                style={{ transformStyle: 'preserve-3d' }}
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/0 via-orange-500/0 to-amber-500/0 group-hover:from-yellow-500/10 group-hover:via-orange-500/10 group-hover:to-amber-500/10 transition-all duration-700"></div>
-                <div className="absolute -top-10 -right-10 w-40 h-40 bg-gradient-to-br from-yellow-300 to-orange-300 rounded-full filter blur-3xl opacity-0 group-hover:opacity-30 transition-opacity duration-700"></div>
-                <div className="relative z-10">
-                  <motion.div 
-                    className="flex mb-4"
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ delay: index * 0.15 + 0.3 }}
-                  >
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <motion.div
-                        key={i}
-                        initial={{ scale: 0, rotate: -180 }}
-                        whileInView={{ scale: 1, rotate: 0 }}
-                        transition={{ delay: index * 0.15 + 0.4 + i * 0.1, type: "spring" }}
-                      >
-                        <Star className="w-6 h-6 text-yellow-400 fill-current" />
-                      </motion.div>
-                    ))}
-                  </motion.div>
-                  <p className="text-gray-700 mb-6 italic text-lg leading-relaxed">&ldquo;{testimonial.text}&rdquo;</p>
-                  <div className="border-t border-yellow-200 pt-4">
-                    <p className="font-bold text-lg bg-gradient-to-r from-gray-900 to-orange-900 bg-clip-text text-transparent">{testimonial.name}</p>
-                    <p className="text-sm text-gray-500 flex items-center mt-1">
-                      <MapPin className="w-4 h-4 mr-1" />
-                      {testimonial.location}
-                    </p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* Live Chat Prompt */}
       <section className="py-12 bg-gradient-to-r from-green-500 to-green-600">
@@ -1258,76 +1189,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-0 left-1/4 w-64 h-64 bg-yellow-400 rounded-full filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-green-400 rounded-full filter blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-        </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
-          <motion.h2 
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold mb-6"
-          >
-            Ready to Book Your Cab?
-          </motion.h2>
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="text-xl mb-8 text-blue-100"
-          >
-            Call us now or book via WhatsApp for instant confirmation
-          </motion.p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <motion.a
-              href="tel:+917903629240"
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3 }}
-              whileHover={{ scale: 1.1, rotate: 2 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all inline-flex items-center space-x-2 shadow-xl"
-            >
-              <Phone className="w-5 h-5" />
-              <span>+91 7903629240</span>
-            </motion.a>
-            <motion.a
-              href="https://wa.me/917903629240"
-              target="_blank"
-              rel="noopener noreferrer"
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4 }}
-              whileHover={{ scale: 1.1, rotate: -2 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-xl"
-            >
-              WhatsApp Now
-            </motion.a>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.5 }}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Link
-                to="/contact"
-                className="bg-white hover:bg-gray-100 text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg transition-all shadow-xl inline-block"
-              >
-                Contact Us
-              </Link>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Reviews Section */}
       <Reviews />
@@ -1338,16 +1200,14 @@ export default function HomePage() {
       {/* Blog Section */}
       <BlogSection />
 
-      {/* Social Share & Newsletter */}
-      <div className="bg-gray-50 py-12">
+      {/* Social Share */}
+      <section className="bg-gray-50 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div className="lg:col-span-1">
-              <SocialShare />
-            </div>
+          <div className="max-w-md mx-auto">
+            <SocialShare />
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Newsletter */}
       <Newsletter />
