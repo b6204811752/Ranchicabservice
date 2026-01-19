@@ -54,13 +54,13 @@ export default function BlogSection() {
     "@type": "Blog",
     "name": "Ranchi Cab Service Blog",
     "description": "Travel tips, booking guides, and destination insights for Ranchi and surrounding areas",
-    "url": "https://ranchicabservice.vercel.app/blog",
+    "url": "https://ranchicabservice.com/blog",
     "publisher": {
       "@type": "Organization",
       "name": "Ranchi Cab Service",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://ranchicabservice.vercel.app/logo.png"
+        "url": "https://ranchicabservice.com/logo.png"
       }
     },
     "blogPost": blogPosts.map(post => ({

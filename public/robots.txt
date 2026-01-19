@@ -19,7 +19,7 @@ Allow: /corporate-taxi
 Allow: /cities
 
 # Sitemaps
-Sitemap: https://ranchicabservice.vercel.app/sitemap.xml
+Sitemap: https://ranchicabservice.com/sitemap.xml
 
 # Major Search Engines
 User-agent: Googlebot

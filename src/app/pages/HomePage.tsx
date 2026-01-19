@@ -247,7 +247,7 @@ export default function HomePage() {
           name="keywords"
           content="car rental ranchi, car rental in ranchi, taxi service ranchi, taxi service in ranchi, cab service in ranchi, cab booking ranchi, ranchi taxi, ranchi cabs, ranchi cab, near me taxi service, near me cab service, 7 seater taxi service, chauffeur driven car rental ranchi, ranchi airport taxi, birsa munda airport taxi, outstation taxi ranchi, one way cab ranchi, one way taxi ranchi, one way cab, one way taxi, one way cab service, one way taxi service, round trip taxi ranchi, local taxi ranchi, ranchi local cab service, ranchi local taxi service, hourly car rental ranchi, ranchi to patna cab, ranchi to kolkata taxi, ranchi to kolkata cab, ranchi to kolkata cab service, ranchi to kolkata taxi service, ranchi to jamshedpur cab, ranchi to bokaro cab, ranchi to bokaro taxi service, ranchi to bokaro cab service, ranchi to dhanbad taxi, ranchi to dhanbad cab service, ranchi to dhanbad taxi service, ranchi to gaya cab, ranchi to gaya taxi service, ranchi to gaya cab service, ranchi to tata cab service, ranchi to tata taxi service, ranchi to netarhat taxi service, ranchi to hazaribagh cab service, ranchi to hazaribagh taxi service, ranchi to koderma cab service, ranchi to koderma taxi service, ranchi to varanasi cab, ranchi to varanasi taxi, ranchi to varanasi cab service, ranchi to varanasi taxi service, ranchi to ramgarh cab service, ranchi to ramgarh taxi service, cab service near me ranchi, best taxi service ranchi, sasta cab service, sasta cab sasta taxi, affordable cab ranchi, 24/7 taxi ranchi, tempo traveller ranchi, innova crysta ranchi, dzire taxi ranchi, ertiga cab ranchi, ranchi cab online booking, corporate taxi ranchi, ranchi car hire, taxi fare ranchi, car rental rates ranchi, ranchi travels, ranchi taxi service near railway station, ranchi taxi number, ranchi cab contact number"
         />
-        <link rel="canonical" href="https://ranchicabservice.vercel.app/" />
+        <link rel="canonical" href="https://ranchicabservice.com/" />
         
         {/* Geo Targeting */}
         <meta name="geo.region" content="IN-JH" />
@@ -267,7 +267,7 @@ export default function HomePage() {
         {/* Enhanced Open Graph */}
         <meta property="og:title" content="Ranchi Cab Service | Book Best Taxi in Ranchi 24/7" />
         <meta property="og:description" content="⭐ Ranchi's #1 Cab Service - Safe, Reliable & Affordable. Book Local Taxi, Outstation Cabs & Airport Transfer. Call +91 7903629240" />
-        <meta property="og:url" content="https://ranchicabservice.vercel.app/" />
+        <meta property="og:url" content="https://ranchicabservice.com/" />
         <meta property="og:type" content="website" />
         
         {/* Twitter Card */}
@@ -280,7 +280,7 @@ export default function HomePage() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "@id": "https://ranchicabservice.vercel.app/#business",
+            "@id": "https://ranchicabservice.com/#business",
             "name": "Ranchi Cab Service",
             "alternateName": "Ranchi Taxi Service",
             "description": "Premier car rental and taxi service in Ranchi offering chauffeur-driven cabs for local trips, outstation journeys, airport transfers, and corporate transportation. Available 24x7 with verified drivers.",
@@ -288,8 +288,8 @@ export default function HomePage() {
             "telephone": "+917903629240",
             "email": "rohittravels10@gmail.com",
             "priceRange": "₹₹",
-            "image": "https://ranchicabservice.vercel.app/logo.png",
-            "logo": "https://ranchicabservice.vercel.app/logo.png",
+            "image": "https://ranchicabservice.com/logo.png",
+            "logo": "https://ranchicabservice.com/logo.png",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Ranchi",
@@ -386,19 +386,19 @@ export default function HomePage() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://ranchicabservice.vercel.app/"
+                "item": "https://ranchicabservice.com/"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Services",
-                "item": "https://ranchicabservice.vercel.app/services"
+                "item": "https://ranchicabservice.com/services"
               },
               {
                 "@type": "ListItem",
                 "position": 3,
                 "name": "Fleet",
-                "item": "https://ranchicabservice.vercel.app/fleet"
+                "item": "https://ranchicabservice.com/fleet"
               }
             ]
           })}
@@ -411,7 +411,7 @@ export default function HomePage() {
             "@type": "Organization",
             "name": "Ranchi Cab Service",
             "url": "https://ranchicabservice.vercel.app",
-            "logo": "https://ranchicabservice.vercel.app/logo.png",
+            "logo": "https://ranchicabservice.com/logo.png",
             "contactPoint": [
               {
                 "@type": "ContactPoint",

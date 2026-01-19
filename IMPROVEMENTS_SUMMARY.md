@@ -226,7 +226,7 @@ Based on analysis of Savaari.com and RanchiTaxiCab.com:
 **Security:** 🔒 HTTPS Enabled
 **Deployment:** ☁️ Vercel (Auto-deploy enabled)
 
-**Live URL:** https://ranchicabservice.vercel.app/
+**Live URL:** https://ranchicabservice.com/
 
 ---
 

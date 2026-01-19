@@ -96,10 +96,10 @@ export default function ServicesPage() {
           name="keywords"
           content="taxi services ranchi, local cab ranchi, outstation taxi ranchi, airport transfer ranchi, corporate taxi service, ranchi cab rates, taxi fare ranchi, hourly cab rental ranchi, cab service ranchi contact number"
         />
-        <link rel="canonical" href="https://ranchicabservice.vercel.app/services" />
+        <link rel="canonical" href="https://ranchicabservice.com/services" />
         <meta property="og:title" content="Taxi Services in Ranchi - Local, Outstation, Airport & Corporate" />
         <meta property="og:description" content="Complete taxi solutions in Ranchi. Best rates, verified drivers, 24/7 service. Book now!" />
-        <meta property="og:url" content="https://ranchicabservice.vercel.app/services" />
+        <meta property="og:url" content="https://ranchicabservice.com/services" />
         
         <script type="application/ld+json">
           {JSON.stringify({
