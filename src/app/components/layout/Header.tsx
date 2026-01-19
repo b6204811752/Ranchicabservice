@@ -34,7 +34,7 @@ export default function Header() {
             />
             <div>
               <h1 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Ranchi Cab Service</h1>
-              <p className="text-xs text-gray-600">Safe & Reliable</p>
+              <p className="text-xs text-gray-600">Top Car|Texi|Cab service in Ranchi</p>
             </div>
           </Link>
 

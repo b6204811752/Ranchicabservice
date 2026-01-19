@@ -77,7 +77,7 @@ export default function HomePage() {
     {
       image: heroImg1,
       title: 'Best Cab Service in Ranchi',
-      subtitle: 'Safe, Reliable & Affordable',
+      subtitle: 'Top-Rated Taxi Service | 24/7 Available | Affordable Rates',
     },
     {
       image: heroImg2,
