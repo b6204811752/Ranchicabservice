@@ -30,7 +30,6 @@ export default function ContactPage() {
           name="keywords"
           content="ranchi cab service contact number, taxi booking ranchi phone number, ranchi cab service whatsapp, call taxi ranchi, book cab ranchi contact, ranchi taxi helpline, 24/7 cab service ranchi"
         />
-        <link rel="canonical" href="https://ranchicabservice.com/contact" />
         <meta property="og:title" content="Contact Ranchi Cab Service - Book Taxi 24/7" />
         <meta property="og:description" content="Call +91 7903629240 for instant taxi booking in Ranchi. Available 24/7" />
         <meta property="og:url" content="https://ranchicabservice.com/contact" />

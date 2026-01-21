@@ -60,7 +60,6 @@ export default function OutstationPage() {
           name="keywords"
           content="outstation taxi ranchi, ranchi to patna cab, ranchi to kolkata taxi, ranchi to jamshedpur cab, ranchi to bokaro taxi, ranchi to dhanbad cab, ranchi to hazaribagh taxi, outstation cab fare ranchi, one way taxi ranchi, round trip cab ranchi, highway taxi ranchi, intercity cab ranchi"
         />
-        <link rel="canonical" href="https://ranchicabservice.com/outstation-taxi" />
         <meta property="og:title" content="Outstation Taxi from Ranchi - Book Cabs to Patna, Kolkata & More" />
         <meta property="og:description" content="Comfortable outstation cabs from Ranchi to nearby cities. Best rates, experienced drivers, AC cars. Book now!" />
         <meta property="og:url" content="https://ranchicabservice.com/outstation-taxi" />

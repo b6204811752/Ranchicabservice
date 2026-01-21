@@ -30,7 +30,6 @@ export default function LocalTaxiPage() {
           name="keywords"
           content="local taxi ranchi, hourly cab rental ranchi, 4 hour taxi ranchi, 8 hour cab ranchi, full day taxi ranchi, half day cab ranchi, local cab service ranchi, city taxi ranchi, ranchi local cab rate, ac taxi ranchi, cab for shopping ranchi, ranchi sightseeing taxi"
         />
-        <link rel="canonical" href="https://ranchicabservice.com/local-taxi-ranchi" />
         <meta property="og:title" content="Local Taxi Service in Ranchi - Hourly Cab Rental from ₹10/km" />
         <meta property="og:description" content="Book hourly cabs in Ranchi. 4Hr, 8Hr, 12Hr packages. AC cabs, verified drivers. Best rates guaranteed!" />
         <meta property="og:url" content="https://ranchicabservice.com/local-taxi-ranchi" />
