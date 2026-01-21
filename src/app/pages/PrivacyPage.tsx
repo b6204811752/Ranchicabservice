@@ -2,11 +2,10 @@ import { Helmet } from 'react-helmet-async';
 
 export default function PrivacyPage() {
   return (
-    <>
+    <>  
       <Helmet>
         <title>Privacy Policy | Ranchi Cab Service</title>
         <meta name="description" content="Privacy Policy for Ranchi Cab Service. Learn how we collect, use, and protect your personal information." />
-        <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 
       <section className="py-16 bg-gray-50">

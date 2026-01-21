@@ -6,7 +6,6 @@ export default function TermsPage() {
       <Helmet>
         <title>Terms and Conditions | Ranchi Cab Service</title>
         <meta name="description" content="Terms and Conditions for using Ranchi Cab Service. Please read these terms carefully before booking." />
-        <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 
       <section className="py-16 bg-gray-50">
