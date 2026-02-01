@@ -8,6 +8,11 @@ export default function RanchiToPatnaPage() {
     "@type": "Product",
     "name": "Ranchi to Patna Cab Service",
     "description": "Book reliable and affordable Ranchi to Patna cab service. 330 km journey with experienced drivers, clean AC vehicles, and best rates starting at ₹4,500.",
+    "image": [
+      "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1200&h=630&fit=crop",
+      "https://images.unsplash.com/photo-1552975084-6e027cd345c2?w=1200&h=630&fit=crop",
+      "https://images.unsplash.com/photo-1485291571150-772bcfc10da5?w=1200&h=630&fit=crop"
+    ],
     "brand": {
       "@type": "Brand",
       "name": "Ranchi Cab Service"
@@ -19,7 +24,43 @@ export default function RanchiToPatnaPage() {
       "price": "4500",
       "priceValidUntil": "2026-12-31",
       "availability": "https://schema.org/InStock",
-      "itemCondition": "https://schema.org/NewCondition"
+      "itemCondition": "https://schema.org/NewCondition",
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingRate": {
+          "@type": "MonetaryAmount",
+          "value": "0",
+          "currency": "INR"
+        },
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "IN",
+          "addressRegion": ["JH", "BR"]
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": "0",
+            "maxValue": "1",
+            "unitCode": "HUR"
+          },
+          "transitTime": {
+            "@type": "QuantitativeValue",
+            "minValue": "6",
+            "maxValue": "7",
+            "unitCode": "HUR"
+          }
+        }
+      },
+      "hasMerchantReturnPolicy": {
+        "@type": "MerchantReturnPolicy",
+        "applicableCountry": "IN",
+        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+        "merchantReturnDays": 1,
+        "returnMethod": "https://schema.org/ReturnByMail",
+        "returnFees": "https://schema.org/FreeReturn"
+      }
     },
     "aggregateRating": {
       "@type": "AggregateRating",
