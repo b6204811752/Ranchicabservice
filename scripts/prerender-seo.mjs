@@ -17,11 +17,147 @@ const distDir = join(__dirname, '..', 'dist');
 const baseUrl = 'https://www.ranchicabservice.com';
 
 // ─── Route SEO Configuration ────────────────────────────────────────────────
+
 const routes = [
+  // ─── HOMEPAGE ───
+  {
+    path: '/',
+    title: 'Ranchi Cab Service | Car Rental in Ranchi | Taxi Hire 24x7 | Book Sedan, SUV, Innova',
+    description: '\u2B50 Book Car Rental in Ranchi \u2713 Chauffeur Driven Cabs 24x7 \u2713 One Way & Round Trip \u2713 Airport Taxi \u2713 Local Hire \u2713 Sedan \u20B910/km \u2713 SUV \u20B914/km \u2713 Innova Crysta \u2713 Govt Verified Drivers \u2713 2000+ Routes. Call: 7903629240',
+    keywords: 'car rental ranchi, car rental in ranchi, taxi service ranchi, taxi service in ranchi, cab service in ranchi, cab booking ranchi, ranchi taxi, ranchi cabs, ranchi cab, near me taxi service, near me cab service, 7 seater taxi service, chauffeur driven car rental ranchi, ranchi airport taxi, birsa munda airport taxi, outstation taxi ranchi, one way cab ranchi, one way taxi ranchi, round trip taxi ranchi, local taxi ranchi, ranchi local cab service, ranchi to patna cab, ranchi to kolkata taxi, ranchi to jamshedpur cab, ranchi to bokaro cab, ranchi to dhanbad taxi',
+    ogTitle: 'Ranchi Cab Service | Book Best Taxi in Ranchi 24/7',
+    ogDescription: "\u2B50 Ranchi's #1 Cab Service - Safe, Reliable & Affordable. Book Local Taxi, Outstation Cabs & Airport Transfer. Call +91 7903629240",
+    twitterTitle: 'Ranchi Cab Service | Best Taxi in Ranchi 24/7',
+    twitterDescription: 'Book Safe & Affordable Taxi in Ranchi. Local, Outstation, Airport & Corporate Cabs Available 24/7',
+    schemas: [
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://www.ranchicabservice.com/#business",
+        "name": "Ranchi Cab Service",
+        "alternateName": "Ranchi Taxi Service",
+        "description": "Premier car rental and taxi service in Ranchi offering chauffeur-driven cabs for local trips, outstation journeys, airport transfers, and corporate transportation. Available 24x7 with verified drivers.",
+        "url": "https://www.ranchicabservice.com",
+        "telephone": "+917903629240",
+        "email": "rohittravels10@gmail.com",
+        "priceRange": "\u20B9\u20B9",
+        "image": "https://www.ranchicabservice.com/logo.png",
+        "logo": "https://www.ranchicabservice.com/logo.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Ranchi",
+          "addressLocality": "Ranchi",
+          "addressRegion": "Jharkhand",
+          "postalCode": "834001",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "23.3441",
+          "longitude": "85.3096"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "00:00",
+          "closes": "23:59"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "500",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Ranchi", "containedIn": { "@type": "State", "name": "Jharkhand" } },
+          { "@type": "City", "name": "Patna" },
+          { "@type": "City", "name": "Kolkata" },
+          { "@type": "City", "name": "Jamshedpur" },
+          { "@type": "City", "name": "Bokaro" },
+          { "@type": "City", "name": "Dhanbad" },
+          { "@type": "City", "name": "Gaya" },
+          { "@type": "City", "name": "Hazaribagh" }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Taxi Services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Local Taxi Service", "description": "Hourly car rental in Ranchi for local trips" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Outstation Taxi Service", "description": "One way and round trip cab service from Ranchi" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Airport Taxi Service", "description": "Birsa Munda Airport pickup and drop service" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Corporate Taxi Service", "description": "Monthly corporate car rental packages" } }
+          ]
+        },
+        "sameAs": [
+          "https://www.facebook.com/ranchicabservice",
+          "https://www.instagram.com/ranchicabservice",
+          "https://twitter.com/ranchicabservice"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.ranchicabservice.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.ranchicabservice.com/services" },
+          { "@type": "ListItem", "position": 3, "name": "Fleet", "item": "https://www.ranchicabservice.com/fleet" }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How can I book a cab in Ranchi?",
+            "acceptedAnswer": { "@type": "Answer", "text": "You can book a cab by calling +91 7903629240, sending a WhatsApp message, or using our online booking form on www.ranchicabservice.com. We provide instant confirmation and 24/7 booking service for all car rental needs." }
+          },
+          {
+            "@type": "Question",
+            "name": "What are your car rental rates in Ranchi?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Our local taxi rates start from \u20B910/km for sedans (Dzire, Aura), \u20B914/km for SUVs (Ertiga), and \u20B916/km for Innova Crysta. Outstation rates are \u20B912/km for sedans and \u20B916/km for SUVs. We offer the lowest average per km rates in Ranchi." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you provide 24/7 taxi service in Ranchi?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes, Ranchi Cab Service operates 24 hours a day, 7 days a week, 365 days a year including all holidays. Our chauffeur-driven cabs are available for emergency travel, airport transfers, or outstation trips at any time." }
+          },
+          {
+            "@type": "Question",
+            "name": "Which cities do you cover for outstation taxi from Ranchi?",
+            "acceptedAnswer": { "@type": "Answer", "text": "We provide outstation taxi service from Ranchi to 2000+ routes including Patna, Kolkata, Jamshedpur, Bokaro, Dhanbad, Gaya, Hazaribagh, Dumka, Deoghar, Varanasi, and all major cities in Jharkhand, Bihar, West Bengal, and neighboring states." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you provide airport taxi service in Ranchi?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes, we provide reliable airport taxi service for Birsa Munda Airport Ranchi with 24/7 availability. Our service includes flight tracking, meet & greet at arrivals, and comfortable rides to/from the airport." }
+          },
+          {
+            "@type": "Question",
+            "name": "Are your drivers verified and experienced?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes, all our drivers are government-verified, police-verified, and have extensive driving experience. Safety is our prime concern. Our chauffeurs are professional, courteous, and well-trained to ensure a comfortable journey." }
+          },
+          {
+            "@type": "Question",
+            "name": "What types of vehicles are available for car rental in Ranchi?",
+            "acceptedAnswer": { "@type": "Answer", "text": "We offer a wide range of vehicles including Maruti Dzire, Hyundai Aura (sedans), Maruti Ertiga (SUV), Toyota Innova Crysta, luxury cars like Audi and BMW. All vehicles are well-maintained, clean, and air-conditioned." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer one-way taxi service from Ranchi?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes, we offer both one-way and round-trip taxi services from Ranchi. For one-way drops, you only pay for one side without any return charges, making it very affordable for intercity travel." }
+          }
+        ]
+      }
+    ]
+  },
+
+  // ─── ABOUT ───
   {
     path: '/about',
     title: 'About Us - Ranchi Cab Service | Best Taxi Service Provider in Ranchi Since 2010',
-    description: 'Learn about Ranchi Cab Service - Ranchi\'s most trusted taxi service provider. 10+ years experience, 500+ happy customers, verified drivers & 24/7 service. Book reliable cabs in Ranchi.',
+    description: "Learn about Ranchi Cab Service - Ranchi's most trusted taxi service provider. 10+ years experience, 500+ happy customers, verified drivers & 24/7 service. Book reliable cabs in Ranchi.",
     keywords: 'about ranchi cab service, ranchi taxi company, best cab service ranchi, trusted taxi ranchi, ranchi travels company, professional cab service ranchi',
     schema: {
       "@context": "https://schema.org",
@@ -33,15 +169,12 @@ const routes = [
         "@type": "LocalBusiness",
         "name": "Ranchi Cab Service",
         "telephone": "+917903629240",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Ranchi",
-          "addressRegion": "Jharkhand",
-          "addressCountry": "IN"
-        }
+        "address": { "@type": "PostalAddress", "addressLocality": "Ranchi", "addressRegion": "Jharkhand", "addressCountry": "IN" }
       }
     }
   },
+
+  // ─── SERVICES ───
   {
     path: '/services',
     title: 'Our Taxi Services in Ranchi | Local, Outstation, Airport & Corporate Cabs',
@@ -53,14 +186,12 @@ const routes = [
       "name": "Ranchi Cab Services",
       "description": "Complete range of taxi and cab services in Ranchi - Local, Outstation, Airport & Corporate.",
       "url": `${baseUrl}/services`,
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Ranchi Cab Service",
-        "telephone": "+917903629240"
-      },
+      "provider": { "@type": "LocalBusiness", "name": "Ranchi Cab Service", "telephone": "+917903629240" },
       "areaServed": { "@type": "City", "name": "Ranchi" }
     }
   },
+
+  // ─── CONTACT ───
   {
     path: '/contact',
     title: 'Contact Ranchi Cab Service | Book Taxi Now | Call +91 7903629240',
@@ -80,6 +211,8 @@ const routes = [
       }
     }
   },
+
+  // ─── FLEET ───
   {
     path: '/fleet',
     title: 'Our Fleet - Ranchi Cab Service | Dzire, Ertiga, Innova Crysta & Luxury Cars',
@@ -102,6 +235,8 @@ const routes = [
       ]
     }
   },
+
+  // ─── CITIES ───
   {
     path: '/cities',
     title: 'Cities We Serve | Ranchi Cab Service | Taxi to Patna, Kolkata, Jamshedpur & More',
@@ -123,6 +258,8 @@ const routes = [
       ]
     }
   },
+
+  // ─── AIRPORT TAXI ───
   {
     path: '/airport-taxi',
     title: 'Ranchi Airport Taxi Service | 24/7 Airport Transfer & Pickup | Birsa Munda Airport Cab',
@@ -139,6 +276,8 @@ const routes = [
       "serviceType": "Airport Taxi Transfer"
     }
   },
+
+  // ─── CORPORATE TAXI ───
   {
     path: '/corporate-taxi',
     title: 'Corporate Taxi Service Ranchi | Business Travel & Employee Transport Solutions',
@@ -155,6 +294,8 @@ const routes = [
       "serviceType": "Corporate Transportation"
     }
   },
+
+  // ─── OUTSTATION TAXI ───
   {
     path: '/outstation-taxi',
     title: 'Outstation Taxi from Ranchi | Book One-Way & Round Trip Cabs | Best Rates',
@@ -175,10 +316,12 @@ const routes = [
       "serviceType": "Outstation Taxi"
     }
   },
+
+  // ─── LOCAL TAXI ───
   {
     path: '/local-taxi-ranchi',
     title: 'Local Taxi Service in Ranchi | Hourly Rental & City Cab | Best Rates',
-    description: 'Book affordable local taxi in Ranchi for city travel. Hourly rental packages, sightseeing tours, shopping trips & daily commute. Starting ₹10/km. Call +91 7903629240.',
+    description: 'Book affordable local taxi in Ranchi for city travel. Hourly rental packages, sightseeing tours, shopping trips & daily commute. Starting \u20B910/km. Call +91 7903629240.',
     keywords: 'local taxi ranchi, city cab ranchi, hourly taxi ranchi, ranchi sightseeing cab, ranchi city tour taxi, auto taxi ranchi',
     schema: {
       "@context": "https://schema.org",
@@ -191,10 +334,12 @@ const routes = [
       "serviceType": "Local Taxi"
     }
   },
+
+  // ─── ROUTE PAGES ───
   {
     path: '/ranchi-to-patna-cab',
-    title: 'Ranchi to Patna Cab | Book One-Way & Round Trip Taxi | ₹3,500 Starting',
-    description: 'Book Ranchi to Patna cab at best rates starting ₹3,500. One-way & round trip taxi. 320 km, 5-6 hrs drive. AC vehicles, experienced drivers. Call +91 7903629240.',
+    title: 'Ranchi to Patna Cab | Book One-Way & Round Trip Taxi | \u20B93,500 Starting',
+    description: 'Book Ranchi to Patna cab at best rates starting \u20B93,500. One-way & round trip taxi. 320 km, 5-6 hrs drive. AC vehicles, experienced drivers. Call +91 7903629240.',
     keywords: 'ranchi to patna cab, ranchi to patna taxi, ranchi patna taxi fare, cab from ranchi to patna, taxi ranchi to patna',
     schema: {
       "@context": "https://schema.org",
@@ -208,8 +353,8 @@ const routes = [
   },
   {
     path: '/ranchi-to-kolkata-taxi',
-    title: 'Ranchi to Kolkata Taxi | Book Cab at Best Rates | ₹5,500 Starting',
-    description: 'Book Ranchi to Kolkata taxi at best rates starting ₹5,500. One-way & round trip cab. 400 km, 6-7 hrs drive. AC vehicles, GPS tracking. Call +91 7903629240.',
+    title: 'Ranchi to Kolkata Taxi | Book Cab at Best Rates | \u20B95,500 Starting',
+    description: 'Book Ranchi to Kolkata taxi at best rates starting \u20B95,500. One-way & round trip cab. 400 km, 6-7 hrs drive. AC vehicles, GPS tracking. Call +91 7903629240.',
     keywords: 'ranchi to kolkata taxi, ranchi to kolkata cab, ranchi kolkata taxi fare, cab from ranchi to kolkata',
     schema: {
       "@context": "https://schema.org",
@@ -223,8 +368,8 @@ const routes = [
   },
   {
     path: '/ranchi-to-jamshedpur-cab',
-    title: 'Ranchi to Jamshedpur Cab | Book Taxi at Best Rates | ₹2,200 Starting',
-    description: 'Book Ranchi to Jamshedpur cab starting ₹2,200. One-way & round trip taxi. 130 km, 2.5-3 hrs drive. AC vehicles, professional drivers. Call +91 7903629240.',
+    title: 'Ranchi to Jamshedpur Cab | Book Taxi at Best Rates | \u20B92,200 Starting',
+    description: 'Book Ranchi to Jamshedpur cab starting \u20B92,200. One-way & round trip taxi. 130 km, 2.5-3 hrs drive. AC vehicles, professional drivers. Call +91 7903629240.',
     keywords: 'ranchi to jamshedpur cab, ranchi to jamshedpur taxi, ranchi jamshedpur taxi fare, cab from ranchi to jamshedpur',
     schema: {
       "@context": "https://schema.org",
@@ -238,8 +383,8 @@ const routes = [
   },
   {
     path: '/ranchi-to-bokaro-taxi',
-    title: 'Ranchi to Bokaro Taxi | Book Cab at Best Rates | ₹2,000 Starting',
-    description: 'Book Ranchi to Bokaro taxi starting ₹2,000. One-way & round trip cab. 110 km, 2-2.5 hrs drive. AC vehicles, experienced drivers. Call +91 7903629240.',
+    title: 'Ranchi to Bokaro Taxi | Book Cab at Best Rates | \u20B92,000 Starting',
+    description: 'Book Ranchi to Bokaro taxi starting \u20B92,000. One-way & round trip cab. 110 km, 2-2.5 hrs drive. AC vehicles, experienced drivers. Call +91 7903629240.',
     keywords: 'ranchi to bokaro taxi, ranchi to bokaro cab, ranchi bokaro taxi fare, cab from ranchi to bokaro',
     schema: {
       "@context": "https://schema.org",
@@ -253,8 +398,8 @@ const routes = [
   },
   {
     path: '/ranchi-to-dhanbad-cab',
-    title: 'Ranchi to Dhanbad Cab | Book Taxi at Best Rates | ₹2,500 Starting',
-    description: 'Book Ranchi to Dhanbad cab starting ₹2,500. One-way & round trip taxi. 170 km, 3-3.5 hrs drive. AC vehicles, GPS tracked. Call +91 7903629240.',
+    title: 'Ranchi to Dhanbad Cab | Book Taxi at Best Rates | \u20B92,500 Starting',
+    description: 'Book Ranchi to Dhanbad cab starting \u20B92,500. One-way & round trip taxi. 170 km, 3-3.5 hrs drive. AC vehicles, GPS tracked. Call +91 7903629240.',
     keywords: 'ranchi to dhanbad cab, ranchi to dhanbad taxi, ranchi dhanbad taxi fare, cab from ranchi to dhanbad',
     schema: {
       "@context": "https://schema.org",
@@ -266,6 +411,8 @@ const routes = [
       "areaServed": [{ "@type": "City", "name": "Ranchi" }, { "@type": "City", "name": "Dhanbad" }]
     }
   },
+
+  // ─── NOINDEX PAGES ───
   {
     path: '/privacy-policy',
     title: 'Privacy Policy | Ranchi Cab Service',
@@ -284,10 +431,17 @@ const routes = [
 
 // ─── HTML Transformation ────────────────────────────────────────────────────
 
+function escapeHtml(str) {
+  return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+}
+
 function injectSEO(html, route) {
-  const canonicalUrl = `${baseUrl}${route.path}`;
-  const ogImage = 'https://www.ranchicabservice.com/logo-1200x630.png';
+  const canonicalUrl = route.path === '/' ? `${baseUrl}/` : `${baseUrl}${route.path}`;
   const robotsContent = route.robots || 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1';
+  const ogTitle = route.ogTitle || route.title;
+  const ogDesc = route.ogDescription || route.description;
+  const twTitle = route.twitterTitle || route.title;
+  const twDesc = route.twitterDescription || route.description;
   
   let result = html;
   
@@ -300,13 +454,13 @@ function injectSEO(html, route) {
   // Replace meta description
   result = result.replace(
     /<meta\s+name="description"\s+content="[^"]*"\s*\/?>/,
-    `<meta name="description" content="${route.description}" />`
+    `<meta name="description" content="${escapeHtml(route.description)}" />`
   );
   
   // Replace meta keywords
   result = result.replace(
     /<meta\s+name="keywords"\s+content="[^"]*"\s*\/?>/,
-    `<meta name="keywords" content="${route.keywords}" />`
+    `<meta name="keywords" content="${escapeHtml(route.keywords)}" />`
   );
   
   // Replace meta robots
@@ -327,46 +481,56 @@ function injectSEO(html, route) {
     `<meta property="og:url" content="${canonicalUrl}" />`
   );
   
-  // Replace og:title (add if not present, or inject before og:url)
+  // Replace/add og:title
   if (result.includes('property="og:title"')) {
     result = result.replace(
       /<meta\s+property="og:title"\s+content="[^"]*"\s*\/?>/,
-      `<meta property="og:title" content="${route.title}" />`
+      `<meta property="og:title" content="${escapeHtml(ogTitle)}" />`
     );
   } else {
     result = result.replace(
       /<meta\s+property="og:url"/,
-      `<meta property="og:title" content="${route.title}" />\n      <meta property="og:description" content="${route.description}" />\n      <meta property="og:url"`
+      `<meta property="og:title" content="${escapeHtml(ogTitle)}" />\n      <meta property="og:description" content="${escapeHtml(ogDesc)}" />\n      <meta property="og:url"`
     );
   }
   
-  // Replace og:description (add if not present)
+  // Replace/add og:description
   if (result.includes('property="og:description"')) {
     result = result.replace(
       /<meta\s+property="og:description"\s+content="[^"]*"\s*\/?>/,
-      `<meta property="og:description" content="${route.description}" />`
+      `<meta property="og:description" content="${escapeHtml(ogDesc)}" />`
     );
   }
   
   // Replace twitter:title
   result = result.replace(
     /<meta\s+name="twitter:title"\s+content="[^"]*"\s*\/?>/,
-    `<meta name="twitter:title" content="${route.title}" />`
+    `<meta name="twitter:title" content="${escapeHtml(twTitle)}" />`
   );
   
   // Replace twitter:description
   result = result.replace(
     /<meta\s+name="twitter:description"\s+content="[^"]*"\s*\/?>/,
-    `<meta name="twitter:description" content="${route.description}" />`
+    `<meta name="twitter:description" content="${escapeHtml(twDesc)}" />`
   );
   
-  // Replace/inject Schema.org JSON-LD (replace the first one with route-specific)
-  if (route.schema) {
-    // Add a page-specific schema BEFORE the existing Organization schema
-    const schemaTag = `<script type="application/ld+json">\n      ${JSON.stringify(route.schema, null, 2).replace(/\n/g, '\n      ')}\n      </script>\n      <script type="application/ld+json">`;
+  // Handle Schema.org JSON-LD
+  if (route.schemas) {
+    // Multiple schemas (homepage) — inject all BEFORE the existing Organization schema
+    const schemaBlocks = route.schemas.map(s => 
+      `<script type="application/ld+json">\n      ${JSON.stringify(s)}\n      </script>`
+    ).join('\n      ');
+    
     result = result.replace(
-      /<script type="application\/ld\+json">/,
-      schemaTag
+      /(<script type="application\/ld\+json">)/,
+      `${schemaBlocks}\n      $1`
+    );
+  } else if (route.schema) {
+    // Single schema (subpages) — inject BEFORE the existing Organization schema
+    const schemaTag = `<script type="application/ld+json">\n      ${JSON.stringify(route.schema)}\n      </script>`;
+    result = result.replace(
+      /(<script type="application\/ld\+json">)/,
+      `${schemaTag}\n      $1`
     );
   }
   
@@ -379,32 +543,39 @@ function main() {
   const indexPath = join(distDir, 'index.html');
   
   if (!existsSync(indexPath)) {
-    console.error('❌ dist/index.html not found! Run `vite build` first.');
+    console.error('\u274C dist/index.html not found! Run `vite build` first.');
     process.exit(1);
   }
   
   const baseHtml = readFileSync(indexPath, 'utf-8');
   let count = 0;
   
-  console.log('🔍 Pre-rendering SEO meta tags for all routes...\n');
+  console.log('\uD83D\uDD0D Pre-rendering SEO meta tags for all routes...\n');
   
   for (const route of routes) {
+    // Generate route-specific HTML from original base template
+    const html = injectSEO(baseHtml, route);
+    
+    if (route.path === '/') {
+      // Homepage — update dist/index.html in place
+      writeFileSync(indexPath, html, 'utf-8');
+      count++;
+      console.log(`  \u2705 / (homepage index.html updated) \u2192 canonical: ${baseUrl}/`);
+      continue;
+    }
+    
     const routeDir = join(distDir, route.path);
     const routeHtml = join(routeDir, 'index.html');
     
-    // Create directory
     mkdirSync(routeDir, { recursive: true });
-    
-    // Generate route-specific HTML
-    const html = injectSEO(baseHtml, route);
     writeFileSync(routeHtml, html, 'utf-8');
     
     count++;
-    console.log(`  ✅ ${route.path}/index.html → canonical: ${baseUrl}${route.path}`);
+    console.log(`  \u2705 ${route.path}/index.html \u2192 canonical: ${baseUrl}${route.path}`);
   }
   
-  console.log(`\n🎉 Pre-rendered ${count} routes with SEO meta tags!`);
-  console.log('   Google will now see correct canonical, title, and description WITHOUT JavaScript.\n');
+  console.log(`\n\uD83C\uDF89 Pre-rendered ${count} routes with SEO meta tags!`);
+  console.log('   Google will now see correct canonical, title, description & schemas WITHOUT JavaScript.\n');
 }
 
 main();
