@@ -1,7 +1,5 @@
 import { Calendar, User, ArrowRight, BookOpen } from 'lucide-react';
 import { motion } from 'motion/react';
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
 
 interface BlogPost {
   id: string;
@@ -11,7 +9,6 @@ interface BlogPost {
   date: string;
   category: string;
   image: string;
-  slug: string;
 }
 
 export default function BlogSection() {
@@ -21,70 +18,32 @@ export default function BlogSection() {
       title: 'Top 10 Tourist Places to Visit in Ranchi',
       excerpt: 'Discover the most beautiful tourist destinations in Ranchi. From Hundru Falls to Rock Garden, explore the best spots with our reliable cab service.',
       author: 'Ranchi Cab Service',
-      date: '2026-01-15',
+      date: '2025-11-15',
       category: 'Travel Guide',
-      image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800',
-      slug: 'top-10-tourist-places-ranchi'
+      image: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=600&q=75',
     },
     {
       id: '2',
       title: 'How to Book a Taxi in Ranchi: Complete Guide',
       excerpt: 'Learn the easiest ways to book a reliable cab in Ranchi. Step-by-step guide for online booking, phone booking, and WhatsApp booking.',
       author: 'Ranchi Cab Service',
-      date: '2026-01-12',
+      date: '2025-11-12',
       category: 'Booking Tips',
-      image: 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800',
-      slug: 'how-to-book-taxi-ranchi'
+      image: 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=600&q=75',
     },
     {
       id: '3',
       title: 'Ranchi to Kolkata Road Trip: Best Route Guide',
       excerpt: 'Planning a road trip from Ranchi to Kolkata? Discover the best routes, pit stops, and travel tips for a comfortable journey.',
       author: 'Ranchi Cab Service',
-      date: '2026-01-10',
+      date: '2025-11-10',
       category: 'Road Trips',
-      image: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800',
-      slug: 'ranchi-to-kolkata-road-trip'
+      image: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=75',
     }
   ];
 
-  // Blog Schema
-  const blogSchema = {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "name": "Ranchi Cab Service Blog",
-    "description": "Travel tips, booking guides, and destination insights for Ranchi and surrounding areas",
-    "url": "https://ranchicabservice.com/blog",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Ranchi Cab Service",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://ranchicabservice.com/logo.png"
-      }
-    },
-    "blogPost": blogPosts.map(post => ({
-      "@type": "BlogPosting",
-      "headline": post.title,
-      "description": post.excerpt,
-      "author": {
-        "@type": "Organization",
-        "name": post.author
-      },
-      "datePublished": post.date,
-      "image": post.image,
-      "articleSection": post.category
-    }))
-  };
-
   return (
     <>
-      <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify(blogSchema)}
-        </script>
-      </Helmet>
-      
       <section className="py-16 bg-gradient-to-b from-white via-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
@@ -123,6 +82,9 @@ export default function BlogSection() {
                     src={post.image}
                     alt={post.title}
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                    loading="lazy"
+                    width="400"
+                    height="192"
                   />
                   <div className="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
                     {post.category}
@@ -160,13 +122,15 @@ export default function BlogSection() {
                   </p>
 
                   {/* Read More */}
-                  <motion.button
-                    whileHover={{ x: 5 }}
+                  <a
+                    href={`https://wa.me/917903629240?text=${encodeURIComponent(`Hi, I'd like to know more about: ${post.title}`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition-colors"
                   >
                     Read More
                     <ArrowRight className="w-4 h-4" />
-                  </motion.button>
+                  </a>
                 </div>
               </motion.article>
             ))}
@@ -179,14 +143,15 @@ export default function BlogSection() {
             viewport={{ once: true }}
             className="text-center"
           >
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+            <a
+              href="https://wa.me/917903629240?text=Hi%2C%20I%E2%80%99d%20like%20to%20know%20more%20about%20your%20travel%20guides%20and%20tips"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-xl font-semibold shadow-lg transition-all inline-flex items-center gap-2"
             >
-              View All Articles
+              Get Travel Tips on WhatsApp
               <ArrowRight className="w-5 h-5" />
-            </motion.button>
+            </a>
           </motion.div>
         </div>
       </section>

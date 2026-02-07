@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Facebook, Twitter, Instagram } from 'lucide-react';
 import { motion } from 'motion/react';
-import logo from '@/assets/images/logos/ranchicabserviceslogo.png';
+import logo from '@/assets/images/logos/ranchicabserviceslogo.webp';
 
 export default function Footer() {
   return (
@@ -18,6 +18,9 @@ export default function Footer() {
               src={logo} 
               alt="Ranchi Cab Service" 
               className="h-16 w-auto object-contain mb-4 bg-white p-2 rounded-lg"
+              width="64"
+              height="64"
+              loading="lazy"
             />
             <h3 className="text-xl font-bold mb-4">Ranchi Cab Service</h3>
             <p className="text-gray-400 mb-4">

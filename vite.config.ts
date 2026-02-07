@@ -21,6 +21,8 @@ export default defineConfig({
         manualChunks: {
           vendor: ['react', 'react-dom', 'react-router-dom'],
           ui: ['react-helmet-async', 'lucide-react'],
+          motion: ['motion'],
+          slider: ['react-slick', 'slick-carousel'],
         },
       },
     },

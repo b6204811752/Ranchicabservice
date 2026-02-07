@@ -3,12 +3,12 @@ import { Car, Users, Wind } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import heroImg from '@/assets/images/vehicles/hero-bg1.webp';
-import ertigaImg from '@/assets/images/vehicles/ertiga.jpg';
-import auraImg from '@/assets/images/vehicles/aura.jpg';
-import dezireImg from '@/assets/images/vehicles/dezire.jpg';
-import cristaImg from '@/assets/images/vehicles/crista.jpeg';
-import audiImg from '@/assets/images/vehicles/audi.jpg';
-import bmwImg from '@/assets/images/vehicles/bmw.jpg';
+import ertigaImg from '@/assets/images/vehicles/ertiga.webp';
+import auraImg from '@/assets/images/vehicles/aura.webp';
+import dezireImg from '@/assets/images/vehicles/dezire.webp';
+import cristaImg from '@/assets/images/vehicles/crista.webp';
+import audiImg from '@/assets/images/vehicles/audi.webp';
+import bmwImg from '@/assets/images/vehicles/bmw.webp';
 
 const fleetSchema = {
   "@context": "https://schema.org",

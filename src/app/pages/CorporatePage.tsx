@@ -2,7 +2,7 @@ import SEO from '../components/common/SEO';
 import { Briefcase, Users, Clock, Shield } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import heroImg from '@/assets/images/vehicles/luxury-car.jpg';
+import heroImg from '@/assets/images/vehicles/luxury-car.webp';
 
 export default function CorporatePage() {
   const services = [

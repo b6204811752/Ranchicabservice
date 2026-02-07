@@ -1,9 +1,9 @@
 import SEO from '../components/common/SEO';
 import { Car, MapPin, Plane, Briefcase, Clock, Users, Shield, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import heroImg from '@/assets/images/vehicles/hero-bg.jpg';
+import heroImg from '@/assets/images/vehicles/hero-bg.webp';
 import airportImg from '@/assets/images/vehicles/airport.avif';
-import corporateImg from '@/assets/images/vehicles/crista.jpeg';
+import corporateImg from '@/assets/images/vehicles/crista.webp';
 
 export default function ServicesPage() {
   const services = [

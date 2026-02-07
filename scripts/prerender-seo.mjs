@@ -41,8 +41,8 @@ const routes = [
         "telephone": "+917903629240",
         "email": "rohittravels10@gmail.com",
         "priceRange": "\u20B9\u20B9",
-        "image": "https://www.ranchicabservice.com/logo.png",
-        "logo": "https://www.ranchicabservice.com/logo.png",
+        "image": "https://www.ranchicabservice.com/logo-512x512.png",
+        "logo": "https://www.ranchicabservice.com/logo-512x512.png",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Ranchi",

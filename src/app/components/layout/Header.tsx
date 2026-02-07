@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Phone, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import logo from '@/assets/images/logos/ranchicabserviceslogo.png';
+import logo from '@/assets/images/logos/ranchicabserviceslogo.webp';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

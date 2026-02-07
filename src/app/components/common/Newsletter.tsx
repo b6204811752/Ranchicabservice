@@ -20,12 +20,27 @@ export default function Newsletter() {
     }
 
     try {
-      // Here you would typically send to your backend or email service
-      // For now, we'll simulate success
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Send to Google Forms for collection
+      const formId = '1FAIpQLSeKQs7fzcpvRyNkHvxxxehYWkwXHk_gX9XDx9XEx2ptaw609g';
+      const formUrl = `https://docs.google.com/forms/d/e/${formId}/formResponse`;
+      const formBody = new URLSearchParams({
+        'entry.533887689': 'Newsletter Subscriber',
+        'entry.354045119': email,
+        'entry.1860281689': 'Newsletter Subscription',
+        'entry.1418006924': '-',
+        'entry.993924594': new Date().toISOString().split('T')[0],
+        'entry.594137324': '-',
+      });
+
+      await fetch(formUrl, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: formBody.toString(),
+      });
       
       setStatus('success');
-      setMessage('Thank you for subscribing! Check your email for exclusive offers.');
+      setMessage('Thank you for subscribing! We will send you exclusive offers.');
       setEmail('');
       
       setTimeout(() => {

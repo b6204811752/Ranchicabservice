@@ -1,23 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
+import { lazy, Suspense } from 'react';
 import HomePage from '@/app/pages/HomePage';
-import AboutPage from '@/app/pages/AboutPage';
-import ServicesPage from '@/app/pages/ServicesPage';
-import OutstationPage from '@/app/pages/OutstationPage';
-import LocalTaxiPage from '@/app/pages/LocalTaxiPage';
-import AirportPage from '@/app/pages/AirportPage';
-import CorporatePage from '@/app/pages/CorporatePage';
-import FleetPage from '@/app/pages/FleetPage';
-import CitiesPage from '@/app/pages/CitiesPage';
-import ContactPage from '@/app/pages/ContactPage';
-import PrivacyPage from '@/app/pages/PrivacyPage';
-import TermsPage from '@/app/pages/TermsPage';
-import NotFoundPage from '@/app/pages/NotFoundPage';
-import RanchiToPatnaPage from '@/app/pages/routes/RanchiToPatnaPage';
-import RanchiToKolkataPage from '@/app/pages/routes/RanchiToKolkataPage';
-import RanchiToJamshedpurPage from '@/app/pages/routes/RanchiToJamshedpurPage';
-import RanchiToBokaroPage from '@/app/pages/routes/RanchiToBokaroPage';
-import RanchiToDhanbadPage from '@/app/pages/routes/RanchiToDhanbadPage';
 import Header from '@/app/components/layout/Header';
 import Footer from '@/app/components/layout/Footer';
 import FloatingButtons from '@/app/components/common/FloatingButtons';
@@ -26,6 +10,25 @@ import ScrollToTopOnNavigation from '@/app/components/common/ScrollToTopOnNaviga
 import SEO from '@/app/components/common/SEO';
 import StickyBookingBar from '@/app/components/common/StickyBookingBar';
 import Breadcrumbs from '@/app/components/common/Breadcrumbs';
+
+// Lazy-loaded pages for code splitting — reduces initial JS bundle
+const AboutPage = lazy(() => import('@/app/pages/AboutPage'));
+const ServicesPage = lazy(() => import('@/app/pages/ServicesPage'));
+const OutstationPage = lazy(() => import('@/app/pages/OutstationPage'));
+const LocalTaxiPage = lazy(() => import('@/app/pages/LocalTaxiPage'));
+const AirportPage = lazy(() => import('@/app/pages/AirportPage'));
+const CorporatePage = lazy(() => import('@/app/pages/CorporatePage'));
+const FleetPage = lazy(() => import('@/app/pages/FleetPage'));
+const CitiesPage = lazy(() => import('@/app/pages/CitiesPage'));
+const ContactPage = lazy(() => import('@/app/pages/ContactPage'));
+const PrivacyPage = lazy(() => import('@/app/pages/PrivacyPage'));
+const TermsPage = lazy(() => import('@/app/pages/TermsPage'));
+const NotFoundPage = lazy(() => import('@/app/pages/NotFoundPage'));
+const RanchiToPatnaPage = lazy(() => import('@/app/pages/routes/RanchiToPatnaPage'));
+const RanchiToKolkataPage = lazy(() => import('@/app/pages/routes/RanchiToKolkataPage'));
+const RanchiToJamshedpurPage = lazy(() => import('@/app/pages/routes/RanchiToJamshedpurPage'));
+const RanchiToBokaroPage = lazy(() => import('@/app/pages/routes/RanchiToBokaroPage'));
+const RanchiToDhanbadPage = lazy(() => import('@/app/pages/routes/RanchiToDhanbadPage'));
 
 export default function App() {
   return (
@@ -37,6 +40,7 @@ export default function App() {
           <Header />
           <Breadcrumbs />
           <main className="flex-1" id="main-content">
+            <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div></div>}>
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/about" element={<AboutPage />} />
@@ -61,6 +65,7 @@ export default function App() {
               {/* 404 Page */}
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
+            </Suspense>
           </main>
           <Footer />
           <FloatingButtons />

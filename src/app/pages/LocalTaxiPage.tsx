@@ -2,7 +2,7 @@ import SEO from '../components/common/SEO';
 import { Clock, MapPin, DollarSign, Shield } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import heroImg from '@/assets/images/vehicles/hero-bg.jpg';
+import heroImg from '@/assets/images/vehicles/hero-bg.webp';
 
 export default function LocalTaxiPage() {
   const packages = [

@@ -18,13 +18,13 @@ import ServiceAreas from '@/app/components/common/ServiceAreas';
 import BlogSection from '@/app/components/common/BlogSection';
 import heroImg1 from '@/assets/images/vehicles/hero-bg1.webp';
 import heroImg2 from '@/assets/images/vehicles/hero-bg2.webp';
-import heroImg3 from '@/assets/images/vehicles/hero-bg.jpg';
-import ertigaImg from '@/assets/images/vehicles/ertiga.jpg';
-import auraImg from '@/assets/images/vehicles/aura.jpg';
-import dezireImg from '@/assets/images/vehicles/dezire.jpg';
-import cristaImg from '@/assets/images/vehicles/crista.jpeg';
-import audiImg from '@/assets/images/vehicles/audi.jpg';
-import bmwImg from '@/assets/images/vehicles/bmw.jpg';
+import heroImg3 from '@/assets/images/vehicles/hero-bg.webp';
+import ertigaImg from '@/assets/images/vehicles/ertiga.webp';
+import auraImg from '@/assets/images/vehicles/aura.webp';
+import dezireImg from '@/assets/images/vehicles/dezire.webp';
+import cristaImg from '@/assets/images/vehicles/crista.webp';
+import audiImg from '@/assets/images/vehicles/audi.webp';
+import bmwImg from '@/assets/images/vehicles/bmw.webp';
 
 export default function HomePage() {
   const [formData, setFormData] = useState({
@@ -244,44 +244,7 @@ export default function HomePage() {
           name="description"
           content="⭐ Book Car Rental in Ranchi ✓ Chauffeur Driven Cabs 24x7 ✓ One Way & Round Trip ✓ Airport Taxi ✓ Local Hire ✓ Sedan ₹10/km ✓ SUV ₹14/km ✓ Innova Crysta ✓ Govt Verified Drivers ✓ 2000+ Routes. Call: 7903629240"
         />
-        <meta
-          name="keywords"
-          content="car rental ranchi, car rental in ranchi, taxi service ranchi, taxi service in ranchi, cab service in ranchi, cab booking ranchi, ranchi taxi, ranchi cabs, ranchi cab, near me taxi service, near me cab service, 7 seater taxi service, chauffeur driven car rental ranchi, ranchi airport taxi, birsa munda airport taxi, outstation taxi ranchi, one way cab ranchi, one way taxi ranchi, one way cab, one way taxi, one way cab service, one way taxi service, round trip taxi ranchi, local taxi ranchi, ranchi local cab service, ranchi local taxi service, hourly car rental ranchi, ranchi to patna cab, ranchi to kolkata taxi, ranchi to kolkata cab, ranchi to kolkata cab service, ranchi to kolkata taxi service, ranchi to jamshedpur cab, ranchi to bokaro cab, ranchi to bokaro taxi service, ranchi to bokaro cab service, ranchi to dhanbad taxi, ranchi to dhanbad cab service, ranchi to dhanbad taxi service, ranchi to gaya cab, ranchi to gaya taxi service, ranchi to gaya cab service, ranchi to tata cab service, ranchi to tata taxi service, ranchi to netarhat taxi service, ranchi to hazaribagh cab service, ranchi to hazaribagh taxi service, ranchi to koderma cab service, ranchi to koderma taxi service, ranchi to varanasi cab, ranchi to varanasi taxi, ranchi to varanasi cab service, ranchi to varanasi taxi service, ranchi to ramgarh cab service, ranchi to ramgarh taxi service, cab service near me ranchi, best taxi service ranchi, sasta cab service, sasta cab sasta taxi, affordable cab ranchi, 24/7 taxi ranchi, tempo traveller ranchi, innova crysta ranchi, dzire taxi ranchi, ertiga cab ranchi, ranchi cab online booking, corporate taxi ranchi, ranchi car hire, taxi fare ranchi, car rental rates ranchi, ranchi travels, ranchi taxi service near railway station, ranchi taxi number, ranchi cab contact number"
-        />
         <link rel="canonical" href="https://www.ranchicabservice.com/" />
-        
-        {/* Geo Targeting */}
-        <meta name="geo.region" content="IN-JH" />
-        <meta name="geo.placename" content="Ranchi" />
-        <meta name="geo.position" content="23.3441;85.3096" />
-        <meta name="ICBM" content="23.3441, 85.3096" />
-        
-        {/* Additional Meta Tags */}
-        <meta name="author" content="Ranchi Cab Service" />
-        <meta name="revisit-after" content="7 days" />
-        <meta name="language" content="English" />
-        <meta name="coverage" content="Worldwide" />
-        <meta name="distribution" content="Global" />
-        <meta name="rating" content="General" />
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-        
-        {/* Enhanced Open Graph */}
-        <meta property="og:title" content="Ranchi Cab Service | Book Best Taxi in Ranchi 24/7" />
-        <meta property="og:description" content="⭐ Ranchi's #1 Cab Service - Safe, Reliable & Affordable. Book Local Taxi, Outstation Cabs & Airport Transfer. Call +91 7903629240" />
-        <meta property="og:url" content="https://www.ranchicabservice.com/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.ranchicabservice.com/logo.png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:site_name" content="Ranchi Cab Service" />
-        <meta property="og:locale" content="en_IN" />
-        
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Ranchi Cab Service | Best Taxi in Ranchi 24/7" />
-        <meta name="twitter:description" content="Book Safe & Affordable Taxi in Ranchi. Local, Outstation, Airport & Corporate Cabs Available 24/7" />
-        <meta name="twitter:image" content="https://www.ranchicabservice.com/logo.png" />
-        <meta name="twitter:site" content="@ranchicabservice" />
       </Helmet>
 
       {/* Hero Section with Image Slider */}
@@ -633,6 +596,8 @@ export default function HomePage() {
                     src={vehicle.image}
                     alt={`${vehicle.name} - Car Rental in Ranchi - ${vehicle.seats} Seater AC Cab`}
                     loading="lazy"
+                    width="600"
+                    height="400"
                     className="w-full h-48 sm:h-56 object-cover"
                     whileHover={{ scale: 1.15 }}
                     transition={{ duration: 0.6 }}
@@ -1140,28 +1105,7 @@ export default function HomePage() {
             </div>
           </motion.div>
 
-          {/* Keywords Box */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.9 }}
-            className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-3xl shadow-2xl p-8 border-4 border-white/20 relative overflow-hidden"
-          >
-            <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full filter blur-3xl"></div>
-            <div className="relative z-10">
-              <h4 className="text-2xl font-bold text-white mb-4 flex items-center gap-2">
-                <span className="text-3xl">🎯</span> Keywords for Quick Search
-              </h4>
-              <p className="text-blue-50 text-sm leading-relaxed">
-                car rental ranchi, taxi service ranchi, cab booking ranchi, ranchi taxi, ranchi cab, chauffeur driven car rental, 
-                ranchi airport taxi, birsa munda airport cab, outstation taxi ranchi, one way cab ranchi, round trip taxi ranchi, 
-                local taxi ranchi, hourly car rental ranchi, tempo traveller ranchi, innova crysta ranchi, dzire taxi ranchi, 
-                ertiga cab ranchi, ranchi cab online booking, corporate taxi ranchi, ranchi car hire, taxi fare ranchi, 
-                car rental rates ranchi, ranchi travels, ranchi taxi service near railway station, ranchi taxi number
-              </p>
-            </div>
-          </motion.div>
+
         </div>
       </section>
 
