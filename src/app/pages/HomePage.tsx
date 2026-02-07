@@ -98,10 +98,11 @@ export default function HomePage() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 5000,
     fade: true,
     cssEase: 'cubic-bezier(0.4, 0, 0.2, 1)',
     pauseOnHover: true,
+    lazyLoad: 'ondemand' as const,
   };
 
   const vehicles = [

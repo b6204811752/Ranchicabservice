@@ -10,6 +10,22 @@ import cristaImg from '@/assets/images/vehicles/crista.jpeg';
 import audiImg from '@/assets/images/vehicles/audi.jpg';
 import bmwImg from '@/assets/images/vehicles/bmw.jpg';
 
+const fleetSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Ranchi Cab Service Fleet",
+  "description": "Our fleet of well-maintained vehicles for taxi service in Ranchi",
+  "numberOfItems": 6,
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Maruti Ertiga - 6+1 Seater SUV" },
+    { "@type": "ListItem", "position": 2, "name": "Hyundai Aura - 4+1 Seater Sedan" },
+    { "@type": "ListItem", "position": 3, "name": "Maruti Dzire - 4+1 Seater Sedan" },
+    { "@type": "ListItem", "position": 4, "name": "Toyota Innova Crysta - 7+1 Seater" },
+    { "@type": "ListItem", "position": 5, "name": "Audi - 4+1 Seater Luxury" },
+    { "@type": "ListItem", "position": 6, "name": "BMW - 4+1 Seater Luxury" }
+  ]
+};
+
 export default function FleetPage() {
   const vehicles = [
     {
@@ -82,6 +98,11 @@ export default function FleetPage() {
           name="description"
           content="Explore our fleet of well-maintained vehicles. From sedans to SUVs and luxury cars. Maruti Dzire, Ertiga, Toyota Innova, Audi, BMW available. Call +91 7903629240"
         />
+        <meta name="keywords" content="ranchi cab fleet, car rental ranchi, dzire taxi ranchi, ertiga cab ranchi, innova crysta ranchi, luxury car rental ranchi" />
+        <link rel="canonical" href="https://www.ranchicabservice.com/fleet" />
+        <script type="application/ld+json">
+          {JSON.stringify(fleetSchema)}
+        </script>
       </Helmet>
 
       <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 overflow-hidden">

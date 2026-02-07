@@ -14,13 +14,15 @@ export default function SEO({
   title, 
   description, 
   keywords, 
-  image = 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1200',
+  image = 'https://www.ranchicabservice.com/logo-1200x630.png',
   type = 'website',
   schema
 }: SEOProps = {}) {
   const location = useLocation();
   const baseUrl = 'https://www.ranchicabservice.com';
-  const canonicalUrl = `${baseUrl}${location.pathname}`;
+  // Normalize canonical: strip trailing slash except for homepage
+  const pathname = location.pathname === '/' ? '/' : location.pathname.replace(/\/+$/, '');
+  const canonicalUrl = pathname === '/' ? `${baseUrl}/` : `${baseUrl}${pathname}`;
   
   const defaultTitle = 'Ranchi Cab Service - Best Taxi Service in Ranchi | Book Now 24/7';
   const defaultDescription = 'Book reliable, safe & affordable taxi services in Ranchi. Local taxi, outstation cabs, airport transfers & corporate taxi. Available 24/7. Call +91 7903629240';

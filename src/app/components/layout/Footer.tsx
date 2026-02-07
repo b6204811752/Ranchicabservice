@@ -118,7 +118,8 @@ export default function Footer() {
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
-            title="Ranchi Location"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Ranchi Cab Service location on Google Maps"
           />
         </div>
 

@@ -13,7 +13,7 @@ export default function Breadcrumbs() {
       .join(' ');
   };
 
-  const baseUrl = 'https://ranchicabservice.vercel.app';
+  const baseUrl = 'https://www.ranchicabservice.com';
   
   // Generate breadcrumb items for schema
   const breadcrumbItems = [

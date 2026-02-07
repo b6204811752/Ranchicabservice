@@ -1,6 +1,30 @@
 {
+  "cleanUrls": true,
+  "trailingSlash": false,
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "redirects": [
+    { "source": "/airport-taxi/", "destination": "/airport-taxi", "statusCode": 301 },
+    { "source": "/fleet/", "destination": "/fleet", "statusCode": 301 },
+    { "source": "/corporate-taxi/", "destination": "/corporate-taxi", "statusCode": 301 },
+    { "source": "/outstation-taxi/", "destination": "/outstation-taxi", "statusCode": 301 },
+    { "source": "/local-taxi-ranchi/", "destination": "/local-taxi-ranchi", "statusCode": 301 },
+    { "source": "/about/", "destination": "/about", "statusCode": 301 },
+    { "source": "/services/", "destination": "/services", "statusCode": 301 },
+    { "source": "/contact/", "destination": "/contact", "statusCode": 301 },
+    { "source": "/cities/", "destination": "/cities", "statusCode": 301 },
+    { "source": "/privacy-policy/", "destination": "/privacy-policy", "statusCode": 301 },
+    { "source": "/terms-conditions/", "destination": "/terms-conditions", "statusCode": 301 },
+    { "source": "/ranchi-to-patna-cab/", "destination": "/ranchi-to-patna-cab", "statusCode": 301 },
+    { "source": "/ranchi-to-kolkata-taxi/", "destination": "/ranchi-to-kolkata-taxi", "statusCode": 301 },
+    { "source": "/ranchi-to-jamshedpur-cab/", "destination": "/ranchi-to-jamshedpur-cab", "statusCode": 301 },
+    { "source": "/ranchi-to-bokaro-taxi/", "destination": "/ranchi-to-bokaro-taxi", "statusCode": 301 },
+    { "source": "/ranchi-to-dhanbad-cab/", "destination": "/ranchi-to-dhanbad-cab", "statusCode": 301 },
+    { "source": "/ranchi-airport-taxi/", "destination": "/ranchi-airport-taxi", "statusCode": 301 },
+    { "source": "/birsa-munda-airport-cab/", "destination": "/birsa-munda-airport-cab", "statusCode": 301 },
+    { "source": "/ranchi-airport-taxi", "destination": "/airport-taxi", "statusCode": 301 },
+    { "source": "/birsa-munda-airport-cab", "destination": "/airport-taxi", "statusCode": 301 }
   ],
   "headers": [
     {
@@ -23,7 +47,10 @@
         { "key": "X-Content-Type-Options", "value": "nosniff" },
         { "key": "X-Frame-Options", "value": "DENY" },
         { "key": "X-XSS-Protection", "value": "1; mode=block" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Strict-Transport-Security", "value": "max-age=31536000; includeSubDomains" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" },
+        { "key": "Content-Security-Policy", "value": "frame-ancestors 'self' https://www.google.com" }
       ]
     }
   ]

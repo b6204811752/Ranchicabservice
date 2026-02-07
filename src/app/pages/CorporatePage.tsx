@@ -29,6 +29,8 @@ export default function CorporatePage() {
           name="description"
           content="Professional corporate taxi service in Ranchi for employee transport, client meetings, and corporate events. Monthly packages available. Call +91 7903629240"
         />
+        <meta name="keywords" content="corporate taxi ranchi, business taxi ranchi, corporate cab service, employee transportation ranchi, corporate travel ranchi" />
+        <link rel="canonical" href="https://www.ranchicabservice.com/corporate-taxi" />
       </Helmet>
 
       <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 overflow-hidden">

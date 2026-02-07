@@ -3,19 +3,19 @@
   <!-- Main Pages -->
   <url>
     <loc>https://www.ranchicabservice.com/</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.ranchicabservice.com/about</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.ranchicabservice.com/services</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
@@ -23,51 +23,75 @@
   <!-- Service Pages -->
   <url>
     <loc>https://www.ranchicabservice.com/local-taxi-ranchi</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://www.ranchicabservice.com/outstation-taxi</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://www.ranchicabservice.com/airport-taxi</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://www.ranchicabservice.com/corporate-taxi</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.ranchicabservice.com/fleet</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.ranchicabservice.com/cities</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.ranchicabservice.com/contact</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
-  <!-- Route Pages -->
+  <!-- Route Pages - Each with unique content -->
   <url>
     <loc>https://www.ranchicabservice.com/ranchi-to-patna-cab</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ranchicabservice.com/ranchi-to-kolkata-taxi</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ranchicabservice.com/ranchi-to-jamshedpur-cab</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ranchicabservice.com/ranchi-to-bokaro-taxi</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.ranchicabservice.com/ranchi-to-dhanbad-cab</loc>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -75,13 +99,13 @@
   <!-- Legal Pages -->
   <url>
     <loc>https://www.ranchicabservice.com/privacy-policy</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.ranchicabservice.com/terms-conditions</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-02-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

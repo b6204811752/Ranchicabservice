@@ -56,6 +56,7 @@ export default function OutstationPage() {
           name="description"
           content="🚗 Book Outstation Cab from Ranchi ✓ Ranchi to Patna ₹4,500 ✓ Ranchi to Kolkata ₹6,000 ✓ AC Cars ✓ One-Way & Round Trip ✓ Experienced Drivers. Call +91 7903629240"
         />
+        <link rel="canonical" href="https://www.ranchicabservice.com/outstation-taxi" />
         <meta
           name="keywords"
           content="outstation taxi ranchi, ranchi to patna cab, ranchi to kolkata taxi, ranchi to jamshedpur cab, ranchi to bokaro taxi, ranchi to dhanbad cab, ranchi to hazaribagh taxi, outstation cab fare ranchi, one way taxi ranchi, round trip cab ranchi, highway taxi ranchi, intercity cab ranchi"

@@ -21,16 +21,36 @@ export default function AirportPage() {
   return (
     <>
       <Helmet>
-        <title>Ranchi Airport Taxi Service | 24/7 Airport Transfer & Pickup</title>
+        <title>Ranchi Airport Taxi Service | 24/7 Airport Transfer & Pickup | Birsa Munda Airport Cab</title>
         <meta
           name="description"
-          content="Book reliable Ranchi airport taxi service. 24/7 airport pickup and drop. Flight tracking, meet & greet service. Call +91 7903629240 for airport transfer."
+          content="Book reliable Ranchi airport taxi service for Birsa Munda Airport. 24/7 airport pickup and drop. Flight tracking, meet & greet service. Call +91 7903629240."
         />
+        <meta name="keywords" content="ranchi airport taxi, birsa munda airport cab, ranchi airport transfer, airport pickup ranchi, airport drop ranchi, ranchi airport cab service" />
+        <link rel="canonical" href="https://www.ranchicabservice.com/airport-taxi" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Ranchi Airport Taxi Service",
+            "description": "24/7 airport pickup and drop service at Birsa Munda Airport, Ranchi. Punctual, reliable, and hassle-free airport transfers.",
+            "provider": {
+              "@type": "LocalBusiness",
+              "name": "Ranchi Cab Service",
+              "telephone": "+917903629240"
+            },
+            "areaServed": {
+              "@type": "City",
+              "name": "Ranchi"
+            },
+            "serviceType": "Airport Taxi Transfer"
+          })}
+        </script>
       </Helmet>
 
       <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={airportImg} alt="Airport Taxi" className="w-full h-full object-cover opacity-30" />
+          <img src={airportImg} alt="Ranchi Airport Taxi Service - Birsa Munda Airport Pickup and Drop" className="w-full h-full object-cover opacity-30" loading="eager" width="1200" height="600" />
           <div className="absolute inset-0 bg-gradient-to-r from-blue-600/80 to-blue-800/80"></div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">

@@ -3,19 +3,27 @@
 
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /assets/*.map$
+
+# Block trailing slash versions (canonical is without trailing slash)
+# Vercel handles 301 redirects for these
 
 # Sitemap
 Sitemap: https://www.ranchicabservice.com/sitemap.xml
 
-# Major Search Engines - Fast Crawling
+# Crawl-delay for polite crawling
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Googlebot-Image
 Allow: /
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 2
 
 User-agent: Slurp
 Allow: /
