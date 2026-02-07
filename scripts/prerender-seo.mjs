@@ -62,13 +62,6 @@ const routes = [
           "opens": "00:00",
           "closes": "23:59"
         },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.8",
-          "reviewCount": "500",
-          "bestRating": "5",
-          "worstRating": "1"
-        },
         "areaServed": [
           { "@type": "City", "name": "Ranchi", "containedIn": { "@type": "State", "name": "Jharkhand" } },
           { "@type": "City", "name": "Patna" },
@@ -111,42 +104,52 @@ const routes = [
           {
             "@type": "Question",
             "name": "How can I book a cab in Ranchi?",
-            "acceptedAnswer": { "@type": "Answer", "text": "You can book a cab by calling +91 7903629240, sending a WhatsApp message, or using our online booking form on www.ranchicabservice.com. We provide instant confirmation and 24/7 booking service for all car rental needs." }
+            "acceptedAnswer": { "@type": "Answer", "text": "You can book a cab by calling +91 7903629240, sending a WhatsApp message, or using our online booking form. We provide instant confirmation and 24/7 booking service." }
           },
           {
             "@type": "Question",
-            "name": "What are your car rental rates in Ranchi?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Our local taxi rates start from \u20B910/km for sedans (Dzire, Aura), \u20B914/km for SUVs (Ertiga), and \u20B916/km for Innova Crysta. Outstation rates are \u20B912/km for sedans and \u20B916/km for SUVs. We offer the lowest average per km rates in Ranchi." }
+            "name": "What are your taxi rates in Ranchi?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Our local taxi rates start from \u20B910/km for sedans and \u20B914/km for SUVs. Outstation rates are \u20B912/km for sedans and \u20B916/km for SUVs. We offer special packages for hourly rentals and airport transfers." }
           },
           {
             "@type": "Question",
-            "name": "Do you provide 24/7 taxi service in Ranchi?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes, Ranchi Cab Service operates 24 hours a day, 7 days a week, 365 days a year including all holidays. Our chauffeur-driven cabs are available for emergency travel, airport transfers, or outstation trips at any time." }
-          },
-          {
-            "@type": "Question",
-            "name": "Which cities do you cover for outstation taxi from Ranchi?",
-            "acceptedAnswer": { "@type": "Answer", "text": "We provide outstation taxi service from Ranchi to 2000+ routes including Patna, Kolkata, Jamshedpur, Bokaro, Dhanbad, Gaya, Hazaribagh, Dumka, Deoghar, Varanasi, and all major cities in Jharkhand, Bihar, West Bengal, and neighboring states." }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you provide airport taxi service in Ranchi?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes, we provide reliable airport taxi service for Birsa Munda Airport Ranchi with 24/7 availability. Our service includes flight tracking, meet & greet at arrivals, and comfortable rides to/from the airport." }
+            "name": "Do you provide outstation cab service from Ranchi?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes, we provide outstation cab service to all major cities including Patna (\u20B94,500), Kolkata (\u20B96,000), Jamshedpur (\u20B92,200), Bokaro, Dhanbad, and more. Both one-way and round trip options are available." }
           },
           {
             "@type": "Question",
             "name": "Are your drivers verified and experienced?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes, all our drivers are government-verified, police-verified, and have extensive driving experience. Safety is our prime concern. Our chauffeurs are professional, courteous, and well-trained to ensure a comfortable journey." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Absolutely! All our drivers are government-verified, police-verified, and have extensive experience. They are professional, courteous, and well-trained in customer service and safe driving." }
           },
           {
             "@type": "Question",
-            "name": "What types of vehicles are available for car rental in Ranchi?",
-            "acceptedAnswer": { "@type": "Answer", "text": "We offer a wide range of vehicles including Maruti Dzire, Hyundai Aura (sedans), Maruti Ertiga (SUV), Toyota Innova Crysta, luxury cars like Audi and BMW. All vehicles are well-maintained, clean, and air-conditioned." }
+            "name": "What types of vehicles do you have?",
+            "acceptedAnswer": { "@type": "Answer", "text": "We have a wide range of vehicles including Maruti Dzire, Hyundai Aura, Maruti Ertiga, Toyota Innova Crysta, Audi, and BMW. All vehicles are well-maintained, clean, and air-conditioned." }
           },
           {
             "@type": "Question",
-            "name": "Do you offer one-way taxi service from Ranchi?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes, we offer both one-way and round-trip taxi services from Ranchi. For one-way drops, you only pay for one side without any return charges, making it very affordable for intercity travel." }
+            "name": "Do you provide 24/7 taxi service?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes, we are available 24 hours a day, 7 days a week, including all holidays. You can book a cab anytime for emergency travel, airport transfers, or outstation trips." }
+          },
+          {
+            "@type": "Question",
+            "name": "What is your cancellation policy?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Cancellations made 24 hours before the scheduled trip are free. Cancellations within 24 hours may incur a small charge. Please contact us for specific details." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you provide airport taxi service?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes, we provide reliable airport pickup and drop services for Ranchi airport (Birsa Munda Airport). We offer flight tracking, meet & greet service, and luggage assistance 24/7." }
+          },
+          {
+            "@type": "Question",
+            "name": "What payment methods do you accept?",
+            "acceptedAnswer": { "@type": "Answer", "text": "We accept all major payment methods including cash, UPI, Google Pay, PhonePe, Paytm, credit/debit cards, and bank transfers. You can choose your preferred payment method at the time of booking." }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer corporate taxi services?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes, we provide customized corporate taxi solutions including monthly packages, dedicated vehicles, professional drivers, and customized billing. Contact us for corporate inquiries and special rates." }
           }
         ]
       }

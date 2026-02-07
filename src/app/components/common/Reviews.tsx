@@ -1,6 +1,5 @@
 import { Star, Quote, User } from 'lucide-react';
 import { motion } from 'motion/react';
-import { Helmet } from 'react-helmet-async';
 
 interface Review {
   id: string;
@@ -78,43 +77,8 @@ export default function Reviews({ reviews: customReviews, title = "What Our Cust
   const reviews = customReviews || defaultReviews;
   const avgRating = reviews.reduce((acc, r) => acc + r.rating, 0) / reviews.length;
 
-  // Generate Review Schema
-  const reviewSchema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Ranchi Cab Service",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": avgRating.toFixed(1),
-      "reviewCount": reviews.length.toString(),
-      "bestRating": "5",
-      "worstRating": "1"
-    },
-    "review": reviews.map(review => ({
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": review.name
-      },
-      "datePublished": review.date,
-      "reviewBody": review.text,
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": review.rating.toString(),
-        "bestRating": "5",
-        "worstRating": "1"
-      }
-    }))
-  };
-
   return (
     <>
-      <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify(reviewSchema)}
-        </script>
-      </Helmet>
-      
       <section className="py-16 bg-gradient-to-b from-white via-blue-50 to-purple-50 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-blue-300 to-purple-300 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
         
