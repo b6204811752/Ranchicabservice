@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/common/SEO';
 import { Shield, Users, Award, Heart, Target, TrendingUp } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
@@ -38,20 +38,11 @@ export default function AboutPage() {
 
   return (
     <>
-      <Helmet>
-        <title>About Us - Ranchi Cab Service | Best Taxi Service Provider in Ranchi Since 2010</title>
-        <meta
-          name="description"
-          content="Learn about Ranchi Cab Service - Ranchi's most trusted taxi service provider. 10+ years experience, 500+ happy customers, verified drivers & 24/7 service. Book reliable cabs in Ranchi."
-        />
-        <meta
-          name="keywords"
-          content="about ranchi cab service, ranchi taxi company, best cab service ranchi, trusted taxi ranchi, ranchi travels company, professional cab service ranchi"
-        />
-        <meta property="og:title" content="About Ranchi Cab Service - Trusted Taxi Service Provider" />
-        <meta property="og:description" content="Ranchi's most reliable cab service with 10+ years experience and 500+ happy customers" />
-        <meta property="og:url" content="https://ranchicabservice.com/about" />
-      </Helmet>
+      <SEO
+        title="About Us - Ranchi Cab Service | Best Taxi Service Provider in Ranchi Since 2010"
+        description="Learn about Ranchi Cab Service - Ranchi's most trusted taxi service provider. 10+ years experience, 500+ happy customers, verified drivers & 24/7 service. Book reliable cabs in Ranchi."
+        keywords="about ranchi cab service, ranchi taxi company, best cab service ranchi, trusted taxi ranchi, ranchi travels company, professional cab service ranchi"
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 overflow-hidden">

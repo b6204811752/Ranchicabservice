@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/common/SEO';
 import { Car, Users, Wind } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
@@ -92,18 +92,12 @@ export default function FleetPage() {
 
   return (
     <>
-      <Helmet>
-        <title>Our Fleet - Car Rental Options | Ranchi Cab Service</title>
-        <meta
-          name="description"
-          content="Explore our fleet of well-maintained vehicles. From sedans to SUVs and luxury cars. Maruti Dzire, Ertiga, Toyota Innova, Audi, BMW available. Call +91 7903629240"
-        />
-        <meta name="keywords" content="ranchi cab fleet, car rental ranchi, dzire taxi ranchi, ertiga cab ranchi, innova crysta ranchi, luxury car rental ranchi" />
-        <link rel="canonical" href="https://www.ranchicabservice.com/fleet" />
-        <script type="application/ld+json">
-          {JSON.stringify(fleetSchema)}
-        </script>
-      </Helmet>
+      <SEO
+        title="Our Fleet - Car Rental Options | Ranchi Cab Service"
+        description="Explore our fleet of well-maintained vehicles. From sedans to SUVs and luxury cars. Maruti Dzire, Ertiga, Toyota Innova, Audi, BMW available. Call +91 7903629240"
+        keywords="ranchi cab fleet, car rental ranchi, dzire taxi ranchi, ertiga cab ranchi, innova crysta ranchi, luxury car rental ranchi"
+        schema={fleetSchema}
+      />
 
       <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 overflow-hidden">
         <div className="absolute inset-0">

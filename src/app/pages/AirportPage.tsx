@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/common/SEO';
 import { Plane, Clock, Shield, Star } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
@@ -20,33 +20,27 @@ export default function AirportPage() {
 
   return (
     <>
-      <Helmet>
-        <title>Ranchi Airport Taxi Service | 24/7 Airport Transfer & Pickup | Birsa Munda Airport Cab</title>
-        <meta
-          name="description"
-          content="Book reliable Ranchi airport taxi service for Birsa Munda Airport. 24/7 airport pickup and drop. Flight tracking, meet & greet service. Call +91 7903629240."
-        />
-        <meta name="keywords" content="ranchi airport taxi, birsa munda airport cab, ranchi airport transfer, airport pickup ranchi, airport drop ranchi, ranchi airport cab service" />
-        <link rel="canonical" href="https://www.ranchicabservice.com/airport-taxi" />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "name": "Ranchi Airport Taxi Service",
-            "description": "24/7 airport pickup and drop service at Birsa Munda Airport, Ranchi. Punctual, reliable, and hassle-free airport transfers.",
-            "provider": {
-              "@type": "LocalBusiness",
-              "name": "Ranchi Cab Service",
-              "telephone": "+917903629240"
-            },
-            "areaServed": {
-              "@type": "City",
-              "name": "Ranchi"
-            },
-            "serviceType": "Airport Taxi Transfer"
-          })}
-        </script>
-      </Helmet>
+      <SEO
+        title="Ranchi Airport Taxi Service | 24/7 Airport Transfer & Pickup | Birsa Munda Airport Cab"
+        description="Book reliable Ranchi airport taxi service for Birsa Munda Airport. 24/7 airport pickup and drop. Flight tracking, meet & greet service. Call +91 7903629240."
+        keywords="ranchi airport taxi, birsa munda airport cab, ranchi airport transfer, airport pickup ranchi, airport drop ranchi, ranchi airport cab service"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Ranchi Airport Taxi Service",
+          "description": "24/7 airport pickup and drop service at Birsa Munda Airport, Ranchi. Punctual, reliable, and hassle-free airport transfers.",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Ranchi Cab Service",
+            "telephone": "+917903629240"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Ranchi"
+          },
+          "serviceType": "Airport Taxi Transfer"
+        }}
+      />
 
       <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 overflow-hidden">
         <div className="absolute inset-0">

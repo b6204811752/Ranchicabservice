@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/common/SEO';
 import { Clock, MapPin, DollarSign, Shield } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
@@ -20,35 +20,23 @@ export default function LocalTaxiPage() {
 
   return (
     <>
-      <Helmet>
-        <title>Local Taxi Service in Ranchi | Hourly Cab Rental @ ₹10/km | 4Hr, 8Hr, 12Hr Packages</title>
-        <meta
-          name="description"
-          content="🚖 Book Local Taxi in Ranchi ✓ 4Hr @ ₹499 ✓ 8Hr @ ₹899 ✓ 12Hr @ ₹1299 ✓ AC Cabs ✓ Verified Drivers ✓ City Tours ✓ Shopping Trips. Call +91 7903629240"
-        />
-        <meta
-          name="keywords"
-          content="local taxi ranchi, hourly cab rental ranchi, 4 hour taxi ranchi, 8 hour cab ranchi, full day taxi ranchi, half day cab ranchi, local cab service ranchi, city taxi ranchi, ranchi local cab rate, ac taxi ranchi, cab for shopping ranchi, ranchi sightseeing taxi"
-        />
-        <meta property="og:title" content="Local Taxi Service in Ranchi - Hourly Cab Rental from ₹10/km" />
-        <meta property="og:description" content="Book hourly cabs in Ranchi. 4Hr, 8Hr, 12Hr packages. AC cabs, verified drivers. Best rates guaranteed!" />
-        <meta property="og:url" content="https://ranchicabservice.com/local-taxi-ranchi" />
-        
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Product",
-            "name": "Local Taxi Service Ranchi",
-            "description": "Hourly cab rental service in Ranchi with flexible packages",
-            "offers": {
-              "@type": "AggregateOffer",
-              "lowPrice": "499",
-              "highPrice": "1299",
-              "priceCurrency": "INR"
-            }
-          })}
-        </script>
-      </Helmet>
+      <SEO
+        title="Local Taxi Service in Ranchi | Hourly Cab Rental @ ₹10/km | 4Hr, 8Hr, 12Hr Packages"
+        description="🚖 Book Local Taxi in Ranchi ✓ 4Hr @ ₹499 ✓ 8Hr @ ₹899 ✓ 12Hr @ ₹1299 ✓ AC Cabs ✓ Verified Drivers ✓ City Tours ✓ Shopping Trips. Call +91 7903629240"
+        keywords="local taxi ranchi, hourly cab rental ranchi, 4 hour taxi ranchi, 8 hour cab ranchi, full day taxi ranchi, half day cab ranchi, local cab service ranchi, city taxi ranchi, ranchi local cab rate, ac taxi ranchi, cab for shopping ranchi, ranchi sightseeing taxi"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "Product",
+          "name": "Local Taxi Service Ranchi",
+          "description": "Hourly cab rental service in Ranchi with flexible packages",
+          "offers": {
+            "@type": "AggregateOffer",
+            "lowPrice": "499",
+            "highPrice": "1299",
+            "priceCurrency": "INR"
+          }
+        }}
+      />
 
       <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 overflow-hidden">
         <div className="absolute inset-0">

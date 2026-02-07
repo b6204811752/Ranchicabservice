@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/common/SEO';
 import { MapPin } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
@@ -13,13 +13,11 @@ export default function CitiesPage() {
 
   return (
     <>
-      <Helmet>
-        <title>Cities We Serve - Cab Service in Jharkhand, West Bengal & Bihar</title>
-        <meta
-          name="description"
-          content="Ranchi Cab Service operates in Ranchi, Jamshedpur, Bokaro, Patna, Kolkata, and many more cities across Jharkhand, West Bengal, and Bihar."
-        />
-      </Helmet>
+      <SEO
+        title="Cities We Serve - Cab Service in Jharkhand, West Bengal & Bihar"
+        description="Ranchi Cab Service operates in Ranchi, Jamshedpur, Bokaro, Patna, Kolkata, and many more cities across Jharkhand, West Bengal, and Bihar. Book intercity cabs at best rates."
+        keywords="cab service jharkhand, taxi service bihar, ranchi to patna cab, ranchi to kolkata taxi, ranchi to jamshedpur cab, ranchi to bokaro taxi, ranchi to dhanbad cab, intercity cab service ranchi"
+      />
 
       <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 overflow-hidden">
         <div className="absolute inset-0">

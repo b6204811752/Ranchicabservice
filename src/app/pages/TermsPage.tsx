@@ -1,12 +1,14 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/common/SEO';
 
 export default function TermsPage() {
   return (
     <>
-      <Helmet>
-        <title>Terms and Conditions | Ranchi Cab Service</title>
-        <meta name="description" content="Terms and Conditions for using Ranchi Cab Service. Please read these terms carefully before booking." />
-      </Helmet>
+      <SEO
+        title="Terms and Conditions | Ranchi Cab Service"
+        description="Terms and Conditions for using Ranchi Cab Service. Please read these terms carefully before booking."
+        keywords="ranchi cab service terms, taxi service terms and conditions, booking terms ranchi cab"
+        robots="noindex, nofollow"
+      />
 
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -8,6 +8,7 @@ interface SEOProps {
   image?: string;
   type?: string;
   schema?: object;
+  robots?: string;
 }
 
 export default function SEO({ 
@@ -16,7 +17,8 @@ export default function SEO({
   keywords, 
   image = 'https://www.ranchicabservice.com/logo-1200x630.png',
   type = 'website',
-  schema
+  schema,
+  robots
 }: SEOProps = {}) {
   const location = useLocation();
   const baseUrl = 'https://www.ranchicabservice.com';
@@ -38,7 +40,7 @@ export default function SEO({
       <title>{pageTitle}</title>
       <meta name="description" content={pageDescription} />
       <meta name="keywords" content={pageKeywords} />
-      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+      <meta name="robots" content={robots || "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"} />
       <link rel="canonical" href={canonicalUrl} />
       
       {/* Open Graph Meta Tags */}

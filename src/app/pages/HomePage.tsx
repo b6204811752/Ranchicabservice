@@ -394,19 +394,19 @@ export default function HomePage() {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://ranchicabservice.com/"
+                "item": "https://www.ranchicabservice.com/"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Services",
-                "item": "https://ranchicabservice.com/services"
+                "item": "https://www.ranchicabservice.com/services"
               },
               {
                 "@type": "ListItem",
                 "position": 3,
                 "name": "Fleet",
-                "item": "https://ranchicabservice.com/fleet"
+                "item": "https://www.ranchicabservice.com/fleet"
               }
             ]
           })}
@@ -418,8 +418,8 @@ export default function HomePage() {
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "Ranchi Cab Service",
-            "url": "https://ranchicabservice.vercel.app",
-            "logo": "https://ranchicabservice.com/logo.png",
+            "url": "https://www.ranchicabservice.com",
+            "logo": "https://www.ranchicabservice.com/logo.png",
             "contactPoint": [
               {
                 "@type": "ContactPoint",
@@ -447,7 +447,7 @@ export default function HomePage() {
                 "name": "How can I book a cab in Ranchi?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "You can book a cab by calling +91 7903629240, sending a WhatsApp message, or using our online booking form on ranchicabservice.vercel.app. We provide instant confirmation and 24/7 booking service for all car rental needs."
+                  "text": "You can book a cab by calling +91 7903629240, sending a WhatsApp message, or using our online booking form on www.ranchicabservice.com. We provide instant confirmation and 24/7 booking service for all car rental needs."
                 }
               },
               {

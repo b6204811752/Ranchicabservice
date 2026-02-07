@@ -1,14 +1,14 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/common/SEO';
 import { Link } from 'react-router-dom';
 import { Home, Phone } from 'lucide-react';
 
 export default function NotFoundPage() {
   return (
     <>
-      <Helmet>
-        <title>404 - Page Not Found | Ranchi Cab Service</title>
-        <meta name="robots" content="noindex, nofollow" />
-      </Helmet>
+      <SEO
+        title="404 - Page Not Found | Ranchi Cab Service"
+        robots="noindex, nofollow"
+      />
 
       <section className="min-h-[80vh] flex items-center justify-center bg-gradient-to-r from-blue-50 to-gray-50">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

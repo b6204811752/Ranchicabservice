@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/common/SEO';
 import { Car, MapPin, Plane, Briefcase, Clock, Users, Shield, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import heroImg from '@/assets/images/vehicles/hero-bg.jpg';
@@ -86,43 +86,31 @@ export default function ServicesPage() {
 
   return (
     <>
-      <Helmet>
-        <title>Our Services - Local, Outstation, Airport & Corporate Taxi in Ranchi | Best Rates 2026</title>
-        <meta
-          name="description"
-          content="✓ Local Taxi Ranchi ₹10/km ✓ Outstation Cabs to Patna, Kolkata ✓ 24/7 Airport Transfer ✓ Corporate Taxi Service. Book Now: +91 7903629240. Best rates guaranteed!"
-        />
-        <meta
-          name="keywords"
-          content="taxi services ranchi, local cab ranchi, outstation taxi ranchi, airport transfer ranchi, corporate taxi service, ranchi cab rates, taxi fare ranchi, hourly cab rental ranchi, cab service ranchi contact number"
-        />
-        <meta property="og:title" content="Taxi Services in Ranchi - Local, Outstation, Airport & Corporate" />
-        <meta property="og:description" content="Complete taxi solutions in Ranchi. Best rates, verified drivers, 24/7 service. Book now!" />
-        <meta property="og:url" content="https://ranchicabservice.com/services" />
-        
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "serviceType": "Taxi Service",
-            "provider": {
-              "@type": "LocalBusiness",
-              "name": "Ranchi Cab Service"
-            },
-            "areaServed": "Ranchi, Jharkhand",
-            "hasOfferCatalog": {
-              "@type": "OfferCatalog",
-              "name": "Taxi Services",
-              "itemListElement": [
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Local Taxi"}},
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Outstation Cab"}},
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Airport Transfer"}},
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Corporate Taxi"}}
-              ]
-            }
-          })}
-        </script>
-      </Helmet>
+      <SEO
+        title="Our Services - Local, Outstation, Airport & Corporate Taxi in Ranchi | Best Rates 2026"
+        description="✓ Local Taxi Ranchi ₹10/km ✓ Outstation Cabs to Patna, Kolkata ✓ 24/7 Airport Transfer ✓ Corporate Taxi Service. Book Now: +91 7903629240. Best rates guaranteed!"
+        keywords="taxi services ranchi, local cab ranchi, outstation taxi ranchi, airport transfer ranchi, corporate taxi service, ranchi cab rates, taxi fare ranchi, hourly cab rental ranchi, cab service ranchi contact number"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Taxi Service",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Ranchi Cab Service"
+          },
+          "areaServed": "Ranchi, Jharkhand",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Taxi Services",
+            "itemListElement": [
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Local Taxi"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Outstation Cab"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Airport Transfer"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Corporate Taxi"}}
+            ]
+          }
+        }}
+      />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 overflow-hidden">
