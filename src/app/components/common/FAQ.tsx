@@ -3,10 +3,15 @@ import { ChevronDown, ChevronUp, HelpCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Helmet } from 'react-helmet-async';
 
-export default function FAQ() {
+interface FAQProps {
+  customFaqs?: { question: string; answer: string }[];
+  title?: string;
+}
+
+export default function FAQ({ customFaqs, title }: FAQProps = {}) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-  const faqs = [
+  const defaultFaqs = [
     {
       question: "How can I book a cab in Ranchi?",
       answer: "You can book a cab by calling +91 7903629240, sending a WhatsApp message, or using our online booking form. We provide instant confirmation and 24/7 booking service."
@@ -49,6 +54,8 @@ export default function FAQ() {
     }
   ];
 
+  const faqs = customFaqs || defaultFaqs;
+
   // Generate FAQPage schema for rich snippets in Google
   const faqSchema = {
     "@context": "https://schema.org",
@@ -62,6 +69,8 @@ export default function FAQ() {
       }
     }))
   };
+
+  const displayTitle = title || "Frequently Asked Questions";
 
   return (
     <section className="py-16 bg-gradient-to-b from-white via-blue-50 to-purple-50 relative overflow-hidden">
@@ -82,7 +91,7 @@ export default function FAQ() {
           <div className="inline-flex items-center gap-2 sm:gap-3 bg-white px-4 sm:px-6 py-2 sm:py-3 rounded-full shadow-lg mb-3 sm:mb-4">
             <HelpCircle className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" />
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-              Frequently Asked Questions
+              {displayTitle}
             </h2>
           </div>
           <p className="text-base sm:text-xl text-gray-600 mt-3 sm:mt-4">
