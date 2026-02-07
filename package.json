@@ -4,10 +4,9 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "build": "vite build",
+    "build": "vite build && node scripts/prerender-seo.mjs",
     "dev": "vite",
-    "preview": "vite preview",
-    "postinstall": "node -e \"try{require('child_process').execSync('chmod +x node_modules/.bin/vite')}catch(e){}\""
+    "preview": "vite preview"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
