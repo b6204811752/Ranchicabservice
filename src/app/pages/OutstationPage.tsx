@@ -54,7 +54,7 @@ export default function OutstationPage() {
       <SEO
         title="Outstation Taxi from Ranchi | Ranchi to Patna, Kolkata, Jamshedpur Cab @ Best Price"
         description="🚗 Book Outstation Cab from Ranchi ✓ Ranchi to Patna ₹4,500 ✓ Ranchi to Kolkata ₹6,000 ✓ AC Cars ✓ One-Way & Round Trip ✓ Experienced Drivers. Call +91 7903629240"
-        keywords="outstation taxi ranchi, ranchi to patna cab, ranchi to kolkata taxi, ranchi to jamshedpur cab, ranchi to bokaro taxi, ranchi to dhanbad cab, ranchi to hazaribagh taxi, outstation cab fare ranchi, one way taxi ranchi, round trip cab ranchi, highway taxi ranchi, intercity cab ranchi"
+        keywords="outstation taxi ranchi, ranchi to patna cab, ranchi to kolkata taxi, ranchi to jamshedpur cab, ranchi to bokaro taxi, ranchi to dhanbad cab, ranchi to hazaribagh taxi, outstation cab fare ranchi, one way taxi ranchi, round trip cab ranchi, highway taxi ranchi, intercity cab ranchi, ranchi to deoghar cab, ranchi to gaya taxi, ranchi to varanasi cab, ranchi to giridih taxi, chauffeur driven car ranchi, long distance taxi ranchi, ranchi tour package taxi"
         schema={{
           "@context": "https://schema.org",
           "@type": "TripAction",

@@ -95,7 +95,7 @@ export default function FleetPage() {
       <SEO
         title="Our Fleet - Car Rental Options | Ranchi Cab Service"
         description="Explore our fleet of well-maintained vehicles. From sedans to SUVs and luxury cars. Maruti Dzire, Ertiga, Toyota Innova, Audi, BMW available. Call +91 7903629240"
-        keywords="ranchi cab fleet, car rental ranchi, dzire taxi ranchi, ertiga cab ranchi, innova crysta ranchi, luxury car rental ranchi"
+        keywords="ranchi cab fleet, car rental ranchi, dzire taxi ranchi, ertiga cab ranchi, innova crysta ranchi, luxury car rental ranchi, sedan taxi ranchi, suv cab ranchi, tempo traveller ranchi, 7 seater cab ranchi, 12 seater tempo traveller ranchi, ac cab ranchi, premium taxi ranchi, audi on rent ranchi, fortuner on rent ranchi, wedding car ranchi"
         schema={fleetSchema}
       />
 

@@ -10,6 +10,7 @@ import ScrollToTopOnNavigation from '@/app/components/common/ScrollToTopOnNaviga
 import SEO from '@/app/components/common/SEO';
 import StickyBookingBar from '@/app/components/common/StickyBookingBar';
 import Breadcrumbs from '@/app/components/common/Breadcrumbs';
+import LiveBookingStats from '@/app/components/common/LiveBookingStats';
 
 // Lazy-loaded pages for code splitting — reduces initial JS bundle
 const AboutPage = lazy(() => import('@/app/pages/AboutPage'));
@@ -69,6 +70,7 @@ export default function App() {
           </main>
           <Footer />
           <FloatingButtons />
+          <LiveBookingStats />
           <StickyBookingBar />
           <ScrollToTop />
         </div>

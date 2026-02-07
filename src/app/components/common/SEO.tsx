@@ -27,8 +27,8 @@ export default function SEO({
   const canonicalUrl = pathname === '/' ? `${baseUrl}/` : `${baseUrl}${pathname}`;
   
   const defaultTitle = 'Ranchi Cab Service - Best Taxi Service in Ranchi | Book Now 24/7';
-  const defaultDescription = 'Book reliable, safe & affordable taxi services in Ranchi. Local taxi, outstation cabs, airport transfers & corporate taxi. Available 24/7. Call +91 7903629240';
-  const defaultKeywords = 'ranchi cab service, taxi service in ranchi, ranchi taxi, cab booking ranchi, ranchi airport taxi, outstation taxi ranchi, local taxi ranchi';
+  const defaultDescription = 'Book reliable, safe & affordable taxi services in Ranchi. Local taxi, outstation cabs, Birsa Munda airport transfers & corporate taxi. Available 24/7. Call +91 7903629240';
+  const defaultKeywords = 'ranchi cab service, taxi service in ranchi, ranchi taxi, cab booking ranchi, ranchi airport taxi, outstation taxi ranchi, local taxi ranchi, birsa munda airport taxi, ranchi to patna cab, ranchi to kolkata taxi, ranchi to jamshedpur cab, car rental ranchi, cab near me ranchi, taxi near me, cheap taxi ranchi, best cab service ranchi, 24 hour taxi ranchi, online cab booking ranchi, innova on rent ranchi, ertiga taxi ranchi, one way taxi ranchi, round trip cab ranchi, jharkhand taxi service';
   
   const pageTitle = title || defaultTitle;
   const pageDescription = description || defaultDescription;
@@ -120,6 +120,7 @@ export default function SEO({
                   }
                 ],
                 "sameAs": [
+                  "https://g.page/r/CdfnA1OiyAQkEAE",
                   "https://www.facebook.com/ranchicabservice",
                   "https://www.instagram.com/ranchicabservice",
                   "https://twitter.com/ranchicabs",
@@ -166,10 +167,37 @@ export default function SEO({
                 },
                 "aggregateRating": {
                   "@type": "AggregateRating",
-                  "ratingValue": "4.8",
+                  "ratingValue": "5.0",
                   "reviewCount": "500",
                   "bestRating": "5",
                   "worstRating": "1"
+                },
+                "paymentAccepted": ["Cash", "Credit Card", "Debit Card", "UPI", "Google Pay", "PhonePe", "Paytm"],
+                "currenciesAccepted": "INR",
+                "hasMap": "https://www.google.com/maps/place/Ranchi,+Jharkhand",
+                "slogan": "Your Trusted Travel Partner in Ranchi",
+                "keywords": "ranchi cab service, taxi ranchi, cab booking ranchi, airport taxi ranchi, outstation taxi"
+              },
+              {
+                "@type": "TaxiService",
+                "name": "Ranchi Cab Service - Taxi Booking",
+                "provider": {
+                  "@id": `${baseUrl}/#organization`
+                },
+                "areaServed": {
+                  "@type": "City",
+                  "name": "Ranchi",
+                  "containedInPlace": {
+                    "@type": "State",
+                    "name": "Jharkhand"
+                  }
+                },
+                "serviceType": ["Local Taxi", "Outstation Cab", "Airport Transfer", "Corporate Taxi"],
+                "availableChannel": {
+                  "@type": "ServiceChannel",
+                  "serviceUrl": baseUrl,
+                  "servicePhone": "+917903629240",
+                  "availableLanguage": ["English", "Hindi"]
                 }
               },
               {

@@ -23,7 +23,7 @@ export default function LocalTaxiPage() {
       <SEO
         title="Local Taxi Service in Ranchi | Hourly Cab Rental @ ₹10/km | 4Hr, 8Hr, 12Hr Packages"
         description="🚖 Book Local Taxi in Ranchi ✓ 4Hr @ ₹499 ✓ 8Hr @ ₹899 ✓ 12Hr @ ₹1299 ✓ AC Cabs ✓ Verified Drivers ✓ City Tours ✓ Shopping Trips. Call +91 7903629240"
-        keywords="local taxi ranchi, hourly cab rental ranchi, 4 hour taxi ranchi, 8 hour cab ranchi, full day taxi ranchi, half day cab ranchi, local cab service ranchi, city taxi ranchi, ranchi local cab rate, ac taxi ranchi, cab for shopping ranchi, ranchi sightseeing taxi"
+        keywords="local taxi ranchi, hourly cab rental ranchi, 4 hour taxi ranchi, 8 hour cab ranchi, full day taxi ranchi, half day cab ranchi, local cab service ranchi, city taxi ranchi, ranchi local cab rate, ac taxi ranchi, cab for shopping ranchi, ranchi sightseeing taxi, taxi for wedding ranchi, cab for hospital ranchi, local car hire ranchi, ranchi city tour taxi, cab near me ranchi, taxi near me, book taxi online ranchi"
         schema={{
           "@context": "https://schema.org",
           "@type": "Product",

@@ -23,7 +23,7 @@ export default function ContactPage() {
       <SEO
         title="Contact Us - Ranchi Cab Service | Call +91 7903629240 | Book Taxi 24/7"
         description="📞 Contact Ranchi Cab Service ✓ Call: +91 7903629240 ✓ Email: rohittravels10@gmail.com ✓ WhatsApp Booking ✓ 24/7 Support ✓ Instant Confirmation. Book your taxi now!"
-        keywords="ranchi cab service contact number, taxi booking ranchi phone number, ranchi cab service whatsapp, call taxi ranchi, book cab ranchi contact, ranchi taxi helpline, 24/7 cab service ranchi"
+        keywords="ranchi cab service contact number, taxi booking ranchi phone number, ranchi cab service whatsapp, call taxi ranchi, book cab ranchi contact, ranchi taxi helpline, 24/7 cab service ranchi, ranchi cab customer care, taxi booking online ranchi, cab service ranchi near me, emergency taxi ranchi"
         schema={{
           "@context": "https://schema.org",
           "@type": "ContactPage",

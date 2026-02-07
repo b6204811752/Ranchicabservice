@@ -23,7 +23,7 @@ export default function AirportPage() {
       <SEO
         title="Ranchi Airport Taxi Service | 24/7 Airport Transfer & Pickup | Birsa Munda Airport Cab"
         description="Book reliable Ranchi airport taxi service for Birsa Munda Airport. 24/7 airport pickup and drop. Flight tracking, meet & greet service. Call +91 7903629240."
-        keywords="ranchi airport taxi, birsa munda airport cab, ranchi airport transfer, airport pickup ranchi, airport drop ranchi, ranchi airport cab service"
+        keywords="ranchi airport taxi, birsa munda airport cab, ranchi airport transfer, airport pickup ranchi, airport drop ranchi, ranchi airport cab service, birsa munda airport taxi fare, ranchi airport to city taxi, airport cab booking ranchi, cheap airport taxi ranchi, ranchi airport taxi contact number, flight taxi ranchi, ranchi airport pickup service, prepaid taxi ranchi airport, ranchi airport to railway station cab"
         schema={{
           "@context": "https://schema.org",
           "@type": "Service",

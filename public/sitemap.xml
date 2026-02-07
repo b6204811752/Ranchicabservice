@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <!-- Main Pages -->
   <url>
     <loc>https://www.ranchicabservice.com/</loc>
     <lastmod>2026-02-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.ranchicabservice.com/og-image.png</image:loc>
+      <image:title>Ranchi Cab Service - Best Taxi Service in Ranchi</image:title>
+      <image:caption>Book reliable taxi services in Ranchi 24/7</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.ranchicabservice.com/logo-512x512.png</image:loc>
+      <image:title>Ranchi Cab Service Logo</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://www.ranchicabservice.com/about</loc>
@@ -64,7 +75,21 @@
     <priority>0.8</priority>
   </url>
   
-  <!-- Route Pages - Each with unique content -->
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://www.ranchicabservice.com/privacy-policy</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.ranchicabservice.com/terms-conditions</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <!-- Route Pages - High value for long-tail SEO -->
   <url>
     <loc>https://www.ranchicabservice.com/ranchi-to-patna-cab</loc>
     <lastmod>2026-02-07</lastmod>

@@ -64,7 +64,7 @@ export default function RanchiToPatnaPage() {
     },
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "4.8",
+      "ratingValue": "5.0",
       "reviewCount": "150"
     }
   };

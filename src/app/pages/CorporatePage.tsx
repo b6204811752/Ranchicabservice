@@ -26,7 +26,7 @@ export default function CorporatePage() {
       <SEO
         title="Corporate Taxi Service in Ranchi | Business Transportation Solutions"
         description="Professional corporate taxi service in Ranchi for employee transport, client meetings, and corporate events. Monthly packages available. Call +91 7903629240"
-        keywords="corporate taxi ranchi, business taxi ranchi, corporate cab service, employee transportation ranchi, corporate travel ranchi"
+        keywords="corporate taxi ranchi, business taxi ranchi, corporate cab service, employee transportation ranchi, corporate travel ranchi, office cab ranchi, company taxi service ranchi, monthly cab service ranchi, staff transportation ranchi, corporate car rental, business travel ranchi, executive cab service ranchi"
       />
 
       <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 overflow-hidden">

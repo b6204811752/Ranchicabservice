@@ -16,6 +16,10 @@ import CTABanner from '@/app/components/common/CTABanner';
 import SocialShare from '@/app/components/common/SocialShare';
 import ServiceAreas from '@/app/components/common/ServiceAreas';
 import BlogSection from '@/app/components/common/BlogSection';
+import HowToBook from '@/app/components/common/HowToBook';
+import TrustIndicators from '@/app/components/common/TrustIndicators';
+import PromoBanner from '@/app/components/common/PromoBanner';
+import InternalLinks from '@/app/components/common/InternalLinks';
 import heroImg1 from '@/assets/images/vehicles/hero-bg1.webp';
 import heroImg2 from '@/assets/images/vehicles/hero-bg2.webp';
 import heroImg3 from '@/assets/images/vehicles/hero-bg.webp';
@@ -239,13 +243,22 @@ export default function HomePage() {
   return (
     <>
       <Helmet>
-        <title>Ranchi Cab Service | Car Rental in Ranchi | Taxi Hire 24x7 | Book Sedan, SUV, Innova</title>
+        <title>Ranchi Cab Service | Best Taxi Service in Ranchi | Book 24/7 | Call +91 7903629240</title>
         <meta
           name="description"
-          content="⭐ Book Car Rental in Ranchi ✓ Chauffeur Driven Cabs 24x7 ✓ One Way & Round Trip ✓ Airport Taxi ✓ Local Hire ✓ Sedan ₹10/km ✓ SUV ₹14/km ✓ Innova Crysta ✓ Govt Verified Drivers ✓ 2000+ Routes. Call: 7903629240"
+          content="⭐ #1 Ranchi Cab Service - Book reliable taxi 24/7 ✓ Birsa Munda Airport Transfer ✓ Outstation Cabs ✓ Local Taxi ✓ Sedan ₹10/km ✓ SUV ₹14/km ✓ Innova Crysta ✓ 5.0★ Google Rated ✓ Govt Verified Drivers. Call: 7903629240"
         />
+        <meta name="keywords" content="ranchi cab service, taxi service in ranchi, ranchi taxi, cab booking ranchi, ranchi airport taxi, outstation taxi ranchi, local taxi ranchi, birsa munda airport taxi, ranchi to patna cab, ranchi to kolkata taxi, ranchi to jamshedpur cab, car rental ranchi, cab near me ranchi, taxi near me, cheap taxi ranchi, best cab service ranchi, 24 hour taxi ranchi, online cab booking ranchi, innova on rent ranchi, ertiga taxi ranchi, one way taxi ranchi, round trip cab ranchi, jharkhand taxi service, ranchi car hire, tempo traveller ranchi" />
         <link rel="canonical" href="https://www.ranchicabservice.com/" />
       </Helmet>
+
+      {/* Promo Banner */}
+      <PromoBanner 
+        promoCode="FIRST20" 
+        discount="20% OFF" 
+        message="on your first booking!" 
+        expiryText="Limited time offer"
+      />
 
       {/* Hero Section with Image Slider */}
       <section className="relative h-[500px] sm:h-[600px] md:h-[700px] overflow-hidden">
@@ -326,6 +339,9 @@ export default function HomePage() {
 
       {/* Trust Badges */}
       <TrustBadges />
+
+      {/* Trust Indicators - Stats & Certifications */}
+      <TrustIndicators />
 
       {/* Booking Form Section */}
       <section id="booking-form" className="py-16 bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 relative overflow-hidden">
@@ -555,6 +571,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* How to Book Section */}
+      <HowToBook />
 
       {/* Our Fleet */}
       <section className="py-16 relative overflow-hidden">
@@ -1131,6 +1150,9 @@ export default function HomePage() {
 
       {/* Newsletter */}
       <Newsletter />
+
+      {/* Internal Links for SEO */}
+      <InternalLinks />
 
       {/* Final CTA Banner */}
       <CTABanner 
