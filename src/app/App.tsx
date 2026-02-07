@@ -30,6 +30,15 @@ const RanchiToKolkataPage = lazy(() => import('@/app/pages/routes/RanchiToKolkat
 const RanchiToJamshedpurPage = lazy(() => import('@/app/pages/routes/RanchiToJamshedpurPage'));
 const RanchiToBokaroPage = lazy(() => import('@/app/pages/routes/RanchiToBokaroPage'));
 const RanchiToDhanbadPage = lazy(() => import('@/app/pages/routes/RanchiToDhanbadPage'));
+const RanchiToDeogharPage = lazy(() => import('@/app/pages/routes/RanchiToDeogharPage'));
+const RanchiToHazaribaghPage = lazy(() => import('@/app/pages/routes/RanchiToHazaribaghPage'));
+const RanchiToGayaPage = lazy(() => import('@/app/pages/routes/RanchiToGayaPage'));
+const RanchiToVaranasiPage = lazy(() => import('@/app/pages/routes/RanchiToVaranasiPage'));
+const RanchiToGiridihPage = lazy(() => import('@/app/pages/routes/RanchiToGiridihPage'));
+const RanchiToNetarhatPage = lazy(() => import('@/app/pages/routes/RanchiToNetarhatPage'));
+const RanchiToDaltonganjPage = lazy(() => import('@/app/pages/routes/RanchiToDaltonganjPage'));
+const RanchiToDumkaPage = lazy(() => import('@/app/pages/routes/RanchiToDumkaPage'));
+const BlogPage = lazy(() => import('@/app/pages/BlogPage'));
 
 export default function App() {
   return (
@@ -62,6 +71,17 @@ export default function App() {
               <Route path="/ranchi-to-jamshedpur-cab" element={<RanchiToJamshedpurPage />} />
               <Route path="/ranchi-to-bokaro-taxi" element={<RanchiToBokaroPage />} />
               <Route path="/ranchi-to-dhanbad-cab" element={<RanchiToDhanbadPage />} />
+              <Route path="/ranchi-to-deoghar-cab" element={<RanchiToDeogharPage />} />
+              <Route path="/ranchi-to-hazaribagh-cab" element={<RanchiToHazaribaghPage />} />
+              <Route path="/ranchi-to-gaya-cab" element={<RanchiToGayaPage />} />
+              <Route path="/ranchi-to-varanasi-cab" element={<RanchiToVaranasiPage />} />
+              <Route path="/ranchi-to-giridih-cab" element={<RanchiToGiridihPage />} />
+              <Route path="/ranchi-to-netarhat-cab" element={<RanchiToNetarhatPage />} />
+              <Route path="/ranchi-to-daltonganj-cab" element={<RanchiToDaltonganjPage />} />
+              <Route path="/ranchi-to-dumka-cab" element={<RanchiToDumkaPage />} />
+              
+              {/* Blog */}
+              <Route path="/blog" element={<BlogPage />} />
               
               {/* 404 Page */}
               <Route path="*" element={<NotFoundPage />} />

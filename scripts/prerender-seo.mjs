@@ -414,6 +414,142 @@ const routes = [
       "areaServed": [{ "@type": "City", "name": "Ranchi" }, { "@type": "City", "name": "Dhanbad" }]
     }
   },
+  {
+    path: '/ranchi-to-deoghar-cab',
+    title: 'Ranchi to Deoghar Cab | Baidyanath Dham Taxi \u20B94,000 | 24/7 Booking',
+    description: 'Book Ranchi to Deoghar cab for Baidyanath Dham darshan. 250 km taxi with AC vehicles. One-way \u20B94,000, Round trip \u20B97,500. Call +91 7903629240!',
+    keywords: 'ranchi to deoghar cab, ranchi to deoghar taxi, baidyanath dham taxi from ranchi, ranchi deoghar cab service, shravan mela cab',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "TaxiService",
+      "name": "Ranchi to Deoghar Cab Service",
+      "description": "Comfortable taxi for Baidyanath Dham pilgrimage from Ranchi. 250 km journey.",
+      "url": `${baseUrl}/ranchi-to-deoghar-cab`,
+      "provider": { "@type": "LocalBusiness", "name": "Ranchi Cab Service", "telephone": "+917903629240" },
+      "areaServed": [{ "@type": "City", "name": "Ranchi" }, { "@type": "City", "name": "Deoghar" }]
+    }
+  },
+  {
+    path: '/ranchi-to-hazaribagh-cab',
+    title: 'Ranchi to Hazaribagh Cab | Book Taxi at \u20B91,500 | 24/7 Service',
+    description: 'Book Ranchi to Hazaribagh cab service. 90 km taxi with AC vehicles, experienced drivers. One-way \u20B91,500. Call +91 7903629240!',
+    keywords: 'ranchi to hazaribagh cab, ranchi to hazaribagh taxi, ranchi hazaribagh cab service, hazaribagh wildlife sanctuary taxi',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "TaxiService",
+      "name": "Ranchi to Hazaribagh Cab Service",
+      "description": "Quick taxi service from Ranchi to Hazaribagh hill station. 90 km journey.",
+      "url": `${baseUrl}/ranchi-to-hazaribagh-cab`,
+      "provider": { "@type": "LocalBusiness", "name": "Ranchi Cab Service", "telephone": "+917903629240" },
+      "areaServed": [{ "@type": "City", "name": "Ranchi" }, { "@type": "City", "name": "Hazaribagh" }]
+    }
+  },
+  {
+    path: '/ranchi-to-gaya-cab',
+    title: 'Ranchi to Gaya Cab | Bodh Gaya Taxi \u20B94,500 | Pind Daan Taxi',
+    description: 'Book Ranchi to Gaya cab for Bodh Gaya darshan & Pind Daan. 280 km taxi. One-way \u20B94,500, Round trip \u20B98,500. Call +91 7903629240!',
+    keywords: 'ranchi to gaya cab, ranchi to gaya taxi, ranchi to bodh gaya cab, pind daan taxi from ranchi, gaya pilgrimage taxi',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "TaxiService",
+      "name": "Ranchi to Gaya Cab Service",
+      "description": "Pilgrimage taxi from Ranchi to Gaya and Bodh Gaya. 280 km journey.",
+      "url": `${baseUrl}/ranchi-to-gaya-cab`,
+      "provider": { "@type": "LocalBusiness", "name": "Ranchi Cab Service", "telephone": "+917903629240" },
+      "areaServed": [{ "@type": "City", "name": "Ranchi" }, { "@type": "City", "name": "Gaya" }]
+    }
+  },
+  {
+    path: '/ranchi-to-varanasi-cab',
+    title: 'Ranchi to Varanasi Cab | Kashi Taxi \u20B96,800 | 24/7 Booking',
+    description: 'Book Ranchi to Varanasi cab for Kashi Vishwanath darshan. 420 km taxi with AC. One-way \u20B96,800. Call +91 7903629240!',
+    keywords: 'ranchi to varanasi cab, ranchi to varanasi taxi, ranchi to kashi cab, kashi vishwanath taxi from ranchi, ganga aarti taxi',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "TaxiService",
+      "name": "Ranchi to Varanasi Cab Service",
+      "description": "Long distance taxi from Ranchi to Varanasi for Kashi pilgrimage. 420 km journey.",
+      "url": `${baseUrl}/ranchi-to-varanasi-cab`,
+      "provider": { "@type": "LocalBusiness", "name": "Ranchi Cab Service", "telephone": "+917903629240" },
+      "areaServed": [{ "@type": "City", "name": "Ranchi" }, { "@type": "City", "name": "Varanasi" }]
+    }
+  },
+  {
+    path: '/ranchi-to-giridih-cab',
+    title: 'Ranchi to Giridih Cab | Parasnath Taxi \u20B92,800 | 24/7 Service',
+    description: 'Book Ranchi to Giridih cab for Parasnath Temple trek. 175 km taxi. One-way \u20B92,800. Call +91 7903629240!',
+    keywords: 'ranchi to giridih cab, ranchi to giridih taxi, ranchi to parasnath cab, sammed shikharji taxi, parasnath temple taxi',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "TaxiService",
+      "name": "Ranchi to Giridih Cab Service",
+      "description": "Taxi for Jain pilgrimage to Parasnath/Sammed Shikharji from Ranchi. 175 km journey.",
+      "url": `${baseUrl}/ranchi-to-giridih-cab`,
+      "provider": { "@type": "LocalBusiness", "name": "Ranchi Cab Service", "telephone": "+917903629240" },
+      "areaServed": [{ "@type": "City", "name": "Ranchi" }, { "@type": "City", "name": "Giridih" }]
+    }
+  },
+  {
+    path: '/ranchi-to-netarhat-cab',
+    title: 'Ranchi to Netarhat Cab | Queen of Chotanagpur Taxi \u20B92,500',
+    description: 'Book Ranchi to Netarhat cab to visit Queen of Chotanagpur. 155 km hill station taxi. Sunrise point tours. \u20B92,500. Call +91 7903629240!',
+    keywords: 'ranchi to netarhat cab, ranchi to netarhat taxi, netarhat hill station taxi, queen of chotanagpur cab, netarhat sunrise point taxi',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "TaxiService",
+      "name": "Ranchi to Netarhat Cab Service",
+      "description": "Scenic taxi ride to Netarhat hill station from Ranchi. 155 km journey.",
+      "url": `${baseUrl}/ranchi-to-netarhat-cab`,
+      "provider": { "@type": "LocalBusiness", "name": "Ranchi Cab Service", "telephone": "+917903629240" },
+      "areaServed": [{ "@type": "City", "name": "Ranchi" }, { "@type": "City", "name": "Netarhat" }]
+    }
+  },
+  {
+    path: '/ranchi-to-daltonganj-cab',
+    title: 'Ranchi to Daltonganj Cab | Betla Safari Taxi \u20B93,000 | 24/7',
+    description: 'Book Ranchi to Daltonganj cab for Betla National Park safari. 185 km taxi. One-way \u20B93,000. Call +91 7903629240!',
+    keywords: 'ranchi to daltonganj cab, ranchi to daltonganj taxi, ranchi to betla cab, betla national park taxi, palamau tiger reserve cab',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "TaxiService",
+      "name": "Ranchi to Daltonganj Cab Service",
+      "description": "Taxi to Daltonganj and Betla National Park from Ranchi. 185 km journey.",
+      "url": `${baseUrl}/ranchi-to-daltonganj-cab`,
+      "provider": { "@type": "LocalBusiness", "name": "Ranchi Cab Service", "telephone": "+917903629240" },
+      "areaServed": [{ "@type": "City", "name": "Ranchi" }, { "@type": "City", "name": "Daltonganj" }]
+    }
+  },
+  {
+    path: '/ranchi-to-dumka-cab',
+    title: 'Ranchi to Dumka Cab | Santhal Taxi \u20B94,800 | 24/7 Service',
+    description: 'Book Ranchi to Dumka cab service. 290 km taxi. Santhal Pargana headquarters. One-way \u20B94,800. Call +91 7903629240!',
+    keywords: 'ranchi to dumka cab, ranchi to dumka taxi, ranchi dumka cab service, santhal pargana cab, maluti temple taxi',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "TaxiService",
+      "name": "Ranchi to Dumka Cab Service",
+      "description": "Taxi to Dumka and Santhal Pargana from Ranchi. 290 km journey.",
+      "url": `${baseUrl}/ranchi-to-dumka-cab`,
+      "provider": { "@type": "LocalBusiness", "name": "Ranchi Cab Service", "telephone": "+917903629240" },
+      "areaServed": [{ "@type": "City", "name": "Ranchi" }, { "@type": "City", "name": "Dumka" }]
+    }
+  },
+
+  // ─── BLOG ───
+  {
+    path: '/blog',
+    title: 'Travel Blog | Ranchi Cab Service | Road Trip Guides & Taxi Tips',
+    description: 'Read travel guides for Ranchi, Jharkhand road trips, hill stations, pilgrimages. Expert tips from Ranchi\'s trusted cab service.',
+    keywords: 'ranchi travel blog, jharkhand tourism guide, ranchi road trips, deoghar guide, netarhat travel, ranchi taxi tips',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Ranchi Cab Service Travel Blog",
+      "description": "Travel guides, road trip tips, and taxi information for Ranchi and Jharkhand.",
+      "url": `${baseUrl}/blog`,
+      "publisher": { "@type": "Organization", "name": "Ranchi Cab Service" }
+    }
+  },
 
   // ─── NOINDEX PAGES ───
   {

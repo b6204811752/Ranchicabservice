@@ -17,6 +17,13 @@ export default function InternalLinks() {
     { name: 'Ranchi to Jamshedpur Cab', href: '/ranchi-to-jamshedpur-cab' },
     { name: 'Ranchi to Bokaro Taxi', href: '/ranchi-to-bokaro-taxi' },
     { name: 'Ranchi to Dhanbad Cab', href: '/ranchi-to-dhanbad-cab' },
+    { name: 'Ranchi to Deoghar Cab', href: '/ranchi-to-deoghar-cab' },
+    { name: 'Ranchi to Hazaribagh Cab', href: '/ranchi-to-hazaribagh-cab' },
+    { name: 'Ranchi to Gaya Cab', href: '/ranchi-to-gaya-cab' },
+    { name: 'Ranchi to Varanasi Cab', href: '/ranchi-to-varanasi-cab' },
+    { name: 'Ranchi to Giridih Cab', href: '/ranchi-to-giridih-cab' },
+    { name: 'Ranchi to Netarhat Cab', href: '/ranchi-to-netarhat-cab' },
+    { name: 'Ranchi to Daltonganj Cab', href: '/ranchi-to-daltonganj-cab' },
   ];
 
   const vehicleLinks = [
