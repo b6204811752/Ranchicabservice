@@ -7,7 +7,7 @@
     "build": "vite build",
     "dev": "vite",
     "preview": "vite preview",
-    "postinstall": "chmod +x node_modules/.bin/vite || true"
+    "postinstall": "node -e \"try{require('child_process').execSync('chmod +x node_modules/.bin/vite')}catch(e){}\""
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
