@@ -176,4 +176,24 @@
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
+  
+  <!-- High-Value Service Pages -->
+  <url>
+    <loc>https://www.ranchicabservice.com/tempo-traveller-ranchi</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.ranchicabservice.com/wedding-car-ranchi</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.ranchicabservice.com/cab-near-me-ranchi</loc>
+    <lastmod>2026-02-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
 </urlset>

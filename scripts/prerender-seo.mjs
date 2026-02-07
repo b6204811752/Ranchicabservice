@@ -551,6 +551,73 @@ const routes = [
     }
   },
 
+  // ─── HIGH-VALUE SERVICE PAGES ───
+  {
+    path: '/tempo-traveller-ranchi',
+    title: 'Tempo Traveller in Ranchi | 9,12,17,26 Seater Rental | ₹18/km',
+    description: 'Book tempo traveller in Ranchi for group travel. 9, 12, 17, 26 seater AC tempo. Weddings, pilgrimages, corporate. From ₹18/km. Call +91 7903629240!',
+    keywords: 'tempo traveller ranchi, tempo traveller hire ranchi, 12 seater tempo ranchi, 17 seater tempo ranchi, tempo traveller on rent ranchi, mini bus rental ranchi, tempo traveller for wedding ranchi, tempo traveller for pilgrimage, group travel ranchi',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Tempo Traveller Rental Ranchi",
+      "description": "Tempo traveller on rent in Ranchi. 9, 12, 17, 26 seater AC tempo for weddings, pilgrimages, corporate travel.",
+      "url": `${baseUrl}/tempo-traveller-ranchi`,
+      "provider": { "@type": "LocalBusiness", "name": "Ranchi Cab Service", "telephone": "+917903629240" },
+      "areaServed": { "@type": "City", "name": "Ranchi" },
+      "offers": {
+        "@type": "AggregateOffer",
+        "lowPrice": "3500",
+        "highPrice": "12000",
+        "priceCurrency": "INR",
+        "offerCount": "4"
+      }
+    }
+  },
+  {
+    path: '/wedding-car-ranchi',
+    title: 'Wedding Car Rental Ranchi | Audi, BMW, Innova | Decorated Cars',
+    description: 'Book wedding car in Ranchi. Luxury Audi, BMW, Mercedes for Dulha. Innova, Ertiga for family. Decorated cars with driver. Call +91 7903629240!',
+    keywords: 'wedding car ranchi, wedding car rental ranchi, marriage car ranchi, dulha car ranchi, audi for wedding ranchi, bmw for wedding ranchi, decorated wedding car, baraat car ranchi, wedding tempo traveller',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Wedding Car Rental Ranchi",
+      "description": "Luxury and decorated wedding cars in Ranchi. Audi, BMW, Mercedes, Innova for weddings.",
+      "url": `${baseUrl}/wedding-car-ranchi`,
+      "provider": { "@type": "LocalBusiness", "name": "Ranchi Cab Service", "telephone": "+917903629240" },
+      "areaServed": { "@type": "City", "name": "Ranchi" },
+      "offers": {
+        "@type": "AggregateOffer",
+        "lowPrice": "5000",
+        "highPrice": "25000",
+        "priceCurrency": "INR"
+      }
+    }
+  },
+  {
+    path: '/cab-near-me-ranchi',
+    title: 'Cab Near Me Ranchi | Book Taxi in 10 Minutes | 24/7 Service',
+    description: 'Find cab near me in Ranchi. Quick taxi pickup from your location in 10 minutes. All areas covered - Ratu Road, Lalpur, Doranda, Kanke. Call +91 7903629240!',
+    keywords: 'cab near me ranchi, taxi near me ranchi, cab booking near me, taxi booking near me, ranchi cab service near me, nearest taxi ranchi, local cab ranchi, auto near me ranchi',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Cab Near Me - Ranchi Taxi Service",
+      "description": "Quick taxi pickup service across all Ranchi localities. Book cab near your location.",
+      "url": `${baseUrl}/cab-near-me-ranchi`,
+      "provider": { "@type": "LocalBusiness", "name": "Ranchi Cab Service", "telephone": "+917903629240" },
+      "areaServed": [
+        { "@type": "Place", "name": "Ratu Road, Ranchi" },
+        { "@type": "Place", "name": "Lalpur, Ranchi" },
+        { "@type": "Place", "name": "Doranda, Ranchi" },
+        { "@type": "Place", "name": "Kanke, Ranchi" },
+        { "@type": "Place", "name": "Bariatu, Ranchi" },
+        { "@type": "Place", "name": "Main Road, Ranchi" }
+      ]
+    }
+  },
+
   // ─── NOINDEX PAGES ───
   {
     path: '/privacy-policy',

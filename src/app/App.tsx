@@ -39,6 +39,9 @@ const RanchiToNetarhatPage = lazy(() => import('@/app/pages/routes/RanchiToNetar
 const RanchiToDaltonganjPage = lazy(() => import('@/app/pages/routes/RanchiToDaltonganjPage'));
 const RanchiToDumkaPage = lazy(() => import('@/app/pages/routes/RanchiToDumkaPage'));
 const BlogPage = lazy(() => import('@/app/pages/BlogPage'));
+const TempoTravellerPage = lazy(() => import('@/app/pages/TempoTravellerPage'));
+const WeddingCarPage = lazy(() => import('@/app/pages/WeddingCarPage'));
+const CabNearMePage = lazy(() => import('@/app/pages/CabNearMePage'));
 
 export default function App() {
   return (
@@ -82,6 +85,11 @@ export default function App() {
               
               {/* Blog */}
               <Route path="/blog" element={<BlogPage />} />
+              
+              {/* Service Pages */}
+              <Route path="/tempo-traveller-ranchi" element={<TempoTravellerPage />} />
+              <Route path="/wedding-car-ranchi" element={<WeddingCarPage />} />
+              <Route path="/cab-near-me-ranchi" element={<CabNearMePage />} />
               
               {/* 404 Page */}
               <Route path="*" element={<NotFoundPage />} />
