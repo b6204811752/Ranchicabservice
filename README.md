@@ -206,14 +206,14 @@ The website integrates multiple booking methods:
 ## 📞 Contact Information
 
 **Phone:** +91 7903629240  
-**Email:** rohittravels10@gmail.com  
+**Email:** ranchicabservice2@gmail.com  
 **Location:** Ranchi, Jharkhand, India
 
 ## 🎯 Customization Guide
 
 ### Update Contact Details
 1. Search for `+917903629240` and replace with your number
-2. Search for `rohittravels10@gmail.com` and replace with your email
+2. Search for `ranchicabservice2@gmail.com` and replace with your email
 3. Update Google Maps embed in `Footer.tsx`
 
 ### Update Branding

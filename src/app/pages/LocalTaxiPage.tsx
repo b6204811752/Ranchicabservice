@@ -21,19 +21,31 @@ export default function LocalTaxiPage() {
   return (
     <>
       <SEO
-        title="Local Taxi Service in Ranchi | Hourly Cab Rental @ ₹10/km | 4Hr, 8Hr, 12Hr Packages"
-        description="🚖 Book Local Taxi in Ranchi ✓ 4Hr @ ₹499 ✓ 8Hr @ ₹899 ✓ 12Hr @ ₹1299 ✓ AC Cabs ✓ Verified Drivers ✓ City Tours ✓ Shopping Trips. Call +91 7903629240"
-        keywords="local taxi ranchi, hourly cab rental ranchi, 4 hour taxi ranchi, 8 hour cab ranchi, full day taxi ranchi, half day cab ranchi, local cab service ranchi, city taxi ranchi, ranchi local cab rate, ac taxi ranchi, cab for shopping ranchi, ranchi sightseeing taxi, taxi for wedding ranchi, cab for hospital ranchi, local car hire ranchi, ranchi city tour taxi, cab near me ranchi, taxi near me, book taxi online ranchi"
+        title="Local Taxi Service in Ranchi | Hourly Cab Rental @ ₹10/km | 4Hr ₹1200, 8Hr ₹2000"
+        description="🚖 Book Local Taxi in Ranchi ✓ Hourly Rental ₹10/km ✓ 4Hr Package ₹1200 ✓ 8Hr Package ₹2000 ✓ AC Sedan, Ertiga, Innova ✓ Verified Drivers ✓ City Tours ✓ Shopping Trips ✓ Hospital Visits. Call +91 7903629240"
+        keywords="local taxi ranchi, hourly cab rental ranchi, 4 hour taxi ranchi, 8 hour cab ranchi, full day taxi ranchi, half day cab ranchi, local cab service ranchi, city taxi ranchi, ranchi local cab rate, ac taxi ranchi, cab for shopping ranchi, ranchi sightseeing taxi, taxi for wedding ranchi, cab for hospital ranchi, local car hire ranchi, ranchi city tour taxi, cab near me ranchi, taxi near me ranchi, book taxi online ranchi, doranda taxi, lalpur cab service, kanke taxi, harmu cab booking, bariatu taxi service, morabadi cab ranchi, hinoo taxi booking, hec area cab, mecon ranchi taxi, ranchi lake cab, pahari mandir taxi, tagore hill cab service, rock garden taxi, sedan on rent ranchi, ertiga local ranchi, innova hourly rental ranchi"
         schema={{
           "@context": "https://schema.org",
           "@type": "Product",
           "name": "Local Taxi Service Ranchi",
-          "description": "Hourly cab rental service in Ranchi with flexible packages",
+          "description": "Hourly cab rental service in Ranchi with flexible packages for city travel, shopping, hospital visits, and sightseeing",
+          "brand": {
+            "@type": "Brand",
+            "name": "Ranchi Cab Service"
+          },
           "offers": {
             "@type": "AggregateOffer",
-            "lowPrice": "499",
-            "highPrice": "1299",
-            "priceCurrency": "INR"
+            "lowPrice": "1200",
+            "highPrice": "3800",
+            "priceCurrency": "INR",
+            "offerCount": "6",
+            "availability": "https://schema.org/InStock"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "85",
+            "bestRating": "5"
           }
         }}
       />

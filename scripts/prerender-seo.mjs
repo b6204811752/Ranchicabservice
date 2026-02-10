@@ -39,7 +39,7 @@ const routes = [
         "description": "Premier car rental and taxi service in Ranchi offering chauffeur-driven cabs for local trips, outstation journeys, airport transfers, and corporate transportation. Available 24x7 with verified drivers.",
         "url": "https://www.ranchicabservice.com",
         "telephone": "+917903629240",
-        "email": "rohittravels10@gmail.com",
+        "email": "ranchicabservice2@gmail.com",
         "priceRange": "\u20B9\u20B9",
         "image": "https://www.ranchicabservice.com/logo-512x512.png",
         "logo": "https://www.ranchicabservice.com/logo-512x512.png",
@@ -210,7 +210,7 @@ const routes = [
         "@type": "LocalBusiness",
         "name": "Ranchi Cab Service",
         "telephone": "+917903629240",
-        "email": "rohittravels10@gmail.com"
+        "email": "ranchicabservice2@gmail.com"
       }
     }
   },

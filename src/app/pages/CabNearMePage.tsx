@@ -64,9 +64,9 @@ export default function CabNearMePage() {
   return (
     <>
       <SEO
-        title="Cab Near Me in Ranchi | Taxi Near Me | Instant Pickup | 24/7 Available"
-        description="Looking for cab near me in Ranchi? Book taxi near you instantly. Pickup from Railway Station, Airport, Lalpur, Doranda, Harmu & all areas. Call +91 7903629240"
-        keywords="cab near me ranchi, taxi near me ranchi, cab near ranchi railway station, taxi near ranchi airport, cab service near me, taxi service near me, auto near me ranchi, uber near me ranchi, ola near me ranchi, cab booking near me"
+        title="Cab Near Me in Ranchi | Taxi Near Me @ ₹10/km | 10 Min Pickup | 24/7"
+        description="📍 Looking for cab near me in Ranchi? Instant taxi pickup within 10 min! ✓ Railway Station ✓ Airport ✓ Lalpur ✓ Doranda ✓ Harmu ✓ Kanke ✓ Bariatu ✓ Morabadi. Call +91 7903629240"
+        keywords="cab near me ranchi, taxi near me ranchi, cab near ranchi railway station, taxi near ranchi airport, cab service near me, taxi service near me, auto near me ranchi, uber alternative ranchi, ola alternative ranchi, cab booking near me, taxi near lalpur, cab near doranda, taxi near harmu, cab near kanke, taxi near bariatu, cab near morabadi, taxi near hinoo, cab near hec ranchi, taxi near mecon, cab near hatia, taxi near namkum, cab near kokar, taxi near argora, cab near booty more, taxi near ratu road, instant cab ranchi, quick taxi ranchi, fast cab service ranchi, budget taxi near me ranchi"
         schema={schema}
       />
 

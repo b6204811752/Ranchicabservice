@@ -341,7 +341,7 @@ Found a bug? Report it with:
 
 ## 💬 Questions?
 
-- Email: rohittravels10@gmail.com
+- Email: ranchicabservice2@gmail.com
 - Phone: +91 7903629240
 
 ## 📄 License

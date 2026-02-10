@@ -29,8 +29,15 @@ export default function ServiceAreas() {
 
   const localAreas = [
     'Doranda', 'Lalpur', 'Kanke', 'Harmu', 'Bariatu',
-    'Morabadi', 'Hinoo', 'Ranchi Airport', 'Birsa Munda Airport',
-    'HEC', 'MECON', 'SAIL', 'Industrial Area'
+    'Morabadi', 'Hinoo', 'Namkum', 'Ratu Road', 'Main Road',
+    'Birsa Chowk', 'Albert Ekka Chowk', 'Firayalal Chowk', 'Kutchery Road',
+    'Ranchi Airport', 'Birsa Munda Airport', 'Ranchi Railway Station',
+    'HEC', 'MECON', 'SAIL', 'Kokar', 'Ashok Nagar',
+    'Piska More', 'Booty More', 'Argora', 'Tupudana',
+    'Hatia', 'Dhurwa', 'Khelgaon', 'Pandra',
+    'Sukhdeonagar', 'Hehal', 'Kantatoli', 'Kadru',
+    'Bahu Bazar', 'Upper Bazar', 'Lower Bazar', 'Daily Market',
+    'Rajendra Chowk', 'Club Road', 'Circular Road', 'Court Road'
   ];
 
   return (

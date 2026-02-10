@@ -126,24 +126,46 @@ export default function WeddingCarPage() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Wedding Car Rental in Ranchi",
-    "description": "Book decorated wedding cars in Ranchi. Luxury cars, decorated vehicles, tempo travellers for baraat and guest transportation.",
+    "name": "Wedding Car Rental in Ranchi - Decorated Cars & Luxury Vehicles",
+    "description": "Book decorated wedding cars in Ranchi. Luxury cars (Audi, BMW, Mercedes), Innova Crysta, tempo travellers for baraat and guest transportation. Flower decoration included.",
     "url": "https://www.ranchicabservice.com/wedding-car-ranchi",
     "provider": {
       "@type": "LocalBusiness",
       "name": "Ranchi Cab Service",
-      "telephone": "+917903629240"
+      "telephone": "+917903629240",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ranchi",
+        "addressRegion": "Jharkhand",
+        "addressCountry": "IN"
+      }
     },
-    "areaServed": { "@type": "City", "name": "Ranchi" },
-    "serviceType": "Wedding Car Rental"
+    "areaServed": {
+      "@type": "City",
+      "name": "Ranchi"
+    },
+    "serviceType": "Wedding Car Rental & Decoration",
+    "offers": {
+      "@type": "AggregateOffer",
+      "lowPrice": "2500",
+      "highPrice": "50000",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "65",
+      "bestRating": "5"
+    }
   };
 
   return (
     <>
       <SEO
-        title="Wedding Car Rental in Ranchi | Decorated Cars, Audi, BMW, Innova | Book Now"
-        description="Book decorated wedding cars in Ranchi. Luxury cars (Audi, BMW, Mercedes), Innova Crysta, tempo travellers for baraat. Flower decoration, professional chauffeurs. Call +91 7903629240"
-        keywords="wedding car ranchi, decorated car for wedding ranchi, marriage car rental ranchi, baraat car ranchi, luxury wedding car ranchi, audi for wedding ranchi, bmw wedding car ranchi, dulhan car ranchi"
+        title="Wedding Car Rental Ranchi | Decorated Audi, BMW @ ₹2500 | Baraat Cars"
+        description="💒 Book Decorated Wedding Cars in Ranchi ✓ Audi, BMW, Mercedes ✓ Innova Crysta ₹5500/day ✓ Dzire ₹2500/day ✓ Tempo for Baraat ✓ Flower Decoration ✓ Professional Chauffeurs. Call +91 7903629240"
+        keywords="wedding car ranchi, decorated car for wedding ranchi, marriage car rental ranchi, baraat car ranchi, luxury wedding car ranchi, audi for wedding ranchi, bmw wedding car ranchi, dulhan car ranchi, innova for wedding ranchi, wedding car decoration ranchi, bridal car ranchi, groom car ranchi, vidaai car ranchi, shaadi car ranchi, vivah car rental ranchi, tempo for baraat ranchi, wedding fleet ranchi, wedding car package ranchi, sherwani car ranchi, wedding car with driver ranchi, just married car ranchi, flower decorated car ranchi, wedding car booking ranchi"
         schema={schema}
       />
 

@@ -1,32 +1,51 @@
 # Ranchi Cab Service - Robots.txt
-# Car Rental & Taxi Service in Ranchi, Jharkhand
+# Best Taxi & Car Rental Service in Ranchi, Jharkhand
+# Website: https://www.ranchicabservice.com
+# Contact: +91 7903629240
 
 User-agent: *
 Allow: /
+Allow: /about
+Allow: /services
+Allow: /local-taxi-ranchi
+Allow: /outstation-taxi
+Allow: /airport-taxi
+Allow: /corporate-taxi
+Allow: /fleet
+Allow: /cities
+Allow: /contact
+Allow: /blog
 Allow: /privacy-policy
 Allow: /terms-conditions
+Allow: /tempo-traveller-ranchi
+Allow: /wedding-car-ranchi
+Allow: /cab-near-me-ranchi
+Allow: /ranchi-to-*
 Disallow: /api/
 Disallow: /*.json$
 Disallow: /assets/*.map$
 
-# Block trailing slash versions (canonical is without trailing slash)
-# Vercel handles 301 redirects for these
-
-# Sitemap
+# Sitemap location
 Sitemap: https://www.ranchicabservice.com/sitemap.xml
 
-# Crawl-delay for polite crawling
+# Googlebot specific rules
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 1
 
 User-agent: Googlebot-Image
 Allow: /
+Allow: /*.webp$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.avif$
 
+# Bingbot
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 2
 
+# Other search engines
 User-agent: Slurp
 Allow: /
 
@@ -38,3 +57,13 @@ Allow: /
 
 User-agent: YandexBot
 Allow: /
+
+# Block AI training bots (optional - keeps content exclusive)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /

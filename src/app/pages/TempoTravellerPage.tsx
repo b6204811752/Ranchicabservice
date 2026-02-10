@@ -81,31 +81,48 @@ export default function TempoTravellerPage() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Tempo Traveller Rental in Ranchi",
-    "description": "Book tempo traveller in Ranchi for group travel. 9, 12, 17, 26 seater available for weddings, pilgrimages, corporate outings.",
+    "name": "Tempo Traveller Rental in Ranchi - 9, 12, 17, 26 Seater",
+    "description": "Book tempo traveller in Ranchi for group travel. 9, 12, 17, 26 seater AC vehicles available for weddings, pilgrimages to Deoghar, corporate outings, and family trips.",
     "url": "https://www.ranchicabservice.com/tempo-traveller-ranchi",
     "provider": {
       "@type": "LocalBusiness",
       "name": "Ranchi Cab Service",
-      "telephone": "+917903629240"
+      "telephone": "+917903629240",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ranchi",
+        "addressRegion": "Jharkhand",
+        "addressCountry": "IN"
+      }
     },
-    "areaServed": { "@type": "City", "name": "Ranchi" },
-    "serviceType": "Tempo Traveller Rental",
+    "areaServed": [
+      {"@type": "City", "name": "Ranchi"},
+      {"@type": "State", "name": "Jharkhand"},
+      {"@type": "State", "name": "Bihar"}
+    ],
+    "serviceType": "Tempo Traveller & Mini Bus Rental",
     "offers": {
       "@type": "AggregateOffer",
       "lowPrice": "18",
       "highPrice": "32",
       "priceCurrency": "INR",
-      "offerCount": "4"
+      "offerCount": "4",
+      "availability": "https://schema.org/InStock"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "75",
+      "bestRating": "5"
     }
   };
 
   return (
     <>
       <SEO
-        title="Tempo Traveller in Ranchi | 9, 12, 17, 26 Seater Rental | ₹18/km"
-        description="Book tempo traveller in Ranchi for group travel. 9 seater ₹18/km, 12 seater ₹20/km, 17 seater ₹22/km. Weddings, pilgrimages, corporate outings. Call +91 7903629240"
-        keywords="tempo traveller ranchi, 12 seater tempo ranchi, 17 seater tempo traveller ranchi, mini bus rental ranchi, tempo traveller for wedding ranchi, tempo traveller deoghar, group travel ranchi"
+        title="Tempo Traveller in Ranchi | 12, 17 Seater @ ₹18/km | Mini Bus Rental"
+        description="🚐 Book Tempo Traveller in Ranchi ✓ 9 Seater ₹18/km ✓ 12 Seater ₹20/km ✓ 17 Seater ₹22/km ✓ 26 Seater Mini Bus ✓ AC Push-back Seats ✓ Deoghar Pilgrimage ✓ Wedding ✓ Corporate. Call +91 7903629240"
+        keywords="tempo traveller ranchi, 12 seater tempo ranchi, 17 seater tempo traveller ranchi, mini bus rental ranchi, tempo traveller for wedding ranchi, tempo traveller deoghar, group travel ranchi, 9 seater tempo traveller ranchi, 26 seater bus rental ranchi, tempo traveller hire ranchi, tempo traveller booking ranchi, ranchi to deoghar tempo traveller, ranchi to patna tempo traveller, ranchi to kolkata tempo, tempo for pilgrimage ranchi, corporate bus rental ranchi, school trip bus ranchi, tempo traveller rate per km ranchi, ac tempo traveller ranchi, luxury tempo traveller ranchi, tempo traveller jharkhand, mini bus for wedding ranchi, tempo traveller near me ranchi"
         schema={schema}
       />
 

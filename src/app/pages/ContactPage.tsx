@@ -22,7 +22,7 @@ export default function ContactPage() {
     <>
       <SEO
         title="Contact Us - Ranchi Cab Service | Call +91 7903629240 | Book Taxi 24/7"
-        description="📞 Contact Ranchi Cab Service ✓ Call: +91 7903629240 ✓ Email: rohittravels10@gmail.com ✓ WhatsApp Booking ✓ 24/7 Support ✓ Instant Confirmation. Book your taxi now!"
+        description="📞 Contact Ranchi Cab Service ✓ Call: +91 7903629240 ✓ Email: ranchicabservice2@gmail.com ✓ WhatsApp Booking ✓ 24/7 Support ✓ Instant Confirmation. Book your taxi now!"
         keywords="ranchi cab service contact number, taxi booking ranchi phone number, ranchi cab service whatsapp, call taxi ranchi, book cab ranchi contact, ranchi taxi helpline, 24/7 cab service ranchi, ranchi cab customer care, taxi booking online ranchi, cab service ranchi near me, emergency taxi ranchi"
         schema={{
           "@context": "https://schema.org",
@@ -31,7 +31,7 @@ export default function ContactPage() {
           "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "+917903629240",
-            "email": "rohittravels10@gmail.com",
+            "email": "ranchicabservice2@gmail.com",
             "contactType": "Customer Service",
             "areaServed": "Ranchi",
             "availableLanguage": ["English", "Hindi"]
@@ -105,8 +105,8 @@ export default function ContactPage() {
                   </motion.div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Email</h3>
-                    <a href="mailto:rohittravels10@gmail.com" className="text-blue-600 hover:text-purple-600 transition-colors font-medium">
-                      rohittravels10@gmail.com
+                    <a href="mailto:ranchicabservice2@gmail.com" className="text-blue-600 hover:text-purple-600 transition-colors font-medium">
+                      ranchicabservice2@gmail.com
                     </a>
                   </div>
                 </motion.div>

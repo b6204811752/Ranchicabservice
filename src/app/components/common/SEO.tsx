@@ -26,9 +26,9 @@ export default function SEO({
   const pathname = location.pathname === '/' ? '/' : location.pathname.replace(/\/+$/, '');
   const canonicalUrl = pathname === '/' ? `${baseUrl}/` : `${baseUrl}${pathname}`;
   
-  const defaultTitle = 'Ranchi Cab Service - Best Taxi Service in Ranchi | Book Now 24/7';
-  const defaultDescription = 'Book reliable, safe & affordable taxi services in Ranchi. Local taxi, outstation cabs, Birsa Munda airport transfers & corporate taxi. Available 24/7. Call +91 7903629240';
-  const defaultKeywords = 'ranchi cab service, taxi service in ranchi, ranchi taxi, cab booking ranchi, ranchi airport taxi, outstation taxi ranchi, local taxi ranchi, birsa munda airport taxi, ranchi to patna cab, ranchi to kolkata taxi, ranchi to jamshedpur cab, car rental ranchi, cab near me ranchi, taxi near me, cheap taxi ranchi, best cab service ranchi, 24 hour taxi ranchi, online cab booking ranchi, innova on rent ranchi, ertiga taxi ranchi, one way taxi ranchi, round trip cab ranchi, jharkhand taxi service';
+  const defaultTitle = 'Ranchi Cab Service - #1 Taxi Service in Ranchi | Book AC Cabs 24/7 @ ₹10/km';
+  const defaultDescription = 'Ranchi Cab Service ⭐5.0 Rating - Book affordable taxis 24/7. Local cab ₹10/km, Outstation from ₹4500, Airport pickup ₹800. AC Sedan, Ertiga, Innova Crysta. 100% verified drivers. Free cancellation. Call +91 7903629240 for instant booking!';
+  const defaultKeywords = 'ranchi cab service, ranci cab, cab in ranchi, ranchi taxi, taxi service in ranchi, ranchi taxi, cab booking ranchi, ranchi airport taxi, outstation taxi ranchi, local taxi ranchi, birsa munda airport taxi, ranchi to patna cab, ranchi to kolkata taxi, ranchi to jamshedpur cab, car rental ranchi, cab near me ranchi, taxi near me ranchi, cheap taxi ranchi, best cab service ranchi, 24 hour taxi ranchi, online cab booking ranchi, innova on rent ranchi, ertiga taxi ranchi, one way taxi ranchi, round trip cab ranchi, jharkhand taxi service, ranchi to bokaro cab, ranchi to dhanbad taxi, cab in doranda, taxi lalpur ranchi, kanke cab service, harmu taxi, bariatu cab, morabadi taxi service, hinoo cab booking, hec ranchi cab, mecon ranchi taxi, ranchi lake taxi, pahari mandir cab, tagore hill taxi, dassam falls cab, rock garden ranchi taxi, hundru falls cab service, ranchi station taxi, airport transfer ranchi, wedding car ranchi, corporate taxi ranchi, tempo traveller ranchi 12 seater, dzire cab ranchi, aura taxi ranchi, crysta on rent ranchi, chauffeur driven car ranchi, reliable taxi jharkhand, safe cab ranchi';
   
   const pageTitle = title || defaultTitle;
   const pageDescription = description || defaultDescription;
@@ -81,7 +81,7 @@ export default function SEO({
                 "description": "Best cab and taxi service in Ranchi offering local taxi, outstation cabs, airport transfers and corporate taxi services 24/7",
                 "url": baseUrl,
                 "telephone": "+917903629240",
-                "email": "rohittravels10@gmail.com",
+                "email": "ranchicabservice2@gmail.com",
                 "priceRange": "₹₹",
                 "address": {
                   "@type": "PostalAddress",

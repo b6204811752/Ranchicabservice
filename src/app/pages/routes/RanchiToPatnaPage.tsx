@@ -72,9 +72,9 @@ export default function RanchiToPatnaPage() {
   return (
     <>
       <SEO
-        title="Ranchi to Patna Cab | Book Ranchi Patna Taxi at ₹4,500 | 24/7 Available"
-        description="Book Ranchi to Patna cab service at best rates. 330 km one-way & round trip taxi available 24/7. Safe, comfortable & affordable. Call +91 7903629240 now!"
-        keywords="ranchi to patna cab, ranchi to patna taxi, ranchi patna cab service, ranchi to patna car rental, ranchi patna taxi fare, cab from ranchi to patna"
+        title="Ranchi to Patna Cab @ ₹4500 | Book Taxi 24/7 | One-Way & Round Trip"
+        description="🚗 Book Ranchi to Patna cab at ₹4500 (330 km). ✓ One-way & Round Trip ✓ AC Sedan, Ertiga, Innova ✓ Experienced Highway Drivers ✓ Door-to-Door Service ✓ 24/7 Available. Call +91 7903629240!"
+        keywords="ranchi to patna cab, ranchi to patna taxi, ranchi patna cab service, ranchi to patna car rental, ranchi patna taxi fare, cab from ranchi to patna, ranchi to patna one way cab, ranchi patna round trip taxi, ranchi to patna cab fare, ranchi to patna dzire cab, ranchi to patna ertiga, ranchi to patna innova, patna to ranchi taxi, patna ranchi cab booking, ranchi patna highway taxi, ranchi to patna cab price, cheapest cab ranchi to patna, ranchi to patna cab contact number, book taxi ranchi to patna online, ranchi patna cab 24 hours"
         schema={schema}
       />
 

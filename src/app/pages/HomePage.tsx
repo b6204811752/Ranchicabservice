@@ -243,12 +243,12 @@ export default function HomePage() {
   return (
     <>
       <Helmet>
-        <title>Ranchi Cab Service | Best Taxi Service in Ranchi | Book 24/7 | Call +91 7903629240</title>
+        <title>Ranchi Cab Service | #1 Taxi in Ranchi @ ₹10/km | Book 24/7 ⭐5.0 Rated</title>
         <meta
           name="description"
-          content="⭐ #1 Ranchi Cab Service - Book reliable taxi 24/7 ✓ Birsa Munda Airport Transfer ✓ Outstation Cabs ✓ Local Taxi ✓ Sedan ₹10/km ✓ SUV ₹14/km ✓ Innova Crysta ✓ 5.0★ Google Rated ✓ Govt Verified Drivers. Call: 7903629240"
+          content="⭐ #1 Ranchi Cab Service - Book reliable taxi 24/7 ✓ Birsa Munda Airport ₹800 ✓ Local Cab ₹10/km ✓ Ranchi to Patna ₹4500 ✓ Innova Crysta, Ertiga, Dzire ✓ 5.0★ Google Rated ✓ Verified Drivers. Call: 7903629240"
         />
-        <meta name="keywords" content="ranchi cab service, taxi service in ranchi, ranchi taxi, cab booking ranchi, ranchi airport taxi, outstation taxi ranchi, local taxi ranchi, birsa munda airport taxi, ranchi to patna cab, ranchi to kolkata taxi, ranchi to jamshedpur cab, car rental ranchi, cab near me ranchi, taxi near me, cheap taxi ranchi, best cab service ranchi, 24 hour taxi ranchi, online cab booking ranchi, innova on rent ranchi, ertiga taxi ranchi, one way taxi ranchi, round trip cab ranchi, jharkhand taxi service, ranchi car hire, tempo traveller ranchi" />
+        <meta name="keywords" content="ranchi cab service, taxi service in ranchi, ranchi taxi, cab booking ranchi, ranchi airport taxi, outstation taxi ranchi, local taxi ranchi, birsa munda airport taxi, ranchi to patna cab, ranchi to kolkata taxi, ranchi to jamshedpur cab, car rental ranchi, cab near me ranchi, taxi near me ranchi, cheap taxi ranchi, best cab service ranchi, 24 hour taxi ranchi, online cab booking ranchi, innova on rent ranchi, ertiga taxi ranchi, one way taxi ranchi, round trip cab ranchi, jharkhand taxi service, ranchi car hire, tempo traveller ranchi, cab in doranda, lalpur taxi, kanke cab service, harmu taxi ranchi, bariatu cab booking, morabadi taxi service, hinoo cab ranchi, taxi near hec ranchi, cab near mecon, wedding car ranchi, corporate cab ranchi, ranchi station taxi, airport transfer ranchi" />
         <link rel="canonical" href="https://www.ranchicabservice.com/" />
       </Helmet>
 

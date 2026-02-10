@@ -111,7 +111,7 @@ export default function CorporatePage() {
               Call: +91 7903629240
             </a>
             <a
-              href="mailto:rohittravels10@gmail.com"
+              href="mailto:ranchicabservice2@gmail.com"
               className="bg-white hover:bg-gray-100 text-blue-600 px-8 py-4 rounded-lg font-semibold transition-colors"
             >
               Email Us

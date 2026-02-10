@@ -14,43 +14,59 @@ export default function FAQ({ customFaqs, title }: FAQProps = {}) {
   const defaultFaqs = [
     {
       question: "How can I book a cab in Ranchi?",
-      answer: "You can book a cab by calling +91 7903629240, sending a WhatsApp message, or using our online booking form. We provide instant confirmation and 24/7 booking service."
+      answer: "You can book a cab by calling +91 7903629240, sending a WhatsApp message, or using our online booking form. We provide instant confirmation and 24/7 booking service. You can also book through our website by filling out the quick booking form with your pickup location, destination, date, and time."
     },
     {
-      question: "What are your taxi rates in Ranchi?",
-      answer: "Our local taxi rates start from ₹10/km for sedans and ₹14/km for SUVs. Outstation rates are ₹12/km for sedans and ₹16/km for SUVs. We offer special packages for hourly rentals and airport transfers."
+      question: "What are the taxi rates in Ranchi?",
+      answer: "Our local taxi rates start from ₹10/km for sedans (Dzire, Aura) and ₹14/km for SUVs (Ertiga). Innova Crysta is available at ₹18/km. For outstation trips, Sedan rates are ₹12/km and SUV ₹16/km. Hourly packages: 4Hr/40km - ₹1,200 (Sedan), 8Hr/80km - ₹2,000 (Sedan). Airport transfer starts at ₹800."
     },
     {
-      question: "Do you provide outstation cab service from Ranchi?",
-      answer: "Yes, we provide outstation cab service to all major cities including Patna (₹4,500), Kolkata (₹6,000), Jamshedpur (₹2,200), Bokaro, Dhanbad, and more. Both one-way and round trip options are available."
+      question: "What is the fare for Ranchi to Patna cab?",
+      answer: "Ranchi to Patna cab fare starts at ₹4,500 for one-way trip (330 km, 6-7 hours) in a sedan. Round trip fare is ₹8,500. Ertiga SUV fare is ₹5,500 one-way. Innova Crysta fare is ₹6,500 one-way. Toll and parking charges are extra. We offer both one-way and round trip options."
+    },
+    {
+      question: "Do you provide Birsa Munda Airport taxi service?",
+      answer: "Yes, we provide 24/7 airport taxi service for Birsa Munda Airport (Ranchi Airport). Airport to city fare starts at ₹800 for sedan. We offer flight tracking, meet & greet at arrival gate, and luggage assistance. Our drivers monitor flight timings for delayed or early arrivals at no extra charge."
+    },
+    {
+      question: "What types of vehicles are available for booking?",
+      answer: "We have a wide range of vehicles: Sedan (Maruti Dzire, Hyundai Aura - 4+1 seater), SUV (Maruti Ertiga - 6+1 seater), Premium SUV (Toyota Innova Crysta - 7+1 seater), Tempo Traveller (12-17 seater for groups), and Luxury Cars (Audi, BMW on request). All vehicles are AC, well-maintained, and sanitized."
     },
     {
       question: "Are your drivers verified and experienced?",
-      answer: "Absolutely! All our drivers are government-verified, police-verified, and have extensive experience. They are professional, courteous, and well-trained in customer service and safe driving."
+      answer: "Yes, all our drivers are 100% government-verified with valid commercial licenses, police verification certificates, and background checks. They have 5+ years of driving experience, are trained in customer service, know all local routes and highways, and speak Hindi and English."
     },
     {
-      question: "What types of vehicles do you have?",
-      answer: "We have a wide range of vehicles including Maruti Dzire, Hyundai Aura, Maruti Ertiga, Toyota Innova Crysta, Audi, and BMW. All vehicles are well-maintained, clean, and air-conditioned."
+      question: "Do you provide taxi service in Doranda, Lalpur, Kanke areas?",
+      answer: "Yes, we provide cab service in all Ranchi localities including Doranda, Lalpur, Kanke, Harmu, Bariatu, Morabadi, Hinoo, HEC, MECON, Namkum, Ratu Road, Main Road, Albert Ekka Chowk, Birsa Chowk, and Ranchi Railway Station. Doorstep pickup available everywhere in Ranchi."
     },
     {
-      question: "Do you provide 24/7 taxi service?",
-      answer: "Yes, we are available 24 hours a day, 7 days a week, including all holidays. You can book a cab anytime for emergency travel, airport transfers, or outstation trips."
+      question: "What is the fare for Ranchi to Kolkata taxi?",
+      answer: "Ranchi to Kolkata taxi fare starts at ₹6,000 for one-way trip (425 km, 8-9 hours) in a sedan. Round trip fare is ₹11,500. The route goes via Jamshedpur-Kharagpur-Kolkata. We also provide Ranchi to Kolkata Airport (CCU) drop service. Toll charges are extra."
     },
     {
-      question: "What is your cancellation policy?",
-      answer: "Cancellations made 24 hours before the scheduled trip are free. Cancellations within 24 hours may incur a small charge. Please contact us for specific details."
+      question: "Do you offer monthly car rental packages in Ranchi?",
+      answer: "Yes, we offer customized monthly car rental packages for corporate clients, businesses, and individuals. Monthly packages include dedicated vehicle, professional driver, flexible hours, and customized billing. Contact us at +91 7903629240 for corporate rates and monthly rental quotes."
     },
     {
-      question: "Do you provide airport taxi service?",
-      answer: "Yes, we provide reliable airport pickup and drop services for Ranchi airport (Birsa Munda Airport). We offer flight tracking, meet & greet service, and luggage assistance 24/7."
+      question: "What is the cancellation policy?",
+      answer: "Cancellations made 24 hours before the scheduled trip are completely free. Cancellations within 12-24 hours incur 25% charge. Cancellations within 12 hours may incur 50% charge. No-show or last-minute cancellation may be charged full amount. Contact us for modifications to your booking."
+    },
+    {
+      question: "Do you provide cab service for weddings in Ranchi?",
+      answer: "Yes, we provide premium car rental for weddings including decorated cars, luxury vehicles (Audi, BMW), Innova Crysta fleet for baarat, and Ertiga for guest transportation. Wedding packages include driver in uniform, flower decoration, and AC vehicle. Book in advance for best availability."
     },
     {
       question: "What payment methods do you accept?",
-      answer: "We accept all major payment methods including cash, UPI, Google Pay, PhonePe, Paytm, credit/debit cards, and bank transfers. You can choose your preferred payment method at the time of booking."
+      answer: "We accept all major payment methods: Cash, UPI (Google Pay, PhonePe, Paytm, BHIM), Credit Cards, Debit Cards, Net Banking, and Bank Transfer. You can pay before or after the trip based on your preference. We provide digital receipts for all transactions."
     },
     {
-      question: "Do you offer corporate taxi services?",
-      answer: "Yes, we provide customized corporate taxi solutions including monthly packages, dedicated vehicles, professional drivers, and customized billing. Contact us for corporate inquiries and special rates."
+      question: "Is there a cab service from Ranchi Railway Station?",
+      answer: "Yes, we provide 24/7 taxi service from Ranchi Junction Railway Station. Our drivers can meet you at the station exit. Pre-booking is recommended for hassle-free pickup. We also provide cab service to Ranchi Railway Station for your departure. Station pickup starts at ₹300."
+    },
+    {
+      question: "Do you provide tempo traveller service in Ranchi?",
+      answer: "Yes, we have 12-seater and 17-seater tempo travellers available for group travel, pilgrimages, corporate outings, and family trips. Tempo traveller rates start at ₹22/km for 12-seater. Ideal for trips to Deoghar, Varanasi, Kolkata, and group outstation travel from Ranchi."
     }
   ];
 
