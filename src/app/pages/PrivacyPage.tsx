@@ -1,4 +1,5 @@
 import SEO from '../components/common/SEO';
+import { Link } from 'react-router-dom';
 
 export default function PrivacyPage() {
   return (
@@ -93,6 +94,9 @@ export default function PrivacyPage() {
                 <li><strong>Phone:</strong> <a href="tel:+917903629240" className="text-blue-600 hover:underline">+91 7903629240</a></li>
                 <li><strong>Email:</strong> <a href="mailto:ranchicabservice2@gmail.com" className="text-blue-600 hover:underline">ranchicabservice2@gmail.com</a></li>
               </ul>
+              <p className="text-gray-700 mt-6">
+                Looking for our services? Visit our <Link to="/services" className="text-blue-600 hover:underline font-semibold">Services page</Link> to book a <Link to="/local-taxi" className="text-blue-600 hover:underline">local taxi</Link>, <Link to="/outstation-taxi" className="text-blue-600 hover:underline">outstation cab</Link>, or <Link to="/airport-taxi" className="text-blue-600 hover:underline">airport transfer</Link>. You can also check our <Link to="/terms" className="text-blue-600 hover:underline">Terms and Conditions</Link> for booking policies.
+              </p>
             </section>
           </div>
         </div>

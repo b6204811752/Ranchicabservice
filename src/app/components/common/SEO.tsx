@@ -15,7 +15,7 @@ export default function SEO({
   title, 
   description, 
   keywords, 
-  image = 'https://www.ranchicabservice.com/logo-1200x630.png',
+  image = 'https://www.ranchicabservice.com/logo-512x512.png',
   type = 'website',
   schema,
   robots
@@ -74,12 +74,42 @@ export default function SEO({
             "@context": "https://schema.org",
             "@graph": [
               {
-                "@type": "LocalBusiness",
+                "@type": "Organization",
                 "@id": `${baseUrl}/#organization`,
+                "name": "Ranchi Cab Service",
+                "alternateName": "Ranchi Taxi Service",
+                "url": baseUrl,
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://www.ranchicabservice.com/logo-512x512.png",
+                  "width": 512,
+                  "height": 512,
+                  "caption": "Ranchi Cab Service Logo"
+                },
+                "image": {
+                  "@type": "ImageObject",
+                  "url": "https://www.ranchicabservice.com/logo-512x512.png",
+                  "width": 512,
+                  "height": 512
+                },
+                "sameAs": [
+                  "https://g.page/r/CdfnA1OiyAQkEAE",
+                  "https://www.facebook.com/ranchicabservice",
+                  "https://www.instagram.com/ranchicabservice",
+                  "https://twitter.com/ranchicabs",
+                  "https://www.linkedin.com/company/ranchicabservice",
+                  "https://wa.me/917903629240"
+                ]
+              },
+              {
+                "@type": "LocalBusiness",
+                "@id": `${baseUrl}/#business`,
                 "name": "Ranchi Cab Service",
                 "alternateName": "Ranchi Taxi Service",
                 "description": "Best cab and taxi service in Ranchi offering local taxi, outstation cabs, airport transfers and corporate taxi services 24/7",
                 "url": baseUrl,
+                "logo": "https://www.ranchicabservice.com/logo-512x512.png",
+                "image": "https://www.ranchicabservice.com/logo-512x512.png",
                 "telephone": "+917903629240",
                 "email": "ranchicabservice2@gmail.com",
                 "priceRange": "₹₹",
@@ -182,7 +212,7 @@ export default function SEO({
                 "@type": "TaxiService",
                 "name": "Ranchi Cab Service - Taxi Booking",
                 "provider": {
-                  "@id": `${baseUrl}/#organization`
+                  "@id": `${baseUrl}/#business`
                 },
                 "areaServed": {
                   "@type": "City",

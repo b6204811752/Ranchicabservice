@@ -108,12 +108,6 @@ export default function TempoTravellerPage() {
       "priceCurrency": "INR",
       "offerCount": "4",
       "availability": "https://schema.org/InStock"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "75",
-      "bestRating": "5"
     }
   };
 

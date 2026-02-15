@@ -42,9 +42,17 @@ export default function NotFoundPage() {
           <div className="mt-12">
             <p className="text-gray-600 mb-4">Popular Pages:</p>
             <div className="flex flex-wrap justify-center gap-3">
-              <Link to="/services" className="text-blue-600 hover:underline">Services</Link>
+              <Link to="/services" className="text-blue-600 hover:underline">Our Services</Link>
+              <span className="text-gray-400">•</span>
+              <Link to="/local-taxi" className="text-blue-600 hover:underline">Local Taxi</Link>
+              <span className="text-gray-400">•</span>
+              <Link to="/outstation-taxi" className="text-blue-600 hover:underline">Outstation Taxi</Link>
+              <span className="text-gray-400">•</span>
+              <Link to="/airport-taxi" className="text-blue-600 hover:underline">Airport Taxi</Link>
               <span className="text-gray-400">•</span>
               <Link to="/fleet" className="text-blue-600 hover:underline">Our Fleet</Link>
+              <span className="text-gray-400">•</span>
+              <Link to="/about" className="text-blue-600 hover:underline">About Us</Link>
               <span className="text-gray-400">•</span>
               <Link to="/contact" className="text-blue-600 hover:underline">Contact Us</Link>
               <span className="text-gray-400">•</span>

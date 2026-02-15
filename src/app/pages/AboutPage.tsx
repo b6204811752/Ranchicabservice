@@ -39,8 +39,8 @@ export default function AboutPage() {
   return (
     <>
       <SEO
-        title="About Us - Ranchi Cab Service | Best Taxi Service Provider in Ranchi Since 2010"
-        description="Learn about Ranchi Cab Service - Ranchi's most trusted taxi service provider. 10+ years experience, 500+ happy customers, verified drivers & 24/7 service. Book reliable cabs in Ranchi."
+        title="About Ranchi Cab Service | Trusted Since 2010"
+        description="Learn about Ranchi Cab Service - Ranchi's most trusted taxi service provider. 10+ years experience, 10,000+ happy customers, verified drivers & 24/7 service. Book reliable cabs in Ranchi."
         keywords="about ranchi cab service, ranchi taxi company, best cab service ranchi, trusted taxi ranchi, ranchi travels company, professional cab service ranchi"
       />
 

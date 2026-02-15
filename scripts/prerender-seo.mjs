@@ -96,63 +96,8 @@ const routes = [
           { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.ranchicabservice.com/services" },
           { "@type": "ListItem", "position": 3, "name": "Fleet", "item": "https://www.ranchicabservice.com/fleet" }
         ]
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How can I book a cab in Ranchi?",
-            "acceptedAnswer": { "@type": "Answer", "text": "You can book a cab by calling +91 7903629240, sending a WhatsApp message, or using our online booking form. We provide instant confirmation and 24/7 booking service." }
-          },
-          {
-            "@type": "Question",
-            "name": "What are your taxi rates in Ranchi?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Our local taxi rates start from \u20B910/km for sedans and \u20B914/km for SUVs. Outstation rates are \u20B912/km for sedans and \u20B916/km for SUVs. We offer special packages for hourly rentals and airport transfers." }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you provide outstation cab service from Ranchi?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes, we provide outstation cab service to all major cities including Patna (\u20B94,500), Kolkata (\u20B96,000), Jamshedpur (\u20B92,200), Bokaro, Dhanbad, and more. Both one-way and round trip options are available." }
-          },
-          {
-            "@type": "Question",
-            "name": "Are your drivers verified and experienced?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Absolutely! All our drivers are government-verified, police-verified, and have extensive experience. They are professional, courteous, and well-trained in customer service and safe driving." }
-          },
-          {
-            "@type": "Question",
-            "name": "What types of vehicles do you have?",
-            "acceptedAnswer": { "@type": "Answer", "text": "We have a wide range of vehicles including Maruti Dzire, Hyundai Aura, Maruti Ertiga, Toyota Innova Crysta, Audi, and BMW. All vehicles are well-maintained, clean, and air-conditioned." }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you provide 24/7 taxi service?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes, we are available 24 hours a day, 7 days a week, including all holidays. You can book a cab anytime for emergency travel, airport transfers, or outstation trips." }
-          },
-          {
-            "@type": "Question",
-            "name": "What is your cancellation policy?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Cancellations made 24 hours before the scheduled trip are free. Cancellations within 24 hours may incur a small charge. Please contact us for specific details." }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you provide airport taxi service?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes, we provide reliable airport pickup and drop services for Ranchi airport (Birsa Munda Airport). We offer flight tracking, meet & greet service, and luggage assistance 24/7." }
-          },
-          {
-            "@type": "Question",
-            "name": "What payment methods do you accept?",
-            "acceptedAnswer": { "@type": "Answer", "text": "We accept all major payment methods including cash, UPI, Google Pay, PhonePe, Paytm, credit/debit cards, and bank transfers. You can choose your preferred payment method at the time of booking." }
-          },
-          {
-            "@type": "Question",
-            "name": "Do you offer corporate taxi services?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes, we provide customized corporate taxi solutions including monthly packages, dedicated vehicles, professional drivers, and customized billing. Contact us for corporate inquiries and special rates." }
-          }
-        ]
       }
+      // FAQPage schema removed - now handled dynamically by FAQ.tsx component to avoid duplicates
     ]
   },
 

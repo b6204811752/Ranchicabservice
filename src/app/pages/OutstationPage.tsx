@@ -52,7 +52,7 @@ export default function OutstationPage() {
   return (
     <>
       <SEO
-        title="Outstation Taxi from Ranchi | Ranchi to Patna ₹4500 | Kolkata, Jamshedpur Cab"
+        title="Outstation Taxi Ranchi | Patna ₹4500 | Kolkata, Jamshedpur"
         description="🚗 Book Outstation Cab from Ranchi ✓ Ranchi to Patna ₹4500 ✓ Ranchi to Kolkata ₹6000 ✓ Ranchi to Jamshedpur ₹2200 ✓ One-Way & Round Trip ✓ AC Cars ✓ Experienced Highway Drivers. Call +91 7903629240"
         keywords="outstation taxi ranchi, ranchi to patna cab, ranchi to kolkata taxi, ranchi to jamshedpur cab, ranchi to bokaro taxi, ranchi to dhanbad cab, ranchi to hazaribagh taxi, outstation cab fare ranchi, one way taxi ranchi, round trip cab ranchi, highway taxi ranchi, intercity cab ranchi, ranchi to deoghar cab, ranchi to gaya taxi, ranchi to varanasi cab, ranchi to giridih taxi, chauffeur driven car ranchi, long distance taxi ranchi, ranchi tour package taxi, ranchi to netarhat cab, ranchi to daltonganj taxi, ranchi to dumka cab, ranchi to chaibasa taxi, ranchi to rajrappa cab, ranchi to bhubaneswar taxi, ranchi to puri cab, ranchi to lucknow taxi, jharkhand outstation cab, bihar outstation taxi, one way drop ranchi, ranchi roundtrip taxi, sedan outstation ranchi, ertiga outstation ranchi, innova crysta outstation, tempo traveller outstation ranchi"
         schema={{
@@ -79,12 +79,6 @@ export default function OutstationPage() {
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ranchi to Kolkata Cab"}, "price": "6000", "priceCurrency": "INR"},
               {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ranchi to Jamshedpur Cab"}, "price": "2200", "priceCurrency": "INR"}
             ]
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5.0",
-            "reviewCount": "200",
-            "bestRating": "5"
           }
         }}
       />
@@ -249,13 +243,24 @@ export default function OutstationPage() {
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 Why Choose Our Outstation Cab Service?
               </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <p className="text-lg text-gray-700 mb-6">
+                Ranchi Cab Service offers the most reliable and affordable <strong>outstation taxi service from Ranchi</strong> to all major cities in Jharkhand, Bihar, and West Bengal. With over 10 years of experience, we understand long-distance travel needs and provide comfortable AC vehicles for your intercity journeys.
+              </p>
+              <p className="text-lg text-gray-700 mb-6">
+                Whether you need a <Link to="/ranchi-to-patna-cab" className="text-blue-600 hover:underline font-semibold">Ranchi to Patna cab</Link>, <Link to="/ranchi-to-kolkata-taxi" className="text-blue-600 hover:underline font-semibold">Ranchi to Kolkata taxi</Link>, or <Link to="/ranchi-to-jamshedpur-cab" className="text-blue-600 hover:underline font-semibold">Ranchi to Jamshedpur cab</Link>, we have flexible one-way and round trip options. Our professional drivers are experienced with highway driving and know all major routes thoroughly.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
                     <span className="text-gray-700">{feature}</span>
                   </div>
                 ))}
+              </div>
+              <div className="bg-blue-50 border-l-4 border-blue-600 p-4 rounded">
+                <p className="text-gray-800">
+                  <strong>Popular Routes:</strong> We cover all major destinations including Patna, Kolkata, Jamshedpur, Bokaro, Dhanbad, Hazaribagh, Deoghar, Gaya, and more. For <Link to="/local-taxi" className="text-blue-600 hover:underline">hourly local taxi</Link> within Ranchi or <Link to="/airport-taxi" className="text-blue-600 hover:underline">airport transfers</Link>, check our other services.
+                </p>
               </div>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-xl">

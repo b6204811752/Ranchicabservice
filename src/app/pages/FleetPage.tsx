@@ -218,6 +218,51 @@ export default function FleetPage() {
         </div>
       </section>
 
+      {/* Popular Routes Section */}
+      <section className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">
+            Book Our Fleet for Popular Routes
+          </h2>
+          <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
+            Our well-maintained vehicles are available for all popular routes from Ranchi. Choose your destination and book now!
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <Link to="/ranchi-to-patna-cab" className="group p-4 bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-lg shadow hover:shadow-lg transition-all">
+              <h3 className="font-semibold text-blue-800 group-hover:text-blue-900">Ranchi to Patna</h3>
+              <p className="text-sm text-gray-600">330 km • From ₹4,500</p>
+            </Link>
+            <Link to="/ranchi-to-kolkata-taxi" className="group p-4 bg-gradient-to-br from-purple-50 to-purple-100 hover:from-purple-100 hover:to-purple-200 rounded-lg shadow hover:shadow-lg transition-all">
+              <h3 className="font-semibold text-purple-800 group-hover:text-purple-900">Ranchi to Kolkata</h3>
+              <p className="text-sm text-gray-600">420 km • From ₹6,000</p>
+            </Link>
+            <Link to="/ranchi-to-jamshedpur-cab" className="group p-4 bg-gradient-to-br from-green-50 to-green-100 hover:from-green-100 hover:to-green-200 rounded-lg shadow hover:shadow-lg transition-all">
+              <h3 className="font-semibold text-green-800 group-hover:text-green-900">Ranchi to Jamshedpur</h3>
+              <p className="text-sm text-gray-600">135 km • From ₹2,200</p>
+            </Link>
+            <Link to="/ranchi-to-bokaro-taxi" className="group p-4 bg-gradient-to-br from-orange-50 to-orange-100 hover:from-orange-100 hover:to-orange-200 rounded-lg shadow hover:shadow-lg transition-all">
+              <h3 className="font-semibold text-orange-800 group-hover:text-orange-900">Ranchi to Bokaro</h3>
+              <p className="text-sm text-gray-600">110 km • From ₹1,800</p>
+            </Link>
+            <Link to="/ranchi-to-dhanbad-cab" className="group p-4 bg-gradient-to-br from-indigo-50 to-indigo-100 hover:from-indigo-100 hover:to-indigo-200 rounded-lg shadow hover:shadow-lg transition-all">
+              <h3 className="font-semibold text-indigo-800 group-hover:text-indigo-900">Ranchi to Dhanbad</h3>
+              <p className="text-sm text-gray-600">165 km • From ₹2,800</p>
+            </Link>
+            <Link to="/ranchi-to-deoghar-cab" className="group p-4 bg-gradient-to-br from-pink-50 to-pink-100 hover:from-pink-100 hover:to-pink-200 rounded-lg shadow hover:shadow-lg transition-all">
+              <h3 className="font-semibold text-pink-800 group-hover:text-pink-900">Ranchi to Deoghar</h3>
+              <p className="text-sm text-gray-600">252 km • From ₹4,200</p>
+            </Link>
+            <Link to="/ranchi-to-hazaribagh-cab" className="group p-4 bg-gradient-to-br from-teal-50 to-teal-100 hover:from-teal-100 hover:to-teal-200 rounded-lg shadow hover:shadow-lg transition-all">
+              <h3 className="font-semibold text-teal-800 group-hover:text-teal-900">Ranchi to Hazaribagh</h3>
+              <p className="text-sm text-gray-600">92 km • From ₹1,600</p>
+            </Link>
+            <Link to="/cities" className="group p-4 bg-gradient-to-br from-gray-100 to-gray-200 hover:from-gray-200 hover:to-gray-300 rounded-lg shadow hover:shadow-lg transition-all flex items-center justify-center">
+              <h3 className="font-semibold text-gray-800 group-hover:text-gray-900">View All Routes →</h3>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Book Your Preferred Vehicle</h2>

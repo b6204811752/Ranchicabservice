@@ -1,4 +1,5 @@
 import SEO from '../components/common/SEO';
+import { Link } from 'react-router-dom';
 
 export default function TermsPage() {
   return (
@@ -111,6 +112,9 @@ export default function TermsPage() {
                 <li><strong>Phone:</strong> <a href="tel:+917903629240" className="text-blue-600 hover:underline">+91 7903629240</a></li>
                 <li><strong>Email:</strong> <a href="mailto:ranchicabservice2@gmail.com" className="text-blue-600 hover:underline">ranchicabservice2@gmail.com</a></li>
               </ul>
+              <p className="text-gray-700 mt-6">
+                Ready to book a cab? Explore our <Link to="/services" className="text-blue-600 hover:underline font-semibold">taxi services</Link> including <Link to="/local-taxi" className="text-blue-600 hover:underline">local taxi</Link>, <Link to="/outstation-taxi" className="text-blue-600 hover:underline">outstation cabs</Link>, <Link to="/airport-taxi" className="text-blue-600 hover:underline">airport transfers</Link>, and <Link to="/corporate-taxi" className="text-blue-600 hover:underline">corporate taxi</Link>. Check our <Link to="/privacy" className="text-blue-600 hover:underline">Privacy Policy</Link> to learn how we protect your data.
+              </p>
             </section>
           </div>
         </div>

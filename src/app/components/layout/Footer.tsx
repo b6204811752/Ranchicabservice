@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500 rounded-full filter blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
           {/* Company Info */}
           <div>
             <img 
@@ -101,6 +101,23 @@ export default function Footer() {
               <li><Link to="/local-taxi-ranchi" className="text-gray-400 hover:text-white transition-colors">Local Taxi</Link></li>
               <li><Link to="/airport-taxi" className="text-gray-400 hover:text-white transition-colors">Airport Transfer</Link></li>
               <li><Link to="/corporate-taxi" className="text-gray-400 hover:text-white transition-colors">Corporate Service</Link></li>
+              <li><Link to="/tempo-traveller-ranchi" className="text-gray-400 hover:text-white transition-colors">Tempo Traveller</Link></li>
+              <li><Link to="/wedding-car-ranchi" className="text-gray-400 hover:text-white transition-colors">Wedding Car Rental</Link></li>
+              <li><Link to="/cab-near-me-ranchi" className="text-gray-400 hover:text-white transition-colors">Cab Near Me</Link></li>
+            </ul>
+          </div>
+
+          {/* Popular Routes */}
+          <div>
+            <h4 className="font-semibold mb-4">Popular Routes</h4>
+            <ul className="space-y-2">
+              <li><Link to="/ranchi-to-patna-cab" className="text-gray-400 hover:text-white transition-colors">Ranchi to Patna</Link></li>
+              <li><Link to="/ranchi-to-kolkata-taxi" className="text-gray-400 hover:text-white transition-colors">Ranchi to Kolkata</Link></li>
+              <li><Link to="/ranchi-to-jamshedpur-cab" className="text-gray-400 hover:text-white transition-colors">Ranchi to Jamshedpur</Link></li>
+              <li><Link to="/ranchi-to-bokaro-taxi" className="text-gray-400 hover:text-white transition-colors">Ranchi to Bokaro</Link></li>
+              <li><Link to="/ranchi-to-dhanbad-cab" className="text-gray-400 hover:text-white transition-colors">Ranchi to Dhanbad</Link></li>
+              <li><Link to="/ranchi-to-deoghar-cab" className="text-gray-400 hover:text-white transition-colors">Ranchi to Deoghar</Link></li>
+              <li><Link to="/cities" className="text-gray-400 hover:text-white transition-colors">View All Routes →</Link></li>
             </ul>
           </div>
 

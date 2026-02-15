@@ -21,7 +21,7 @@ export default function LocalTaxiPage() {
   return (
     <>
       <SEO
-        title="Local Taxi Service in Ranchi | Hourly Cab Rental @ ₹10/km | 4Hr ₹1200, 8Hr ₹2000"
+        title="Local Taxi Ranchi @ ₹10/km | Hourly Cab Rental"
         description="🚖 Book Local Taxi in Ranchi ✓ Hourly Rental ₹10/km ✓ 4Hr Package ₹1200 ✓ 8Hr Package ₹2000 ✓ AC Sedan, Ertiga, Innova ✓ Verified Drivers ✓ City Tours ✓ Shopping Trips ✓ Hospital Visits. Call +91 7903629240"
         keywords="local taxi ranchi, hourly cab rental ranchi, 4 hour taxi ranchi, 8 hour cab ranchi, full day taxi ranchi, half day cab ranchi, local cab service ranchi, city taxi ranchi, ranchi local cab rate, ac taxi ranchi, cab for shopping ranchi, ranchi sightseeing taxi, taxi for wedding ranchi, cab for hospital ranchi, local car hire ranchi, ranchi city tour taxi, cab near me ranchi, taxi near me ranchi, book taxi online ranchi, doranda taxi, lalpur cab service, kanke taxi, harmu cab booking, bariatu taxi service, morabadi cab ranchi, hinoo taxi booking, hec area cab, mecon ranchi taxi, ranchi lake cab, pahari mandir taxi, tagore hill cab service, rock garden taxi, sedan on rent ranchi, ertiga local ranchi, innova hourly rental ranchi"
         schema={{
@@ -135,6 +135,38 @@ export default function LocalTaxiPage() {
                 <p className="text-gray-600">{feature.description}</p>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Need Outstation Travel Section */}
+      <section className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">
+            Need Outstation Travel?
+          </h2>
+          <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
+            Planning a trip outside Ranchi? We offer comfortable and affordable outstation taxi services to all major cities.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            <Link to="/outstation-taxi" className="group p-4 bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-lg shadow hover:shadow-lg transition-all text-center">
+              <h3 className="font-semibold text-blue-800 text-sm">Outstation Taxi</h3>
+            </Link>
+            <Link to="/ranchi-to-patna-cab" className="group p-4 bg-gradient-to-br from-purple-50 to-purple-100 hover:from-purple-100 hover:to-purple-200 rounded-lg shadow hover:shadow-lg transition-all text-center">
+              <h3 className="font-semibold text-purple-800 text-sm">Ranchi to Patna</h3>
+            </Link>
+            <Link to="/ranchi-to-kolkata-taxi" className="group p-4 bg-gradient-to-br from-green-50 to-green-100 hover:from-green-100 hover:to-green-200 rounded-lg shadow hover:shadow-lg transition-all text-center">
+              <h3 className="font-semibold text-green-800 text-sm">Ranchi to Kolkata</h3>
+            </Link>
+            <Link to="/ranchi-to-jamshedpur-cab" className="group p-4 bg-gradient-to-br from-orange-50 to-orange-100 hover:from-orange-100 hover:to-orange-200 rounded-lg shadow hover:shadow-lg transition-all text-center">
+              <h3 className="font-semibold text-orange-800 text-sm">Ranchi to Jamshedpur</h3>
+            </Link>
+            <Link to="/ranchi-to-deoghar-cab" className="group p-4 bg-gradient-to-br from-pink-50 to-pink-100 hover:from-pink-100 hover:to-pink-200 rounded-lg shadow hover:shadow-lg transition-all text-center">
+              <h3 className="font-semibold text-pink-800 text-sm">Ranchi to Deoghar</h3>
+            </Link>
+            <Link to="/cities" className="group p-4 bg-gradient-to-br from-gray-100 to-gray-200 hover:from-gray-200 hover:to-gray-300 rounded-lg shadow hover:shadow-lg transition-all flex items-center justify-center">
+              <h3 className="font-semibold text-gray-800 text-sm">All Routes →</h3>
+            </Link>
           </div>
         </div>
       </section>

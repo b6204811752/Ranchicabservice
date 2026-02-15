@@ -58,6 +58,9 @@ export default function CorporatePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
               <h2 className="text-3xl font-bold mb-6">Our Corporate Services</h2>
+              <p className="text-gray-600 mb-6 text-lg">
+                Ranchi Cab Service offers comprehensive corporate transportation solutions designed to meet the unique needs of businesses in Ranchi and surrounding areas. Our professional taxi service ensures your employees, clients, and executives travel in comfort and style.
+              </p>
               <ul className="space-y-4">
                 {services.map((service, index) => (
                   <li key={index} className="flex items-center space-x-3">
@@ -66,6 +69,17 @@ export default function CorporatePage() {
                   </li>
                 ))}
               </ul>
+              <div className="mt-8 p-6 bg-blue-50 rounded-xl">
+                <h3 className="font-bold text-xl mb-3">Why Choose Us for Corporate Travel?</h3>
+                <ul className="space-y-2 text-gray-700">
+                  <li>• Dedicated account manager for your business</li>
+                  <li>• Flexible billing options - monthly or per trip</li>
+                  <li>• Priority booking for urgent requirements</li>
+                  <li>• Detailed trip reports and invoicing</li>
+                  <li>• Professional, uniformed drivers</li>
+                  <li>• GPS tracking for safety and monitoring</li>
+                </ul>
+              </div>
             </div>
             <div className="rounded-xl overflow-hidden shadow-xl">
               <img

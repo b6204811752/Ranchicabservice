@@ -45,6 +45,12 @@ export default function CitiesPage() {
 
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
+              Ranchi Cab Service operates comprehensive <strong>taxi services across Jharkhand, West Bengal, and Bihar</strong>. With our extensive network and experienced drivers, we provide reliable intercity cab service to all major cities and tourist destinations in the region.
+            </p>
+          </div>
+          
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <motion.div 
               initial={{ opacity: 0, rotateY: -20, y: 30 }}
@@ -126,9 +132,78 @@ export default function CitiesPage() {
         </div>
       </section>
 
+      {/* Additional Services Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-6">Our Services Across Cities</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <div className="bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl border border-blue-100">
+              <h3 className="font-bold text-xl mb-3 text-blue-900">Local Taxi</h3>
+              <p className="text-gray-600 mb-4">Hourly cab rental for city tours and local travel in all covered cities.</p>
+              <Link to="/local-taxi" className="text-blue-600 hover:underline font-semibold">Learn More →</Link>
+            </div>
+            <div className="bg-gradient-to-br from-green-50 to-white p-6 rounded-xl border border-green-100">
+              <h3 className="font-bold text-xl mb-3 text-green-900">Outstation Taxi</h3>
+              <p className="text-gray-600 mb-4">Intercity cab service connecting all major cities with one-way and round trips.</p>
+              <Link to="/outstation-taxi" className="text-green-600 hover:underline font-semibold">View Routes →</Link>
+            </div>
+            <div className="bg-gradient-to-br from-purple-50 to-white p-6 rounded-xl border border-purple-100">
+              <h3 className="font-bold text-xl mb-3 text-purple-900">Airport Transfer</h3>
+              <p className="text-gray-600 mb-4">Reliable airport pickup and drop service at all major airports in the region.</p>
+              <Link to="/airport-taxi" className="text-purple-600 hover:underline font-semibold">Book Now →</Link>
+            </div>
+            <div className="bg-gradient-to-br from-orange-50 to-white p-6 rounded-xl border border-orange-100">
+              <h3 className="font-bold text-xl mb-3 text-orange-900">Corporate Taxi</h3>
+              <p className="text-gray-600 mb-4">Professional business transportation solutions for enterprises across all cities.</p>
+              <Link to="/corporate-taxi" className="text-orange-600 hover:underline font-semibold">Get Quote →</Link>
+            </div>
+          </div>
+          <div className="bg-gray-50 rounded-xl p-8">
+            <h3 className="text-2xl font-bold mb-4 text-center">Why Choose Ranchi Cab Service for Intercity Travel?</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start">
+                    <span className="text-green-500 mr-2 mt-1">✓</span>
+                    <span><strong>Wide Coverage:</strong> We operate in 20+ cities across Jharkhand, West Bengal, and Bihar</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-500 mr-2 mt-1">✓</span>
+                    <span><strong>24/7 Availability:</strong> Book cabs anytime for immediate or advance bookings</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-500 mr-2 mt-1">✓</span>
+                    <span><strong>Transparent Pricing:</strong> No hidden charges, clear fare breakdown for all routes</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-start">
+                    <span className="text-green-500 mr-2 mt-1">✓</span>
+                    <span><strong>Professional Drivers:</strong> Experienced local drivers familiar with all routes</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-500 mr-2 mt-1">✓</span>
+                    <span><strong>Well-Maintained Fleet:</strong> Clean AC vehicles including Sedan, SUV, and Innova Crysta</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-500 mr-2 mt-1">✓</span>
+                    <span><strong>Flexible Options:</strong> One-way, round trip, and multi-city tour packages available</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Book Your Ride</h2>
+          <p className="text-lg mb-8 text-blue-100 max-w-2xl mx-auto">
+            Ready to travel? Contact us for instant booking or explore our <Link to="/services" className="text-yellow-300 hover:text-yellow-200 underline font-semibold">full range of services</Link>.
+          </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link to="/#booking-form">
               <button className="bg-white hover:bg-gray-100 text-blue-600 px-8 py-4 rounded-lg font-semibold transition-colors shadow-lg">

@@ -28,6 +28,10 @@ Disallow: /assets/*.map$
 # Sitemap location
 Sitemap: https://www.ranchicabservice.com/sitemap.xml
 
+# LLM Context File for AI assistants
+# AI models can use this file to learn about our services
+Allow: /llms.txt
+
 # Googlebot specific rules
 User-agent: Googlebot
 Allow: /
@@ -58,12 +62,32 @@ Allow: /
 User-agent: YandexBot
 Allow: /
 
-# Block AI training bots (optional - keeps content exclusive)
+# AI Bots and LLM Crawlers
+# Allow AI assistants to access our content for better discoverability
 User-agent: GPTBot
-Disallow: /
+Allow: /
+Allow: /llms.txt
 
 User-agent: ChatGPT-User
-Disallow: /
+Allow: /
+Allow: /llms.txt
 
 User-agent: CCBot
-Disallow: /
+Allow: /
+Allow: /llms.txt
+
+User-agent: anthropic-ai
+Allow: /
+Allow: /llms.txt
+
+User-agent: Claude-Web
+Allow: /
+Allow: /llms.txt
+
+User-agent: PerplexityBot
+Allow: /
+Allow: /llms.txt
+
+User-agent: cohere-ai
+Allow: /
+Allow: /llms.txt

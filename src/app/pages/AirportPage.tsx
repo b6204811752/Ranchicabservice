@@ -50,12 +50,6 @@ export default function AirportPage() {
             "price": "800",
             "priceCurrency": "INR",
             "availability": "https://schema.org/InStock"
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5.0",
-            "reviewCount": "120",
-            "bestRating": "5"
           }
         }}
       />
@@ -115,6 +109,56 @@ export default function AirportPage() {
                 <p className="text-gray-600">{feature.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* More Services Section */}
+      <section className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">
+            Explore More Services
+          </h2>
+          <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
+            Besides airport transfers, we offer comprehensive taxi services for all your travel needs in and around Ranchi.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <Link to="/local-taxi-ranchi" className="group p-6 bg-gradient-to-br from-blue-50 to-blue-100 hover:from-blue-100 hover:to-blue-200 rounded-lg shadow hover:shadow-lg transition-all">
+              <h3 className="font-bold text-blue-800 group-hover:text-blue-900 text-lg mb-2">Local Taxi</h3>
+              <p className="text-sm text-gray-600">Hourly rental for city travel</p>
+            </Link>
+            <Link to="/outstation-taxi" className="group p-6 bg-gradient-to-br from-purple-50 to-purple-100 hover:from-purple-100 hover:to-purple-200 rounded-lg shadow hover:shadow-lg transition-all">
+              <h3 className="font-bold text-purple-800 group-hover:text-purple-900 text-lg mb-2">Outstation Taxi</h3>
+              <p className="text-sm text-gray-600">Long-distance travel</p>
+            </Link>
+            <Link to="/corporate-taxi" className="group p-6 bg-gradient-to-br from-green-50 to-green-100 hover:from-green-100 hover:to-green-200 rounded-lg shadow hover:shadow-lg transition-all">
+              <h3 className="font-bold text-green-800 group-hover:text-green-900 text-lg mb-2">Corporate Service</h3>
+              <p className="text-sm text-gray-600">Business travel solutions</p>
+            </Link>
+            <Link to="/fleet" className="group p-6 bg-gradient-to-br from-orange-50 to-orange-100 hover:from-orange-100 hover:to-orange-200 rounded-lg shadow hover:shadow-lg transition-all">
+              <h3 className="font-bold text-orange-800 group-hover:text-orange-900 text-lg mb-2">View Fleet</h3>
+              <p className="text-sm text-gray-600">Our vehicle options</p>
+            </Link>
+          </div>
+          <h3 className="text-2xl font-bold text-center mb-6 text-gray-800">
+            Popular Routes from Airport
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            <Link to="/ranchi-to-patna-cab" className="p-4 bg-gray-50 hover:bg-blue-50 rounded-lg text-center transition-all">
+              <p className="font-semibold text-gray-800 text-sm">Airport to Patna</p>
+            </Link>
+            <Link to="/ranchi-to-kolkata-taxi" className="p-4 bg-gray-50 hover:bg-blue-50 rounded-lg text-center transition-all">
+              <p className="font-semibold text-gray-800 text-sm">Airport to Kolkata</p>
+            </Link>
+            <Link to="/ranchi-to-jamshedpur-cab" className="p-4 bg-gray-50 hover:bg-blue-50 rounded-lg text-center transition-all">
+              <p className="font-semibold text-gray-800 text-sm">Airport to Jamshedpur</p>
+            </Link>
+            <Link to="/ranchi-to-bokaro-taxi" className="p-4 bg-gray-50 hover:bg-blue-50 rounded-lg text-center transition-all">
+              <p className="font-semibold text-gray-800 text-sm">Airport to Bokaro</p>
+            </Link>
+            <Link to="/cities" className="p-4 bg-gray-100 hover:bg-gray-200 rounded-lg text-center transition-all">
+              <p className="font-semibold text-gray-800 text-sm">All Destinations →</p>
+            </Link>
           </div>
         </div>
       </section>
