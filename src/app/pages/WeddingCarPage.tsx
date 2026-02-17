@@ -165,9 +165,9 @@ export default function WeddingCarPage() {
   return (
     <>
       <SEO
-        title="Wedding Car Rental Ranchi | Decorated Audi, BMW @ ₹2500 | Baraat Cars"
-        description="💒 Book Decorated Wedding Cars in Ranchi ✓ Audi, BMW, Mercedes ✓ Innova Crysta ₹5500/day ✓ Dzire ₹2500/day ✓ Tempo for Baraat ✓ Flower Decoration ✓ Professional Chauffeurs. Call +91 7903629240"
-        keywords="wedding car ranchi, decorated car for wedding ranchi, marriage car rental ranchi, baraat car ranchi, luxury wedding car ranchi, audi for wedding ranchi, bmw wedding car ranchi, dulhan car ranchi, innova for wedding ranchi, wedding car decoration ranchi, bridal car ranchi, groom car ranchi, vidaai car ranchi, shaadi car ranchi, vivah car rental ranchi, tempo for baraat ranchi, wedding fleet ranchi, wedding car package ranchi, sherwani car ranchi, wedding car with driver ranchi, just married car ranchi, flower decorated car ranchi, wedding car booking ranchi"
+        title="Wedding Car Rental Ranchi | Decorated Audi, BMW @ ₹2500 | Baraat & Dulhan Cars"
+        description="💒 Book Decorated Wedding Cars in Ranchi ✓ Audi, BMW, Mercedes ✓ Innova Crysta ₹5500/day ✓ Dzire ₹2500/day ✓ Tempo for Baraat ✓ Flower Decoration ✓ Professional Chauffeurs ✓ Best Rates. Call +91 7903629240"
+        keywords="wedding car ranchi, decorated car for wedding ranchi, marriage car rental ranchi, baraat car ranchi, luxury wedding car ranchi, audi for wedding ranchi, bmw wedding car ranchi, dulhan car ranchi, dulhan ki gaadi ranchi, innova for wedding ranchi, wedding car decoration ranchi, bridal car ranchi, groom car ranchi, vidaai car ranchi, shaadi car ranchi, shaadi ki gaadi ranchi, vivah car rental ranchi, tempo for baraat ranchi, wedding fleet ranchi, wedding car package ranchi, sherwani car ranchi, wedding car with driver ranchi, just married car ranchi, flower decorated car ranchi, wedding car booking ranchi, phool wali gaadi ranchi, sej gaadi ranchi, marriage car booking ranchi, wedding car rate ranchi, cheap wedding car ranchi, best wedding car ranchi, luxury car for shaadi ranchi, mercedes wedding car ranchi, decorated innova wedding ranchi"
         schema={schema}
       />
 

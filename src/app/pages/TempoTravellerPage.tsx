@@ -120,9 +120,9 @@ export default function TempoTravellerPage() {
   return (
     <>
       <SEO
-        title="Tempo Traveller in Ranchi | 12, 17 Seater @ ₹18/km | Mini Bus Rental"
-        description="🚐 Book Tempo Traveller in Ranchi ✓ 9 Seater ₹18/km ✓ 12 Seater ₹20/km ✓ 17 Seater ₹22/km ✓ 26 Seater Mini Bus ✓ AC Push-back Seats ✓ Deoghar Pilgrimage ✓ Wedding ✓ Corporate. Call +91 7903629240"
-        keywords="tempo traveller ranchi, 12 seater tempo ranchi, 17 seater tempo traveller ranchi, mini bus rental ranchi, tempo traveller for wedding ranchi, tempo traveller deoghar, group travel ranchi, 9 seater tempo traveller ranchi, 26 seater bus rental ranchi, tempo traveller hire ranchi, tempo traveller booking ranchi, ranchi to deoghar tempo traveller, ranchi to patna tempo traveller, ranchi to kolkata tempo, tempo for pilgrimage ranchi, corporate bus rental ranchi, school trip bus ranchi, tempo traveller rate per km ranchi, ac tempo traveller ranchi, luxury tempo traveller ranchi, tempo traveller jharkhand, mini bus for wedding ranchi, tempo traveller near me ranchi"
+        title="Tempo Traveller in Ranchi | 12 & 17 Seater @ ₹18/km | Mini Bus on Rent"
+        description="🚐 Book Tempo Traveller in Ranchi ✓ 9 Seater ₹18/km ✓ 12 Seater ₹20/km ✓ 17 Seater ₹22/km ✓ 26 Seater Mini Bus ✓ AC Push-back Seats ✓ Deoghar Yatra ✓ Wedding ✓ Corporate ✓ School Trips. Call +91 7903629240"
+        keywords="tempo traveller ranchi, 12 seater tempo ranchi, 17 seater tempo traveller ranchi, mini bus rental ranchi, mini bus on rent ranchi, tempo traveller for wedding ranchi, tempo traveller deoghar, group travel ranchi, 9 seater tempo traveller ranchi, 26 seater bus rental ranchi, tempo traveller hire ranchi, tempo traveller booking ranchi, ranchi to deoghar tempo traveller, ranchi to patna tempo traveller, ranchi to kolkata tempo, tempo for pilgrimage ranchi, corporate bus rental ranchi, school trip bus ranchi, tempo traveller rate per km ranchi, ac tempo traveller ranchi, luxury tempo traveller ranchi, tempo traveller jharkhand, mini bus for wedding ranchi, tempo traveller near me ranchi, tempo traveller on rent ranchi, tempo traveller ranchi price, tempo traveller ranchi booking number, 12 seater van ranchi, family trip tempo ranchi, pilgrimage tempo ranchi, mandir yatra tempo ranchi, tempo traveller ranchi se deoghar, baba dham tempo traveller ranchi, group cab ranchi"
         schema={schema}
       />
 

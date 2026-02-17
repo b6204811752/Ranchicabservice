@@ -15,9 +15,9 @@ export default function RanchiToGayaPage() {
         innovaOneWay: '₹7,200',
         innovaRoundTrip: '₹13,500',
         slug: 'ranchi-to-gaya-cab',
-        metaTitle: 'Ranchi to Gaya Cab | Bodh Gaya Taxi ₹4,500 | Pind Daan Taxi',
-        metaDescription: 'Book Ranchi to Gaya cab for Bodh Gaya darshan & Pind Daan. 280 km taxi service. One-way ₹4,500, Round trip ₹8,500. Call +91 7903629240!',
-        metaKeywords: 'ranchi to gaya cab, ranchi to gaya taxi, ranchi to bodh gaya cab, pind daan taxi from ranchi, ranchi to gaya car rental, bodh gaya taxi booking, ranchi gaya one way cab, gaya pilgrimage taxi',
+        metaTitle: 'Ranchi to Gaya Cab @ ₹4,500 | Bodh Gaya & Pind Daan Taxi 24/7',
+        metaDescription: '🙏 Book Ranchi to Gaya cab @ ₹4,500 for Bodh Gaya darshan & Pind Daan ✓ 280 km ✓ AC Sedan, Ertiga, Innova ✓ Pilgrimage Package ✓ Round Trip ₹8,500. Call +91 7903629240!',
+        metaKeywords: 'ranchi to gaya cab, ranchi to gaya taxi, ranchi to gaya cab service, ranchi gaya taxi fare, ranchi to bodh gaya cab, ranchi to bodh gaya taxi, pind daan taxi from ranchi, ranchi to gaya car rental, bodh gaya taxi booking, ranchi gaya one way cab, gaya pilgrimage taxi, gaya to ranchi cab, gaya to ranchi taxi, ranchi to gaya round trip, ranchi se gaya gaadi, ranchi to gaya cab price, cheapest cab ranchi to gaya, ranchi to gaya cab booking, ranchi to vishnupad temple taxi, ranchi to mahabodhi temple cab, pind daan ke liye taxi ranchi, ranchi to gaya cab phone number',
         aboutText: [
           'Planning a pilgrimage to <strong>Bodh Gaya</strong> or <strong>Pind Daan ceremony</strong>? Our <strong>Ranchi to Gaya cab service</strong> provides reliable and comfortable transportation for your spiritual journey. Gaya is one of the most sacred pilgrimage sites in India, where Lord Buddha attained enlightenment.',
           'The 280 km journey from Ranchi to Gaya takes approximately 5-6 hours via NH-33 and NH-83. Our experienced drivers help you navigate the pilgrimage sites including Mahabodhi Temple, Vishnupad Temple, and Phalgu River for Pind Daan rituals.',

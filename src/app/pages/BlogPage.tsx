@@ -192,9 +192,9 @@ export default function BlogPage() {
   return (
     <>
       <SEO
-        title="Travel Blog | Ranchi Cab Service | Road Trip Guides & Taxi Tips"
-        description="Read our travel guides for Ranchi, Jharkhand road trips, hill stations, pilgrimages and more. Expert tips from Ranchi's trusted cab service."
-        keywords="ranchi travel blog, jharkhand tourism guide, ranchi road trips, deoghar guide, netarhat travel, ranchi taxi tips, jharkhand pilgrimage"
+        title="Travel Blog & Guides | Ranchi Cab Service | Road Trips & Tourism Tips"
+        description="Read travel guides & tips for Ranchi, Jharkhand road trips, hill stations, pilgrimages, waterfalls & tourist places. Expert travel advice from Jharkhand's trusted cab service. Plan your trip now!"
+        keywords="ranchi travel blog, jharkhand tourism guide, ranchi road trips, deoghar travel guide, netarhat hill station guide, ranchi taxi tips, jharkhand pilgrimage guide, ranchi tourist places, jharkhand tourist places, ranchi sightseeing places, hundru falls trip, dassam falls travel, jonha falls guide, ranchi to deoghar road trip, jharkhand road trip itinerary, ranchi weekend getaway, betla national park trip, palamau tiger reserve guide, ranchi travel tips, jharkhand travel blog, best places to visit near ranchi, ranchi day trip ideas, ranchi tourism blog"
         schema={schema}
       />
 

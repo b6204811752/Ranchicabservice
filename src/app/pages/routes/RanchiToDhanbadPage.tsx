@@ -15,9 +15,9 @@ export default function RanchiToDhanbadPage() {
         innovaOneWay: '₹3,800',
         innovaRoundTrip: '₹7,000',
         slug: 'ranchi-to-dhanbad-cab',
-        metaTitle: 'Ranchi to Dhanbad Taxi | Cab @ ₹2,400 | Car Rental 24/7 Available',
-        metaDescription: 'Book Ranchi to Dhanbad taxi & car rental at ₹2,400. 150 km one-way & round trip cab service 24/7. Safe AC vehicles, verified drivers. Best rates guaranteed. Call +91 7903629240!',
-        metaKeywords: 'ranchi to dhanbad, ranchi to dhanbad taxi, ranchi to dhanbad cab, ranchi dhanbad taxi, ranchi to dhanbad car rental, cab from ranchi to dhanbad, taxi ranchi to dhanbad, ranchi dhanbad cab service, ranchi to dhanbad cab fare, ranchi to dhanbad cab booking',
+        metaTitle: 'Ranchi to Dhanbad Cab @ ₹2,400 | One-Way & Round Trip Taxi 24/7',
+        metaDescription: '🚗 Book Ranchi to Dhanbad cab @ ₹2,400 (150 km) ✓ One-Way & Round Trip ✓ AC Sedan, Ertiga, Innova ✓ Verified Drivers ✓ Best Rates ✓ Free Cancellation. Call +91 7903629240!',
+        metaKeywords: 'ranchi to dhanbad, ranchi to dhanbad taxi, ranchi to dhanbad cab, ranchi dhanbad taxi, ranchi to dhanbad car rental, cab from ranchi to dhanbad, taxi ranchi to dhanbad, ranchi dhanbad cab service, ranchi to dhanbad cab fare, ranchi to dhanbad cab booking, dhanbad to ranchi cab, dhanbad to ranchi taxi, ranchi to dhanbad one way cab, ranchi to dhanbad round trip, ranchi se dhanbad gaadi, ranchi to dhanbad cab price, cheapest cab ranchi to dhanbad, ranchi to dhanbad innova, ranchi to dhanbad ertiga, ranchi to dhanbad cab phone number, best taxi ranchi to dhanbad',
         aboutText: [
           'Looking for a comfortable <strong>Ranchi to Dhanbad cab service</strong>? Ranchi Cab Service offers reliable taxi service from Ranchi to Dhanbad, the Coal Capital of India. Enjoy a smooth 150 km journey in our clean AC vehicles driven by experienced professionals.',
           'Dhanbad is known as the Coal Capital of India and is an important industrial city in Jharkhand. The journey from Ranchi to Dhanbad takes approximately 3-4 hours via NH-23 through Bokaro. Our drivers are well-versed with the route and ensure safe, comfortable travel.'

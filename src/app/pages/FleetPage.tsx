@@ -93,9 +93,9 @@ export default function FleetPage() {
   return (
     <>
       <SEO
-        title="Our Fleet - Car Rental Options | Ranchi Cab Service"
-        description="Explore our fleet of well-maintained vehicles. From sedans to SUVs and luxury cars. Maruti Dzire, Ertiga, Toyota Innova, Audi, BMW available. Call +91 7903629240"
-        keywords="ranchi cab fleet, car rental ranchi, dzire taxi ranchi, ertiga cab ranchi, innova crysta ranchi, luxury car rental ranchi, sedan taxi ranchi, suv cab ranchi, tempo traveller ranchi, 7 seater cab ranchi, 12 seater tempo traveller ranchi, ac cab ranchi, premium taxi ranchi, audi on rent ranchi, fortuner on rent ranchi, wedding car ranchi"
+        title="Our Fleet | Car Rental Ranchi | Dzire ₹10/km, Ertiga, Innova, Audi, BMW"
+        description="Explore our fleet of AC vehicles in Ranchi ✓ Maruti Dzire ₹10/km ✓ Ertiga ₹14/km ✓ Toyota Innova Crysta ₹18/km ✓ Audi, BMW, Mercedes for weddings ✓ Tempo Traveller. Well-maintained, GPS tracked. Call +91 7903629240"
+        keywords="ranchi cab fleet, car rental ranchi, dzire taxi ranchi, dzire on rent ranchi, ertiga cab ranchi, ertiga on rent ranchi, innova crysta ranchi, innova on rent ranchi, luxury car rental ranchi, sedan taxi ranchi, suv cab ranchi, tempo traveller ranchi, 7 seater cab ranchi, 12 seater tempo traveller ranchi, ac cab ranchi, premium taxi ranchi, audi on rent ranchi, bmw on rent ranchi, fortuner on rent ranchi, wedding car ranchi, swift dezire cab ranchi, maruti ertiga ranchi, toyota innova ranchi, tata aura cab ranchi, car hire with driver ranchi, self drive car ranchi, car on rent ranchi, vehicle on rent ranchi, gaadi kiraye pe ranchi, innova crysta rate ranchi, ertiga per km rate ranchi, sedan rate per km ranchi"
         schema={fleetSchema}
       />
 

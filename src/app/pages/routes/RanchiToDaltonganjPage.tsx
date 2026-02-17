@@ -15,9 +15,9 @@ export default function RanchiToDaltonganjPage() {
         innovaOneWay: '₹5,000',
         innovaRoundTrip: '₹9,500',
         slug: 'ranchi-to-daltonganj-cab',
-        metaTitle: 'Ranchi to Daltonganj Cab | Betla Safari Taxi ₹3,000 | 24/7',
-        metaDescription: 'Book Ranchi to Daltonganj cab for Betla National Park safari. 185 km taxi service. One-way ₹3,000, Round trip ₹5,600. Call +91 7903629240!',
-        metaKeywords: 'ranchi to daltonganj cab, ranchi to daltonganj taxi, ranchi to betla cab, betla national park taxi, ranchi to palamau car rental, daltonganj taxi booking, betla tiger reserve cab',
+        metaTitle: 'Ranchi to Daltonganj Cab @ ₹3,000 | Betla Safari Taxi 24/7',
+        metaDescription: '🐅 Book Ranchi to Daltonganj cab @ ₹3,000 for Betla National Park Safari ✓ 185 km ✓ AC Sedan, Ertiga, Innova ✓ Wildlife Tour ✓ Round Trip ₹5,600. Call +91 7903629240!',
+        metaKeywords: 'ranchi to daltonganj cab, ranchi to daltonganj taxi, ranchi to daltonganj cab service, ranchi daltonganj taxi fare, ranchi to betla cab, ranchi to betla taxi, betla national park taxi, ranchi to palamau car rental, daltonganj taxi booking, betla tiger reserve cab, daltonganj to ranchi cab, daltonganj to ranchi taxi, ranchi to daltonganj round trip, ranchi se daltonganj gaadi, ranchi to betla safari cab, ranchi to daltonganj cab booking, ranchi to daltonganj cab price, cheapest cab ranchi to daltonganj, ranchi to palamau tiger reserve taxi, ranchi to daltonganj cab phone number',
         aboutText: [
           'Explore <strong>Betla National Park</strong> with our <strong>Ranchi to Daltonganj cab service</strong>. Daltonganj is the gateway to Palamau Tiger Reserve (Betla), one of the first tiger reserves in India under Project Tiger.',
           'The 185 km journey from Ranchi to Daltonganj takes approximately 4-5 hours. From Daltonganj, Betla National Park is just 25 km. Our drivers can arrange your safari permits and guide you through the wildlife sanctuary.',

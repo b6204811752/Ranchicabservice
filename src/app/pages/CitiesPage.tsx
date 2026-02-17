@@ -14,9 +14,9 @@ export default function CitiesPage() {
   return (
     <>
       <SEO
-        title="Cities We Serve - Cab Service in Jharkhand, West Bengal & Bihar"
-        description="Ranchi Cab Service operates in Ranchi, Jamshedpur, Bokaro, Patna, Kolkata, and many more cities across Jharkhand, West Bengal, and Bihar. Book intercity cabs at best rates."
-        keywords="cab service jharkhand, taxi service bihar, ranchi to patna cab, ranchi to kolkata taxi, ranchi to jamshedpur cab, ranchi to bokaro taxi, ranchi to dhanbad cab, intercity cab service ranchi"
+        title="Cities We Serve | Cab Service Jharkhand, Bihar & West Bengal | All Routes"
+        description="Ranchi Cab Service covers 50+ cities ✓ Ranchi ✓ Jamshedpur ✓ Bokaro ✓ Dhanbad ✓ Patna ✓ Kolkata ✓ Gaya ✓ Varanasi ✓ Deoghar & more. Book intercity cabs at best rates across Jharkhand, Bihar & West Bengal. Call +91 7903629240"
+        keywords="cab service jharkhand, taxi service bihar, ranchi to patna cab, ranchi to kolkata taxi, ranchi to jamshedpur cab, ranchi to bokaro taxi, ranchi to dhanbad cab, intercity cab service ranchi, ranchi to deoghar cab, ranchi to gaya taxi, ranchi to varanasi cab, ranchi to hazaribagh cab, ranchi to giridih taxi, ranchi to daltonganj cab, ranchi to dumka taxi, ranchi to netarhat cab, ranchi to chaibasa taxi, ranchi to bhubaneswar cab, ranchi to puri taxi, jharkhand intercity cab, bihar cab service, west bengal taxi service, all india taxi from ranchi, ranchi to all cities cab, outstation routes from ranchi, ranchi cab service all routes, jharkhand tour taxi"
       />
 
       <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 overflow-hidden">

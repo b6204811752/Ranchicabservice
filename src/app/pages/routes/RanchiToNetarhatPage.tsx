@@ -15,9 +15,9 @@ export default function RanchiToNetarhatPage() {
         innovaOneWay: '₹4,200',
         innovaRoundTrip: '₹7,800',
         slug: 'ranchi-to-netarhat-cab',
-        metaTitle: 'Ranchi to Netarhat Cab | Queen of Chotanagpur Taxi ₹2,500',
-        metaDescription: 'Book Ranchi to Netarhat cab to visit Queen of Chotanagpur. 155 km hill station taxi. Sunrise & sunset point tours. One-way ₹2,500. Call +91 7903629240!',
-        metaKeywords: 'ranchi to netarhat cab, ranchi to netarhat taxi, netarhat hill station taxi, queen of chotanagpur cab, ranchi to netarhat car rental, netarhat sunrise point taxi, netarhat tour package',
+        metaTitle: 'Ranchi to Netarhat Cab @ ₹2,500 | Queen of Chotanagpur Taxi 24/7',
+        metaDescription: '🏔️ Book Ranchi to Netarhat cab @ ₹2,500 ✓ 155 km Hill Station Trip ✓ Sunrise & Sunset Point ✓ AC Sedan, Ertiga, Innova ✓ Magnolia Point Tour. Call +91 7903629240!',
+        metaKeywords: 'ranchi to netarhat cab, ranchi to netarhat taxi, ranchi to netarhat cab service, ranchi netarhat taxi fare, netarhat hill station taxi, queen of chotanagpur cab, ranchi to netarhat car rental, netarhat sunrise point taxi, netarhat tour package, netarhat to ranchi cab, netarhat to ranchi taxi, ranchi to netarhat round trip, ranchi se netarhat gaadi, ranchi to netarhat cab price, cheapest cab ranchi to netarhat, ranchi to magnolia point cab, ranchi to netarhat cab booking, ranchi to netarhat weekend trip, netarhat tour taxi ranchi, ranchi to netarhat cab phone number',
         aboutText: [
           'Escape to the <strong>Queen of Chotanagpur</strong> with our <strong>Ranchi to Netarhat cab service</strong>. Netarhat, perched at 3,700 feet, is Jharkhand\'s most beautiful hill station known for its stunning sunrise and sunset views from Magnolia Point.',
           'The 155 km scenic journey from Ranchi to Netarhat takes about 4-5 hours through dense forests and winding mountain roads. Our experienced drivers navigate the hilly terrain safely while you enjoy the breathtaking landscapes.',

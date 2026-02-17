@@ -15,9 +15,9 @@ export default function RanchiToDeogharPage() {
         innovaOneWay: '₹6,500',
         innovaRoundTrip: '₹12,000',
         slug: 'ranchi-to-deoghar-cab',
-        metaTitle: 'Ranchi to Deoghar Cab | Baidyanath Dham Taxi ₹4,000 | 24/7',
-        metaDescription: 'Book Ranchi to Deoghar cab for Baidyanath Dham darshan. 250 km taxi service with AC vehicles. One-way ₹4,000, Round trip ₹7,500. Call +91 7903629240!',
-        metaKeywords: 'ranchi to deoghar cab, ranchi to deoghar taxi, ranchi deoghar cab service, baidyanath dham taxi from ranchi, ranchi to deoghar car rental, deoghar taxi booking, ranchi deoghar one way cab, ranchi to baba baidyanath cab',
+        metaTitle: 'Ranchi to Deoghar Cab @ ₹4,000 | Baidyanath Dham Taxi 24/7',
+        metaDescription: '🙏 Book Ranchi to Deoghar cab @ ₹4,000 for Baidyanath Dham darshan ✓ 250 km ✓ AC Sedan, Ertiga, Innova ✓ Shravan Special ✓ Round Trip ₹7,500 ✓ Temple Guide. Call +91 7903629240!',
+        metaKeywords: 'ranchi to deoghar cab, ranchi to deoghar taxi, ranchi to deoghar cab service, ranchi deoghar taxi fare, baidyanath dham taxi from ranchi, ranchi to deoghar car rental, deoghar taxi booking, ranchi deoghar one way cab, ranchi to baba baidyanath cab, deoghar to ranchi cab, deoghar to ranchi taxi, ranchi to deoghar round trip, ranchi se deoghar gaadi, ranchi to deoghar cab booking, ranchi to deoghar cab price, cheapest cab ranchi to deoghar, ranchi to deoghar shravan taxi, ranchi to deoghar mandir taxi, baba baidyanath dham taxi, baba dham taxi ranchi, ranchi to babadham cab, ranchi to deoghar cab phone number, tempo traveller ranchi to deoghar',
         aboutText: [
           'Planning a pilgrimage to <strong>Baidyanath Dham</strong>? Our <strong>Ranchi to Deoghar cab service</strong> offers comfortable and reliable transportation for your spiritual journey. Deoghar, home to one of the 12 Jyotirlingas, attracts millions of devotees annually, especially during Shravan month.',
           'The 250 km journey from Ranchi to Deoghar takes approximately 5-6 hours via NH-33 and NH-114. Our experienced drivers are familiar with the route and can help you with darshan timings. We offer both one-way drops and round trip packages with waiting time included for temple visits.',

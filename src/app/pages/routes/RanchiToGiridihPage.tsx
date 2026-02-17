@@ -15,9 +15,9 @@ export default function RanchiToGiridihPage() {
         innovaOneWay: '₹4,500',
         innovaRoundTrip: '₹8,500',
         slug: 'ranchi-to-giridih-cab',
-        metaTitle: 'Ranchi to Giridih Cab | Parasnath Taxi ₹2,800 | 24/7',
-        metaDescription: 'Book Ranchi to Giridih cab for Parasnath Temple trek. 175 km taxi service with AC vehicles. One-way ₹2,800. Call +91 7903629240!',
-        metaKeywords: 'ranchi to giridih cab, ranchi to giridih taxi, ranchi to parasnath cab, parasnath temple taxi from ranchi, ranchi to giridih car rental, giridih taxi booking, ranchi giridih one way cab, sammed shikharji taxi',
+        metaTitle: 'Ranchi to Giridih Cab @ ₹2,800 | Parasnath & Sammed Shikharji Taxi',
+        metaDescription: '🙏 Book Ranchi to Giridih cab @ ₹2,800 for Parasnath Temple & Sammed Shikharji ✓ 175 km ✓ AC Sedan, Ertiga, Innova ✓ Trek Base Drop. Call +91 7903629240!',
+        metaKeywords: 'ranchi to giridih cab, ranchi to giridih taxi, ranchi to giridih cab service, ranchi giridih taxi fare, ranchi to parasnath cab, ranchi to parasnath taxi, parasnath temple taxi from ranchi, ranchi to giridih car rental, giridih taxi booking, ranchi giridih one way cab, sammed shikharji taxi, giridih to ranchi cab, giridih to ranchi taxi, ranchi to giridih round trip, ranchi se giridih gaadi, ranchi to madhuban cab, ranchi to parasnath hill cab, ranchi to giridih cab booking, ranchi to giridih cab price, cheapest cab ranchi to giridih, jain tirth yatra taxi ranchi, ranchi to giridih cab phone number',
         aboutText: [
           'Planning a trip to <strong>Parasnath Hill</strong> or <strong>Sammed Shikharji</strong>? Our <strong>Ranchi to Giridih cab service</strong> provides reliable transportation to one of the holiest Jain pilgrimage sites in India. Parasnath Peak (1,365m) is the highest point in Jharkhand and home to 24 Jain temples.',
           'The 175 km journey from Ranchi to Giridih takes approximately 4-4.5 hours. From Giridih, the Parasnath temple trek base is about 25 km. Our drivers are familiar with the route and can drop you at Madhuban for the trek.',

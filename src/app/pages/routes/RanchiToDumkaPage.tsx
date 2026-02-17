@@ -15,9 +15,9 @@ export default function RanchiToDumkaPage() {
         innovaOneWay: '₹7,800',
         innovaRoundTrip: '₹14,800',
         slug: 'ranchi-to-dumka-cab',
-        metaTitle: 'Ranchi to Dumka Cab | Santhal Taxi ₹4,800 | 24/7 Service',
-        metaDescription: 'Book Ranchi to Dumka cab service. 290 km one-way & round trip taxi. Santhal Pargana headquarters. One-way ₹4,800. Call +91 7903629240!',
-        metaKeywords: 'ranchi to dumka cab, ranchi to dumka taxi, ranchi dumka cab service, dumka taxi from ranchi, ranchi to dumka car rental, santhal pargana cab, ranchi dumka one way taxi',
+        metaTitle: 'Ranchi to Dumka Cab @ ₹4,800 | Santhal Pargana Taxi 24/7',
+        metaDescription: '🚗 Book Ranchi to Dumka cab @ ₹4,800 (290 km) ✓ One-Way & Round Trip ✓ AC Sedan, Ertiga, Innova ✓ Maluti Temple Tour ✓ Santhal Pargana. Call +91 7903629240!',
+        metaKeywords: 'ranchi to dumka cab, ranchi to dumka taxi, ranchi to dumka cab service, ranchi dumka taxi fare, ranchi dumka cab service, dumka taxi from ranchi, ranchi to dumka car rental, santhal pargana cab, ranchi dumka one way taxi, dumka to ranchi cab, dumka to ranchi taxi, ranchi to dumka round trip, ranchi se dumka gaadi, ranchi to dumka cab price, cheapest cab ranchi to dumka, ranchi to maluti temple cab, ranchi to dumka cab booking, ranchi to dumka cab phone number',
         aboutText: [
           'Travel to the heart of <strong>Santhal Pargana</strong> with our <strong>Ranchi to Dumka cab service</strong>. Dumka, the divisional headquarters of Santhal Pargana, is known for its rich tribal culture and the famous Maluti temples complex.',
           'The 290 km journey from Ranchi to Dumka takes approximately 6-7 hours via Giridih and Deoghar. Our comfortable AC vehicles and experienced drivers ensure a smooth journey through the scenic landscapes of East Jharkhand.',

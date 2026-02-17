@@ -39,9 +39,9 @@ export default function AboutPage() {
   return (
     <>
       <SEO
-        title="About Ranchi Cab Service | Trusted Since 2010"
-        description="Learn about Ranchi Cab Service - Ranchi's most trusted taxi service provider. 10+ years experience, 10,000+ happy customers, verified drivers & 24/7 service. Book reliable cabs in Ranchi."
-        keywords="about ranchi cab service, ranchi taxi company, best cab service ranchi, trusted taxi ranchi, ranchi travels company, professional cab service ranchi"
+        title="About Ranchi Cab Service | #1 Trusted Taxi Company Since 2010 | 10,000+ Rides"
+        description="About Ranchi Cab Service - Jharkhand's #1 trusted taxi company since 2010 ✓ 10,000+ happy customers ✓ 50+ verified drivers ✓ 24/7 service ✓ 5.0★ Google rated ✓ GPS-enabled AC cars. Reliable & safe cab service in Ranchi."
+        keywords="about ranchi cab service, ranchi cab service company, ranchi taxi company, best cab service ranchi, trusted taxi service ranchi, ranchi travels company, professional cab service ranchi, ranchi cab service owner, ranchi cab service review, ranchi cab service rating, safest taxi ranchi, who owns ranchi cab service, ranchi cab service history, taxi company jharkhand, cab company ranchi, ranchi travel agency, best rated cab ranchi, top taxi service ranchi"
       />
 
       {/* Hero Section */}

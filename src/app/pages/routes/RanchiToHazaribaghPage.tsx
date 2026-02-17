@@ -15,9 +15,9 @@ export default function RanchiToHazaribaghPage() {
         innovaOneWay: '₹2,600',
         innovaRoundTrip: '₹4,800',
         slug: 'ranchi-to-hazaribagh-cab',
-        metaTitle: 'Ranchi to Hazaribagh Cab | Book Taxi at ₹1,500 | 24/7',
-        metaDescription: 'Book Ranchi to Hazaribagh cab service. 90 km taxi with AC vehicles, experienced drivers. One-way ₹1,500, Round trip ₹2,800. Call +91 7903629240!',
-        metaKeywords: 'ranchi to hazaribagh cab, ranchi to hazaribagh taxi, ranchi hazaribagh cab service, hazaribagh taxi from ranchi, ranchi to hazaribagh car rental, hazaribagh cab booking, ranchi hazaribagh one way taxi',
+        metaTitle: 'Ranchi to Hazaribagh Cab @ ₹1,500 | One-Way & Round Trip 24/7',
+        metaDescription: '🚗 Book Ranchi to Hazaribagh cab @ ₹1,500 (90 km) ✓ One-Way & Round Trip ✓ AC Sedan, Ertiga, Innova ✓ Wildlife Sanctuary Tours ✓ Canary Hill. Call +91 7903629240!',
+        metaKeywords: 'ranchi to hazaribagh cab, ranchi to hazaribagh taxi, ranchi to hazaribagh cab service, ranchi hazaribagh taxi fare, hazaribagh taxi from ranchi, ranchi to hazaribagh car rental, hazaribagh cab booking, ranchi hazaribagh one way taxi, hazaribagh to ranchi cab, hazaribagh to ranchi taxi, ranchi to hazaribagh round trip, ranchi se hazaribagh gaadi, ranchi to hazaribagh cab price, cheapest cab ranchi to hazaribagh, ranchi to canary hill cab, ranchi to hazaribagh wildlife sanctuary taxi, ranchi to hazaribagh cab booking, ranchi to hazaribagh cab phone number',
         aboutText: [
           'Looking for a reliable <strong>Ranchi to Hazaribagh cab service</strong>? Ranchi Cab Service offers comfortable taxi service to Hazaribagh, one of the most beautiful hill stations in Jharkhand. Known for its pleasant climate and Hazaribagh Wildlife Sanctuary, it\'s a popular weekend getaway destination.',
           'The 90 km journey from Ranchi to Hazaribagh takes approximately 2-2.5 hours via NH-33. Our professional drivers ensure a safe and comfortable journey through the scenic route. We offer both one-way drops and round trip packages.',

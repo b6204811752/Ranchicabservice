@@ -87,9 +87,9 @@ export default function ServicesPage() {
   return (
     <>
       <SEO
-        title="Taxi Services Ranchi | Local, Outstation & Airport Cab"
-        description="✓ Local Taxi Ranchi ₹10/km ✓ Outstation Cabs to Patna, Kolkata ✓ 24/7 Airport Transfer ✓ Corporate Taxi Service. Book Now: +91 7903629240. Best rates guaranteed!"
-        keywords="taxi services ranchi, local cab ranchi, outstation taxi ranchi, airport transfer ranchi, corporate taxi service, ranchi cab rates, taxi fare ranchi, hourly cab rental ranchi, cab service ranchi contact number"
+        title="Taxi Services in Ranchi | Local ₹10/km, Outstation, Airport & Corporate Cab"
+        description="All taxi services in Ranchi ✓ Local Taxi ₹10/km ✓ Outstation Cabs to Patna, Kolkata ✓ 24/7 Airport Transfer ₹800 ✓ Corporate Monthly Packages ✓ Wedding Cars ✓ Tempo Traveller. Best rates guaranteed! Call +91 7903629240"
+        keywords="taxi services ranchi, all cab services ranchi, local cab ranchi, outstation taxi ranchi, airport transfer ranchi, corporate taxi service ranchi, ranchi cab rates, taxi fare ranchi, hourly cab rental ranchi, cab service ranchi contact number, ranchi cab service list, types of taxi ranchi, ranchi taxi rate list, wedding car service ranchi, tempo traveller service ranchi, taxi service in ranchi jharkhand, ranchi me taxi service, best taxi service ranchi, cheap cab service ranchi, 24 hour cab service ranchi, reliable taxi service ranchi, ranchi cab service price list"
         schema={{
           "@context": "https://schema.org",
           "@type": "Service",
