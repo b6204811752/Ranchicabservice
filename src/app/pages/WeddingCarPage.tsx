@@ -209,7 +209,7 @@ export default function WeddingCarPage() {
       </section>
 
       {/* Services */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white overflow-x-hidden w-full">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
             Our Wedding Car Services
@@ -228,7 +228,7 @@ export default function WeddingCarPage() {
       </section>
 
       {/* Vehicle Options */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 overflow-x-hidden w-full">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">
             Wedding Car Options
@@ -273,7 +273,7 @@ export default function WeddingCarPage() {
       </section>
 
       {/* Packages */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white overflow-x-hidden w-full">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
             Wedding Packages
@@ -305,7 +305,7 @@ export default function WeddingCarPage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16 bg-gradient-to-br from-pink-50 to-red-50">
+      <section className="py-16 bg-gradient-to-br from-pink-50 to-red-50 overflow-x-hidden w-full">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
             Why Choose Us for Your Wedding
@@ -334,7 +334,7 @@ export default function WeddingCarPage() {
       <FAQ customFaqs={faqs} title="Wedding Car FAQs" />
 
       {/* CTA */}
-      <section className="py-16 bg-gradient-to-r from-pink-500 to-red-500">
+      <section className="py-16 bg-gradient-to-r from-pink-500 to-red-500 overflow-x-hidden w-full">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             Make Your Wedding Memorable

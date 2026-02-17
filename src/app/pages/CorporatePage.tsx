@@ -55,7 +55,7 @@ export default function CorporatePage() {
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-16 overflow-x-hidden w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
@@ -94,7 +94,7 @@ export default function CorporatePage() {
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 overflow-x-hidden w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {benefits.map((benefit, index) => (
@@ -108,7 +108,7 @@ export default function CorporatePage() {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white overflow-x-hidden w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Get Corporate Quote</h2>
           <p className="text-xl mb-8 text-blue-100">

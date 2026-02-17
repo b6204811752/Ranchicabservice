@@ -164,7 +164,7 @@ export default function TempoTravellerPage() {
       </section>
 
       {/* Vehicle Options */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 overflow-x-hidden w-full">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">
             Choose Your Tempo Traveller
@@ -211,14 +211,14 @@ export default function TempoTravellerPage() {
       </section>
 
       {/* Package Rates */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white overflow-x-hidden w-full">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
             Popular Package Rates
           </h2>
           
-          <div className="max-w-4xl mx-auto overflow-x-auto">
-            <table className="w-full border-collapse">
+          <div className="max-w-4xl mx-auto overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
+            <table className="w-full border-collapse min-w-[600px]">
               <thead>
                 <tr className="bg-blue-600 text-white">
                   <th className="p-4 text-left">Package</th>
@@ -246,7 +246,7 @@ export default function TempoTravellerPage() {
       </section>
 
       {/* Use Cases */}
-      <section className="py-16 bg-gradient-to-br from-blue-50 to-purple-50">
+      <section className="py-16 bg-gradient-to-br from-blue-50 to-purple-50 overflow-x-hidden w-full">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
             Perfect For Every Occasion
@@ -275,7 +275,7 @@ export default function TempoTravellerPage() {
       <FAQ customFaqs={faqs} title="Tempo Traveller FAQs" />
 
       {/* CTA */}
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600">
+      <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600 overflow-x-hidden w-full">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             Book Your Tempo Traveller Now

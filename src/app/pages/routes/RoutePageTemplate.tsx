@@ -215,34 +215,34 @@ export default function RoutePageTemplate({ route }: RoutePageTemplateProps) {
                 <h3 className="text-2xl font-bold text-gray-800 mb-4 mt-8">
                   {route.from} to {route.to} Cab Fare & Vehicle Options
                 </h3>
-                <div className="overflow-x-auto">
-                  <table className="w-full border-collapse">
+                <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
+                  <table className="w-full border-collapse min-w-[500px]">
                     <thead>
                       <tr className="bg-blue-100">
-                        <th className="border border-gray-300 px-4 py-3 text-left" scope="col">Vehicle Type</th>
-                        <th className="border border-gray-300 px-4 py-3 text-left" scope="col">Capacity</th>
-                        <th className="border border-gray-300 px-4 py-3 text-left" scope="col">One Way</th>
-                        <th className="border border-gray-300 px-4 py-3 text-left" scope="col">Round Trip</th>
+                        <th className="border border-gray-300 px-2 sm:px-4 py-3 text-left text-sm sm:text-base" scope="col">Vehicle Type</th>
+                        <th className="border border-gray-300 px-2 sm:px-4 py-3 text-left text-sm sm:text-base" scope="col">Capacity</th>
+                        <th className="border border-gray-300 px-2 sm:px-4 py-3 text-left text-sm sm:text-base" scope="col">One Way</th>
+                        <th className="border border-gray-300 px-2 sm:px-4 py-3 text-left text-sm sm:text-base" scope="col">Round Trip</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td className="border border-gray-300 px-4 py-3">Sedan (Dzire/Aura)</td>
-                        <td className="border border-gray-300 px-4 py-3">4+1</td>
-                        <td className="border border-gray-300 px-4 py-3 font-semibold">{route.sedanOneWay}</td>
-                        <td className="border border-gray-300 px-4 py-3 font-semibold">{route.sedanRoundTrip}</td>
+                        <td className="border border-gray-300 px-2 sm:px-4 py-3 text-sm sm:text-base">Sedan (Dzire/Aura)</td>
+                        <td className="border border-gray-300 px-2 sm:px-4 py-3 text-sm sm:text-base">4+1</td>
+                        <td className="border border-gray-300 px-2 sm:px-4 py-3 font-semibold text-sm sm:text-base">{route.sedanOneWay}</td>
+                        <td className="border border-gray-300 px-2 sm:px-4 py-3 font-semibold text-sm sm:text-base">{route.sedanRoundTrip}</td>
                       </tr>
                       <tr className="bg-gray-50">
-                        <td className="border border-gray-300 px-4 py-3">SUV (Ertiga)</td>
-                        <td className="border border-gray-300 px-4 py-3">6+1</td>
-                        <td className="border border-gray-300 px-4 py-3 font-semibold">{route.suvOneWay}</td>
-                        <td className="border border-gray-300 px-4 py-3 font-semibold">{route.suvRoundTrip}</td>
+                        <td className="border border-gray-300 px-2 sm:px-4 py-3 text-sm sm:text-base">SUV (Ertiga)</td>
+                        <td className="border border-gray-300 px-2 sm:px-4 py-3 text-sm sm:text-base">6+1</td>
+                        <td className="border border-gray-300 px-2 sm:px-4 py-3 font-semibold text-sm sm:text-base">{route.suvOneWay}</td>
+                        <td className="border border-gray-300 px-2 sm:px-4 py-3 font-semibold text-sm sm:text-base">{route.suvRoundTrip}</td>
                       </tr>
                       <tr>
-                        <td className="border border-gray-300 px-4 py-3">Innova Crysta</td>
-                        <td className="border border-gray-300 px-4 py-3">7+1</td>
-                        <td className="border border-gray-300 px-4 py-3 font-semibold">{route.innovaOneWay}</td>
-                        <td className="border border-gray-300 px-4 py-3 font-semibold">{route.innovaRoundTrip}</td>
+                        <td className="border border-gray-300 px-2 sm:px-4 py-3 text-sm sm:text-base">Innova Crysta</td>
+                        <td className="border border-gray-300 px-2 sm:px-4 py-3 text-sm sm:text-base">7+1</td>
+                        <td className="border border-gray-300 px-2 sm:px-4 py-3 font-semibold text-sm sm:text-base">{route.innovaOneWay}</td>
+                        <td className="border border-gray-300 px-2 sm:px-4 py-3 font-semibold text-sm sm:text-base">{route.innovaRoundTrip}</td>
                       </tr>
                     </tbody>
                   </table>

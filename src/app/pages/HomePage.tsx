@@ -261,7 +261,7 @@ export default function HomePage() {
       />
 
       {/* Hero Section with Image Slider */}
-      <section className="relative h-[500px] sm:h-[600px] md:h-[700px] overflow-hidden">
+      <section className="relative h-[500px] sm:h-[600px] md:h-[700px] overflow-hidden overflow-x-hidden w-full">
         {/* Floating Bubbles */}
         <div className="absolute inset-0 z-[5] pointer-events-none overflow-hidden">
           {[...Array(15)].map((_, i) => (
@@ -460,7 +460,7 @@ export default function HomePage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16 relative overflow-hidden">
+      <section className="py-16 relative overflow-hidden overflow-x-hidden w-full">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 opacity-50"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <motion.div 
@@ -512,7 +512,7 @@ export default function HomePage() {
       </section>
 
       {/* Our Services */}
-      <section className="py-16 relative bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50">
+      <section className="py-16 relative bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 overflow-x-hidden w-full">
         <div className="absolute inset-0 opacity-30">
           <div className="absolute top-0 left-0 w-96 h-96 bg-blue-400 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-400 rounded-full filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
@@ -582,7 +582,7 @@ export default function HomePage() {
       <HowToBook />
 
       {/* Our Fleet */}
-      <section className="py-16 relative overflow-hidden">
+      <section className="py-16 relative overflow-hidden overflow-x-hidden w-full">
         <div className="absolute inset-0 bg-gradient-to-b from-white via-blue-50 to-purple-50"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <motion.div 
@@ -756,7 +756,7 @@ export default function HomePage() {
 
 
       {/* Live Chat Prompt */}
-      <section className="py-12 bg-gradient-to-r from-green-500 to-green-600">
+      <section className="py-12 bg-gradient-to-r from-green-500 to-green-600 overflow-x-hidden w-full">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -782,7 +782,7 @@ export default function HomePage() {
       </section>
 
       {/* Fare Calculator Section */}
-      <section className="py-16 bg-gradient-to-br from-white via-blue-50 to-white">
+      <section className="py-16 bg-gradient-to-br from-white via-blue-50 to-white overflow-x-hidden w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <motion.div
@@ -1146,7 +1146,7 @@ export default function HomePage() {
       <BlogSection />
 
       {/* Social Share */}
-      <section className="bg-gray-50 py-12">
+      <section className="bg-gray-50 py-12 overflow-x-hidden w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-md mx-auto">
             <SocialShare />

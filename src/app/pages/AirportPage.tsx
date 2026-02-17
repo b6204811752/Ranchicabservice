@@ -78,7 +78,7 @@ export default function AirportPage() {
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-16 overflow-x-hidden w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12">Airport Transfer Rates</h2>
           <div className="max-w-3xl mx-auto space-y-4">
@@ -99,7 +99,7 @@ export default function AirportPage() {
         </div>
       </section>
 
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 overflow-x-hidden w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
@@ -114,7 +114,7 @@ export default function AirportPage() {
       </section>
 
       {/* More Services Section */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-white overflow-x-hidden w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-4 text-gray-800">
             Explore More Services
@@ -163,7 +163,7 @@ export default function AirportPage() {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white overflow-x-hidden w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Book Airport Taxi</h2>
           <div className="flex flex-wrap justify-center gap-4">

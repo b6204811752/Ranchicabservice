@@ -43,7 +43,7 @@ export default function CitiesPage() {
         </div>
       </section>
 
-      <section className="py-16">
+      <section className="py-16 overflow-x-hidden w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
@@ -133,7 +133,7 @@ export default function CitiesPage() {
       </section>
 
       {/* Additional Services Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white overflow-x-hidden w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-6">Our Services Across Cities</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
@@ -198,7 +198,7 @@ export default function CitiesPage() {
         </div>
       </section>
 
-      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white overflow-x-hidden w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Book Your Ride</h2>
           <p className="text-lg mb-8 text-blue-100 max-w-2xl mx-auto">

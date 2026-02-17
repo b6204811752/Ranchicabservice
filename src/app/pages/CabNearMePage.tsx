@@ -115,7 +115,7 @@ export default function CabNearMePage() {
       </section>
 
       {/* How It Works */}
-      <section className="py-12 bg-white">
+      <section className="py-12 bg-white overflow-x-hidden w-full">
         <div className="container mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-8 text-gray-800">
             Get a Cab in 3 Simple Steps
@@ -186,7 +186,7 @@ export default function CabNearMePage() {
       </section>
 
       {/* Landmark Pickups */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white overflow-x-hidden w-full">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
             Popular Pickup Points
@@ -205,7 +205,7 @@ export default function CabNearMePage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16 bg-gradient-to-br from-blue-50 to-green-50">
+      <section className="py-16 bg-gradient-to-br from-blue-50 to-green-50 overflow-x-hidden w-full">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
             Why Book Cab With Us
@@ -231,7 +231,7 @@ export default function CabNearMePage() {
       </section>
 
       {/* Rates */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white overflow-x-hidden w-full">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">
             Local Taxi Rates in Ranchi
