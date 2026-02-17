@@ -98,7 +98,7 @@ export default function HomePage() {
   const sliderSettings = {
     dots: true,
     infinite: true,
-    speed: 1000,
+    speed: 800,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -107,6 +107,9 @@ export default function HomePage() {
     cssEase: 'cubic-bezier(0.4, 0, 0.2, 1)',
     pauseOnHover: true,
     lazyLoad: 'ondemand' as const,
+    accessibility: true,
+    swipe: true,
+    waitForAnimate: false,
   };
 
   const vehicles = [
@@ -261,62 +264,38 @@ export default function HomePage() {
       />
 
       {/* Hero Section with Image Slider */}
-      <section className="relative h-[500px] sm:h-[600px] md:h-[700px] overflow-hidden overflow-x-hidden w-full">
-        {/* Floating Bubbles */}
-        <div className="absolute inset-0 z-[5] pointer-events-none overflow-hidden">
-          {[...Array(15)].map((_, i) => (
-            <motion.div
-              key={i}
-              className="absolute rounded-full"
-              style={{
-                width: `${Math.random() * 60 + 20}px`,
-                height: `${Math.random() * 60 + 20}px`,
-                left: `${Math.random() * 100}%`,
-                top: `${100 + Math.random() * 20}%`,
-                background: `radial-gradient(circle at 30% 30%, rgba(255, 255, 255, ${Math.random() * 0.4 + 0.1}), rgba(147, 197, 253, ${Math.random() * 0.3 + 0.1}))`,
-                boxShadow: `inset -2px -2px 8px rgba(255, 255, 255, 0.3), 0 4px 20px rgba(59, 130, 246, ${Math.random() * 0.3 + 0.1})`,
-              }}
-              animate={{
-                y: [-100, -window.innerHeight - 200],
-                x: [0, Math.sin(i) * 100],
-                scale: [1, 1.2, 1],
-                opacity: [0, 1, 1, 0],
-              }}
-              transition={{
-                duration: Math.random() * 10 + 15,
-                repeat: Infinity,
-                delay: Math.random() * 5,
-                ease: "easeInOut",
-              }}
-            />
-          ))}
-        </div>
+      <section className="relative h-[500px] sm:h-[600px] md:h-[700px] overflow-hidden w-full" style={{ containIntrinsicSize: '100vw 700px', contentVisibility: 'visible' }}>
         <Slider {...sliderSettings} className="h-full">
           {heroSlides.map((slide, index) => (
-            <div key={index} className="relative h-[600px] md:h-[700px]">
-              <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: `url(${slide.image})` }}
-              >
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-800/70 to-transparent" />
-              </div>
+            <div key={index} className="relative h-[500px] sm:h-[600px] md:h-[700px]">
+              {index === 0 ? (
+                <img
+                  src={slide.image}
+                  alt={slide.title}
+                  fetchPriority="high"
+                  decoding="sync"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              ) : (
+                <div
+                  className="absolute inset-0 bg-cover bg-center"
+                  style={{ backgroundImage: `url(${slide.image})` }}
+                />
+              )}
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-800/70 to-transparent" />
               <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
-                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: 0.2 }}
-                  className="max-w-2xl text-white"
-                >
-                  <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                <div className="max-w-2xl text-white">
+                  <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight">
                     {slide.title}
                   </h1>
-                  <p className="text-2xl md:text-3xl mb-8 text-blue-100">
+                  <p className="text-xl sm:text-2xl md:text-3xl mb-6 sm:mb-8 text-blue-100">
                     {slide.subtitle}
                   </p>
-                  <div className="flex flex-wrap gap-4">
+                  <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
                     <a
                       href="tel:+917903629240"
-                      className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 inline-flex items-center space-x-2 shadow-lg"
+                      tabIndex={index !== 0 ? -1 : undefined}
+                      className="w-full sm:w-auto bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all transform hover:scale-105 inline-flex items-center justify-center space-x-2 shadow-lg"
                     >
                       <Phone className="w-5 h-5" />
                       <span>Call: +91 7903629240</span>
@@ -325,12 +304,13 @@ export default function HomePage() {
                       href="https://wa.me/917903629240"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105 shadow-lg"
+                      tabIndex={index !== 0 ? -1 : undefined}
+                      className="w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all transform hover:scale-105 shadow-lg text-center"
                     >
                       WhatsApp Now
                     </a>
                   </div>
-                </motion.div>
+                </div>
               </div>
             </div>
           ))}

@@ -127,8 +127,9 @@ export default function BlogSection() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition-colors"
+                    aria-label={`Read more about ${post.title}`}
                   >
-                    Read More
+                    Learn about {post.title.length > 40 ? post.title.substring(0, 40) + '…' : post.title}
                     <ArrowRight className="w-4 h-4" />
                   </a>
                 </div>

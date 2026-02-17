@@ -53,9 +53,9 @@ export default function TrustIndicators() {
           viewport={{ once: true }}
           className="mb-12"
         >
-          <h3 className="text-center text-xl font-bold text-gray-900 mb-6">
+          <h2 className="text-center text-xl font-bold text-gray-900 mb-6">
             Why Customers Trust Us
-          </h3>
+          </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {certifications.map((cert, index) => (
               <motion.div
@@ -67,7 +67,7 @@ export default function TrustIndicators() {
                 className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-4 text-center border border-blue-100"
               >
                 <cert.icon className="w-8 h-8 text-blue-600 mx-auto mb-2" />
-                <h4 className="font-semibold text-gray-900 text-sm">{cert.title}</h4>
+                <h3 className="font-semibold text-gray-900 text-sm">{cert.title}</h3>
                 <p className="text-xs text-gray-600 mt-1">{cert.description}</p>
               </motion.div>
             ))}
