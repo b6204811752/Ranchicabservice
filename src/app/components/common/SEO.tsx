@@ -251,6 +251,20 @@ export default function SEO({
               {
                 "@type": "TaxiService",
                 "name": "Ranchi Cab Service - Taxi Booking",
+                "telephone": "+917903629240",
+                "priceRange": "₹₹",
+                "image": [
+                  "https://www.ranchicabservice.com/logo-512x512.png",
+                  "https://www.ranchicabservice.com/og-image.png"
+                ],
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Birsa Chowk, Kathalkocha",
+                  "addressLocality": "Ranchi",
+                  "addressRegion": "Jharkhand",
+                  "postalCode": "834001",
+                  "addressCountry": "IN"
+                },
                 "provider": {
                   "@id": `${baseUrl}/#business`
                 },
