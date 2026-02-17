@@ -372,8 +372,9 @@ export default function HomePage() {
             </p>
             <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label className="block text-sm font-semibold mb-2">Your Name</label>
+                <label htmlFor="booking-name" className="block text-sm font-semibold mb-2">Your Name</label>
                 <input
+                  id="booking-name"
                   type="text"
                   required
                   value={formData.name}
@@ -383,8 +384,9 @@ export default function HomePage() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-semibold mb-2">Phone Number</label>
+                <label htmlFor="booking-phone" className="block text-sm font-semibold mb-2">Phone Number</label>
                 <input
+                  id="booking-phone"
                   type="tel"
                   required
                   value={formData.phone}
@@ -394,8 +396,9 @@ export default function HomePage() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-semibold mb-2">Pickup Location</label>
+                <label htmlFor="booking-pickup" className="block text-sm font-semibold mb-2">Pickup Location</label>
                 <input
+                  id="booking-pickup"
                   type="text"
                   required
                   value={formData.pickup}
@@ -405,8 +408,9 @@ export default function HomePage() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-semibold mb-2">Drop Location</label>
+                <label htmlFor="booking-drop" className="block text-sm font-semibold mb-2">Drop Location</label>
                 <input
+                  id="booking-drop"
                   type="text"
                   required
                   value={formData.drop}
@@ -416,8 +420,9 @@ export default function HomePage() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-semibold mb-2">Date</label>
+                <label htmlFor="booking-date" className="block text-sm font-semibold mb-2">Date</label>
                 <input
+                  id="booking-date"
                   type="date"
                   required
                   value={formData.date}
@@ -426,8 +431,9 @@ export default function HomePage() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-semibold mb-2">Time</label>
+                <label htmlFor="booking-time" className="block text-sm font-semibold mb-2">Time</label>
                 <input
+                  id="booking-time"
                   type="time"
                   required
                   value={formData.time}

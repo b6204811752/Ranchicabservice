@@ -173,8 +173,9 @@ export default function ContactPage() {
                     viewport={{ once: true }}
                     transition={{ delay: 0.1 }}
                   >
-                    <label className="block text-sm font-semibold mb-2 text-gray-700">Name</label>
+                    <label htmlFor="contact-name" className="block text-sm font-semibold mb-2 text-gray-700">Name</label>
                     <input
+                      id="contact-name"
                       type="text"
                       required
                       value={formData.name}
@@ -188,8 +189,9 @@ export default function ContactPage() {
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
                   >
-                    <label className="block text-sm font-semibold mb-2 text-gray-700">Email</label>
+                    <label htmlFor="contact-email" className="block text-sm font-semibold mb-2 text-gray-700">Email</label>
                     <input
+                      id="contact-email"
                       type="email"
                       required
                       value={formData.email}
@@ -203,8 +205,9 @@ export default function ContactPage() {
                     viewport={{ once: true }}
                     transition={{ delay: 0.3 }}
                   >
-                    <label className="block text-sm font-semibold mb-2 text-gray-700">Phone</label>
+                    <label htmlFor="contact-phone" className="block text-sm font-semibold mb-2 text-gray-700">Phone</label>
                     <input
+                      id="contact-phone"
                       type="tel"
                       required
                       value={formData.phone}
@@ -218,8 +221,9 @@ export default function ContactPage() {
                     viewport={{ once: true }}
                     transition={{ delay: 0.4 }}
                   >
-                    <label className="block text-sm font-semibold mb-2 text-gray-700">Message</label>
+                    <label htmlFor="contact-message" className="block text-sm font-semibold mb-2 text-gray-700">Message</label>
                     <textarea
+                      id="contact-message"
                       required
                       rows={4}
                       value={formData.message}

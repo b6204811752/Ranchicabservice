@@ -97,13 +97,13 @@
       
       <!-- Schema.org structured data is managed by SEO.tsx component using @graph -->
       
-      <!-- Preconnect for Performance -->
+      <!-- Preconnect for Performance - Keep only critical origins (PageSpeed recommends max 3-4) -->
       <link rel="preconnect" href="https://www.googletagmanager.com" />
-      <link rel="preconnect" href="https://www.google-analytics.com" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link rel="preconnect" href="https://images.unsplash.com" />
-      <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+      <!-- Downgrade less critical connections to dns-prefetch -->
+      <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+      <link rel="dns-prefetch" href="https://images.unsplash.com" />
       <link rel="dns-prefetch" href="https://wa.me" />
       
       <!-- Preload critical resources for faster LCP -->

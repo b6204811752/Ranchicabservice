@@ -122,8 +122,9 @@ export default function OutstationPage() {
               <h2 className="text-2xl font-bold mb-6 text-center">Book Outstation Cab</h2>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <label className="block text-sm font-semibold mb-2">From</label>
+                  <label htmlFor="outstation-from" className="block text-sm font-semibold mb-2">From</label>
                   <input
+                    id="outstation-from"
                     type="text"
                     required
                     value={formData.from}
@@ -132,8 +133,9 @@ export default function OutstationPage() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold mb-2">To</label>
+                  <label htmlFor="outstation-to" className="block text-sm font-semibold mb-2">To</label>
                   <input
+                    id="outstation-to"
                     type="text"
                     required
                     value={formData.to}
@@ -143,8 +145,9 @@ export default function OutstationPage() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold mb-2">Travel Date</label>
+                  <label htmlFor="outstation-date" className="block text-sm font-semibold mb-2">Travel Date</label>
                   <input
+                    id="outstation-date"
                     type="date"
                     required
                     value={formData.date}
@@ -153,8 +156,9 @@ export default function OutstationPage() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold mb-2">Trip Type</label>
+                  <label htmlFor="outstation-triptype" className="block text-sm font-semibold mb-2">Trip Type</label>
                   <select
+                    id="outstation-triptype"
                     value={formData.tripType}
                     onChange={(e) => setFormData({ ...formData, tripType: e.target.value })}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
@@ -164,8 +168,9 @@ export default function OutstationPage() {
                   </select>
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold mb-2">Phone Number</label>
+                  <label htmlFor="outstation-phone" className="block text-sm font-semibold mb-2">Phone Number</label>
                   <input
+                    id="outstation-phone"
                     type="tel"
                     required
                     value={formData.phone}

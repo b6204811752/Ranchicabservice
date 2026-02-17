@@ -35,8 +35,9 @@ export default function FareCalculator() {
       
       <div className="space-y-4">
         <div>
-          <label className="block text-sm font-semibold mb-2 text-gray-700">Distance (km)</label>
+          <label htmlFor="fare-distance" className="block text-sm font-semibold mb-2 text-gray-700">Distance (km)</label>
           <input
+            id="fare-distance"
             type="number"
             value={distance}
             onChange={(e) => setDistance(e.target.value)}
@@ -46,8 +47,9 @@ export default function FareCalculator() {
         </div>
         
         <div>
-          <label className="block text-sm font-semibold mb-2 text-gray-700">Vehicle Type</label>
+          <label htmlFor="fare-vehicle" className="block text-sm font-semibold mb-2 text-gray-700">Vehicle Type</label>
           <select
+            id="fare-vehicle"
             value={vehicleType}
             onChange={(e) => setVehicleType(e.target.value)}
             className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"

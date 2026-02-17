@@ -19,14 +19,16 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          vendor: ['react', 'react-dom', 'react-router-dom'],
-          ui: ['react-helmet-async', 'lucide-react'],
-          motion: ['motion'],
-          slider: ['react-slick', 'slick-carousel'],
+          'vendor-react': ['react', 'react-dom', 'react-router-dom'],
+          'vendor-helmet': ['react-helmet-async'],
+          'vendor-icons': ['lucide-react'],
+          'vendor-motion': ['motion'],
+          'vendor-slider': ['react-slick', 'slick-carousel'],
         },
       },
     },
     cssCodeSplit: true,
     assetsInlineLimit: 4096,
+    chunkSizeWarningLimit: 1000,
   },
 })
