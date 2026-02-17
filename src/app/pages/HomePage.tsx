@@ -2,14 +2,15 @@ import { Phone, Clock, Shield, Users, Star, MapPin, Car, ArrowRight, MessageCirc
 import SEO from '@/app/components/common/SEO';
 import { Link } from 'react-router-dom';
 import { useState, lazy, Suspense } from 'react';
-import Slider from 'react-slick';
 import '@/styles/slick-theme.css';
-import { motion } from 'motion/react';
-import TrustBadges from '@/app/components/common/TrustBadges';
-import TrustIndicators from '@/app/components/common/TrustIndicators';
 import PromoBanner from '@/app/components/common/PromoBanner';
 
+// Lazy-load Slider to defer 64KB vendor-slider from critical path
+const Slider = lazy(() => import('react-slick'));
+
 // Lazy-load below-the-fold components to reduce initial bundle & TBT
+const TrustBadges = lazy(() => import('@/app/components/common/TrustBadges'));
+const TrustIndicators = lazy(() => import('@/app/components/common/TrustIndicators'));
 const FareCalculator = lazy(() => import('@/app/components/common/FareCalculator'));
 const FAQ = lazy(() => import('@/app/components/common/FAQ'));
 const ComparisonTable = lazy(() => import('@/app/components/common/ComparisonTable'));
@@ -21,7 +22,6 @@ const ServiceAreas = lazy(() => import('@/app/components/common/ServiceAreas'));
 const BlogSection = lazy(() => import('@/app/components/common/BlogSection'));
 const HowToBook = lazy(() => import('@/app/components/common/HowToBook'));
 const InternalLinks = lazy(() => import('@/app/components/common/InternalLinks'));
-import heroImg1 from '@/assets/images/vehicles/hero-bg1.webp';
 import heroImg2 from '@/assets/images/vehicles/hero-bg2.webp';
 import heroImg3 from '@/assets/images/vehicles/hero-bg.webp';
 import ertigaImg from '@/assets/images/vehicles/ertiga.webp';
@@ -80,7 +80,7 @@ export default function HomePage() {
 
   const heroSlides = [
     {
-      image: heroImg1,
+      image: '/hero-bg1.webp',
       title: 'Ranchi Taxi & Car Rental Service',
       subtitle: 'Top-Rated Cab & Taxi Service | 24/7 Available @ ₹10/km',
     },
@@ -262,6 +262,40 @@ export default function HomePage() {
 
       {/* Hero Section with Image Slider */}
       <section className="hero-slider relative h-[500px] sm:h-[600px] md:h-[700px] overflow-hidden w-full" style={{ containIntrinsicSize: '100vw 700px', contentVisibility: 'visible' }}>
+        <Suspense fallback={
+          /* Static first slide while Slider JS loads */
+          <div className="relative h-[500px] sm:h-[600px] md:h-[700px]">
+            <img
+              src={heroSlides[0].image}
+              alt={heroSlides[0].title}
+              width={466}
+              height={240}
+              fetchPriority="high"
+              decoding="sync"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-800/70 to-transparent" />
+            <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
+              <div className="max-w-2xl text-white">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight">
+                  {heroSlides[0].title}
+                </h1>
+                <p className="text-xl sm:text-2xl md:text-3xl mb-6 sm:mb-8 text-blue-100">
+                  {heroSlides[0].subtitle}
+                </p>
+                <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
+                  <a href="tel:+917903629240" aria-label="Call Ranchi Cab Service for booking" className="w-full sm:w-auto bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all transform hover:scale-105 inline-flex items-center justify-center space-x-2 shadow-lg">
+                    <Phone className="w-5 h-5" />
+                    <span>Call: +91 7903629240</span>
+                  </a>
+                  <a href="https://wa.me/917903629240" target="_blank" rel="noopener noreferrer" aria-label="Book a cab via WhatsApp" className="w-full sm:w-auto bg-green-700 hover:bg-green-800 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all transform hover:scale-105 shadow-lg text-center">
+                    WhatsApp Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        }>
         <Slider {...sliderSettings} className="h-full">
           {heroSlides.map((slide, index) => (
             <div key={index} className="relative h-[500px] sm:h-[600px] md:h-[700px]">
@@ -322,27 +356,22 @@ export default function HomePage() {
             </div>
           ))}
         </Slider>
+        </Suspense>
       </section>
 
       {/* Trust Badges */}
-      <TrustBadges />
+      <Suspense fallback={null}><TrustBadges /></Suspense>
 
       {/* Trust Indicators - Stats & Certifications */}
-      <TrustIndicators />
+      <Suspense fallback={null}><TrustIndicators /></Suspense>
 
       {/* Booking Form Section */}
       <section id="booking-form" className="py-16 bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <motion.div
-            initial={{ opacity: 0, y: 50, rotateX: -20 }}
-            whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            whileHover={{ y: -5, boxShadow: "0 30px 60px -15px rgba(0, 0, 0, 0.3)" }}
+          <div
             className="bg-white/90 backdrop-blur-xl rounded-2xl shadow-2xl p-8 border-t-4 border-blue-600 relative overflow-hidden"
-            style={{ transformStyle: 'preserve-3d' }}
           >
             <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 opacity-50"></div>
             <div className="relative z-10">
@@ -442,7 +471,7 @@ export default function HomePage() {
               </div>
             </form>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -450,10 +479,7 @@ export default function HomePage() {
       <section className="py-16 relative overflow-hidden overflow-x-hidden w-full">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 opacity-50"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <div
             className="text-center mb-8 sm:mb-12 px-4"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent mb-3 sm:mb-4">
@@ -462,37 +488,24 @@ export default function HomePage() {
             <p className="text-base sm:text-xl text-gray-600">
               Your trusted partner for safe and reliable taxi services
             </p>
-          </motion.div>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 20, rotateX: -15 }}
-                whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1, duration: 0.6 }}
-                whileHover={{ 
-                  y: -10, 
-                  rotateY: 5,
-                  scale: 1.05,
-                  boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)"
-                }}
                 className="group relative bg-gradient-to-br from-white via-blue-50 to-purple-50 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all transform border border-blue-100 backdrop-blur-sm"
-                style={{ transformStyle: 'preserve-3d' }}
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 <div className="relative z-10">
-                  <motion.div 
+                  <div 
                     className="text-blue-600 mb-4"
-                    whileHover={{ rotate: 360, scale: 1.2 }}
-                    transition={{ duration: 0.6 }}
                   >
                     {feature.icon}
-                  </motion.div>
+                  </div>
                   <h3 className="text-xl font-bold mb-2 bg-gradient-to-r from-gray-900 to-blue-900 bg-clip-text text-transparent">{feature.title}</h3>
                   <p className="text-gray-600">{feature.description}</p>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -505,10 +518,7 @@ export default function HomePage() {
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-400 rounded-full filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '1s' }}></div>
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
+          <div
             className="text-center mb-8 sm:mb-12 px-4"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-3 sm:mb-4">
@@ -517,22 +527,11 @@ export default function HomePage() {
             <p className="text-base sm:text-xl text-gray-600">
               Comprehensive cab solutions for all your travel needs
             </p>
-          </motion.div>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
             {services.map((service, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 50, rotateX: -20 }}
-                whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.15, type: "spring", stiffness: 100 }}
-                whileHover={{ 
-                  y: -15,
-                  rotateY: 8,
-                  scale: 1.05,
-                  transition: { duration: 0.3 }
-                }}
-                style={{ transformStyle: 'preserve-3d' }}
               >
                 <Link
                   to={service.link}
@@ -546,20 +545,18 @@ export default function HomePage() {
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 via-purple-500/0 to-pink-500/0 group-hover:from-blue-500/10 group-hover:via-purple-500/10 group-hover:to-pink-500/10 transition-all duration-500"></div>
                   <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full filter blur-2xl opacity-0 group-hover:opacity-30 transition-opacity"></div>
-                  <motion.div 
+                  <div 
                     className="text-blue-600 mb-4 relative z-10"
-                    whileHover={{ scale: 1.2, rotate: 5 }}
-                    transition={{ type: "spring", stiffness: 300 }}
                   >
                     {service.icon}
-                  </motion.div>
+                  </div>
                   <h3 className="text-xl font-bold mb-2 relative z-10 bg-gradient-to-r from-gray-900 to-blue-900 bg-clip-text text-transparent group-hover:from-blue-600 group-hover:to-purple-600 transition-all">{service.title}</h3>
                   <p className="text-gray-600 mb-4 relative z-10">{service.description}</p>
                   <span className="text-blue-600 font-semibold flex items-center group-hover:translate-x-2 transition-transform relative z-10">
                     Learn More <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </Link>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -572,10 +569,7 @@ export default function HomePage() {
       <section className="py-16 relative overflow-hidden overflow-x-hidden w-full">
         <div className="absolute inset-0 bg-gradient-to-b from-white via-blue-50 to-purple-50"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <div
             className="text-center mb-8 sm:mb-12 px-4"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent mb-3 sm:mb-4">
@@ -584,44 +578,30 @@ export default function HomePage() {
             <p className="text-base sm:text-xl text-gray-600">
               Wide range of vehicles to suit your needs and budget
             </p>
-          </motion.div>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {vehicles.map((vehicle, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, scale: 0.8, rotateY: -30 }}
-                whileInView={{ opacity: 1, scale: 1, rotateY: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1, duration: 0.6 }}
-                whileHover={{ 
-                  y: -12,
-                  rotateY: 5,
-                  scale: 1.03,
-                  boxShadow: "0 30px 60px -15px rgba(0, 0, 0, 0.3)"
-                }}
                 className="group relative bg-white/90 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden border border-gray-100"
-                style={{ transformStyle: 'preserve-3d' }}
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 via-purple-500/0 to-pink-500/0 group-hover:from-blue-500/10 group-hover:via-purple-500/10 group-hover:to-pink-500/10 transition-all duration-700"></div>
                 <div className="relative overflow-hidden">
-                  <motion.img
+                  <img
                     src={vehicle.image}
                     alt={`${vehicle.name} - Car Rental in Ranchi - ${vehicle.seats} Seater AC Cab`}
                     loading="lazy"
                     width="600"
                     height="400"
                     className="w-full h-48 sm:h-56 object-cover"
-                    whileHover={{ scale: 1.15 }}
-                    transition={{ duration: 0.6 }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500" />
                   <div className="absolute top-4 right-4">
-                    <motion.div 
+                    <div 
                       className="bg-gradient-to-r from-green-400 to-emerald-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg"
-                      whileHover={{ scale: 1.1, rotate: 5 }}
                     >
                       AC Available
-                    </motion.div>
+                    </div>
                   </div>
                 </div>
                 <div className="p-6 relative">
@@ -630,30 +610,25 @@ export default function HomePage() {
                     <span className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full font-semibold">{vehicle.seats} Seater</span>
                   </div>
                   <div className="border-t border-gray-200 pt-4 space-y-3">
-                    <motion.div 
+                    <div 
                       className="flex justify-between items-center p-3 rounded-lg bg-gradient-to-r from-blue-50 to-purple-50"
-                      whileHover={{ scale: 1.02, x: 5 }}
                     >
                       <span className="text-gray-700 font-medium">Local:</span>
                       <span className="font-bold text-xl bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">{vehicle.local}</span>
-                    </motion.div>
-                    <motion.div 
+                    </div>
+                    <div 
                       className="flex justify-between items-center p-3 rounded-lg bg-gradient-to-r from-purple-50 to-pink-50"
-                      whileHover={{ scale: 1.02, x: 5 }}
                     >
                       <span className="text-gray-700 font-medium">Outstation:</span>
                       <span className="font-bold text-xl bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">{vehicle.outstation}</span>
-                    </motion.div>
+                    </div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
-          <motion.div 
+          <div 
             className="text-center mt-8"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
           >
             <Link
               to="/fleet"
@@ -662,7 +637,7 @@ export default function HomePage() {
               View Full Fleet
               <ArrowRight className="w-5 h-5" />
             </Link>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -671,10 +646,7 @@ export default function HomePage() {
         <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-300 to-purple-300 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-purple-300 to-pink-300 rounded-full filter blur-3xl opacity-20 animate-pulse" style={{ animationDelay: '1.5s' }}></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
+          <div
             className="text-center mb-8 sm:mb-12 px-4"
           >
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-3 sm:mb-4">
@@ -683,58 +655,42 @@ export default function HomePage() {
             <p className="text-base sm:text-xl text-gray-600">
               Best rates for outstation cab service
             </p>
-          </motion.div>
+          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {routes.map((route, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, x: -20, rotateY: -15 }}
-                whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.08, duration: 0.6 }}
-                whileHover={{ 
-                  y: -8,
-                  rotateY: 5,
-                  scale: 1.03,
-                  boxShadow: "0 20px 40px -12px rgba(0, 0, 0, 0.25)"
-                }}
                 className="group relative bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all border border-gray-100 overflow-hidden"
-                style={{ transformStyle: 'preserve-3d' }}
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 via-purple-500/0 to-pink-500/0 group-hover:from-blue-500/5 group-hover:via-purple-500/5 group-hover:to-pink-500/5 transition-all duration-500"></div>
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-yellow-300 to-orange-300 rounded-full filter blur-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
                 <div className="relative z-10">
                   <div className="flex items-center justify-between mb-4">
-                    <motion.h3 
+                    <h3 
                       className="text-lg font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
-                      whileHover={{ scale: 1.05 }}
                     >
                       {route.from}
-                    </motion.h3>
-                    <motion.div
-                      whileHover={{ rotate: 360, scale: 1.2 }}
-                      transition={{ duration: 0.6 }}
+                    </h3>
+                    <div
                     >
                       <ArrowRight className="w-6 h-6 text-blue-600" />
-                    </motion.div>
-                    <motion.h3 
+                    </div>
+                    <h3 
                       className="text-lg font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent"
-                      whileHover={{ scale: 1.05 }}
                     >
                       {route.to}
-                    </motion.h3>
+                    </h3>
                   </div>
                   <div className="flex justify-between text-sm mb-2">
                     <span className="text-gray-600">{route.distance}</span>
-                    <motion.span 
+                    <span 
                       className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent"
-                      whileHover={{ scale: 1.15 }}
                     >
                       {route.fare}
-                    </motion.span>
+                    </span>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -745,10 +701,7 @@ export default function HomePage() {
       {/* Live Chat Prompt */}
       <section className="py-12 bg-gradient-to-r from-green-500 to-green-600 overflow-x-hidden w-full">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <div
             className="flex flex-col md:flex-row items-center justify-between gap-6 bg-white/10 backdrop-blur-sm rounded-2xl p-8"
           >
             <div className="text-white text-left">
@@ -765,7 +718,7 @@ export default function HomePage() {
               <MessageCircle className="w-6 h-6" />
               Chat on WhatsApp
             </a>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -773,11 +726,7 @@ export default function HomePage() {
       <section className="py-16 bg-gradient-to-br from-white via-blue-50 to-white overflow-x-hidden w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+            <div
             >
               <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">
                 Calculate Your Fare
@@ -808,15 +757,11 @@ export default function HomePage() {
                   </div>
                 </div>
               </div>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+            </div>
+            <div
             >
               <Suspense fallback={null}><FareCalculator /></Suspense>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -834,25 +779,17 @@ export default function HomePage() {
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full filter blur-3xl opacity-10 animate-pulse" style={{ animationDelay: '1s' }}></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+          <div
             className="text-center mb-12"
           >
             <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
               Car Rental & Taxi Service in Ranchi
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">Your Trusted Travel Partner</p>
-          </motion.div>
+          </div>
 
           {/* Introduction Card */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
+          <div
             className="bg-white/80 backdrop-blur-lg rounded-3xl shadow-xl p-8 md:p-10 mb-12 border border-white/20"
           >
             <p className="text-lg text-gray-700 leading-relaxed">
@@ -861,14 +798,10 @@ export default function HomePage() {
               outstation journeys, airport transfers, and corporate transportation. With over <span className="font-bold text-purple-600">2000+ routes covered</span> and <span className="font-bold text-purple-600">500+ satisfied customers</span>, 
               we have established ourselves as the most trusted <span className="font-semibold">cab booking service in Ranchi</span>.
             </p>
-          </motion.div>
+          </div>
 
           {/* Services Grid */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
+          <div
             className="mb-16"
           >
             <h3 className="text-3xl font-bold text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-8">
@@ -876,8 +809,7 @@ export default function HomePage() {
             </h3>
             
             <div className="grid md:grid-cols-2 gap-6">
-              <motion.div
-                whileHover={{ y: -5, boxShadow: "0 20px 40px -12px rgba(0, 0, 0, 0.2)" }}
+              <div
                 className="group relative bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-6 border border-blue-100 overflow-hidden transition-all"
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-400 to-purple-400 rounded-full filter blur-2xl opacity-0 group-hover:opacity-20 transition-opacity"></div>
@@ -889,10 +821,9 @@ export default function HomePage() {
                     or daily commute. Our flexible packages include 4-hour, 8-hour, and 12-hour rentals starting at just <span className="font-bold text-blue-600">₹10/km</span> for sedans.
                   </p>
                 </div>
-              </motion.div>
+              </div>
               
-              <motion.div
-                whileHover={{ y: -5, boxShadow: "0 20px 40px -12px rgba(0, 0, 0, 0.2)" }}
+              <div
                 className="group relative bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-6 border border-purple-100 overflow-hidden transition-all"
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full filter blur-2xl opacity-0 group-hover:opacity-20 transition-opacity"></div>
@@ -904,10 +835,9 @@ export default function HomePage() {
                     We cover popular routes like Ranchi to Patna, Ranchi to Kolkata, Ranchi to Jamshedpur, Ranchi to Bokaro, and <span className="font-bold text-purple-600">2000+ more destinations</span>.
                   </p>
                 </div>
-              </motion.div>
+              </div>
               
-              <motion.div
-                whileHover={{ y: -5, boxShadow: "0 20px 40px -12px rgba(0, 0, 0, 0.2)" }}
+              <div
                 className="group relative bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-6 border border-indigo-100 overflow-hidden transition-all"
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-indigo-400 to-blue-400 rounded-full filter blur-2xl opacity-0 group-hover:opacity-20 transition-opacity"></div>
@@ -919,10 +849,9 @@ export default function HomePage() {
                     and drop with flight tracking, meet & greet service, and comfortable rides to/from the airport.
                   </p>
                 </div>
-              </motion.div>
+              </div>
               
-              <motion.div
-                whileHover={{ y: -5, boxShadow: "0 20px 40px -12px rgba(0, 0, 0, 0.2)" }}
+              <div
                 className="group relative bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-6 border border-pink-100 overflow-hidden transition-all"
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-pink-400 to-purple-400 rounded-full filter blur-2xl opacity-0 group-hover:opacity-20 transition-opacity"></div>
@@ -934,16 +863,12 @@ export default function HomePage() {
                     and flexible billing options for businesses and organizations.
                   </p>
                 </div>
-              </motion.div>
+              </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Fleet Section */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.4 }}
+          <div
             className="mb-16"
           >
             <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-3xl shadow-2xl p-8 md:p-12 text-white relative overflow-hidden">
@@ -957,22 +882,17 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Routes Grid */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.5 }}
+          <div
             className="mb-16"
           >
             <h3 className="text-3xl font-bold text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-8">
               Top Outstation Cab Routes & Fares
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
-              <motion.div
-                whileHover={{ scale: 1.02 }}
+              <div
                 className="bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-6 border border-gray-100"
               >
                 <ul className="space-y-3">
@@ -989,9 +909,8 @@ export default function HomePage() {
                     <span className="text-sm text-gray-600">140 km • <span className="font-bold text-blue-600">₹2,200</span></span>
                   </li>
                 </ul>
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.02 }}
+              </div>
+              <div
                 className="bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-6 border border-gray-100"
               >
                 <ul className="space-y-3">
@@ -1008,9 +927,8 @@ export default function HomePage() {
                     <span className="text-sm text-gray-600">200 km • <span className="font-bold text-purple-600">₹3,000</span></span>
                   </li>
                 </ul>
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.02 }}
+              </div>
+              <div
                 className="bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-6 border border-gray-100"
               >
                 <ul className="space-y-3">
@@ -1027,16 +945,12 @@ export default function HomePage() {
                     <span className="text-sm text-gray-600">270 km • <span className="font-bold text-pink-600">₹3,800</span></span>
                   </li>
                 </ul>
-              </motion.div>
+              </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Why Choose Us Grid */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.6 }}
+          <div
             className="mb-16"
           >
             <h3 className="text-3xl font-bold text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-8">
@@ -1053,25 +967,20 @@ export default function HomePage() {
                 { icon: '🏆', title: 'Best Price Guarantee', desc: 'Lowest per km rates' },
                 { icon: '👔', title: 'Expert Chauffeurs', desc: 'Professional and courteous' }
               ].map((item, index) => (
-                <motion.div
+                <div
                   key={index}
-                  whileHover={{ y: -5, scale: 1.02 }}
                   className="bg-white/90 backdrop-blur-md rounded-xl shadow-lg p-4 border border-gray-100 text-center group hover:shadow-xl transition-all"
                 >
                   <div className="text-4xl mb-2 group-hover:scale-110 transition-transform">{item.icon}</div>
                   <h4 className="font-bold text-gray-800 mb-1">{item.title}</h4>
                   <p className="text-sm text-gray-600">{item.desc}</p>
-                </motion.div>
+                </div>
               ))}
             </div>
-          </motion.div>
+          </div>
 
           {/* Booking CTA */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.7 }}
+          <div
             className="mb-16"
           >
             <div className="bg-gradient-to-r from-green-500 to-emerald-600 rounded-3xl shadow-2xl p-8 md:p-12 text-white text-center relative overflow-hidden">
@@ -1096,14 +1005,10 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Service Areas */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.8 }}
+          <div
             className="mb-12"
           >
             <div className="bg-white/90 backdrop-blur-md rounded-3xl shadow-xl p-8 md:p-10 border border-gray-100">
@@ -1116,7 +1021,7 @@ export default function HomePage() {
                 and all major localities in Ranchi city.
               </p>
             </div>
-          </motion.div>
+          </div>
 
 
         </div>

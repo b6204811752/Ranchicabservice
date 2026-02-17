@@ -1,6 +1,5 @@
 import { X, Gift, Clock, Percent } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
 
 interface PromoBannerProps {
   promoCode?: string;
@@ -40,13 +39,8 @@ export default function PromoBanner({
   if (!isVisible) return null;
 
   return (
-    <AnimatePresence>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.3 }}
-        className="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 text-white relative overflow-hidden"
+      <div
+        className="bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 text-white relative overflow-hidden animate-[fadeIn_0.3s_ease-in-out]"
       >
         {/* Animated background pattern */}
         <div className="absolute inset-0 opacity-10">
@@ -114,7 +108,6 @@ export default function PromoBanner({
             }
           })
         }} />
-      </motion.div>
-    </AnimatePresence>
+      </div>
   );
 }
