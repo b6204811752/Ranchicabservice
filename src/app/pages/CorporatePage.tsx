@@ -2,7 +2,9 @@ import SEO from '../components/common/SEO';
 import { Briefcase, Users, Clock, Shield } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import heroImg from '@/assets/images/vehicles/luxury-car.webp';
+
+const heroImg = 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1200&auto=format&fit=crop';
+const corporateImg = 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&auto=format&fit=crop';
 
 export default function CorporatePage() {
   const services = [
@@ -83,7 +85,7 @@ export default function CorporatePage() {
             </div>
             <div className="rounded-xl overflow-hidden shadow-xl">
               <img
-                src="https://images.unsplash.com/photo-1551836022-4c4c79fd09a0?w=800"
+                src={corporateImg}
                 alt="Corporate Service"
                 className="w-full h-full object-cover"
               />
