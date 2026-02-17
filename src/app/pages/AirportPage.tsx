@@ -1,4 +1,6 @@
 import SEO from '../components/common/SEO';
+import FAQ from '../components/common/FAQ';
+import InternalLinks from '../components/common/InternalLinks';
 import { Plane, Clock, Shield, Star } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
@@ -210,6 +212,19 @@ export default function AirportPage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQ customFaqs={[
+        { question: "How much does Ranchi airport taxi cost?", answer: "Ranchi Airport (Birsa Munda Airport) taxi starts at ₹800 for sedan (Dzire/Aura). Ertiga SUV costs ₹1,000-₹1,200. Innova Crysta costs ₹1,500-₹1,800. Rates apply for airport to city center (up to 15 km). Beyond city limits, per-km charges apply." },
+        { question: "Do you track flight timings for airport pickup?", answer: "Yes, we track all flight arrivals in real-time. Our driver arrives at the airport before your flight lands. If your flight is delayed or arrives early, we adjust the pickup time automatically at no extra charge." },
+        { question: "Is 24/7 airport taxi available in Ranchi?", answer: "Yes, our airport taxi service operates 24 hours, 7 days a week including early morning flights and late night arrivals. Night charges (10 PM - 6 AM) of 10% extra apply. We are available for all domestic airline arrivals and departures." },
+        { question: "How do I book airport taxi to Ranchi Airport?", answer: "Call +91 7903629240 or WhatsApp your flight details (flight number, date, time). We'll confirm your booking with driver name and vehicle number. You can also book through our website. Pre-booking recommended for guaranteed availability." },
+        { question: "Can I get an airport taxi from Ranchi to other cities?", answer: "Yes, we provide direct airport pickup to outstation destinations: Airport to Jamshedpur (₹2,500), Airport to Bokaro (₹2,000), Airport to Dhanbad (₹2,800), Airport to Hazaribagh (₹1,800). Convenient direct drop without city stop." },
+        { question: "Where does the driver meet me at Ranchi Airport?", answer: "Our driver waits at the arrival gate exit with a name placard. We share the driver's name, photo, phone number, and car details via WhatsApp before pickup. Luggage assistance provided. Meet & greet service included at no extra cost." }
+      ]} title="Airport Taxi FAQs" />
+
+      {/* Internal Links */}
+      <InternalLinks />
     </>
   );
 }

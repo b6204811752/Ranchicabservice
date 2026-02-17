@@ -1,4 +1,6 @@
 import SEO from '../components/common/SEO';
+import FAQ from '../components/common/FAQ';
+import InternalLinks from '../components/common/InternalLinks';
 import { Briefcase, Users, Clock, Shield } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
@@ -29,6 +31,31 @@ export default function CorporatePage() {
         title="Corporate Taxi Ranchi | Employee Transport | Monthly Cab Packages for Business"
         description="Professional corporate taxi service in Ranchi ✓ Employee transport ✓ Client meeting cabs ✓ Monthly packages ✓ Invoice billing ✓ Dedicated account manager ✓ GPS tracked. Call +91 7903629240"
         keywords="corporate taxi ranchi, corporate cab service ranchi, business taxi ranchi, employee transportation ranchi, corporate travel ranchi, office cab ranchi, company taxi service ranchi, monthly cab service ranchi, staff transportation ranchi, corporate car rental ranchi, business travel ranchi, executive cab service ranchi, office pick up drop ranchi, employee shuttle ranchi, it company cab ranchi, corporate cab booking ranchi, company car hire ranchi, bulk taxi booking ranchi, corporate transport jharkhand, office cab monthly package ranchi, corporate cab rate ranchi"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Corporate Taxi Service",
+          "name": "Corporate Taxi Service in Ranchi",
+          "description": "Professional corporate taxi service in Ranchi offering employee transport, client meeting transfers, monthly cab packages, and dedicated business transportation solutions.",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Ranchi Cab Service",
+            "telephone": "+917903629240",
+            "address": { "@type": "PostalAddress", "addressLocality": "Ranchi", "addressRegion": "Jharkhand", "addressCountry": "IN" }
+          },
+          "areaServed": { "@type": "City", "name": "Ranchi" },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Corporate Taxi Packages",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Employee Transportation" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Client Meeting Transfers" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Monthly Corporate Packages" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Executive Airport Transfers" } }
+            ]
+          },
+          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "75", "bestRating": "5" }
+        }}
       />
 
       <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 overflow-hidden">
@@ -135,6 +162,19 @@ export default function CorporatePage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQ customFaqs={[
+        { question: "What corporate taxi packages are available in Ranchi?", answer: "We offer flexible corporate packages including daily employee pick-up/drop, monthly dedicated vehicle rental, per-trip billing, and customized solutions for IT companies, hospitals, and businesses. Packages start from ₹15,000/month for a dedicated sedan." },
+        { question: "How does corporate billing work?", answer: "We provide monthly invoice billing with detailed trip logs, GST invoices, and multiple payment options (bank transfer, cheque, UPI). Each trip is documented with driver details, vehicle number, pickup/drop time, and kilometers covered." },
+        { question: "Can we get a dedicated vehicle and driver?", answer: "Yes, we provide dedicated vehicles with assigned drivers for corporate clients. Your driver will be familiar with your regular routes, employees, and specific requirements. Vehicle options include Sedan, Ertiga SUV, and Innova Crysta." },
+        { question: "Do you cover employee shifts and night pickups?", answer: "Yes, we provide 24/7 corporate transportation including early morning, late night, and rotational shift pickups. Night shift transportation is available with verified drivers and GPS-tracked vehicles for employee safety." },
+        { question: "What safety measures do you have for corporate travel?", answer: "All vehicles are GPS-tracked in real-time, drivers are police-verified with commercial licenses, vehicles undergo regular maintenance and sanitization, and we provide trip tracking links that can be shared with HR/admin teams." },
+        { question: "How do I get a corporate quote?", answer: "Call us at +91 7903629240 or email ranchicabservice2@gmail.com with your requirements (number of employees, routes, shift timings). Our corporate team will prepare a customized quote within 24 hours. Bulk discounts available for 5+ vehicle requirements." }
+      ]} title="Corporate Taxi FAQs" />
+
+      {/* Internal Links */}
+      <InternalLinks />
     </>
   );
 }

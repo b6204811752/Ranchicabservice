@@ -1,4 +1,6 @@
 import SEO from '../components/common/SEO';
+import FAQ from '../components/common/FAQ';
+import InternalLinks from '../components/common/InternalLinks';
 import { Link } from 'react-router-dom';
 import { Phone, MapPin, Clock, Navigation, Car, Star, Shield, Check } from 'lucide-react';
 
@@ -332,6 +334,19 @@ export default function CabNearMePage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQ customFaqs={[
+        { question: "How do I find a cab near me in Ranchi?", answer: "Simply call +91 7903629240 or WhatsApp your live location. Our nearest available cab will be dispatched to your pickup point within 10-15 minutes. We cover all areas of Ranchi including Doranda, Lalpur, Kanke, Harmu, Bariatu, Morabadi, Hinoo, HEC, Railway Station, and Airport." },
+        { question: "How fast can I get a taxi near me in Ranchi?", answer: "Our average pickup time is 10-15 minutes in most Ranchi locations. For areas near our driver hubs (Railway Station, Airport, Birsa Chowk), pickup can be as fast as 5-7 minutes. We have 50+ drivers stationed across the city for quick response." },
+        { question: "Is Ranchi Cab Service available at night?", answer: "Yes, we provide 24/7 taxi service including late night and early morning. Night charges (10 PM - 6 AM) are just 10% extra. Our verified drivers ensure safe night travel anywhere in Ranchi." },
+        { question: "How much does a cab near me cost in Ranchi?", answer: "Our rates start at ₹10/km for sedan (Dzire/Aura). Minimum fare is ₹150. Base fare applies for first 4 km. No surge pricing unlike Ola/Uber. SUV starts at ₹14/km. We offer the most transparent and affordable rates in Ranchi." },
+        { question: "Can I get a cab near Ranchi Railway Station?", answer: "Yes, we have multiple cabs stationed near Ranchi Junction Railway Station 24/7. Pickup from station exit within 5-10 minutes. We also serve Hatia Railway Station. Pre-booking recommended for assured availability during peak hours." },
+        { question: "Do you offer cab service at Birsa Munda Airport?", answer: "Yes, we provide 24/7 airport taxi service at Birsa Munda Airport. Airport to city starts at ₹800. We track your flight timing and wait at the arrival gate. No extra charge for flight delays. Pre-book for guaranteed availability." }
+      ]} title="Cab Near Me FAQs" />
+
+      {/* Internal Links */}
+      <InternalLinks />
     </>
   );
 }

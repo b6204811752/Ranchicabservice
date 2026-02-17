@@ -1,4 +1,6 @@
 import SEO from '../../components/common/SEO';
+import FAQ from '../../components/common/FAQ';
+import InternalLinks from '../../components/common/InternalLinks';
 import { Phone, MapPin, Clock, IndianRupee, Car, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -93,6 +95,17 @@ export default function RoutePageTemplate({ route }: RoutePageTemplateProps) {
           { "@type": "ListItem", "position": 2, "name": "Outstation Taxi", "item": "https://www.ranchicabservice.com/outstation-taxi" },
           { "@type": "ListItem", "position": 3, "name": `${route.from} to ${route.to} Cab` }
         ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": route.faqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
       }
     ]
   };
@@ -271,18 +284,9 @@ export default function RoutePageTemplate({ route }: RoutePageTemplateProps) {
                   </>
                 )}
 
-                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-3 md:mb-4 mt-6 md:mt-8">
-                  FAQs - {route.from} to {route.to} Cab
-                </h3>
-                <div className="space-y-3 md:space-y-4">
-                  {route.faqs.map((faq, i) => (
-                    <div key={i} className="bg-gray-50 p-3 sm:p-4 rounded-lg">
-                      <h4 className="font-semibold text-gray-800 mb-2 text-sm sm:text-base">Q: {faq.question}</h4>
-                      <p className="text-gray-700 text-sm sm:text-base">A: {faq.answer}</p>
-                    </div>
-                  ))}
-                </div>
               </section>
+              {/* FAQ with FAQPage schema for Google rich snippets */}
+              <FAQ customFaqs={route.faqs} title={`${route.from} to ${route.to} Cab - FAQs`} />
             </div>
 
             {/* Sidebar */}
@@ -333,6 +337,9 @@ export default function RoutePageTemplate({ route }: RoutePageTemplateProps) {
           </div>
         </div>
       </section>
+
+      {/* Internal Links for SEO */}
+      <InternalLinks />
     </>
   );
 }

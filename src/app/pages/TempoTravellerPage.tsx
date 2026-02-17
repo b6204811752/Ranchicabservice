@@ -2,6 +2,7 @@ import SEO from '../components/common/SEO';
 import { Link } from 'react-router-dom';
 import { Phone, Users, MapPin, Clock, Shield, Star, Check, Calendar, Car } from 'lucide-react';
 import FAQ from '../components/common/FAQ';
+import InternalLinks from '../components/common/InternalLinks';
 
 const heroImg = 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&auto=format&fit=crop';
 const tempo9Img = 'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=600&auto=format&fit=crop';
@@ -300,6 +301,9 @@ export default function TempoTravellerPage() {
           </div>
         </div>
       </section>
+
+      {/* Internal Links */}
+      <InternalLinks />
     </>
   );
 }

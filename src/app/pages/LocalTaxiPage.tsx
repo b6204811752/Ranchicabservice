@@ -1,4 +1,6 @@
 import SEO from '../components/common/SEO';
+import FAQ from '../components/common/FAQ';
+import InternalLinks from '../components/common/InternalLinks';
 import { Clock, MapPin, DollarSign, Shield } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
@@ -222,6 +224,19 @@ export default function LocalTaxiPage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQ customFaqs={[
+        { question: "What is the rate for local taxi in Ranchi?", answer: "Local taxi rates in Ranchi start at ₹10/km for sedans (Dzire, Aura). SUV (Ertiga) costs ₹14/km. Innova Crysta is ₹18/km. Hourly packages are also available: 4Hr/40km at ₹1,200, 8Hr/80km at ₹2,000, and 12Hr/120km at ₹2,800 for sedan." },
+        { question: "Which areas in Ranchi do you cover for local taxi?", answer: "We cover all areas in Ranchi including Doranda, Lalpur, Kanke, Harmu, Bariatu, Morabadi, Hinoo, HEC, MECON, Namkum, Ratu Road, Main Road, Piska More, Birsa Chowk, Albert Ekka Chowk, Ranchi Railway Station, Hatia, and Birsa Munda Airport." },
+        { question: "Can I book a local taxi for hospital or shopping trips?", answer: "Yes, our local taxi service is perfect for hospital visits (RIMS, Medica, Orchid), shopping trips (Nucleus Mall, GEL Church Complex, Lalpur Bazaar), and any city travel. We offer comfortable AC vehicles with professional drivers." },
+        { question: "Is local taxi available for full day rental?", answer: "Yes, we offer 4-hour, 8-hour, and 12-hour rental packages. Full day 12Hr/120km package costs ₹2,800 for sedan and ₹3,800 for SUV. Extra km charged at ₹10/km for sedan, ₹14/km for SUV. Extra hours charged at ₹200/hr for sedan." },
+        { question: "How do I book a local taxi in Ranchi?", answer: "You can book by calling +91 7903629240, sending a WhatsApp message with your pickup location, or using our online booking form. We provide instant confirmation and pickup within 10-15 minutes." },
+        { question: "Do you offer taxi for Ranchi city sightseeing?", answer: "Yes, we offer city sightseeing packages covering Ranchi's top attractions: Pahari Mandir, Birsa Zoological Park, Tagore Hill, Rock Garden, Ranchi Lake, Jonha Falls, Dasam Falls, and more. 8Hr/80km sightseeing package starts at ₹2,000." }
+      ]} title="Local Taxi FAQs" />
+
+      {/* Internal Links */}
+      <InternalLinks />
     </>
   );
 }

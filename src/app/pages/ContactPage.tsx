@@ -1,4 +1,5 @@
 import SEO from '../components/common/SEO';
+import InternalLinks from '../components/common/InternalLinks';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { useState } from 'react';
 import { motion } from 'motion/react';
@@ -243,6 +244,9 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      {/* Internal Links */}
+      <InternalLinks />
     </>
   );
 }

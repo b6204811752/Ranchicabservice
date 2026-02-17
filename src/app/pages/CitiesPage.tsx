@@ -1,4 +1,6 @@
 import SEO from '../components/common/SEO';
+import FAQ from '../components/common/FAQ';
+import InternalLinks from '../components/common/InternalLinks';
 import { MapPin } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
@@ -17,6 +19,33 @@ export default function CitiesPage() {
         title="Cities We Serve | Cab Service Jharkhand, Bihar & West Bengal | All Routes"
         description="Ranchi Cab Service covers 50+ cities ✓ Ranchi ✓ Jamshedpur ✓ Bokaro ✓ Dhanbad ✓ Patna ✓ Kolkata ✓ Gaya ✓ Varanasi ✓ Deoghar & more. Book intercity cabs at best rates across Jharkhand, Bihar & West Bengal. Call +91 7903629240"
         keywords="cab service jharkhand, taxi service bihar, ranchi to patna cab, ranchi to kolkata taxi, ranchi to jamshedpur cab, ranchi to bokaro taxi, ranchi to dhanbad cab, intercity cab service ranchi, ranchi to deoghar cab, ranchi to gaya taxi, ranchi to varanasi cab, ranchi to hazaribagh cab, ranchi to giridih taxi, ranchi to daltonganj cab, ranchi to dumka taxi, ranchi to netarhat cab, ranchi to chaibasa taxi, ranchi to bhubaneswar cab, ranchi to puri taxi, jharkhand intercity cab, bihar cab service, west bengal taxi service, all india taxi from ranchi, ranchi to all cities cab, outstation routes from ranchi, ranchi cab service all routes, jharkhand tour taxi"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Intercity Taxi Service",
+          "name": "Intercity Cab Service - Ranchi Cab Service",
+          "description": "Intercity taxi service covering 50+ cities across Jharkhand, Bihar, and West Bengal. Book outstation cabs from Ranchi to Patna, Kolkata, Jamshedpur, Bokaro, Dhanbad and more.",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Ranchi Cab Service",
+            "telephone": "+917903629240"
+          },
+          "areaServed": [
+            { "@type": "State", "name": "Jharkhand" },
+            { "@type": "State", "name": "Bihar" },
+            { "@type": "State", "name": "West Bengal" }
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Intercity Routes",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ranchi to Patna Cab", "description": "330 km, starting ₹4,500" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ranchi to Kolkata Taxi", "description": "425 km, starting ₹6,000" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ranchi to Jamshedpur Cab", "description": "135 km, starting ₹2,200" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ranchi to Bokaro Taxi", "description": "110 km, starting ₹1,800" } }
+            ]
+          }
+        }}
       />
 
       <section className="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 overflow-hidden">
@@ -227,6 +256,19 @@ export default function CitiesPage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQ customFaqs={[
+        { question: "Which cities does Ranchi Cab Service cover?", answer: "We cover 50+ cities across 3 states: Jharkhand (Ranchi, Jamshedpur, Bokaro, Dhanbad, Hazaribagh, Deoghar, Giridih, Ramgarh, Daltonganj, Dumka, Netarhat), Bihar (Patna, Gaya, Bhagalpur, Muzaffarpur), and West Bengal (Kolkata, Durgapur, Asansol, Siliguri). Both one-way and round trip available." },
+        { question: "What is the cheapest outstation route from Ranchi?", answer: "The cheapest outstation route is Ranchi to Bokaro at ₹1,800 (110 km, 2.5 hours) in a sedan. Other affordable routes include Ranchi to Hazaribagh (₹1,600, 92 km) and Ranchi to Jamshedpur (₹2,200, 135 km). SUV and Innova options also available at higher rates." },
+        { question: "Can I book a one-way cab to another city?", answer: "Yes, we offer both one-way and round trip outstation cabs. One-way fares: Ranchi to Patna ₹4,500, Ranchi to Kolkata ₹6,000, Ranchi to Jamshedpur ₹2,200, Ranchi to Dhanbad ₹2,500. Round trip fares are approximately 1.8x of one-way fare." },
+        { question: "Do you provide intercity cab service for group travel?", answer: "Yes, we have Tempo Travellers (12/17 seater) and Innova Crysta (7+1 seater) for group intercity travel. Tempo Traveller rates start at ₹18/km. Ideal for family trips, pilgrimages to Deoghar, corporate outings, and wedding groups." },
+        { question: "Is the driver familiar with outstation routes?", answer: "Yes, our drivers are experienced highway drivers familiar with all major interstate routes. They know the best roads, fuel stops, food courts, and rest points along each route. All vehicles have GPS navigation as backup." },
+        { question: "Do outstation fares include toll and taxes?", answer: "Our listed fares are base fares. Toll charges, state entry taxes, parking fees, and driver night allowance (for trips beyond 10 PM) are additional. We provide complete fare breakdown before trip confirmation so there are no surprises." }
+      ]} title="Intercity Cab Service FAQs" />
+
+      {/* Internal Links */}
+      <InternalLinks />
     </>
   );
 }

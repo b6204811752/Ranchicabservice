@@ -1,4 +1,6 @@
 import SEO from '../components/common/SEO';
+import FAQ from '../components/common/FAQ';
+import InternalLinks from '../components/common/InternalLinks';
 import { MapPin, ArrowRight, Check, Phone, Car } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -362,6 +364,19 @@ export default function OutstationPage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQ customFaqs={[
+        { question: "What is the cheapest outstation cab from Ranchi?", answer: "The most affordable outstation cab from Ranchi is to Bokaro at ₹1,800 (110 km) and Hazaribagh at ₹1,600 (92 km) in a sedan. Other popular routes: Ranchi to Jamshedpur ₹2,200 (135 km), Ranchi to Dhanbad ₹2,500 (165 km). One-way and round trip available." },
+        { question: "Do you provide one-way outstation cabs?", answer: "Yes, we offer both one-way and round trip outstation cabs from Ranchi. One-way fares: Patna ₹4,500, Kolkata ₹6,000, Jamshedpur ₹2,200, Bokaro ₹1,800, Dhanbad ₹2,500. Round trip is approximately 1.8x of one-way fare." },
+        { question: "What vehicles are available for outstation trips?", answer: "We offer Sedan (Maruti Dzire/Hyundai Aura - 4+1 seater), SUV (Maruti Ertiga - 6+1 seater), and Premium SUV (Toyota Innova Crysta - 7+1 seater) for outstation trips. Tempo Traveller (12/17 seater) also available for group travel." },
+        { question: "Are toll charges included in the outstation fare?", answer: "Our listed fares are base fares. Toll charges, state entry taxes, parking fees, and driver allowance (for overnight trips) are charged extra. We provide complete fare breakdown before trip confirmation." },
+        { question: "Can I book an outstation cab for next day early morning?", answer: "Yes, we accept advance bookings for any date and time. For early morning departures (before 6 AM), we recommend booking at least 12 hours in advance. Night charges (10 PM - 6 AM) of 10% extra apply for early morning pickups." },
+        { question: "Is it safe to travel outstation at night?", answer: "Yes, all our outstation drivers are experienced highway drivers with 5+ years of experience. Vehicles are GPS-tracked, and our control room monitors trips 24/7. We share driver details and vehicle number before the trip for your safety." }
+      ]} title="Outstation Taxi FAQs" />
+
+      {/* Internal Links */}
+      <InternalLinks />
     </>
   );
 }

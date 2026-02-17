@@ -1,4 +1,5 @@
 import SEO from '../components/common/SEO';
+import InternalLinks from '../components/common/InternalLinks';
 import { Link } from 'react-router-dom';
 import { Calendar, Clock, MapPin, Car, ArrowRight, User } from 'lucide-react';
 
@@ -329,6 +330,9 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
+
+      {/* Internal Links */}
+      <InternalLinks />
     </>
   );
 }

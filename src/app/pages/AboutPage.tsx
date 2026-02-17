@@ -1,4 +1,6 @@
 import SEO from '../components/common/SEO';
+import FAQ from '../components/common/FAQ';
+import InternalLinks from '../components/common/InternalLinks';
 import { Shield, Users, Award, Heart, Target, TrendingUp } from 'lucide-react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
@@ -42,6 +44,25 @@ export default function AboutPage() {
         title="About Ranchi Cab Service | #1 Trusted Taxi Company Since 2010 | 10,000+ Rides"
         description="About Ranchi Cab Service - Jharkhand's #1 trusted taxi company since 2010 ✓ 10,000+ happy customers ✓ 50+ verified drivers ✓ 24/7 service ✓ 5.0★ Google rated ✓ GPS-enabled AC cars. Reliable & safe cab service in Ranchi."
         keywords="about ranchi cab service, ranchi cab service company, ranchi taxi company, best cab service ranchi, trusted taxi service ranchi, ranchi travels company, professional cab service ranchi, ranchi cab service owner, ranchi cab service review, ranchi cab service rating, safest taxi ranchi, who owns ranchi cab service, ranchi cab service history, taxi company jharkhand, cab company ranchi, ranchi travel agency, best rated cab ranchi, top taxi service ranchi"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "name": "About Ranchi Cab Service",
+          "description": "Learn about Ranchi Cab Service - Jharkhand's most trusted taxi company since 2010 with 10,000+ happy customers and 5.0 Google rating.",
+          "url": "https://www.ranchicabservice.com/about",
+          "mainEntity": {
+            "@type": "LocalBusiness",
+            "name": "Ranchi Cab Service",
+            "foundingDate": "2010",
+            "telephone": "+917903629240",
+            "email": "ranchicabservice2@gmail.com",
+            "address": { "@type": "PostalAddress", "streetAddress": "Birsa Chowk, Kathalkocha", "addressLocality": "Ranchi", "addressRegion": "Jharkhand", "postalCode": "834001", "addressCountry": "IN" },
+            "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "500", "bestRating": "5" },
+            "numberOfEmployees": { "@type": "QuantitativeValue", "value": "50" },
+            "slogan": "Your Trusted Travel Partner in Ranchi",
+            "knowsAbout": ["Taxi Service", "Car Rental", "Airport Transfers", "Outstation Travel", "Corporate Transportation", "Wedding Car Rental"]
+          }
+        }}
       />
 
       {/* Hero Section */}
@@ -282,6 +303,19 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQ customFaqs={[
+        { question: "How long has Ranchi Cab Service been operating?", answer: "Ranchi Cab Service has been operating since 2010, making us one of the most experienced taxi companies in Jharkhand with over 15 years of service. We have completed 50,000+ trips and served 10,000+ happy customers." },
+        { question: "Is Ranchi Cab Service a reliable company?", answer: "Yes, we are rated 5.0 stars on Google with verified customer reviews. We have 50+ government-verified drivers, GPS-tracked AC vehicles, 24/7 customer support, and transparent pricing with no hidden charges. We are one of the most trusted taxi companies in Ranchi." },
+        { question: "What areas does Ranchi Cab Service cover?", answer: "We provide taxi services across all of Ranchi city and outstation routes to major cities in Jharkhand (Jamshedpur, Bokaro, Dhanbad, Hazaribagh, Deoghar), Bihar (Patna, Gaya), and West Bengal (Kolkata). We cover 50+ cities across 3 states." },
+        { question: "How can I contact Ranchi Cab Service?", answer: "You can reach us 24/7 via Phone: +91 7903629240, WhatsApp: +91 7903629240, Email: ranchicabservice2@gmail.com, or book online through our website. We provide instant booking confirmation for all services." },
+        { question: "What makes Ranchi Cab Service different from Ola and Uber?", answer: "Unlike app-based services, we offer fixed transparent rates (no surge pricing), dedicated driver for your trip, door-to-door service, outstation and long-distance travel, wedding car rentals, and corporate monthly packages. We also provide tempo travellers for group travel which ride-hailing apps don't offer." },
+        { question: "Are your drivers verified and trained?", answer: "Yes, all 50+ drivers at Ranchi Cab Service have commercial driving licenses, police verification certificates, 5+ years driving experience, and customer service training. They are familiar with all local routes in Ranchi and major highway routes across Jharkhand, Bihar, and West Bengal." }
+      ]} title="About Ranchi Cab Service - FAQs" />
+
+      {/* Internal Links */}
+      <InternalLinks />
     </>
   );
 }

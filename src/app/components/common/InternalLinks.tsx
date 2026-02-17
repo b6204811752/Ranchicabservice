@@ -9,6 +9,9 @@ export default function InternalLinks() {
     { name: 'Airport Taxi Ranchi', href: '/airport-taxi' },
     { name: 'Corporate Taxi Service', href: '/corporate-taxi' },
     { name: 'Car Rental Ranchi', href: '/fleet' },
+    { name: 'Wedding Car Ranchi', href: '/wedding-car-ranchi' },
+    { name: 'Tempo Traveller Ranchi', href: '/tempo-traveller-ranchi' },
+    { name: 'Cab Near Me Ranchi', href: '/cab-near-me-ranchi' },
   ];
 
   const routeLinks = [
@@ -24,6 +27,7 @@ export default function InternalLinks() {
     { name: 'Ranchi to Giridih Cab', href: '/ranchi-to-giridih-cab' },
     { name: 'Ranchi to Netarhat Cab', href: '/ranchi-to-netarhat-cab' },
     { name: 'Ranchi to Daltonganj Cab', href: '/ranchi-to-daltonganj-cab' },
+    { name: 'Ranchi to Dumka Cab', href: '/ranchi-to-dumka-cab' },
   ];
 
   const vehicleLinks = [
@@ -31,15 +35,17 @@ export default function InternalLinks() {
     { name: 'Ertiga Cab Ranchi', href: '/fleet#ertiga' },
     { name: 'Innova Crysta Ranchi', href: '/fleet#innova' },
     { name: 'Tempo Traveller Ranchi', href: '/tempo-traveller-ranchi' },
+    { name: 'Audi BMW for Wedding', href: '/wedding-car-ranchi' },
     { name: '7 Seater Cab Ranchi', href: '/fleet#7-seater' },
   ];
 
   const localAreaLinks = [
     { name: 'Taxi Near Ranchi Airport', href: '/airport-taxi' },
-    { name: 'Cab Near Railway Station', href: '/local-taxi-ranchi#railway-station' },
-    { name: 'Taxi Near Birsa Chowk', href: '/local-taxi-ranchi#birsa-chowk' },
-    { name: 'Cab Service Doranda', href: '/local-taxi-ranchi#doranda' },
-    { name: 'Taxi Harmu Ranchi', href: '/local-taxi-ranchi#harmu' },
+    { name: 'Cab Near Railway Station', href: '/cab-near-me-ranchi' },
+    { name: 'Taxi Near Birsa Chowk', href: '/cab-near-me-ranchi' },
+    { name: 'Cab Service Doranda', href: '/local-taxi-ranchi' },
+    { name: 'Taxi Harmu Ranchi', href: '/local-taxi-ranchi' },
+    { name: 'Cab Lalpur Ranchi', href: '/local-taxi-ranchi' },
   ];
 
   // ItemList Schema for internal links - helps Google understand site structure
@@ -152,12 +158,16 @@ export default function InternalLinks() {
           {/* Additional SEO Text */}
           <div className="mt-10 pt-8 border-t border-gray-700">
             <p className="text-gray-300 text-sm text-center max-w-4xl mx-auto leading-relaxed">
-              <strong className="text-white">Ranchi Cab Service</strong> is Jharkhand's trusted <strong className="text-white">taxi service provider</strong> offering 
-              <strong className="text-white"> local taxi</strong>, <strong className="text-white">outstation cabs</strong>, 
-              <strong className="text-white"> Birsa Munda airport transfer</strong>, and <strong className="text-white">corporate car rental</strong> services. 
-              We cover all major routes including <strong className="text-white">Ranchi to Patna</strong>, <strong className="text-white">Ranchi to Kolkata</strong>, 
-              <strong className="text-white"> Ranchi to Jamshedpur</strong>, <strong className="text-white">Ranchi to Bokaro</strong>, and <strong className="text-white">Ranchi to Dhanbad</strong>. 
-              Book your <strong className="text-white">cab in Ranchi</strong> 24/7 at best rates. Call <strong className="text-yellow-400">+91 7903629240</strong>.
+              <strong className="text-white">Ranchi Cab Service</strong> is Jharkhand's most trusted <strong className="text-white">taxi service provider</strong> since 2010, offering 
+              <strong className="text-white"> local taxi @ ₹10/km</strong>, <strong className="text-white">outstation cabs</strong>, 
+              <strong className="text-white"> Birsa Munda Airport transfer @ ₹800</strong>, <strong className="text-white">corporate car rental</strong>, 
+              <strong className="text-white"> wedding car service</strong>, and <strong className="text-white">tempo traveller rental</strong>. 
+              We cover all major routes including <strong className="text-white">Ranchi to Patna (₹4,500)</strong>, <strong className="text-white">Ranchi to Kolkata (₹6,000)</strong>, 
+              <strong className="text-white"> Ranchi to Jamshedpur (₹2,200)</strong>, <strong className="text-white">Ranchi to Bokaro (₹1,800)</strong>, 
+              <strong className="text-white"> Ranchi to Dhanbad (₹2,500)</strong>, and <strong className="text-white">Ranchi to Deoghar (₹4,200)</strong>. 
+              Fleet includes Dzire, Ertiga, Innova Crysta, Audi, BMW, and Tempo Traveller. 
+              5.0★ Google rated with 10,000+ happy customers. <strong className="text-white">Verified drivers, GPS-tracked AC vehicles, 24/7 service, free cancellation.</strong> 
+              Book your <strong className="text-white">cab in Ranchi</strong> now - Call <strong className="text-yellow-400">+91 7903629240</strong> or WhatsApp for instant booking.
             </p>
           </div>
         </div>

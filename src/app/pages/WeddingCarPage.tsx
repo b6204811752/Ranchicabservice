@@ -2,6 +2,7 @@ import SEO from '../components/common/SEO';
 import { Link } from 'react-router-dom';
 import { Phone, Heart, Car, Star, Check, Calendar, Shield, MapPin } from 'lucide-react';
 import FAQ from '../components/common/FAQ';
+import InternalLinks from '../components/common/InternalLinks';
 
 const heroImg = 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=1200&auto=format&fit=crop';
 const innovaImg = 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&auto=format&fit=crop';
@@ -359,6 +360,9 @@ export default function WeddingCarPage() {
           </div>
         </div>
       </section>
+
+      {/* Internal Links */}
+      <InternalLinks />
     </>
   );
 }

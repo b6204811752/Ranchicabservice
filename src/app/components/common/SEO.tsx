@@ -298,6 +298,50 @@ export default function SEO({
                   "target": `${baseUrl}/?s={search_term_string}`,
                   "query-input": "required name=search_term_string"
                 }
+              },
+              {
+                "@type": "HowTo",
+                "name": "How to Book a Cab in Ranchi",
+                "description": "Book a taxi in Ranchi in 3 simple steps - Call, WhatsApp, or book online for instant confirmation",
+                "totalTime": "PT2M",
+                "estimatedCost": {
+                  "@type": "MonetaryAmount",
+                  "currency": "INR",
+                  "value": "150"
+                },
+                "step": [
+                  {
+                    "@type": "HowToStep",
+                    "position": 1,
+                    "name": "Contact Us",
+                    "text": "Call +91 7903629240 or send a WhatsApp message with your pickup location, destination, date, and time. You can also fill the booking form on our website.",
+                    "url": `${baseUrl}/contact`
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 2,
+                    "name": "Get Instant Confirmation",
+                    "text": "Receive instant booking confirmation with driver name, vehicle number, and fare details. No advance payment required.",
+                    "url": baseUrl
+                  },
+                  {
+                    "@type": "HowToStep",
+                    "position": 3,
+                    "name": "Enjoy Your Ride",
+                    "text": "Your verified driver arrives at your doorstep in a clean AC vehicle. Pay after the trip via cash, UPI, or card.",
+                    "url": baseUrl
+                  }
+                ]
+              },
+              {
+                "@type": "GeoCircle",
+                "geoMidpoint": {
+                  "@type": "GeoCoordinates",
+                  "latitude": "23.3441",
+                  "longitude": "85.3096"
+                },
+                "geoRadius": "100000",
+                "description": "Service area of Ranchi Cab Service covering Ranchi and surrounding 100km radius"
               }
             ]
           })}
