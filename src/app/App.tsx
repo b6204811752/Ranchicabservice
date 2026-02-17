@@ -4,13 +4,15 @@ import { lazy, Suspense } from 'react';
 import HomePage from '@/app/pages/HomePage';
 import Header from '@/app/components/layout/Header';
 import Footer from '@/app/components/layout/Footer';
-import FloatingButtons from '@/app/components/common/FloatingButtons';
-import ScrollToTop from '@/app/components/common/ScrollToTop';
 import ScrollToTopOnNavigation from '@/app/components/common/ScrollToTopOnNavigation';
 import SEO from '@/app/components/common/SEO';
-import StickyBookingBar from '@/app/components/common/StickyBookingBar';
 import Breadcrumbs from '@/app/components/common/Breadcrumbs';
-import LiveBookingStats from '@/app/components/common/LiveBookingStats';
+
+// Lazy-load non-critical overlay components
+const FloatingButtons = lazy(() => import('@/app/components/common/FloatingButtons'));
+const ScrollToTop = lazy(() => import('@/app/components/common/ScrollToTop'));
+const StickyBookingBar = lazy(() => import('@/app/components/common/StickyBookingBar'));
+const LiveBookingStats = lazy(() => import('@/app/components/common/LiveBookingStats'));
 
 // Lazy-loaded pages for code splitting — reduces initial JS bundle
 const AboutPage = lazy(() => import('@/app/pages/AboutPage'));
@@ -53,7 +55,7 @@ export default function App() {
           <Header />
           <Breadcrumbs />
           <main className="flex-1 w-full" id="main-content">
-            <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div></div>}>
+            <Suspense fallback={null}>
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/about" element={<AboutPage />} />
@@ -97,10 +99,12 @@ export default function App() {
             </Suspense>
           </main>
           <Footer />
-          <FloatingButtons />
-          <LiveBookingStats />
-          <StickyBookingBar />
-          <ScrollToTop />
+          <Suspense fallback={null}>
+            <FloatingButtons />
+            <LiveBookingStats />
+            <StickyBookingBar />
+            <ScrollToTop />
+          </Suspense>
         </div>
       </Router>
     </HelmetProvider>
