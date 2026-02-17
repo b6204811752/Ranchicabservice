@@ -168,51 +168,51 @@ export default function RoutePageTemplate({ route }: RoutePageTemplateProps) {
       {/* Main Content */}
       <section className="w-full bg-gradient-to-b from-blue-50 to-white py-8 md:py-12 overflow-x-hidden">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
             <div className="lg:col-span-2">
-              <section className="bg-white rounded-lg shadow-md p-8 mb-8">
-                <h2 className="text-3xl font-bold text-gray-800 mb-6">
+              <section className="bg-white rounded-lg shadow-md p-4 sm:p-6 md:p-8 mb-6 md:mb-8">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-4 md:mb-6">
                   Book {route.from} to {route.to} Cab - Best Taxi Service
                 </h2>
                 {route.aboutText.map((text, i) => (
-                  <p key={i} className="text-gray-700 mb-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: text }} />
+                  <p key={i} className="text-sm sm:text-base text-gray-700 mb-3 md:mb-4 leading-relaxed" dangerouslySetInnerHTML={{ __html: text }} />
                 ))}
 
-                <h3 className="text-2xl font-bold text-gray-800 mb-4 mt-8">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-3 md:mb-4 mt-6 md:mt-8">
                   Why Choose Our {route.from} to {route.to} Taxi Service?
                 </h3>
-                <div className="grid md:grid-cols-2 gap-4 mb-6">
-                  <div className="flex items-start gap-3">
-                    <Shield className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" aria-hidden="true" />
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mb-4 md:mb-6">
+                  <div className="flex items-start gap-2 sm:gap-3">
+                    <Shield className="w-5 h-5 sm:w-6 sm:h-6 text-green-600 mt-1 flex-shrink-0" aria-hidden="true" />
                     <div>
-                      <h4 className="font-semibold text-gray-800">Verified Drivers</h4>
-                      <p className="text-gray-600 text-sm">All drivers are government verified with years of experience</p>
+                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Verified Drivers</h4>
+                      <p className="text-gray-600 text-xs sm:text-sm">All drivers are government verified with years of experience</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <Car className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" aria-hidden="true" />
+                  <div className="flex items-start gap-2 sm:gap-3">
+                    <Car className="w-5 h-5 sm:w-6 sm:h-6 text-green-600 mt-1 flex-shrink-0" aria-hidden="true" />
                     <div>
-                      <h4 className="font-semibold text-gray-800">Clean AC Vehicles</h4>
-                      <p className="text-gray-600 text-sm">Well-maintained cars with comfortable seating</p>
+                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Clean AC Vehicles</h4>
+                      <p className="text-gray-600 text-xs sm:text-sm">Well-maintained cars with comfortable seating</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <IndianRupee className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" aria-hidden="true" />
+                  <div className="flex items-start gap-2 sm:gap-3">
+                    <IndianRupee className="w-5 h-5 sm:w-6 sm:h-6 text-green-600 mt-1 flex-shrink-0" aria-hidden="true" />
                     <div>
-                      <h4 className="font-semibold text-gray-800">Best Rates</h4>
-                      <p className="text-gray-600 text-sm">Competitive and transparent pricing with no hidden charges</p>
+                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">Best Rates</h4>
+                      <p className="text-gray-600 text-xs sm:text-sm">Competitive and transparent pricing with no hidden charges</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-3">
-                    <Clock className="w-6 h-6 text-green-600 mt-1 flex-shrink-0" aria-hidden="true" />
+                  <div className="flex items-start gap-2 sm:gap-3">
+                    <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-green-600 mt-1 flex-shrink-0" aria-hidden="true" />
                     <div>
-                      <h4 className="font-semibold text-gray-800">24/7 Available</h4>
-                      <p className="text-gray-600 text-sm">Book anytime - we&apos;re always ready to serve</p>
+                      <h4 className="font-semibold text-gray-800 text-sm sm:text-base">24/7 Available</h4>
+                      <p className="text-gray-600 text-xs sm:text-sm">Book anytime - we&apos;re always ready to serve</p>
                     </div>
                   </div>
                 </div>
 
-                <h3 className="text-2xl font-bold text-gray-800 mb-4 mt-8">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-3 md:mb-4 mt-6 md:mt-8">
                   {route.from} to {route.to} Cab Fare & Vehicle Options
                 </h3>
                 <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
@@ -247,16 +247,16 @@ export default function RoutePageTemplate({ route }: RoutePageTemplateProps) {
                     </tbody>
                   </table>
                 </div>
-                <p className="text-sm text-gray-600 mt-3">
+                <p className="text-xs sm:text-sm text-gray-600 mt-2 sm:mt-3">
                   *Rates are subject to change. Toll charges, parking, and state taxes extra.
                 </p>
 
                 {route.stops.length > 0 && (
                   <>
-                    <h3 className="text-2xl font-bold text-gray-800 mb-4 mt-8">
+                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-3 md:mb-4 mt-6 md:mt-8">
                       Popular Stops on {route.from}-{route.to} Route
                     </h3>
-                    <ul className="list-disc list-inside space-y-2 text-gray-700">
+                    <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-700">
                       {route.stops.map((stop, i) => (
                         <li key={i}>{stop}</li>
                       ))}
@@ -264,14 +264,14 @@ export default function RoutePageTemplate({ route }: RoutePageTemplateProps) {
                   </>
                 )}
 
-                <h3 className="text-2xl font-bold text-gray-800 mb-4 mt-8">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-3 md:mb-4 mt-6 md:mt-8">
                   FAQs - {route.from} to {route.to} Cab
                 </h3>
-                <div className="space-y-4">
+                <div className="space-y-3 md:space-y-4">
                   {route.faqs.map((faq, i) => (
-                    <div key={i} className="bg-gray-50 p-4 rounded-lg">
-                      <h4 className="font-semibold text-gray-800 mb-2">Q: {faq.question}</h4>
-                      <p className="text-gray-700">A: {faq.answer}</p>
+                    <div key={i} className="bg-gray-50 p-3 sm:p-4 rounded-lg">
+                      <h4 className="font-semibold text-gray-800 mb-2 text-sm sm:text-base">Q: {faq.question}</h4>
+                      <p className="text-gray-700 text-sm sm:text-base">A: {faq.answer}</p>
                     </div>
                   ))}
                 </div>
@@ -280,24 +280,24 @@ export default function RoutePageTemplate({ route }: RoutePageTemplateProps) {
 
             {/* Sidebar */}
             <div className="lg:col-span-1">
-              <div className="bg-yellow-50 border-2 border-yellow-400 rounded-lg p-4 md:p-6 lg:sticky lg:top-24">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">
+              <div className="bg-yellow-50 border-2 border-yellow-400 rounded-lg p-4 sm:p-5 md:p-6 lg:sticky lg:top-24">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-3 md:mb-4">
                   Book Your Cab Now!
                 </h3>
-                <p className="text-gray-700 mb-6">
+                <p className="text-sm sm:text-base text-gray-700 mb-4 md:mb-6">
                   Get instant confirmation and the best rates for {route.from} to {route.to} taxi service.
                 </p>
 
-                <div className="space-y-4">
+                <div className="space-y-3 md:space-y-4">
                   <a
                     href="tel:+917903629240"
-                    className="block w-full bg-blue-600 text-white text-center px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+                    className="block w-full bg-blue-600 text-white text-center px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-blue-700 transition"
                   >
                     📞 Call: +91 7903629240
                   </a>
                   <a
                     href={`https://wa.me/917903629240?text=I want to book ${route.from} to ${route.to} cab`}
-                    className="block w-full bg-green-600 text-white text-center px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition"
+                    className="block w-full bg-green-600 text-white text-center px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-green-700 transition"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -305,15 +305,15 @@ export default function RoutePageTemplate({ route }: RoutePageTemplateProps) {
                   </a>
                   <Link
                     to="/contact"
-                    className="block w-full bg-gray-800 text-white text-center px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 transition"
+                    className="block w-full bg-gray-800 text-white text-center px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-gray-900 transition"
                   >
                     📧 Online Booking
                   </Link>
                 </div>
 
-                <div className="mt-6 pt-6 border-t border-yellow-400">
-                  <h4 className="font-semibold text-gray-800 mb-3">Why Book With Us?</h4>
-                  <ul className="space-y-2 text-sm text-gray-700">
+                <div className="mt-4 md:mt-6 pt-4 md:pt-6 border-t border-yellow-400">
+                  <h4 className="font-semibold text-gray-800 mb-2 md:mb-3 text-sm sm:text-base">Why Book With Us?</h4>
+                  <ul className="space-y-1.5 md:space-y-2 text-xs sm:text-sm text-gray-700">
                     <li>✅ Instant Booking Confirmation</li>
                     <li>✅ No Advance Payment</li>
                     <li>✅ Free Cancellation (24hrs before)</li>
