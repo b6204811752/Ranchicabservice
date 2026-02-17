@@ -7,7 +7,7 @@ const heroImg = 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=120
 const tempo9Img = 'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=600&auto=format&fit=crop';
 const tempo12Img = 'https://images.unsplash.com/photo-1464219789935-c2d9d9aba644?w=600&auto=format&fit=crop';
 const tempo17Img = 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&auto=format&fit=crop';
-const miniBusImg = 'https://images.unsplash.com/photo-1575505586569-646b2ca898fc?w=600&auto=format&fit=crop';
+const miniBusImg = 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&auto=format&fit=crop';
 
 export default function TempoTravellerPage() {
   const vehicles = [

@@ -2,6 +2,8 @@ import SEO from '../components/common/SEO';
 import { Link } from 'react-router-dom';
 import { Phone, MapPin, Clock, Navigation, Car, Star, Shield, Check } from 'lucide-react';
 
+const heroImg = 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1200&auto=format&fit=crop';
+
 export default function CabNearMePage() {
   const areas = [
     { name: 'Ranchi Railway Station', distance: '0 km', time: '5-10 min', popular: true },

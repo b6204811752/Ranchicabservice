@@ -8,7 +8,7 @@ const innovaImg = 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=6
 const audiImg = 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=600&auto=format&fit=crop';
 const bmwImg = 'https://images.unsplash.com/photo-1555215695-3004980ad54e?w=600&auto=format&fit=crop';
 const mercedesImg = 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=600&auto=format&fit=crop';
-const dzireImg = 'https://images.unsplash.com/photo-1552519507-ec3e5ec87847?w=600&auto=format&fit=crop';
+const dzireImg = 'https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=600&auto=format&fit=crop';
 const tempoImg = 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&auto=format&fit=crop';
 
 export default function WeddingCarPage() {
