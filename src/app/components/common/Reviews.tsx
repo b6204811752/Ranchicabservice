@@ -146,7 +146,7 @@ export default function Reviews({ reviews: customReviews, title = "What Our Cust
             {/* Multi-Platform Ratings - Like Savaari */}
             <div className="flex flex-wrap justify-center gap-4 mt-6">
               <a 
-                href="https://g.page/r/CdfnA1OiyAQkEAE/review" 
+                href="https://maps.app.goo.gl/kHZc2RRdUo5TsbdU9" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-md border border-gray-100 hover:shadow-lg hover:border-blue-200 transition-all group"
@@ -271,7 +271,7 @@ export default function Reviews({ reviews: customReviews, title = "What Our Cust
                 Book Your Ride Now
               </motion.a>
               <motion.a
-                href="https://g.page/r/CdfnA1OiyAQkEAE/review"
+                href="https://maps.app.goo.gl/kHZc2RRdUo5TsbdU9"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}

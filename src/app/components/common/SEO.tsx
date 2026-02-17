@@ -93,7 +93,7 @@ export default function SEO({
                   "height": 512
                 },
                 "sameAs": [
-                  "https://g.page/r/CdfnA1OiyAQkEAE",
+                  "https://maps.app.goo.gl/kHZc2RRdUo5TsbdU9",
                   "https://www.facebook.com/ranchicabservice",
                   "https://www.instagram.com/ranchicabservice",
                   "https://twitter.com/ranchicabs",
@@ -154,7 +154,7 @@ export default function SEO({
                   }
                 ],
                 "sameAs": [
-                  "https://g.page/r/CdfnA1OiyAQkEAE",
+                  "https://maps.app.goo.gl/kHZc2RRdUo5TsbdU9",
                   "https://www.facebook.com/ranchicabservice",
                   "https://www.instagram.com/ranchicabservice",
                   "https://twitter.com/ranchicabs",
@@ -208,7 +208,7 @@ export default function SEO({
                 },
                 "paymentAccepted": ["Cash", "Credit Card", "Debit Card", "UPI", "Google Pay", "PhonePe", "Paytm"],
                 "currenciesAccepted": "INR",
-                "hasMap": "https://goo.gl/maps/CdfnA1OiyAQkEAE1",
+                "hasMap": "https://maps.app.goo.gl/kHZc2RRdUo5TsbdU9",
                 "slogan": "Your Trusted Travel Partner in Ranchi",
                 "foundingDate": "2010",
                 "knowsAbout": ["Taxi Service", "Car Rental", "Airport Transfers", "Outstation Travel", "Corporate Transportation"],

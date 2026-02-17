@@ -30,7 +30,7 @@ export default function Footer() {
               <motion.a 
                 whileHover={{ scale: 1.2 }} 
                 transition={{ duration: 0.3 }}
-                href="https://g.page/r/CdfnA1OiyAQkEAE/review" 
+                href="https://maps.app.goo.gl/kHZc2RRdUo5TsbdU9" 
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Review us on Google"
@@ -146,7 +146,7 @@ export default function Footer() {
             </ul>
             {/* Google Review Badge */}
             <a 
-              href="https://g.page/r/CdfnA1OiyAQkEAE/review" 
+              href="https://maps.app.goo.gl/kHZc2RRdUo5TsbdU9" 
               target="_blank" 
               rel="noopener noreferrer"
               className="mt-4 inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg transition-colors group"
