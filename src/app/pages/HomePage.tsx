@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 import { useState, lazy, Suspense } from 'react';
 import '@/styles/slick-theme.css';
 import PromoBanner from '@/app/components/common/PromoBanner';
+import TrustBadges from '@/app/components/common/TrustBadges';
+import TrustIndicators from '@/app/components/common/TrustIndicators';
 
 // Lazy-load Slider to defer 64KB vendor-slider from critical path
 const Slider = lazy(() => import('react-slick'));
 
 // Lazy-load below-the-fold components to reduce initial bundle & TBT
-const TrustBadges = lazy(() => import('@/app/components/common/TrustBadges'));
-const TrustIndicators = lazy(() => import('@/app/components/common/TrustIndicators'));
 const FareCalculator = lazy(() => import('@/app/components/common/FareCalculator'));
 const FAQ = lazy(() => import('@/app/components/common/FAQ'));
 const ComparisonTable = lazy(() => import('@/app/components/common/ComparisonTable'));
@@ -360,10 +360,10 @@ export default function HomePage() {
       </section>
 
       {/* Trust Badges */}
-      <Suspense fallback={null}><TrustBadges /></Suspense>
+      <TrustBadges />
 
       {/* Trust Indicators - Stats & Certifications */}
-      <Suspense fallback={null}><TrustIndicators /></Suspense>
+      <TrustIndicators />
 
       {/* Booking Form Section */}
       <section id="booking-form" className="py-16 bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 relative overflow-hidden">
@@ -376,7 +376,7 @@ export default function HomePage() {
             <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 opacity-50"></div>
             <div className="relative z-10">
             <div className="text-center mb-4">
-              <span className="inline-block bg-green-500 text-white px-4 py-1 rounded-full text-xs font-semibold animate-pulse">
+              <span className="inline-block bg-green-800 text-white px-4 py-1 rounded-full text-xs font-semibold animate-pulse">
                 🔥 500+ Bookings This Month
               </span>
             </div>
@@ -538,7 +538,7 @@ export default function HomePage() {
                   className="block relative bg-white/80 backdrop-blur-lg p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all group overflow-hidden border border-white/20"
                 >
                   <div className="absolute top-4 right-4 z-20">
-                    <span className="flex items-center gap-1 bg-green-500 text-white text-xs px-3 py-1 rounded-full font-semibold">
+                    <span className="flex items-center gap-1 bg-green-800 text-white text-xs px-3 py-1 rounded-full font-semibold">
                       <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
                       Available Now
                     </span>
