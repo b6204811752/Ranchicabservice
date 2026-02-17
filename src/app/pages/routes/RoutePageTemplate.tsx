@@ -100,8 +100,8 @@ export default function RoutePageTemplate({ route }: RoutePageTemplateProps) {
       />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
-          <div className="container mx-auto px-4">
+      <section className="w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12 md:py-16 overflow-x-hidden">
+          <div className="w-full max-w-7xl mx-auto px-4 sm:px-6">
             <nav aria-label="Breadcrumb" className="text-sm mb-4">
               <Link to="/" className="hover:underline">Home</Link>
               <span className="mx-1">/</span>
@@ -110,24 +110,24 @@ export default function RoutePageTemplate({ route }: RoutePageTemplateProps) {
               <span>{route.from} to {route.to}</span>
             </nav>
 
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
               {route.from} to {route.to} Cab Service
             </h1>
-            <p className="text-xl mb-6">
+            <p className="text-base md:text-xl mb-6">
               Book Reliable & Affordable Taxi from {route.from} to {route.to} | {route.distance} | Starting at {route.sedanOneWay}
             </p>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4">
               <a
                 href="tel:+917903629240"
-                className="bg-yellow-500 text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition flex items-center gap-2"
+                className="w-full sm:w-auto bg-yellow-500 text-blue-900 px-6 md:px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition flex items-center justify-center gap-2 text-sm md:text-base"
               >
-                <Phone className="w-5 h-5" />
-                Call Now: +91 7903629240
+                <Phone className="w-4 h-4 md:w-5 md:h-5" />
+                Call: +91 7903629240
               </a>
               <a
                 href={`https://wa.me/917903629240?text=I want to book ${route.from} to ${route.to} cab`}
-                className="bg-green-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-600 transition"
+                className="w-full sm:w-auto bg-green-500 text-white px-6 md:px-8 py-3 rounded-lg font-semibold hover:bg-green-600 transition text-sm md:text-base text-center"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -138,36 +138,36 @@ export default function RoutePageTemplate({ route }: RoutePageTemplateProps) {
       </section>
 
       {/* Quick Info Cards */}
-      <section className="bg-gradient-to-b from-blue-50 to-white py-4">
-        <div className="container mx-auto px-4 -mt-8 mb-12">
-          <div className="grid md:grid-cols-4 gap-4">
-            <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-              <MapPin className="w-10 h-10 text-blue-600 mx-auto mb-2" aria-hidden="true" />
-              <div className="text-2xl font-bold text-gray-800">{route.distance}</div>
-              <div className="text-gray-600">Distance</div>
+      <section className="w-full bg-gradient-to-b from-blue-50 to-white py-4 overflow-x-hidden">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 -mt-8 mb-12">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+            <div className="bg-white rounded-lg shadow-lg p-4 md:p-6 text-center">
+              <MapPin className="w-8 h-8 md:w-10 md:h-10 text-blue-600 mx-auto mb-2" aria-hidden="true" />
+              <div className="text-lg md:text-2xl font-bold text-gray-800">{route.distance}</div>
+              <div className="text-xs md:text-base text-gray-600">Distance</div>
             </div>
-            <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-              <Clock className="w-10 h-10 text-blue-600 mx-auto mb-2" aria-hidden="true" />
-              <div className="text-2xl font-bold text-gray-800">{route.duration}</div>
-              <div className="text-gray-600">Travel Time</div>
+            <div className="bg-white rounded-lg shadow-lg p-4 md:p-6 text-center">
+              <Clock className="w-8 h-8 md:w-10 md:h-10 text-blue-600 mx-auto mb-2" aria-hidden="true" />
+              <div className="text-lg md:text-2xl font-bold text-gray-800">{route.duration}</div>
+              <div className="text-xs md:text-base text-gray-600">Travel Time</div>
             </div>
-            <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-              <IndianRupee className="w-10 h-10 text-blue-600 mx-auto mb-2" aria-hidden="true" />
-              <div className="text-2xl font-bold text-gray-800">{route.sedanOneWay}</div>
-              <div className="text-gray-600">Starting Fare</div>
+            <div className="bg-white rounded-lg shadow-lg p-4 md:p-6 text-center">
+              <IndianRupee className="w-8 h-8 md:w-10 md:h-10 text-blue-600 mx-auto mb-2" aria-hidden="true" />
+              <div className="text-lg md:text-2xl font-bold text-gray-800">{route.sedanOneWay}</div>
+              <div className="text-xs md:text-base text-gray-600">Starting Fare</div>
             </div>
-            <div className="bg-white rounded-lg shadow-lg p-6 text-center">
-              <Car className="w-10 h-10 text-blue-600 mx-auto mb-2" aria-hidden="true" />
-              <div className="text-2xl font-bold text-gray-800">All Types</div>
-              <div className="text-gray-600">Vehicles Available</div>
+            <div className="bg-white rounded-lg shadow-lg p-4 md:p-6 text-center">
+              <Car className="w-8 h-8 md:w-10 md:h-10 text-blue-600 mx-auto mb-2" aria-hidden="true" />
+              <div className="text-lg md:text-2xl font-bold text-gray-800">All Types</div>
+              <div className="text-xs md:text-base text-gray-600">Vehicles Available</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Main Content */}
-      <section className="bg-gradient-to-b from-blue-50 to-white py-12">
-        <div className="container mx-auto px-4">
+      <section className="w-full bg-gradient-to-b from-blue-50 to-white py-8 md:py-12 overflow-x-hidden">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2">
               <section className="bg-white rounded-lg shadow-md p-8 mb-8">
@@ -280,7 +280,7 @@ export default function RoutePageTemplate({ route }: RoutePageTemplateProps) {
 
             {/* Sidebar */}
             <div className="lg:col-span-1">
-              <div className="bg-yellow-50 border-2 border-yellow-400 rounded-lg p-6 sticky top-24">
+              <div className="bg-yellow-50 border-2 border-yellow-400 rounded-lg p-4 md:p-6 lg:sticky lg:top-24">
                 <h3 className="text-2xl font-bold text-gray-800 mb-4">
                   Book Your Cab Now!
                 </h3>

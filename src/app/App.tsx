@@ -47,12 +47,12 @@ export default function App() {
   return (
     <HelmetProvider>
       <Router>
-        <div className="min-h-screen flex flex-col bg-white">
+        <div className="min-h-screen flex flex-col bg-white overflow-x-hidden">
           <SEO />
           <ScrollToTopOnNavigation />
           <Header />
           <Breadcrumbs />
-          <main className="flex-1" id="main-content">
+          <main className="flex-1 w-full" id="main-content">
             <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div></div>}>
             <Routes>
               <Route path="/" element={<HomePage />} />
