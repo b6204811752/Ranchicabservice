@@ -71,8 +71,11 @@ export default function CabNearMePage() {
       />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-green-600 to-blue-600 py-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/20"></div>
+      <section className="relative py-16 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={heroImg} alt="Cab Near Me Ranchi" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-green-900/80 to-blue-900/80"></div>
+        </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center text-white">
             <div className="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full mb-4 animate-pulse">

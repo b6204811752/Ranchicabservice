@@ -105,16 +105,20 @@ export default function SEO({
                 "@type": "LocalBusiness",
                 "@id": `${baseUrl}/#business`,
                 "name": "Ranchi Cab Service",
-                "alternateName": "Ranchi Taxi Service",
-                "description": "Best cab and taxi service in Ranchi offering local taxi, outstation cabs, airport transfers and corporate taxi services 24/7",
+                "alternateName": ["Ranchi Taxi Service", "Ranchi Cab", "RCS Taxi"],
+                "description": "Best cab and taxi service in Ranchi offering local taxi, outstation cabs, airport transfers and corporate taxi services 24/7. Verified drivers, clean AC vehicles, and affordable rates.",
                 "url": baseUrl,
                 "logo": "https://www.ranchicabservice.com/logo-512x512.png",
-                "image": "https://www.ranchicabservice.com/logo-512x512.png",
+                "image": [
+                  "https://www.ranchicabservice.com/logo-512x512.png",
+                  "https://www.ranchicabservice.com/logo-1200x630.png"
+                ],
                 "telephone": "+917903629240",
                 "email": "ranchicabservice2@gmail.com",
                 "priceRange": "₹₹",
                 "address": {
                   "@type": "PostalAddress",
+                  "streetAddress": "Birsa Chowk, Kathalkocha",
                   "addressLocality": "Ranchi",
                   "addressRegion": "Jharkhand",
                   "postalCode": "834001",
@@ -204,8 +208,44 @@ export default function SEO({
                 },
                 "paymentAccepted": ["Cash", "Credit Card", "Debit Card", "UPI", "Google Pay", "PhonePe", "Paytm"],
                 "currenciesAccepted": "INR",
-                "hasMap": "https://www.google.com/maps/place/Ranchi,+Jharkhand",
+                "hasMap": "https://goo.gl/maps/CdfnA1OiyAQkEAE1",
                 "slogan": "Your Trusted Travel Partner in Ranchi",
+                "foundingDate": "2010",
+                "knowsAbout": ["Taxi Service", "Car Rental", "Airport Transfers", "Outstation Travel", "Corporate Transportation"],
+                "makesOffer": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "24/7 Taxi Service",
+                      "description": "Round-the-clock cab service in Ranchi"
+                    },
+                    "availability": "https://schema.org/InStock"
+                  }
+                ],
+                "contactPoint": [
+                  {
+                    "@type": "ContactPoint",
+                    "telephone": "+917903629240",
+                    "contactType": "customer service",
+                    "availableLanguage": ["English", "Hindi"],
+                    "areaServed": "IN",
+                    "contactOption": "TollFree",
+                    "hoursAvailable": {
+                      "@type": "OpeningHoursSpecification",
+                      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                      "opens": "00:00",
+                      "closes": "23:59"
+                    }
+                  },
+                  {
+                    "@type": "ContactPoint",
+                    "contactType": "customer support",
+                    "telephone": "+917903629240",
+                    "email": "ranchicabservice2@gmail.com",
+                    "url": "https://wa.me/917903629240"
+                  }
+                ],
                 "keywords": "ranchi cab service, taxi ranchi, cab booking ranchi, airport taxi ranchi, outstation taxi"
               },
               {

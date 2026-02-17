@@ -99,9 +99,8 @@ export default function RoutePageTemplate({ route }: RoutePageTemplateProps) {
         schema={schema}
       />
 
-      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
-        {/* Hero Section */}
-        <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
           <div className="container mx-auto px-4">
             <nav aria-label="Breadcrumb" className="text-sm mb-4">
               <Link to="/" className="hover:underline">Home</Link>
@@ -136,9 +135,10 @@ export default function RoutePageTemplate({ route }: RoutePageTemplateProps) {
               </a>
             </div>
           </div>
-        </div>
+      </section>
 
-        {/* Quick Info Cards */}
+      {/* Quick Info Cards */}
+      <section className="bg-gradient-to-b from-blue-50 to-white py-4">
         <div className="container mx-auto px-4 -mt-8 mb-12">
           <div className="grid md:grid-cols-4 gap-4">
             <div className="bg-white rounded-lg shadow-lg p-6 text-center">
@@ -163,9 +163,11 @@ export default function RoutePageTemplate({ route }: RoutePageTemplateProps) {
             </div>
           </div>
         </div>
+      </section>
 
-        {/* Main Content */}
-        <div className="container mx-auto px-4 py-12">
+      {/* Main Content */}
+      <section className="bg-gradient-to-b from-blue-50 to-white py-12">
+        <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2">
               <section className="bg-white rounded-lg shadow-md p-8 mb-8">
@@ -323,7 +325,7 @@ export default function RoutePageTemplate({ route }: RoutePageTemplateProps) {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

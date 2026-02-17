@@ -3,6 +3,14 @@ import { Link } from 'react-router-dom';
 import { Phone, Heart, Car, Star, Check, Calendar, Shield, MapPin } from 'lucide-react';
 import FAQ from '../components/common/FAQ';
 
+const heroImg = 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=1200&auto=format&fit=crop';
+const innovaImg = 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&auto=format&fit=crop';
+const audiImg = 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=600&auto=format&fit=crop';
+const bmwImg = 'https://images.unsplash.com/photo-1555215695-3004980ad54e?w=600&auto=format&fit=crop';
+const mercedesImg = 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=600&auto=format&fit=crop';
+const dzireImg = 'https://images.unsplash.com/photo-1552519507-ec3e5ec87847?w=600&auto=format&fit=crop';
+const tempoImg = 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&auto=format&fit=crop';
+
 export default function WeddingCarPage() {
   const weddingCars = [
     {
@@ -164,8 +172,11 @@ export default function WeddingCarPage() {
       />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-pink-500 via-red-500 to-pink-500 py-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/20"></div>
+      <section className="relative py-16 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={heroImg} alt="Wedding Car Ranchi" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-pink-900/80 via-red-900/80 to-pink-900/80"></div>
+        </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center text-white">
             <div className="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full mb-4">
@@ -227,10 +238,13 @@ export default function WeddingCarPage() {
           </p>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-            {weddingCars.map((car, idx) => (
+            {weddingCars.map((car, idx) => {
+              const carImages = [innovaImg, audiImg, bmwImg, mercedesImg, dzireImg, tempoImg];
+              return (
               <div key={idx} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow border-2 border-pink-100">
-                <div className="h-40 bg-gradient-to-br from-pink-400 to-red-500 flex items-center justify-center relative">
-                  <Car className="w-20 h-20 text-white/50" />
+                <div className="h-40 relative overflow-hidden">
+                  <img src={carImages[idx]} alt={car.name} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   <div className="absolute top-2 right-2 bg-white/90 px-3 py-1 rounded-full text-sm font-medium text-pink-600">
                     {car.type}
                   </div>
@@ -252,7 +266,8 @@ export default function WeddingCarPage() {
                   <p className="text-xs text-gray-500 mt-2">Best for: {car.bestFor}</p>
                 </div>
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>

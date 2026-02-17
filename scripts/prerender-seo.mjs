@@ -45,7 +45,7 @@ const routes = [
         "logo": "https://www.ranchicabservice.com/logo-512x512.png",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Ranchi",
+          "streetAddress": "Birsa Chowk, Kathalkocha",
           "addressLocality": "Ranchi",
           "addressRegion": "Jharkhand",
           "postalCode": "834001",
@@ -83,10 +83,22 @@ const routes = [
           ]
         },
         "sameAs": [
+          "https://goo.gl/maps/CdfnA1OiyAQkEAE1",
           "https://www.facebook.com/ranchicabservice",
           "https://www.instagram.com/ranchicabservice",
-          "https://twitter.com/ranchicabservice"
-        ]
+          "https://twitter.com/ranchicabs",
+          "https://www.linkedin.com/company/ranchicabservice"
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "bestRating": "5",
+          "worstRating": "1",
+          "ratingCount": "350",
+          "reviewCount": "350"
+        },
+        "paymentAccepted": "Cash, UPI, Credit Card, Debit Card, Google Pay, PhonePe",
+        "currenciesAccepted": "INR"
       },
       {
         "@context": "https://schema.org",

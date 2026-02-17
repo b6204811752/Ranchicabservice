@@ -89,8 +89,10 @@ export default function Newsletter() {
 
           {/* Subscription Form */}
           <form onSubmit={handleSubmit} className="max-w-md mx-auto">
+            <label htmlFor="newsletter-email" className="sr-only">Email Address</label>
             <div className="flex flex-col sm:flex-row gap-3">
               <input
+                id="newsletter-email"
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}

@@ -3,6 +3,12 @@ import { Link } from 'react-router-dom';
 import { Phone, Users, MapPin, Clock, Shield, Star, Check, Calendar, Car } from 'lucide-react';
 import FAQ from '../components/common/FAQ';
 
+const heroImg = 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1200&auto=format&fit=crop';
+const tempo9Img = 'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=600&auto=format&fit=crop';
+const tempo12Img = 'https://images.unsplash.com/photo-1464219789935-c2d9d9aba644?w=600&auto=format&fit=crop';
+const tempo17Img = 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&auto=format&fit=crop';
+const miniBusImg = 'https://images.unsplash.com/photo-1575505586569-646b2ca898fc?w=600&auto=format&fit=crop';
+
 export default function TempoTravellerPage() {
   const vehicles = [
     {
@@ -121,8 +127,11 @@ export default function TempoTravellerPage() {
       />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 py-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/20"></div>
+      <section className="relative py-16 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={heroImg} alt="Tempo Traveller Ranchi" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-purple-900/80 to-blue-900/80"></div>
+        </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center text-white">
             <div className="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full mb-4">
@@ -165,10 +174,13 @@ export default function TempoTravellerPage() {
           </p>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-            {vehicles.map((vehicle, idx) => (
+            {vehicles.map((vehicle, idx) => {
+              const vehicleImages = [tempo9Img, tempo12Img, tempo17Img, miniBusImg];
+              return (
               <div key={idx} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <div className="h-40 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
-                  <Users className="w-20 h-20 text-white/50" />
+                <div className="h-40 relative overflow-hidden">
+                  <img src={vehicleImages[idx]} alt={vehicle.name} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-800 mb-2">{vehicle.name}</h3>
@@ -192,7 +204,8 @@ export default function TempoTravellerPage() {
                   <p className="text-xs text-gray-500">Best for: {vehicle.bestFor}</p>
                 </div>
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
