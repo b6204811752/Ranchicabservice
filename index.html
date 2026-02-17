@@ -6,13 +6,13 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="theme-color" content="#2563eb" />
       
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-079YLS1DY0"></script>
+      <!-- Google tag (gtag.js) - Deferred for performance -->
+      <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-079YLS1DY0"></script>
       <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-079YLS1DY0');
+        gtag('config', 'G-079YLS1DY0', { send_page_view: true });
       </script>
       
       <!-- Microsoft Clarity - Add your Clarity ID below -->
@@ -105,8 +105,7 @@
       <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
       
       <!-- Preload critical resources for faster LCP -->
-      <link rel="preload" href="/src/styles/index.css" as="style" />
-      <link rel="preload" href="/src/main.tsx" as="script" crossorigin />
+      <link rel="modulepreload" href="/src/main.tsx" />
       
       <title>Ranchi Cab Service | Taxi & Car Rental @ ₹10/km | 24/7 Booking ⭐5.0</title>
     </head>

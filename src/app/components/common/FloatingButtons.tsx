@@ -8,7 +8,7 @@ export default function FloatingButtons() {
         href="https://wa.me/917903629240?text=Hi, I want to book a cab"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-green-500 hover:bg-green-600 text-white p-3 sm:p-3 md:p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group"
+        className="bg-green-700 hover:bg-green-800 text-white p-3 sm:p-3 md:p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group"
         aria-label="Chat with us on WhatsApp"
       >
         <MessageCircle className="w-5 h-5 sm:w-5 sm:h-5 md:w-6 md:h-6" />

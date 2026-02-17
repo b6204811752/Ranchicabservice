@@ -16,3 +16,19 @@
   color: #2563eb !important;
   opacity: 1 !important;
 }
+
+/* Prevent CLS: Lock slider dimensions to parent container */
+.hero-slider .slick-slider,
+.hero-slider .slick-list,
+.hero-slider .slick-track {
+  height: 100% !important;
+}
+
+.hero-slider .slick-slide > div {
+  height: 100%;
+}
+
+/* Contain layout to prevent forced reflow from affecting page */
+.hero-slider {
+  contain: layout style paint;
+}

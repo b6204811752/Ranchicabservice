@@ -237,7 +237,7 @@ export default function ServicesPage() {
               href="https://wa.me/917903629240"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
+              className="bg-green-700 hover:bg-green-800 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors"
             >
               WhatsApp Now
             </a>

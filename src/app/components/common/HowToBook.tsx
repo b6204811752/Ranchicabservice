@@ -104,7 +104,7 @@ export default function HowToBook() {
               href="https://wa.me/917903629240?text=Hi,%20I%20want%20to%20book%20a%20cab"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl"
+              className="inline-flex items-center gap-2 bg-green-700 hover:bg-green-800 text-white px-8 py-3 rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl"
             >
               <MessageCircle className="w-5 h-5" />
               WhatsApp

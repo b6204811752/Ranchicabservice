@@ -38,7 +38,7 @@ export default function SocialShare({
       name: 'WhatsApp',
       icon: <MessageCircle className="w-5 h-5" />,
       url: `https://wa.me/?text=${encodeURIComponent(`${title} - ${url}`)}`,
-      color: 'bg-green-500 hover:bg-green-600'
+      color: 'bg-green-700 hover:bg-green-800'
     },
     {
       name: 'Email',

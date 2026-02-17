@@ -1,25 +1,26 @@
 import { Phone, Clock, Shield, Users, Star, MapPin, Car, ArrowRight, MessageCircle } from 'lucide-react';
 import SEO from '@/app/components/common/SEO';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, lazy, Suspense } from 'react';
 import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import '@/styles/slick-theme.css';
 import { motion } from 'motion/react';
 import TrustBadges from '@/app/components/common/TrustBadges';
-import FareCalculator from '@/app/components/common/FareCalculator';
-import FAQ from '@/app/components/common/FAQ';
-import ComparisonTable from '@/app/components/common/ComparisonTable';
-import Reviews from '@/app/components/common/Reviews';
-import Newsletter from '@/app/components/common/Newsletter';
-import CTABanner from '@/app/components/common/CTABanner';
-import SocialShare from '@/app/components/common/SocialShare';
-import ServiceAreas from '@/app/components/common/ServiceAreas';
-import BlogSection from '@/app/components/common/BlogSection';
-import HowToBook from '@/app/components/common/HowToBook';
 import TrustIndicators from '@/app/components/common/TrustIndicators';
 import PromoBanner from '@/app/components/common/PromoBanner';
-import InternalLinks from '@/app/components/common/InternalLinks';
+
+// Lazy-load below-the-fold components to reduce initial bundle & TBT
+const FareCalculator = lazy(() => import('@/app/components/common/FareCalculator'));
+const FAQ = lazy(() => import('@/app/components/common/FAQ'));
+const ComparisonTable = lazy(() => import('@/app/components/common/ComparisonTable'));
+const Reviews = lazy(() => import('@/app/components/common/Reviews'));
+const Newsletter = lazy(() => import('@/app/components/common/Newsletter'));
+const CTABanner = lazy(() => import('@/app/components/common/CTABanner'));
+const SocialShare = lazy(() => import('@/app/components/common/SocialShare'));
+const ServiceAreas = lazy(() => import('@/app/components/common/ServiceAreas'));
+const BlogSection = lazy(() => import('@/app/components/common/BlogSection'));
+const HowToBook = lazy(() => import('@/app/components/common/HowToBook'));
+const InternalLinks = lazy(() => import('@/app/components/common/InternalLinks'));
 import heroImg1 from '@/assets/images/vehicles/hero-bg1.webp';
 import heroImg2 from '@/assets/images/vehicles/hero-bg2.webp';
 import heroImg3 from '@/assets/images/vehicles/hero-bg.webp';
@@ -260,7 +261,7 @@ export default function HomePage() {
       />
 
       {/* Hero Section with Image Slider */}
-      <section className="relative h-[500px] sm:h-[600px] md:h-[700px] overflow-hidden w-full" style={{ containIntrinsicSize: '100vw 700px', contentVisibility: 'visible' }}>
+      <section className="hero-slider relative h-[500px] sm:h-[600px] md:h-[700px] overflow-hidden w-full" style={{ containIntrinsicSize: '100vw 700px', contentVisibility: 'visible' }}>
         <Slider {...sliderSettings} className="h-full">
           {heroSlides.map((slide, index) => (
             <div key={index} className="relative h-[500px] sm:h-[600px] md:h-[700px]">
@@ -268,6 +269,8 @@ export default function HomePage() {
                 <img
                   src={slide.image}
                   alt={slide.title}
+                  width={466}
+                  height={240}
                   fetchPriority="high"
                   decoding="sync"
                   className="absolute inset-0 w-full h-full object-cover"
@@ -309,7 +312,7 @@ export default function HomePage() {
                       rel="noopener noreferrer"
                       tabIndex={index !== 0 ? -1 : undefined}
                       aria-label="Book a cab via WhatsApp"
-                      className="w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all transform hover:scale-105 shadow-lg text-center"
+                      className="w-full sm:w-auto bg-green-700 hover:bg-green-800 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all transform hover:scale-105 shadow-lg text-center"
                     >
                       WhatsApp Now
                     </a>
@@ -563,7 +566,7 @@ export default function HomePage() {
       </section>
 
       {/* How to Book Section */}
-      <HowToBook />
+      <Suspense fallback={null}><HowToBook /></Suspense>
 
       {/* Our Fleet */}
       <section className="py-16 relative overflow-hidden overflow-x-hidden w-full">
@@ -812,17 +815,17 @@ export default function HomePage() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <FareCalculator />
+              <Suspense fallback={null}><FareCalculator /></Suspense>
             </motion.div>
           </div>
         </div>
       </section>
 
       {/* Comparison Table */}
-      <ComparisonTable />
+      <Suspense fallback={null}><ComparisonTable /></Suspense>
 
       {/* FAQ Section */}
-      <FAQ />
+      <Suspense fallback={null}><FAQ /></Suspense>
 
       {/* SEO Content Section */}
       <section className="py-20 bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 relative overflow-hidden">
@@ -1122,35 +1125,35 @@ export default function HomePage() {
 
 
       {/* Reviews Section */}
-      <Reviews />
+      <Suspense fallback={null}><Reviews /></Suspense>
 
       {/* Service Areas */}
-      <ServiceAreas />
+      <Suspense fallback={null}><ServiceAreas /></Suspense>
 
       {/* Blog Section */}
-      <BlogSection />
+      <Suspense fallback={null}><BlogSection /></Suspense>
 
       {/* Social Share */}
       <section className="bg-gray-50 py-12 overflow-x-hidden w-full">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-md mx-auto">
-            <SocialShare />
+            <Suspense fallback={null}><SocialShare /></Suspense>
           </div>
         </div>
       </section>
 
       {/* Newsletter */}
-      <Newsletter />
+      <Suspense fallback={null}><Newsletter /></Suspense>
 
       {/* Internal Links for SEO */}
-      <InternalLinks />
+      <Suspense fallback={null}><InternalLinks /></Suspense>
 
       {/* Final CTA Banner */}
-      <CTABanner 
+      <Suspense fallback={null}><CTABanner 
         variant="dark"
         title="Book Your Next Ride with Confidence"
         description="Trusted by 500+ customers. Professional drivers. Best rates guaranteed."
-      />
+      /></Suspense>
     </>
   );
 }

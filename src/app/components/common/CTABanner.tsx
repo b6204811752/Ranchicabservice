@@ -115,7 +115,7 @@ export default function CTABanner({
                 whileHover={{ scale: 1.02, x: 10 }}
                 whileTap={{ scale: 0.98 }}
                 aria-label="Message on WhatsApp for cab booking"
-                className="bg-green-500 hover:bg-green-600 text-white px-8 py-5 rounded-2xl font-bold text-lg shadow-2xl transition-all flex items-center justify-between group"
+                className="bg-green-700 hover:bg-green-800 text-white px-8 py-5 rounded-2xl font-bold text-lg shadow-2xl transition-all flex items-center justify-between group"
               >
                 <div className="flex items-center gap-4">
                   <div className="p-3 bg-white/20 rounded-full">

@@ -154,7 +154,7 @@ export default function TempoTravellerPage() {
               </a>
               <a
                 href="https://wa.me/917903629240?text=Hi,%20I%20want%20to%20book%20a%20tempo%20traveller"
-                className="bg-green-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-600 transition-colors"
+                className="bg-green-700 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-800 transition-colors"
               >
                 WhatsApp Booking
               </a>

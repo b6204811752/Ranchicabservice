@@ -104,7 +104,7 @@ export default function CabNearMePage() {
                 </a>
                 <a
                   href="https://wa.me/917903629240?text=Hi,%20I%20need%20a%20cab%20near%20me%20in%20Ranchi"
-                  className="bg-green-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-600 transition-colors flex items-center justify-center gap-2"
+                  className="bg-green-700 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-800 transition-colors flex items-center justify-center gap-2"
                 >
                   📍 Share Location on WhatsApp
                 </a>
@@ -300,7 +300,7 @@ export default function CabNearMePage() {
             </a>
             <a
               href="https://wa.me/917903629240?text=Hi,%20I%20need%20a%20cab%20near%20me"
-              className="bg-green-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-600 transition-colors border-2 border-white"
+              className="bg-green-700 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-800 transition-colors border-2 border-white"
             >
               📍 WhatsApp Location
             </a>

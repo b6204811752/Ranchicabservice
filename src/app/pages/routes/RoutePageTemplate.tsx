@@ -134,7 +134,7 @@ export default function RoutePageTemplate({ route }: RoutePageTemplateProps) {
               </a>
               <a
                 href={`https://wa.me/917903629240?text=I want to book ${route.from} to ${route.to} cab`}
-                className="w-full sm:w-auto bg-green-500 text-white px-6 md:px-8 py-3 rounded-lg font-semibold hover:bg-green-600 transition text-sm md:text-base text-center"
+                className="w-full sm:w-auto bg-green-700 text-white px-6 md:px-8 py-3 rounded-lg font-semibold hover:bg-green-800 transition text-sm md:text-base text-center"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -304,7 +304,7 @@ export default function RoutePageTemplate({ route }: RoutePageTemplateProps) {
                   </a>
                   <a
                     href={`https://wa.me/917903629240?text=I want to book ${route.from} to ${route.to} cab`}
-                    className="block w-full bg-green-600 text-white text-center px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-green-700 transition"
+                    className="block w-full bg-green-700 text-white text-center px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-green-800 transition"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

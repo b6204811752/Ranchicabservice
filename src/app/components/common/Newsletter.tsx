@@ -130,7 +130,7 @@ export default function Newsletter() {
                   exit={{ opacity: 0, y: -10 }}
                   className={`mt-4 px-6 py-3 rounded-lg flex items-center gap-2 justify-center ${
                     status === 'success'
-                      ? 'bg-green-500 text-white'
+                      ? 'bg-green-700 text-white'
                       : 'bg-red-500 text-white'
                   }`}
                 >

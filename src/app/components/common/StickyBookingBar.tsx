@@ -49,7 +49,7 @@ export default function StickyBookingBar() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   aria-label="Send a WhatsApp message to book"
-                  className="flex items-center gap-1 sm:gap-2 bg-green-500 hover:bg-green-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold text-xs sm:text-sm shadow-lg transition-all flex-1 sm:flex-initial justify-center"
+                  className="flex items-center gap-1 sm:gap-2 bg-green-700 hover:bg-green-800 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold text-xs sm:text-sm shadow-lg transition-all flex-1 sm:flex-initial justify-center"
                 >
                   <MessageCircle className="w-3 h-3 sm:w-4 sm:h-4" />
                   <span className="hidden xs:inline">WhatsApp</span>

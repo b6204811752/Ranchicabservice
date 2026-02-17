@@ -181,7 +181,7 @@ export default function FAQ({ customFaqs, title }: FAQProps = {}) {
               href="https://wa.me/917903629240"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-lg font-semibold transition-all"
+              className="bg-green-700 hover:bg-green-800 text-white px-8 py-3 rounded-lg font-semibold transition-all"
             >
               WhatsApp Us
             </a>
