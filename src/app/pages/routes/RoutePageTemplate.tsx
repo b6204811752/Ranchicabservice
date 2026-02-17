@@ -29,65 +29,72 @@ interface RoutePageTemplateProps {
 export default function RoutePageTemplate({ route }: RoutePageTemplateProps) {
   const schema = {
     "@context": "https://schema.org",
-    "@type": "Product",
-    "name": `${route.from} to ${route.to} Cab Service`,
-    "description": route.metaDescription,
-    "image": [
-      "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1200&h=630&fit=crop"
-    ],
-    "brand": {
-      "@type": "Brand",
-      "name": "Ranchi Cab Service"
-    },
-    "offers": {
-      "@type": "Offer",
-      "url": `https://www.ranchicabservice.com/${route.slug}`,
-      "priceCurrency": "INR",
-      "price": route.sedanOneWay.replace(/[₹,]/g, ''),
-      "priceValidUntil": "2026-12-31",
-      "availability": "https://schema.org/InStock",
-      "itemCondition": "https://schema.org/NewCondition",
-      "shippingDetails": {
-        "@type": "OfferShippingDetails",
-        "shippingRate": {
-          "@type": "MonetaryAmount",
-          "value": "0",
-          "currency": "INR"
-        },
-        "shippingDestination": {
-          "@type": "DefinedRegion",
-          "addressCountry": "IN"
-        },
-        "deliveryTime": {
-          "@type": "ShippingDeliveryTime",
-          "handlingTime": {
-            "@type": "QuantitativeValue",
-            "minValue": "0",
-            "maxValue": "1",
-            "unitCode": "HUR"
-          },
-          "transitTime": {
-            "@type": "QuantitativeValue",
-            "minValue": "1",
-            "maxValue": "12",
-            "unitCode": "HUR"
+    "@graph": [
+      {
+        "@type": "TaxiService",
+        "name": `${route.from} to ${route.to} Cab Service`,
+        "description": route.metaDescription,
+        "url": `https://www.ranchicabservice.com/${route.slug}`,
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Ranchi Cab Service",
+          "telephone": "+917903629240",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Ranchi",
+            "addressRegion": "Jharkhand",
+            "addressCountry": "IN"
           }
+        },
+        "areaServed": [
+          { "@type": "City", "name": route.from },
+          { "@type": "City", "name": route.to }
+        ],
+        "serviceType": "Outstation Taxi Service",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": `${route.from} to ${route.to} Cab Options`,
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": `Sedan (${route.from} to ${route.to})`,
+              "priceCurrency": "INR",
+              "price": route.sedanOneWay.replace(/[₹,]/g, ''),
+              "availability": "https://schema.org/InStock"
+            },
+            {
+              "@type": "Offer",
+              "name": `SUV (${route.from} to ${route.to})`,
+              "priceCurrency": "INR",
+              "price": route.suvOneWay.replace(/[₹,]/g, ''),
+              "availability": "https://schema.org/InStock"
+            },
+            {
+              "@type": "Offer",
+              "name": `Innova Crysta (${route.from} to ${route.to})`,
+              "priceCurrency": "INR",
+              "price": route.innovaOneWay.replace(/[₹,]/g, ''),
+              "availability": "https://schema.org/InStock"
+            }
+          ]
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "120",
+          "bestRating": "5",
+          "worstRating": "1"
         }
       },
-      "hasMerchantReturnPolicy": {
-        "@type": "MerchantReturnPolicy",
-        "applicableCountry": "IN",
-        "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-        "merchantReturnDays": 1,
-        "returnMethod": "https://schema.org/ReturnByMail",
-        "returnFees": "https://schema.org/FreeReturn"
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.ranchicabservice.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Outstation Taxi", "item": "https://www.ranchicabservice.com/outstation-taxi" },
+          { "@type": "ListItem", "position": 3, "name": `${route.from} to ${route.to} Cab` }
+        ]
       }
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "150"
-    }
+    ]
   };
 
   return (

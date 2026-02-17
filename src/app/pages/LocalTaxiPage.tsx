@@ -26,27 +26,52 @@ export default function LocalTaxiPage() {
         keywords="local taxi ranchi, hourly cab rental ranchi, 4 hour taxi ranchi, 8 hour cab ranchi, full day taxi ranchi, half day cab ranchi, local cab service ranchi, city taxi ranchi, ranchi local cab rate, ac taxi ranchi, cab for shopping ranchi, ranchi sightseeing taxi, taxi for wedding ranchi, cab for hospital ranchi, local car hire ranchi, ranchi city tour taxi, cab near me ranchi, taxi near me ranchi, book taxi online ranchi, doranda taxi, lalpur cab service, kanke taxi, harmu cab booking, bariatu taxi service, morabadi cab ranchi, hinoo taxi booking, hec area cab, mecon ranchi taxi, ranchi lake cab, pahari mandir taxi, tagore hill cab service, rock garden taxi, sedan on rent ranchi, ertiga local ranchi, innova hourly rental ranchi"
         schema={{
           "@context": "https://schema.org",
-          "@type": "Product",
-          "name": "Local Taxi Service Ranchi",
-          "description": "Hourly cab rental service in Ranchi with flexible packages for city travel, shopping, hospital visits, and sightseeing",
-          "brand": {
-            "@type": "Brand",
-            "name": "Ranchi Cab Service"
-          },
-          "offers": {
-            "@type": "AggregateOffer",
-            "lowPrice": "1200",
-            "highPrice": "3800",
-            "priceCurrency": "INR",
-            "offerCount": "6",
-            "availability": "https://schema.org/InStock"
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "5.0",
-            "reviewCount": "85",
-            "bestRating": "5"
-          }
+          "@graph": [
+            {
+              "@type": "Service",
+              "serviceType": "Local Taxi Service",
+              "name": "Local Taxi Service Ranchi",
+              "description": "Hourly cab rental service in Ranchi with flexible packages for city travel, shopping, hospital visits, and sightseeing. Starting at ₹10/km.",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Ranchi Cab Service",
+                "telephone": "+917903629240",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Ranchi",
+                  "addressRegion": "Jharkhand",
+                  "addressCountry": "IN"
+                }
+              },
+              "areaServed": {
+                "@type": "City",
+                "name": "Ranchi"
+              },
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Local Taxi Packages",
+                "itemListElement": [
+                  { "@type": "Offer", "name": "4Hr / 40km Package", "priceCurrency": "INR", "price": "1200" },
+                  { "@type": "Offer", "name": "8Hr / 80km Package", "priceCurrency": "INR", "price": "2000" },
+                  { "@type": "Offer", "name": "12Hr / 120km Package", "priceCurrency": "INR", "price": "2800" }
+                ]
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "85",
+                "bestRating": "5",
+                "worstRating": "1"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.ranchicabservice.com/" },
+                { "@type": "ListItem", "position": 2, "name": "Local Taxi Ranchi" }
+              ]
+            }
+          ]
         }}
       />
 

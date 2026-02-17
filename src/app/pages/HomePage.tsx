@@ -1,5 +1,5 @@
-import { Helmet } from 'react-helmet-async';
 import { Phone, Clock, Shield, Users, Star, MapPin, Car, ArrowRight, MessageCircle } from 'lucide-react';
+import SEO from '@/app/components/common/SEO';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Slider from 'react-slick';
@@ -245,15 +245,11 @@ export default function HomePage() {
 
   return (
     <>
-      <Helmet>
-        <title>Ranchi Taxi & Cab Service | Car Rental @ ₹10/km | Book 24/7 ⭐5.0</title>
-        <meta
-          name="description"
-          content="⭐ #1 Ranchi Taxi, Cab & Car Rental Service 24/7 ✓ Local Taxi ₹10/km ✓ Ranchi to Dhanbad ₹2400 ✓ Airport Cab ₹800 ✓ Ranchi to Patna ₹4500 ✓ Innova, Ertiga, Dzire ✓ 5.0★ Rated ✓ Verified Drivers. Call: 7903629240"
-        />
-        <meta name="keywords" content="ranchi taxi, ranchi cab, car rental ranchi, ranchi to dhanbad, taxi service in ranchi, ranchi cab service, cab booking ranchi, ranchi airport taxi, outstation taxi ranchi, local taxi ranchi, birsa munda airport taxi, ranchi to patna cab, ranchi to kolkata taxi, ranchi to jamshedpur cab, cab near me ranchi, taxi near me ranchi, car hire ranchi, cheap taxi ranchi, best cab service ranchi, 24 hour taxi ranchi, online cab booking ranchi, innova on rent ranchi, ertiga taxi ranchi, one way taxi ranchi, round trip cab ranchi, jharkhand taxi service, ranchi to bokaro cab, tempo traveller ranchi, cab in doranda, lalpur taxi, kanke cab service, harmu taxi ranchi, bariatu cab booking, morabadi taxi service, hinoo cab ranchi, wedding car ranchi, corporate cab ranchi, ranchi station taxi" />
-        <link rel="canonical" href="https://www.ranchicabservice.com/" />
-      </Helmet>
+      <SEO
+        title="Ranchi Taxi & Cab Service | Car Rental @ ₹10/km | Book 24/7 ⭐5.0"
+        description="⭐ #1 Ranchi Taxi, Cab & Car Rental Service 24/7 ✓ Local Taxi ₹10/km ✓ Ranchi to Dhanbad ₹2400 ✓ Airport Cab ₹800 ✓ Ranchi to Patna ₹4500 ✓ Innova, Ertiga, Dzire ✓ 5.0★ Rated ✓ Verified Drivers. Call: 7903629240"
+        keywords="ranchi taxi, ranchi cab, car rental ranchi, ranchi to dhanbad, taxi service in ranchi, ranchi cab service, cab booking ranchi, ranchi airport taxi, outstation taxi ranchi, local taxi ranchi, birsa munda airport taxi, ranchi to patna cab, ranchi to kolkata taxi, ranchi to jamshedpur cab, cab near me ranchi, taxi near me ranchi, car hire ranchi, best cab service ranchi, 24 hour taxi ranchi, online cab booking ranchi, jharkhand taxi service, ranchi to bokaro cab, tempo traveller ranchi, wedding car ranchi, corporate cab ranchi"
+      />
 
       {/* Promo Banner */}
       <PromoBanner 
@@ -285,9 +281,15 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 via-blue-800/70 to-transparent" />
               <div className="relative h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
                 <div className="max-w-2xl text-white">
-                  <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight">
-                    {slide.title}
-                  </h1>
+                  {index === 0 ? (
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight">
+                      {slide.title}
+                    </h1>
+                  ) : (
+                    <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 leading-tight">
+                      {slide.title}
+                    </h2>
+                  )}
                   <p className="text-xl sm:text-2xl md:text-3xl mb-6 sm:mb-8 text-blue-100">
                     {slide.subtitle}
                   </p>
@@ -960,7 +962,7 @@ export default function HomePage() {
             className="mb-16"
           >
             <h3 className="text-3xl font-bold text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-8">
-              Popular Outstation Routes from Ranchi
+              Top Outstation Cab Routes & Fares
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
               <motion.div
@@ -1032,7 +1034,7 @@ export default function HomePage() {
             className="mb-16"
           >
             <h3 className="text-3xl font-bold text-center bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-8">
-              Why Choose Ranchi Cab Service?
+              Our Key Advantages
             </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
               {[

@@ -57,29 +57,53 @@ export default function OutstationPage() {
         keywords="outstation taxi ranchi, ranchi to patna cab, ranchi to kolkata taxi, ranchi to jamshedpur cab, ranchi to bokaro taxi, ranchi to dhanbad cab, ranchi to hazaribagh taxi, outstation cab fare ranchi, one way taxi ranchi, round trip cab ranchi, highway taxi ranchi, intercity cab ranchi, ranchi to deoghar cab, ranchi to gaya taxi, ranchi to varanasi cab, ranchi to giridih taxi, chauffeur driven car ranchi, long distance taxi ranchi, ranchi tour package taxi, ranchi to netarhat cab, ranchi to daltonganj taxi, ranchi to dumka cab, ranchi to chaibasa taxi, ranchi to rajrappa cab, ranchi to bhubaneswar taxi, ranchi to puri cab, ranchi to lucknow taxi, jharkhand outstation cab, bihar outstation taxi, one way drop ranchi, ranchi roundtrip taxi, sedan outstation ranchi, ertiga outstation ranchi, innova crysta outstation, tempo traveller outstation ranchi"
         schema={{
           "@context": "https://schema.org",
-          "@type": "Service",
-          "name": "Outstation Taxi Service from Ranchi",
-          "description": "Book outstation cabs from Ranchi to Patna, Kolkata, Jamshedpur, Bokaro, Dhanbad and other cities. One-way and round trip available 24/7.",
-          "provider": {
-            "@type": "LocalBusiness",
-            "name": "Ranchi Cab Service",
-            "telephone": "+917903629240"
-          },
-          "areaServed": [
-            {"@type": "State", "name": "Jharkhand"},
-            {"@type": "State", "name": "Bihar"},
-            {"@type": "State", "name": "West Bengal"},
-            {"@type": "State", "name": "Odisha"}
-          ],
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Outstation Routes",
-            "itemListElement": [
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ranchi to Patna Cab"}, "price": "4500", "priceCurrency": "INR"},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ranchi to Kolkata Cab"}, "price": "6000", "priceCurrency": "INR"},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ranchi to Jamshedpur Cab"}, "price": "2200", "priceCurrency": "INR"}
-            ]
-          }
+          "@graph": [
+            {
+              "@type": "Service",
+              "name": "Outstation Taxi Service from Ranchi",
+              "description": "Book outstation cabs from Ranchi to Patna, Kolkata, Jamshedpur, Bokaro, Dhanbad and other cities. One-way and round trip available 24/7.",
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "Ranchi Cab Service",
+                "telephone": "+917903629240",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Ranchi",
+                  "addressRegion": "Jharkhand",
+                  "addressCountry": "IN"
+                }
+              },
+              "areaServed": [
+                {"@type": "State", "name": "Jharkhand"},
+                {"@type": "State", "name": "Bihar"},
+                {"@type": "State", "name": "West Bengal"},
+                {"@type": "State", "name": "Odisha"}
+              ],
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Outstation Routes",
+                "itemListElement": [
+                  {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ranchi to Patna Cab"}, "price": "4500", "priceCurrency": "INR"},
+                  {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ranchi to Kolkata Cab"}, "price": "6000", "priceCurrency": "INR"},
+                  {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ranchi to Jamshedpur Cab"}, "price": "2200", "priceCurrency": "INR"}
+                ]
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "reviewCount": "200",
+                "bestRating": "5",
+                "worstRating": "1"
+              }
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.ranchicabservice.com/" },
+                { "@type": "ListItem", "position": 2, "name": "Outstation Taxi Ranchi" }
+              ]
+            }
+          ]
         }}
       />
 
