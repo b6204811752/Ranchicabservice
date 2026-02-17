@@ -297,6 +297,7 @@ export default function HomePage() {
                     <a
                       href="tel:+917903629240"
                       tabIndex={index !== 0 ? -1 : undefined}
+                      aria-label="Call Ranchi Cab Service for booking"
                       className="w-full sm:w-auto bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all transform hover:scale-105 inline-flex items-center justify-center space-x-2 shadow-lg"
                     >
                       <Phone className="w-5 h-5" />
@@ -307,6 +308,7 @@ export default function HomePage() {
                       target="_blank"
                       rel="noopener noreferrer"
                       tabIndex={index !== 0 ? -1 : undefined}
+                      aria-label="Book a cab via WhatsApp"
                       className="w-full sm:w-auto bg-green-500 hover:bg-green-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-base sm:text-lg transition-all transform hover:scale-105 shadow-lg text-center"
                     >
                       WhatsApp Now
@@ -748,12 +750,13 @@ export default function HomePage() {
           >
             <div className="text-white text-left">
               <h3 className="text-2xl font-bold mb-2">Need Help Choosing the Right Cab?</h3>
-              <p className="text-green-100">Chat with us on WhatsApp for instant assistance & best deals</p>
+              <p className="text-white">Chat with us on WhatsApp for instant assistance & best deals</p>
             </div>
             <a
               href="https://wa.me/917903629240?text=Hi, I need help booking a cab"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Chat on WhatsApp for cab assistance"
               className="bg-white text-green-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-50 transition-all shadow-xl flex items-center gap-2 whitespace-nowrap"
             >
               <MessageCircle className="w-6 h-6" />
@@ -783,21 +786,21 @@ export default function HomePage() {
                 <div className="flex items-start gap-3">
                   <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">✓</div>
                   <div>
-                    <h4 className="font-semibold text-gray-800">Transparent Pricing</h4>
+                    <h3 className="font-semibold text-gray-800">Transparent Pricing</h3>
                     <p className="text-gray-600 text-sm">No surge pricing, no hidden costs</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">✓</div>
                   <div>
-                    <h4 className="font-semibold text-gray-800">Multiple Payment Options</h4>
+                    <h3 className="font-semibold text-gray-800">Multiple Payment Options</h3>
                     <p className="text-gray-600 text-sm">Cash, UPI, Cards - your choice</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">✓</div>
                   <div>
-                    <h4 className="font-semibold text-gray-800">Best Rate Guarantee</h4>
+                    <h3 className="font-semibold text-gray-800">Best Rate Guarantee</h3>
                     <p className="text-gray-600 text-sm">Competitive rates for all routes</p>
                   </div>
                 </div>
@@ -1073,17 +1076,17 @@ export default function HomePage() {
               <div className="absolute bottom-0 right-0 w-64 h-64 bg-white/10 rounded-full filter blur-3xl"></div>
               <div className="relative z-10">
                 <h3 className="text-3xl font-bold mb-4">Easy Cab Booking in Ranchi</h3>
-                <p className="text-xl text-green-50 mb-6 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-xl text-white/90 mb-6 max-w-3xl mx-auto leading-relaxed">
                   Booking a <span className="font-bold text-white">taxi in Ranchi</span> is now easier than ever! Simply call us at <span className="font-bold text-white">+91 7903629240</span>, 
                   send a WhatsApp message, or use our <span className="font-bold text-white">online cab booking</span> form. We provide instant confirmation and ensure 
                   your cab arrives on time, every time.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
-                  <a href="tel:+917903629240" className="bg-white text-green-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-50 transition-all shadow-xl inline-flex items-center gap-2">
+                  <a href="tel:+917903629240" aria-label="Call now to book a Ranchi cab" className="bg-white text-green-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-50 transition-all shadow-xl inline-flex items-center gap-2">
                     <Phone className="w-5 h-5" />
                     Call Now
                   </a>
-                  <a href="https://wa.me/917903629240" target="_blank" rel="noopener noreferrer" className="bg-green-700 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-800 transition-all shadow-xl inline-flex items-center gap-2">
+                  <a href="https://wa.me/917903629240" target="_blank" rel="noopener noreferrer" aria-label="Book via WhatsApp instant messaging" className="bg-green-700 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-800 transition-all shadow-xl inline-flex items-center gap-2">
                     <MessageCircle className="w-5 h-5" />
                     WhatsApp
                   </a>

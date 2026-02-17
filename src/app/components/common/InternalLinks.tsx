@@ -27,19 +27,19 @@ export default function InternalLinks() {
   ];
 
   const vehicleLinks = [
-    { name: 'Dzire Taxi Ranchi', href: '/fleet' },
-    { name: 'Ertiga Cab Ranchi', href: '/fleet' },
-    { name: 'Innova Crysta Ranchi', href: '/fleet' },
-    { name: 'Tempo Traveller Ranchi', href: '/fleet' },
-    { name: '7 Seater Cab Ranchi', href: '/fleet' },
+    { name: 'Dzire Taxi Ranchi', href: '/fleet#dzire' },
+    { name: 'Ertiga Cab Ranchi', href: '/fleet#ertiga' },
+    { name: 'Innova Crysta Ranchi', href: '/fleet#innova' },
+    { name: 'Tempo Traveller Ranchi', href: '/tempo-traveller-ranchi' },
+    { name: '7 Seater Cab Ranchi', href: '/fleet#7-seater' },
   ];
 
   const localAreaLinks = [
     { name: 'Taxi Near Ranchi Airport', href: '/airport-taxi' },
-    { name: 'Cab Near Railway Station', href: '/local-taxi-ranchi' },
-    { name: 'Taxi Near Birsa Chowk', href: '/local-taxi-ranchi' },
-    { name: 'Cab Service Doranda', href: '/local-taxi-ranchi' },
-    { name: 'Taxi Harmu Ranchi', href: '/local-taxi-ranchi' },
+    { name: 'Cab Near Railway Station', href: '/local-taxi-ranchi#railway-station' },
+    { name: 'Taxi Near Birsa Chowk', href: '/local-taxi-ranchi#birsa-chowk' },
+    { name: 'Cab Service Doranda', href: '/local-taxi-ranchi#doranda' },
+    { name: 'Taxi Harmu Ranchi', href: '/local-taxi-ranchi#harmu' },
   ];
 
   // ItemList Schema for internal links - helps Google understand site structure
@@ -151,7 +151,7 @@ export default function InternalLinks() {
 
           {/* Additional SEO Text */}
           <div className="mt-10 pt-8 border-t border-gray-700">
-            <p className="text-gray-400 text-sm text-center max-w-4xl mx-auto leading-relaxed">
+            <p className="text-gray-300 text-sm text-center max-w-4xl mx-auto leading-relaxed">
               <strong className="text-white">Ranchi Cab Service</strong> is Jharkhand's trusted <strong className="text-white">taxi service provider</strong> offering 
               <strong className="text-white"> local taxi</strong>, <strong className="text-white">outstation cabs</strong>, 
               <strong className="text-white"> Birsa Munda airport transfer</strong>, and <strong className="text-white">corporate car rental</strong> services. 

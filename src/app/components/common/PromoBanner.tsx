@@ -76,13 +76,13 @@ export default function PromoBanner({
               className="flex items-center gap-2 bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg font-mono font-bold text-sm transition-all border border-white/30"
             >
               <span>Code: {promoCode}</span>
-              <span className="text-xs opacity-75">
+              <span className="text-xs opacity-90">
                 {copied ? '✓ Copied!' : 'Click to copy'}
               </span>
             </button>
 
             {/* Expiry */}
-            <div className="hidden md:flex items-center gap-1 text-sm text-white/80">
+            <div className="hidden md:flex items-center gap-1 text-sm text-white/90">
               <Clock className="w-4 h-4" />
               {expiryText}
             </div>

@@ -142,7 +142,7 @@ export default function Newsletter() {
           </form>
 
           {/* Privacy Note */}
-          <p className="text-sm text-white/70 mt-6">
+          <p className="text-sm text-white/90 mt-6">
             We respect your privacy. Unsubscribe anytime. No spam, ever!
           </p>
 

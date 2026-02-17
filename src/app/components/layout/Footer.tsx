@@ -23,7 +23,7 @@ export default function Footer() {
               loading="lazy"
             />
             <h3 className="text-xl font-bold mb-4">Ranchi Cab Service</h3>
-            <p className="text-gray-400 mb-4">
+            <p className="text-gray-300 mb-4">
               Your trusted partner for safe, reliable, and affordable taxi services in Ranchi and nearby cities.
             </p>
             <div className="flex space-x-4">
@@ -84,12 +84,12 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">Home</Link></li>
-              <li><Link to="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
-              <li><Link to="/services" className="text-gray-400 hover:text-white transition-colors">Services</Link></li>
-              <li><Link to="/fleet" className="text-gray-400 hover:text-white transition-colors">Our Fleet</Link></li>
-              <li><Link to="/blog" className="text-gray-400 hover:text-white transition-colors">Travel Blog</Link></li>
-              <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
+              <li><Link to="/" className="text-gray-300 hover:text-white transition-colors">Home</Link></li>
+              <li><Link to="/about" className="text-gray-300 hover:text-white transition-colors">About Us</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors">Services</Link></li>
+              <li><Link to="/fleet" className="text-gray-300 hover:text-white transition-colors">Our Fleet</Link></li>
+              <li><Link to="/blog" className="text-gray-300 hover:text-white transition-colors">Travel Blog</Link></li>
+              <li><Link to="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
 
@@ -97,13 +97,13 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Our Services</h4>
             <ul className="space-y-2">
-              <li><Link to="/outstation-taxi" className="text-gray-400 hover:text-white transition-colors">Outstation Taxi</Link></li>
-              <li><Link to="/local-taxi-ranchi" className="text-gray-400 hover:text-white transition-colors">Local Taxi</Link></li>
-              <li><Link to="/airport-taxi" className="text-gray-400 hover:text-white transition-colors">Airport Transfer</Link></li>
-              <li><Link to="/corporate-taxi" className="text-gray-400 hover:text-white transition-colors">Corporate Service</Link></li>
-              <li><Link to="/tempo-traveller-ranchi" className="text-gray-400 hover:text-white transition-colors">Tempo Traveller</Link></li>
-              <li><Link to="/wedding-car-ranchi" className="text-gray-400 hover:text-white transition-colors">Wedding Car Rental</Link></li>
-              <li><Link to="/cab-near-me-ranchi" className="text-gray-400 hover:text-white transition-colors">Cab Near Me</Link></li>
+              <li><Link to="/outstation-taxi" className="text-gray-300 hover:text-white transition-colors">Outstation Taxi</Link></li>
+              <li><Link to="/local-taxi-ranchi" className="text-gray-300 hover:text-white transition-colors">Local Taxi</Link></li>
+              <li><Link to="/airport-taxi" className="text-gray-300 hover:text-white transition-colors">Airport Transfer</Link></li>
+              <li><Link to="/corporate-taxi" className="text-gray-300 hover:text-white transition-colors">Corporate Service</Link></li>
+              <li><Link to="/tempo-traveller-ranchi" className="text-gray-300 hover:text-white transition-colors">Tempo Traveller</Link></li>
+              <li><Link to="/wedding-car-ranchi" className="text-gray-300 hover:text-white transition-colors">Wedding Car Rental</Link></li>
+              <li><Link to="/cab-near-me-ranchi" className="text-gray-300 hover:text-white transition-colors">Cab Near Me</Link></li>
             </ul>
           </div>
 
@@ -111,13 +111,13 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Popular Routes</h4>
             <ul className="space-y-2">
-              <li><Link to="/ranchi-to-patna-cab" className="text-gray-400 hover:text-white transition-colors">Ranchi to Patna</Link></li>
-              <li><Link to="/ranchi-to-kolkata-taxi" className="text-gray-400 hover:text-white transition-colors">Ranchi to Kolkata</Link></li>
-              <li><Link to="/ranchi-to-jamshedpur-cab" className="text-gray-400 hover:text-white transition-colors">Ranchi to Jamshedpur</Link></li>
-              <li><Link to="/ranchi-to-bokaro-taxi" className="text-gray-400 hover:text-white transition-colors">Ranchi to Bokaro</Link></li>
-              <li><Link to="/ranchi-to-dhanbad-cab" className="text-gray-400 hover:text-white transition-colors">Ranchi to Dhanbad</Link></li>
-              <li><Link to="/ranchi-to-deoghar-cab" className="text-gray-400 hover:text-white transition-colors">Ranchi to Deoghar</Link></li>
-              <li><Link to="/cities" className="text-gray-400 hover:text-white transition-colors">View All Routes →</Link></li>
+              <li><Link to="/ranchi-to-patna-cab" className="text-gray-300 hover:text-white transition-colors">Ranchi to Patna</Link></li>
+              <li><Link to="/ranchi-to-kolkata-taxi" className="text-gray-300 hover:text-white transition-colors">Ranchi to Kolkata</Link></li>
+              <li><Link to="/ranchi-to-jamshedpur-cab" className="text-gray-300 hover:text-white transition-colors">Ranchi to Jamshedpur</Link></li>
+              <li><Link to="/ranchi-to-bokaro-taxi" className="text-gray-300 hover:text-white transition-colors">Ranchi to Bokaro</Link></li>
+              <li><Link to="/ranchi-to-dhanbad-cab" className="text-gray-300 hover:text-white transition-colors">Ranchi to Dhanbad</Link></li>
+              <li><Link to="/ranchi-to-deoghar-cab" className="text-gray-300 hover:text-white transition-colors">Ranchi to Deoghar</Link></li>
+              <li><Link to="/cities" className="text-gray-300 hover:text-white transition-colors">View All Routes →</Link></li>
             </ul>
           </div>
 
@@ -127,19 +127,19 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <Phone className="w-5 h-5 text-yellow-400 mt-1 flex-shrink-0" />
-                <a href="tel:+917903629240" className="text-gray-400 hover:text-white">
+                <a href="tel:+917903629240" className="text-gray-300 hover:text-white" aria-label="Call Ranchi Cab Service at +91 7903629240">
                   +91 7903629240
                 </a>
               </li>
               <li className="flex items-start space-x-3">
                 <Mail className="w-5 h-5 text-yellow-400 mt-1 flex-shrink-0" />
-                <a href="mailto:ranchicabservice2@gmail.com" className="text-gray-400 hover:text-white">
+                <a href="mailto:ranchicabservice2@gmail.com" className="text-gray-300 hover:text-white">
                   ranchicabservice2@gmail.com
                 </a>
               </li>
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-yellow-400 mt-1 flex-shrink-0" />
-                <span className="text-gray-400">
+                <span className="text-gray-300">
                   Ranchi, Jharkhand, India
                 </span>
               </li>
@@ -175,14 +175,14 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-gray-400 text-sm text-center md:text-left">
+            <p className="text-gray-300 text-sm text-center md:text-left">
               © {new Date().getFullYear()} Ranchi Cab Service. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <Link to="/privacy-policy" className="text-gray-400 hover:text-white text-sm transition-colors">
+              <Link to="/privacy-policy" className="text-gray-300 hover:text-white text-sm transition-colors">
                 Privacy Policy
               </Link>
-              <Link to="/terms-conditions" className="text-gray-400 hover:text-white text-sm transition-colors">
+              <Link to="/terms-conditions" className="text-gray-300 hover:text-white text-sm transition-colors">
                 Terms & Conditions
               </Link>
             </div>

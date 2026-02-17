@@ -36,6 +36,7 @@ export default function StickyBookingBar() {
                   href="tel:+917903629240"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  aria-label="Call to book a cab now"
                   className="flex items-center gap-1 sm:gap-2 bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold text-xs sm:text-sm shadow-lg transition-all flex-1 sm:flex-initial justify-center"
                 >
                   <Phone className="w-3 h-3 sm:w-4 sm:h-4" />
@@ -47,6 +48,7 @@ export default function StickyBookingBar() {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  aria-label="Send a WhatsApp message to book"
                   className="flex items-center gap-1 sm:gap-2 bg-green-500 hover:bg-green-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg font-semibold text-xs sm:text-sm shadow-lg transition-all flex-1 sm:flex-initial justify-center"
                 >
                   <MessageCircle className="w-3 h-3 sm:w-4 sm:h-4" />
