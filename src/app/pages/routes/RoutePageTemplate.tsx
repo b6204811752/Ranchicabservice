@@ -166,11 +166,11 @@ export default function RoutePageTemplate({ route }: RoutePageTemplateProps) {
       </section>
 
       {/* Main Content */}
-      <section className="w-full bg-gradient-to-b from-blue-50 to-white py-8 md:py-12 overflow-x-hidden">
+      <section className="w-full bg-gradient-to-b from-blue-50 to-white py-8 md:py-12 overflow-hidden">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
-            <div className="lg:col-span-2 w-full">
-              <section className="bg-white rounded-lg shadow-md p-4 sm:p-6 md:p-8 mb-6 md:mb-8 w-full overflow-x-hidden">
+            <div className="lg:col-span-2 min-w-0">
+              <section className="bg-white rounded-lg shadow-md p-4 sm:p-6 md:p-8 mb-6 md:mb-8 min-w-0">
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-4 md:mb-6">
                   Book {route.from} to {route.to} Cab - Best Taxi Service
                 </h2>
@@ -215,8 +215,8 @@ export default function RoutePageTemplate({ route }: RoutePageTemplateProps) {
                 <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-3 md:mb-4 mt-6 md:mt-8">
                   {route.from} to {route.to} Cab Fare & Vehicle Options
                 </h3>
-                <div className="w-full overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
-                  <table className="w-full border-collapse min-w-[500px]">
+                <div className="overflow-x-auto">
+                  <table className="w-full border-collapse" style={{ minWidth: '480px' }}>
                     <thead>
                       <tr className="bg-blue-100">
                         <th className="border border-gray-300 px-2 sm:px-4 py-3 text-left text-sm sm:text-base" scope="col">Vehicle Type</th>
@@ -279,8 +279,8 @@ export default function RoutePageTemplate({ route }: RoutePageTemplateProps) {
             </div>
 
             {/* Sidebar */}
-            <div className="lg:col-span-1 w-full">
-              <div className="bg-yellow-50 border-2 border-yellow-400 rounded-lg p-4 sm:p-5 md:p-6 lg:sticky lg:top-24 w-full overflow-x-hidden">
+            <div className="lg:col-span-1 min-w-0">
+              <div className="bg-yellow-50 border-2 border-yellow-400 rounded-lg p-4 sm:p-5 md:p-6 lg:sticky lg:top-24">
                 <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800 mb-3 md:mb-4">
                   Book Your Cab Now!
                 </h3>

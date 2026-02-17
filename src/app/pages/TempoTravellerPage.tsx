@@ -217,8 +217,8 @@ export default function TempoTravellerPage() {
             Popular Package Rates
           </h2>
           
-          <div className="max-w-4xl mx-auto overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
-            <table className="w-full border-collapse min-w-[600px]">
+          <div className="max-w-4xl mx-auto overflow-x-auto">
+            <table className="w-full border-collapse" style={{ minWidth: '480px' }}>
               <thead>
                 <tr className="bg-blue-600 text-white">
                   <th className="p-4 text-left">Package</th>

@@ -43,7 +43,7 @@ export default function ComparisonTable() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="bg-white/10 backdrop-blur-lg rounded-2xl overflow-hidden border border-white/20 shadow-2xl min-w-[600px] sm:min-w-0"
+            className="bg-white/10 backdrop-blur-lg rounded-2xl overflow-hidden border border-white/20 shadow-2xl"
           >
             <div className="grid grid-cols-3 bg-gradient-to-r from-blue-600 to-purple-600 p-3 sm:p-4 font-bold text-sm sm:text-base md:text-lg">
               <div className="col-span-1 text-left">Features</div>
