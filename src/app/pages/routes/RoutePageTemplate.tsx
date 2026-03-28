@@ -33,9 +33,11 @@ export default function RoutePageTemplate({ route }: RoutePageTemplateProps) {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "TaxiService",
+        "@type": ["TaxiService", "LocalBusiness"],
         "name": `${route.from} to ${route.to} Cab Service`,
         "description": route.metaDescription,
+        "image": "https://www.ranchicabservice.com/assets/images/vehicles/dezire.webp",
+        "priceRange": "₹₹",
         "url": `https://www.ranchicabservice.com/${route.slug}`,
         "provider": {
           "@type": "LocalBusiness",

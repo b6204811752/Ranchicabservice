@@ -53,6 +53,8 @@ export default function AboutPage() {
           "mainEntity": {
             "@type": "LocalBusiness",
             "name": "Ranchi Cab Service",
+            "image": "https://www.ranchicabservice.com/assets/images/vehicles/dezire.webp",
+            "priceRange": "₹₹",
             "foundingDate": "2010",
             "telephone": "+917903629240",
             "email": "ranchicabservice2@gmail.com",

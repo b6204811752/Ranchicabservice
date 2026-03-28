@@ -30,9 +30,11 @@ export default function AirportPage() {
           "@context": "https://schema.org",
           "@graph": [
             {
-              "@type": "Service",
+              "@type": ["Service", "LocalBusiness"],
               "name": "Ranchi Airport Taxi Service - Birsa Munda Airport Pickup & Drop",
               "description": "24/7 airport pickup and drop service at Birsa Munda Airport, Ranchi. Punctual, reliable, and hassle-free airport transfers with flight tracking.",
+              "image": "https://www.ranchicabservice.com/assets/images/vehicles/dezire.webp",
+              "priceRange": "₹₹",
               "provider": {
                 "@type": "LocalBusiness",
                 "name": "Ranchi Cab Service",

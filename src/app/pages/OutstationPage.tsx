@@ -61,7 +61,7 @@ export default function OutstationPage() {
           "@context": "https://schema.org",
           "@graph": [
             {
-              "@type": "Service",
+              "@type": ["Service", "LocalBusiness"],
               "name": "Outstation Taxi Service from Ranchi",
               "description": "Book outstation cabs from Ranchi to Patna, Kolkata, Jamshedpur, Bokaro, Dhanbad and other cities. One-way and round trip available 24/7.",
               "provider": {

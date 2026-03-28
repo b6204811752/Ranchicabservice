@@ -30,10 +30,12 @@ export default function LocalTaxiPage() {
           "@context": "https://schema.org",
           "@graph": [
             {
-              "@type": "Service",
+              "@type": ["Service", "LocalBusiness"],
               "serviceType": "Local Taxi Service",
               "name": "Local Taxi Service Ranchi",
               "description": "Hourly cab rental service in Ranchi with flexible packages for city travel, shopping, hospital visits, and sightseeing. Starting at ₹10/km.",
+              "image": "https://www.ranchicabservice.com/assets/images/vehicles/dezire.webp",
+              "priceRange": "₹₹",
               "provider": {
                 "@type": "LocalBusiness",
                 "name": "Ranchi Cab Service",

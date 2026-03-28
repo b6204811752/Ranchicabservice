@@ -33,10 +33,12 @@ export default function CorporatePage() {
         keywords="corporate taxi ranchi, corporate cab service ranchi, business taxi ranchi, employee transportation ranchi, corporate travel ranchi, office cab ranchi, company taxi service ranchi, monthly cab service ranchi, staff transportation ranchi, corporate car rental ranchi, business travel ranchi, executive cab service ranchi, office pick up drop ranchi, employee shuttle ranchi, it company cab ranchi, corporate cab booking ranchi, company car hire ranchi, bulk taxi booking ranchi, corporate transport jharkhand, office cab monthly package ranchi, corporate cab rate ranchi"
         schema={{
           "@context": "https://schema.org",
-          "@type": "Service",
+          "@type": ["Service", "LocalBusiness"],
           "serviceType": "Corporate Taxi Service",
           "name": "Corporate Taxi Service in Ranchi",
           "description": "Professional corporate taxi service in Ranchi offering employee transport, client meeting transfers, monthly cab packages, and dedicated business transportation solutions.",
+          "image": "https://www.ranchicabservice.com/assets/images/vehicles/dezire.webp",
+          "priceRange": "₹₹",
           "provider": {
             "@type": "LocalBusiness",
             "name": "Ranchi Cab Service",
