@@ -1,8 +1,16 @@
 {
+  "cleanUrls": true,
+  "trailingSlash": false,
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],
   "redirects": [
+    {
+      "source": "/:path(.*)",
+      "has": [{ "type": "host", "value": "ranchicabservice.com" }],
+      "destination": "https://www.ranchicabservice.com/:path",
+      "statusCode": 301
+    },
     { "source": "/ranchi-airport-taxi", "destination": "/airport-taxi", "statusCode": 301 },
     { "source": "/birsa-munda-airport-cab", "destination": "/airport-taxi", "statusCode": 301 }
   ],
