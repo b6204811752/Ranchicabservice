@@ -221,7 +221,7 @@ export default function AirportPage() {
         { question: "How do I book airport taxi to Ranchi Airport?", answer: "Call +91 7903629240 or WhatsApp your flight details (flight number, date, time). We'll confirm your booking with driver name and vehicle number. You can also book through our website. Pre-booking recommended for guaranteed availability." },
         { question: "Can I get an airport taxi from Ranchi to other cities?", answer: "Yes, we provide direct airport pickup to outstation destinations: Airport to Jamshedpur (₹2,500), Airport to Bokaro (₹2,000), Airport to Dhanbad (₹2,800), Airport to Hazaribagh (₹1,800). Convenient direct drop without city stop." },
         { question: "Where does the driver meet me at Ranchi Airport?", answer: "Our driver waits at the arrival gate exit with a name placard. We share the driver's name, photo, phone number, and car details via WhatsApp before pickup. Luggage assistance provided. Meet & greet service included at no extra cost." }
-      ]} title="Airport Taxi FAQs" />
+      ]} title="Airport Taxi FAQs" includeSchema={true} />
 
       {/* Internal Links */}
       <InternalLinks />

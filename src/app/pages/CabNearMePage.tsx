@@ -343,7 +343,7 @@ export default function CabNearMePage() {
         { question: "How much does a cab near me cost in Ranchi?", answer: "Our rates start at ₹10/km for sedan (Dzire/Aura). Minimum fare is ₹150. Base fare applies for first 4 km. No surge pricing unlike Ola/Uber. SUV starts at ₹14/km. We offer the most transparent and affordable rates in Ranchi." },
         { question: "Can I get a cab near Ranchi Railway Station?", answer: "Yes, we have multiple cabs stationed near Ranchi Junction Railway Station 24/7. Pickup from station exit within 5-10 minutes. We also serve Hatia Railway Station. Pre-booking recommended for assured availability during peak hours." },
         { question: "Do you offer cab service at Birsa Munda Airport?", answer: "Yes, we provide 24/7 airport taxi service at Birsa Munda Airport. Airport to city starts at ₹800. We track your flight timing and wait at the arrival gate. No extra charge for flight delays. Pre-book for guaranteed availability." }
-      ]} title="Cab Near Me FAQs" />
+      ]} title="Cab Near Me FAQs" includeSchema={true} />
 
       {/* Internal Links */}
       <InternalLinks />

@@ -770,7 +770,7 @@ export default function HomePage() {
       <Suspense fallback={null}><ComparisonTable /></Suspense>
 
       {/* FAQ Section */}
-      <Suspense fallback={null}><FAQ /></Suspense>
+      <Suspense fallback={null}><FAQ includeSchema={true} /></Suspense>
 
       {/* SEO Content Section */}
       <section className="py-20 bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 relative overflow-hidden">

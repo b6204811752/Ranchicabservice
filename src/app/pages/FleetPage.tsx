@@ -307,7 +307,7 @@ export default function FleetPage() {
         { question: "Can I get a luxury car for my wedding in Ranchi?", answer: "Yes, we offer decorated luxury cars for weddings including Audi, BMW, and Mercedes. Wedding car rental starts from ₹2,500/day for Dzire to ₹50,000 for luxury Audi/BMW with decoration. Flower decoration and professional chauffeur included." },
         { question: "Do you have tempo travellers for group travel?", answer: "Yes, we have 9-seater, 12-seater, 17-seater tempo travellers and 26-seater mini buses. Rates start at ₹18/km for 9-seater. Perfect for pilgrimages (Deoghar, Varanasi), corporate outings, school trips, and family functions." },
         { question: "How old are the vehicles in your fleet?", answer: "Most vehicles in our fleet are less than 3 years old. We regularly update our fleet with newer models. All vehicles undergo yearly fitness certification and weekly maintenance checks to ensure optimal performance and passenger safety." }
-      ]} title="Vehicle & Fleet FAQs" />
+      ]} title="Vehicle & Fleet FAQs" includeSchema={true} />
 
       {/* Internal Links */}
       <InternalLinks />

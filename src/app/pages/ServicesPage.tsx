@@ -255,7 +255,7 @@ export default function ServicesPage() {
         { question: "Do you provide airport pickup and drop service?", answer: "Yes, we provide 24/7 Birsa Munda Airport (IXR) pickup and drop service starting at ₹800. We offer flight tracking, meet & greet at arrival gate, luggage assistance, and no extra charge for flight delays. Both sedan and SUV options available." },
         { question: "What types of vehicles are available?", answer: "Our fleet includes: Sedan (Maruti Dzire, Hyundai Aura - 4+1), SUV (Maruti Ertiga - 6+1), Premium SUV (Toyota Innova Crysta - 7+1), Tempo Traveller (12/17 seater), and Luxury Cars (Audi, BMW for weddings). All vehicles are AC, GPS-tracked, and well-maintained." },
         { question: "Is there a monthly or corporate cab package available?", answer: "Yes, we offer customized monthly corporate packages including dedicated vehicles, professional drivers, flexible billing (monthly/per trip), priority booking, detailed trip reports, and a dedicated account manager. Contact us at +91 7903629240 for corporate rates." }
-      ]} title="Taxi Services FAQs" />
+      ]} title="Taxi Services FAQs" includeSchema={true} />
 
       {/* Internal Links for SEO */}
       <InternalLinks />

@@ -332,7 +332,7 @@ export default function WeddingCarPage() {
       </section>
 
       {/* FAQ */}
-      <FAQ customFaqs={faqs} title="Wedding Car FAQs" />
+      <FAQ customFaqs={faqs} title="Wedding Car FAQs" includeSchema={true} />
 
       {/* CTA */}
       <section className="py-16 bg-gradient-to-r from-pink-500 to-red-500 overflow-x-hidden w-full">

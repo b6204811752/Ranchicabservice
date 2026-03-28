@@ -84,6 +84,17 @@ export default function Reviews({ reviews: customReviews, title = "What Our Cust
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Ranchi Cab Service",
+    "image": "https://www.ranchicabservice.com/og-image.jpg",
+    "telephone": "+917903629240",
+    "priceRange": "₹₹",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ranchi",
+      "addressLocality": "Ranchi",
+      "addressRegion": "JH",
+      "postalCode": "834001",
+      "addressCountry": "IN"
+    },
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": avgRating.toFixed(1),

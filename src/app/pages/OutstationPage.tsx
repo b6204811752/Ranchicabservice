@@ -373,7 +373,7 @@ export default function OutstationPage() {
         { question: "Are toll charges included in the outstation fare?", answer: "Our listed fares are base fares. Toll charges, state entry taxes, parking fees, and driver allowance (for overnight trips) are charged extra. We provide complete fare breakdown before trip confirmation." },
         { question: "Can I book an outstation cab for next day early morning?", answer: "Yes, we accept advance bookings for any date and time. For early morning departures (before 6 AM), we recommend booking at least 12 hours in advance. Night charges (10 PM - 6 AM) of 10% extra apply for early morning pickups." },
         { question: "Is it safe to travel outstation at night?", answer: "Yes, all our outstation drivers are experienced highway drivers with 5+ years of experience. Vehicles are GPS-tracked, and our control room monitors trips 24/7. We share driver details and vehicle number before the trip for your safety." }
-      ]} title="Outstation Taxi FAQs" />
+      ]} title="Outstation Taxi FAQs" includeSchema={true} />
 
       {/* Internal Links */}
       <InternalLinks />

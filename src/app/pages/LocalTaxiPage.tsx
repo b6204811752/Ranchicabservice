@@ -233,7 +233,7 @@ export default function LocalTaxiPage() {
         { question: "Is local taxi available for full day rental?", answer: "Yes, we offer 4-hour, 8-hour, and 12-hour rental packages. Full day 12Hr/120km package costs ₹2,800 for sedan and ₹3,800 for SUV. Extra km charged at ₹10/km for sedan, ₹14/km for SUV. Extra hours charged at ₹200/hr for sedan." },
         { question: "How do I book a local taxi in Ranchi?", answer: "You can book by calling +91 7903629240, sending a WhatsApp message with your pickup location, or using our online booking form. We provide instant confirmation and pickup within 10-15 minutes." },
         { question: "Do you offer taxi for Ranchi city sightseeing?", answer: "Yes, we offer city sightseeing packages covering Ranchi's top attractions: Pahari Mandir, Birsa Zoological Park, Tagore Hill, Rock Garden, Ranchi Lake, Jonha Falls, Dasam Falls, and more. 8Hr/80km sightseeing package starts at ₹2,000." }
-      ]} title="Local Taxi FAQs" />
+      ]} title="Local Taxi FAQs" includeSchema={true} />
 
       {/* Internal Links */}
       <InternalLinks />

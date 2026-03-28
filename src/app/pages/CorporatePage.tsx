@@ -171,7 +171,7 @@ export default function CorporatePage() {
         { question: "Do you cover employee shifts and night pickups?", answer: "Yes, we provide 24/7 corporate transportation including early morning, late night, and rotational shift pickups. Night shift transportation is available with verified drivers and GPS-tracked vehicles for employee safety." },
         { question: "What safety measures do you have for corporate travel?", answer: "All vehicles are GPS-tracked in real-time, drivers are police-verified with commercial licenses, vehicles undergo regular maintenance and sanitization, and we provide trip tracking links that can be shared with HR/admin teams." },
         { question: "How do I get a corporate quote?", answer: "Call us at +91 7903629240 or email ranchicabservice2@gmail.com with your requirements (number of employees, routes, shift timings). Our corporate team will prepare a customized quote within 24 hours. Bulk discounts available for 5+ vehicle requirements." }
-      ]} title="Corporate Taxi FAQs" />
+      ]} title="Corporate Taxi FAQs" includeSchema={true} />
 
       {/* Internal Links */}
       <InternalLinks />

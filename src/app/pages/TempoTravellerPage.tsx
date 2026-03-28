@@ -273,7 +273,7 @@ export default function TempoTravellerPage() {
       </section>
 
       {/* FAQ */}
-      <FAQ customFaqs={faqs} title="Tempo Traveller FAQs" />
+      <FAQ customFaqs={faqs} title="Tempo Traveller FAQs" includeSchema={true} />
 
       {/* CTA */}
       <section className="py-16 bg-gradient-to-r from-blue-600 to-purple-600 overflow-x-hidden w-full">

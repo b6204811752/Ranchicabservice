@@ -312,7 +312,7 @@ export default function AboutPage() {
         { question: "How can I contact Ranchi Cab Service?", answer: "You can reach us 24/7 via Phone: +91 7903629240, WhatsApp: +91 7903629240, Email: ranchicabservice2@gmail.com, or book online through our website. We provide instant booking confirmation for all services." },
         { question: "What makes Ranchi Cab Service different from Ola and Uber?", answer: "Unlike app-based services, we offer fixed transparent rates (no surge pricing), dedicated driver for your trip, door-to-door service, outstation and long-distance travel, wedding car rentals, and corporate monthly packages. We also provide tempo travellers for group travel which ride-hailing apps don't offer." },
         { question: "Are your drivers verified and trained?", answer: "Yes, all 50+ drivers at Ranchi Cab Service have commercial driving licenses, police verification certificates, 5+ years driving experience, and customer service training. They are familiar with all local routes in Ranchi and major highway routes across Jharkhand, Bihar, and West Bengal." }
-      ]} title="About Ranchi Cab Service - FAQs" />
+      ]} title="About Ranchi Cab Service - FAQs" includeSchema={true} />
 
       {/* Internal Links */}
       <InternalLinks />

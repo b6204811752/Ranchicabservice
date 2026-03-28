@@ -6,9 +6,10 @@ import { Helmet } from 'react-helmet-async';
 interface FAQProps {
   customFaqs?: { question: string; answer: string }[];
   title?: string;
+  includeSchema?: boolean;
 }
 
-export default function FAQ({ customFaqs, title }: FAQProps = {}) {
+export default function FAQ({ customFaqs, title, includeSchema = false }: FAQProps = {}) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const defaultFaqs = [
@@ -69,11 +70,12 @@ export default function FAQ({ customFaqs, title }: FAQProps = {}) {
       answer: "Yes, we have 12-seater and 17-seater tempo travellers available for group travel, pilgrimages, corporate outings, and family trips. Tempo traveller rates start at ₹22/km for 12-seater. Ideal for trips to Deoghar, Varanasi, Kolkata, and group outstation travel from Ranchi."
     }
   ];
-
   const faqs = customFaqs || defaultFaqs;
 
+  const displayTitle = title || "Frequently Asked Questions";
+
   // Generate FAQPage schema for rich snippets in Google
-  const faqSchema = {
+  const faqSchema = includeSchema ? {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": faqs.map(faq => ({
@@ -84,18 +86,17 @@ export default function FAQ({ customFaqs, title }: FAQProps = {}) {
         "text": faq.answer
       }
     }))
-  };
-
-  const displayTitle = title || "Frequently Asked Questions";
+  } : null;
 
   return (
     <section className="py-16 bg-gradient-to-b from-white via-blue-50 to-purple-50 relative overflow-hidden">
-      {/* FAQPage Schema for Google Rich Snippets */}
-      <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify(faqSchema)}
-        </script>
-      </Helmet>
+      {includeSchema && faqSchema && (
+        <Helmet>
+          <script type="application/ld+json">
+            {JSON.stringify(faqSchema)}
+          </script>
+        </Helmet>
+      )}
       <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-blue-300 to-purple-300 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <motion.div 

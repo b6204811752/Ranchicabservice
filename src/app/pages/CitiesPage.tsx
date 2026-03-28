@@ -265,7 +265,7 @@ export default function CitiesPage() {
         { question: "Do you provide intercity cab service for group travel?", answer: "Yes, we have Tempo Travellers (12/17 seater) and Innova Crysta (7+1 seater) for group intercity travel. Tempo Traveller rates start at ₹18/km. Ideal for family trips, pilgrimages to Deoghar, corporate outings, and wedding groups." },
         { question: "Is the driver familiar with outstation routes?", answer: "Yes, our drivers are experienced highway drivers familiar with all major interstate routes. They know the best roads, fuel stops, food courts, and rest points along each route. All vehicles have GPS navigation as backup." },
         { question: "Do outstation fares include toll and taxes?", answer: "Our listed fares are base fares. Toll charges, state entry taxes, parking fees, and driver night allowance (for trips beyond 10 PM) are additional. We provide complete fare breakdown before trip confirmation so there are no surprises." }
-      ]} title="Intercity Cab Service FAQs" />
+      ]} title="Intercity Cab Service FAQs" includeSchema={true} />
 
       {/* Internal Links */}
       <InternalLinks />
