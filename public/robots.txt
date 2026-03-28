@@ -35,7 +35,6 @@ Allow: /llms.txt
 # Googlebot specific rules
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 1
 
 User-agent: Googlebot-Image
 Allow: /
@@ -47,7 +46,6 @@ Allow: /*.avif$
 # Bingbot
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 2
 
 # Other search engines
 User-agent: Slurp
